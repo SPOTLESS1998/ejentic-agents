@@ -3,7 +3,12 @@
 // and drafting emails/reports. Everything is JSON-in, JSON-out.
 import { requireEnv, optionalEnv } from './env.js';
 
-const MODEL = optionalEnv('GEMINI_MODEL', 'gemini-2.5-flash');
+// Default model. gemini-flash-lite-latest has the most generous free-tier daily
+// quota and is plenty for screening + short email drafts (which you review before
+// sending). gemini-2.5-flash is only ~20 requests/day/model on the free tier —
+// fine for the scheduled once-a-day run, but tight for testing. Override with the
+// GEMINI_MODEL env var; run `npm run probe-models` to see which have quota today.
+const MODEL = optionalEnv('GEMINI_MODEL', 'gemini-flash-lite-latest');
 const endpoint = (model: string) =>
   `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 

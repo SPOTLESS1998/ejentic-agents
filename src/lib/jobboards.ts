@@ -72,13 +72,21 @@ function looksLikeRealJob(j: BoardJob): boolean {
   return true;
 }
 
-/** The Muse — real category + remote filtering. Best source for actual roles. */
-export async function themuse(categories: string[], pages = 1, remoteOnly = true): Promise<BoardJob[]> {
+/** The Muse — real category + remote filtering. Best source for actual roles.
+ *  `levels` filters seniority (e.g. ['Entry Level','Mid Level']) so we don't
+ *  drown in Principal/Senior roles the candidate can't take. Empty = all levels. */
+export async function themuse(
+  categories: string[],
+  pages = 1,
+  remoteOnly = true,
+  levels: string[] = [],
+): Promise<BoardJob[]> {
   const out: BoardJob[] = [];
   for (let page = 1; page <= pages; page++) {
     try {
       const params = new URLSearchParams();
       for (const c of categories) params.append('category', c);
+      for (const l of levels) params.append('level', l);
       if (remoteOnly) params.append('location', 'Flexible / Remote');
       params.append('page', String(page));
       const res = await fetch(`https://www.themuse.com/api/public/jobs?${params.toString()}`, {

@@ -19,13 +19,17 @@ The agents **never send anything on your behalf** — they draft, you review and
 For each run the Job agent:
 
 1. **Gathers** real, individual job postings from free structured job boards —
-   **The Muse**, **RemoteOK** (for jobs that fit your resume) and **Remotive**
-   (for companies hiring support staff = leads). These return direct links to the
-   actual posting, not search-result pages.
-2. **Screens** the results with Gemini — a quick, cheap first pass to throw out junk.
-3. **Verifies** the promising ones: checks the link is alive, reads the details,
-   and asks Gemini to confirm it's genuine and draft a tailored email. Anything it
-   isn't confident about (below 55%) is dropped. **Accuracy beats volume.**
+   **The Muse** (filtered to entry/mid seniority so you get roles you can actually
+   land, not Principal/Lead ones), **RemoteOK** (for jobs that fit your resume) and
+   **Remotive** (for companies hiring support staff = leads). These return direct
+   links to the actual posting, not search-result pages.
+2. **Screens + drafts in a single batched AI call per type.** One Gemini call reads
+   the whole batch, keeps only genuine fits (dropping anything below 55% confidence
+   — **accuracy beats volume**), and writes a tailored email for each keeper. This
+   is deliberately frugal: ~**2 AI calls per run**, so it stays well inside the free
+   tier (which is only ~20 requests/day on some models).
+3. **Verifies** each keeper's link is alive before reporting it (a free check — no
+   AI needed).
 4. **Messages you** on Telegram — every item labeled `JOB` or `LEAD`, with the link
    and a draft email.
 5. **Remembers** what it reported (in `data/seen-jobs.json`) so tomorrow is fresh.
@@ -93,7 +97,8 @@ npm run job                # the real thing — messages you on Telegram
 ## Tuning
 Edit these in `.env` (all optional):
 - `MAX_JOBS` / `MAX_LEADS` (default 4 each) — how many of each to report per run.
-- `GEMINI_MODEL` (default `gemini-2.5-flash`).
+- `GEMINI_MODEL` (default `gemini-flash-lite-latest` — most generous free-tier
+  daily quota). Run `npm run probe-models` to see which models have quota today.
 
 Want different roles or lead targets? Edit `src/context/candidate.ts` and
 `src/context/ejentic.ts` — they're written in plain English. To change which job

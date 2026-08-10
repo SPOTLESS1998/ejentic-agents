@@ -9,6 +9,7 @@
     "chat-id": "tsx src/tools/getChatId.ts",
     "ping": "tsx src/tools/ping.ts",
     "selftest": "tsx src/tools/selftest.ts",
+    "probe-models": "tsx src/tools/probeModels.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
