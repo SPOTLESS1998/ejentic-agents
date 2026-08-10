@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# secrets — never commit real keys/tokens. Only the template is tracked.
+.env
+.env.local
+!.env.example
+
+# logs / os junk
+*.log
+.DS_Store
+
+# NOTE: data/seen-*.json is intentionally NOT ignored — it stores which
+# opportunities were already reported, so it must persist between runs.

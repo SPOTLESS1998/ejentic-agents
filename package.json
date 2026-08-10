@@ -1,0 +1,22 @@
+{
+  "name": "ejentic-agents",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Autonomous agents for Ejentic AI — job/lead hunting (agent 1), scholarships (agent 2), and research (agent 3). Findings are verified before they notify you on Telegram.",
+  "scripts": {
+    "job": "tsx src/agents/job.ts",
+    "chat-id": "tsx src/tools/getChatId.ts",
+    "ping": "tsx src/tools/ping.ts",
+    "selftest": "tsx src/tools/selftest.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

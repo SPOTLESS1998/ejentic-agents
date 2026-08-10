@@ -1,0 +1,51 @@
+name: Job Agent
+
+# Runs the job/lead hunter on a schedule and lets you trigger it by hand.
+on:
+  schedule:
+    # Daily at 06:17 UTC (~07:17 in Nigeria/WAT). Odd minute chosen on purpose
+    # so we're not hitting the APIs at the top of the hour with everyone else.
+    - cron: '17 6 * * *'
+  workflow_dispatch: {}
+
+# Needed so the run can commit the updated "seen" list back to the repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: job-agent
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm ci
+
+      - name: Run job agent
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: npm run job
+
+      # Persist the "already reported" memory so tomorrow's run won't repeat itself.
+      - name: Save seen list
+        if: always()
+        run: |
+          if ! git diff --quiet -- data/seen-jobs.json; then
+            git config user.name "ejentic-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add data/seen-jobs.json
+            git commit -m "chore: update job agent seen list [skip ci]"
+            git push
+          else
+            echo "No change to the seen list."
+          fi
