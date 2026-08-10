@@ -16,6 +16,7 @@
 // =============================================================================
 import { remotive, remoteOK, themuse, makeMatcher, scrubInjection, type BoardJob } from '../lib/jobboards.js';
 import { geminiJSON } from '../lib/gemini.js';
+import { quotaExhausted, isQuotaError } from '../lib/gemini.js';
 import { resolveChatId, sendMessage, esc } from '../lib/telegram.js';
 import { loadSeen, saveSeen, normalizeUrl, type SeenMap } from '../lib/store.js';
 import { candidateSummary } from '../context/candidate.js';
@@ -271,15 +272,18 @@ async function run(label: Label, candidatesAll: Candidate[], cap: number, seen: 
   const confirmed: Confirmed[] = [];
   for (const i of keep) {
     if (confirmed.length >= cap) break;
+    if (quotaExhausted()) break; // AI budget spent — stop; unevaluated items retry next run
     const c = fresh[i];
     const key = seenKey(label, c);
-    if (seen[key]) continue;
-    seen[key] = { firstSeen: new Date().toISOString(), label, title: c.title }; // mark up-front
     try {
       const result = await confirmAndDraft(c, label);
+      // Mark seen only after a real verdict (kept OR genuinely rejected), so a
+      // transient failure below leaves it un-marked and it gets retried next run.
+      seen[key] = { firstSeen: new Date().toISOString(), label, title: c.title };
       if (result) confirmed.push(result);
     } catch (e) {
       console.error(`  verify failed for ${c.url}: ${(e as Error).message}`);
+      if (isQuotaError(e)) break; // don't hammer a spent quota
     }
   }
   console.log(`[${label}] ${confirmed.length} confirmed.`);
@@ -293,26 +297,45 @@ async function main() {
 
   console.log('Gathering…');
   const [jobCands, leadCands] = await Promise.all([gatherJobs(), gatherLeads()]);
-  const jobs = await run('JOB', jobCands, MAX_JOBS, seen);
-  const leads = await run('LEAD', leadCands, MAX_LEADS, seen);
+
+  // Never let one label's failure (e.g. AI quota) kill the whole run — the user
+  // should always get a Telegram message, even if it's just "couldn't finish".
+  let degraded = false;
+  const safeRun = async (label: Label, cands: Candidate[], cap: number): Promise<Confirmed[]> => {
+    try {
+      return await run(label, cands, cap, seen);
+    } catch (e) {
+      if (isQuotaError(e)) degraded = true;
+      console.error(`[${label}] aborted: ${(e as Error).message}`);
+      return [];
+    }
+  };
+  const jobs = await safeRun('JOB', jobCands, MAX_JOBS);
+  const leads = await safeRun('LEAD', leadCands, MAX_LEADS);
   const all = [...jobs, ...leads];
+  if (quotaExhausted()) degraded = true;
 
   const date = new Date().toISOString().slice(0, 10);
-  const header =
-    all.length === 0
-      ? `🔎 <b>Ejentic Job Agent</b> — ${date}\nNo new qualifying opportunities today. I'll keep looking. 🫡`
-      : `🔎 <b>Ejentic Job Agent</b> — ${date}\nFound <b>${jobs.length}</b> job(s) and <b>${leads.length}</b> lead(s). 👇`;
+  let header: string;
+  if (all.length > 0) {
+    header = `🔎 <b>Ejentic Job Agent</b> — ${date}\nFound <b>${jobs.length}</b> job(s) and <b>${leads.length}</b> lead(s). 👇`;
+    if (degraded) header += `\n<i>(Heads up: the free AI quota ran out mid-run — there may be more next time.)</i>`;
+  } else if (degraded) {
+    header = `🔎 <b>Ejentic Job Agent</b> — ${date}\n⚠️ I couldn't finish analyzing today — the free AI quota is used up. I'll try again on the next run.`;
+  } else {
+    header = `🔎 <b>Ejentic Job Agent</b> — ${date}\nNo new qualifying opportunities today. I'll keep looking. 🫡`;
+  }
 
   if (dryRun) {
-    console.log('\n===== DRY RUN (nothing sent) =====\n');
+    console.log('\n===== DRY RUN (nothing sent, seen-store NOT written) =====\n');
     console.log(header.replace(/<[^>]+>/g, ''));
     for (const c of all) console.log('\n' + render(c).replace(/<[^>]+>/g, ''));
   } else {
     await sendMessage(chatId, header);
     for (const c of all) await sendMessage(chatId, render(c));
+    saveSeen(SEEN_PATH, seen); // only persist on a real run
   }
 
-  saveSeen(SEEN_PATH, seen);
   console.log(`\nDone. Jobs: ${jobs.length}, Leads: ${leads.length}. Seen-store size: ${Object.keys(seen).length}.`);
 }
 
