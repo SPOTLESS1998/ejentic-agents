@@ -7,8 +7,13 @@ remember what they've already sent so you never see a duplicate.
 | # | Agent | What it does | Status |
 |---|-------|--------------|--------|
 | 1 | **Job agent** | Finds remote **jobs** that fit your resume **and** business **leads** for Ejentic AI. Each item comes with a ready-to-review draft email. | ✅ Built |
-| 2 | Scholarship agent | Finds Master's scholarships (China-focused, global too). | ⏳ Next |
-| 3 | Researcher agent | Finds news/resources/strategies to strengthen Ejentic AI. | ⏳ Next |
+| 2 | **Scholarship agent** | Finds funded **Master's scholarships** (China-focused, global too) in AI/ML/CS, with funding, deadline and eligibility for each. | ✅ Built |
+| 3 | **Researcher agent** | Scans the web for tools, techniques, market moves and strategies to strengthen Ejentic AI — a short briefing with a "so what" takeaway per item. | ✅ Built |
+
+Agents **2 and 3 discover things via web search (Firecrawl)** instead of job boards,
+but otherwise share the exact same frugal pipeline as the Job agent below: search
+→ **one** batched AI call to screen → verify links → Telegram → remember. They all
+message the **same** Telegram bot; each keeps its own memory (`data/seen-*.json`).
 
 The agents **never send anything on your behalf** — they draft, you review and send.
 
@@ -72,9 +77,14 @@ npm run ping        # you should get a "test message" in Telegram
 
 ### 4. Try the agent locally
 ```bash
-npm run job -- --dry-run   # prints results to your terminal, sends nothing
-npm run job                # the real thing — messages you on Telegram
+npm run job -- --dry-run           # prints results to your terminal, sends nothing
+npm run job                        # the real thing — messages you on Telegram
+
+npm run scholarship -- --dry-run   # agent #2 (needs FIRECRAWL_API_KEY)
+npm run research -- --dry-run      # agent #3 (needs FIRECRAWL_API_KEY)
 ```
+> Tip: add `-- --list` to any agent (e.g. `npm run scholarship -- --list`) to see
+> the raw search hits with **no AI call** — handy for tuning without spending quota.
 
 ---
 

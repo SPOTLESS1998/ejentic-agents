@@ -1,0 +1,52 @@
+name: Scholarship Agent
+
+# Runs the scholarship hunter on a schedule and lets you trigger it by hand.
+on:
+  schedule:
+    # Daily at 06:37 UTC — 20 min after the Job agent, so the runs don't overlap
+    # and the Telegram messages arrive as separate, digestible briefings.
+    - cron: '37 6 * * *'
+  workflow_dispatch: {}
+
+# Needed so the run can commit the updated "seen" list back to the repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: scholarship-agent
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm ci
+
+      - name: Run scholarship agent
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: npm run scholarship
+
+      # Persist the "already reported" memory so tomorrow's run won't repeat itself.
+      - name: Save seen list
+        if: always()
+        run: |
+          if ! git diff --quiet -- data/seen-scholarships.json; then
+            git config user.name "ejentic-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add data/seen-scholarships.json
+            git commit -m "chore: update scholarship agent seen list [skip ci]"
+            git push
+          else
+            echo "No change to the seen list."
+          fi

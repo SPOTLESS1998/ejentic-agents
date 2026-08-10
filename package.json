@@ -6,6 +6,8 @@
   "description": "Autonomous agents for Ejentic AI — job/lead hunting (agent 1), scholarships (agent 2), and research (agent 3). Findings are verified before they notify you on Telegram.",
   "scripts": {
     "job": "tsx src/agents/job.ts",
+    "scholarship": "tsx src/agents/scholarship.ts",
+    "research": "tsx src/agents/research.ts",
     "chat-id": "tsx src/tools/getChatId.ts",
     "ping": "tsx src/tools/ping.ts",
     "selftest": "tsx src/tools/selftest.ts",
