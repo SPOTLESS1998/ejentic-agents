@@ -1,0 +1,26 @@
+name: Ping Test
+
+# A tiny, on-demand smoke test: sends ONE Telegram message using the real repo
+# secrets, so we can prove the bot token + chat wiring works end-to-end without
+# running a full agent (no Gemini / Firecrawl quota spent). Manual trigger only —
+# there is deliberately no schedule, so this never fires on its own.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm ci
+
+      - name: Send Telegram ping
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: npm run ping
