@@ -438,5 +438,35 @@
     "firstSeen": "2026-08-15T06:58:49.106Z",
     "label": "LEAD",
     "title": "Coles Liquor"
+  },
+  "lead:mobiux labs uk limited ( formerly vida technologies ltd)": {
+    "firstSeen": "2026-08-16T07:00:01.643Z",
+    "label": "LEAD",
+    "title": "Mobiux Labs UK Limited ( Formerly Vida Technologies Ltd)"
+  },
+  "lead:harris farm markets": {
+    "firstSeen": "2026-08-16T07:00:01.643Z",
+    "label": "LEAD",
+    "title": "Harris Farm Markets"
+  },
+  "lead:multiplymii": {
+    "firstSeen": "2026-08-16T07:00:01.643Z",
+    "label": "LEAD",
+    "title": "MultiplyMii"
+  },
+  "lead:wolt": {
+    "firstSeen": "2026-08-16T07:00:01.643Z",
+    "label": "LEAD",
+    "title": "Wolt"
+  },
+  "lead:canadian armed forces | forces armã©es canadiennes": {
+    "firstSeen": "2026-08-16T07:00:01.643Z",
+    "label": "LEAD",
+    "title": "Canadian Armed Forces | Forces armÃ©es canadiennes"
+  },
+  "lead:booz allen hamilton": {
+    "firstSeen": "2026-08-16T07:00:01.643Z",
+    "label": "LEAD",
+    "title": "Booz Allen Hamilton"
   }
 }
