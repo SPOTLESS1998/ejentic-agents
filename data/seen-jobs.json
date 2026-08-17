@@ -468,5 +468,30 @@
     "firstSeen": "2026-08-16T07:00:01.643Z",
     "label": "LEAD",
     "title": "Booz Allen Hamilton"
+  },
+  "lead:freedompay": {
+    "firstSeen": "2026-08-17T07:17:42.440Z",
+    "label": "LEAD",
+    "title": "FreedomPay"
+  },
+  "lead:pivotal health": {
+    "firstSeen": "2026-08-17T07:17:42.440Z",
+    "label": "LEAD",
+    "title": "Pivotal Health"
+  },
+  "lead:menzies aviation": {
+    "firstSeen": "2026-08-17T07:17:42.440Z",
+    "label": "LEAD",
+    "title": "Menzies Aviation"
+  },
+  "lead:chico's fas, inc.": {
+    "firstSeen": "2026-08-17T07:17:42.440Z",
+    "label": "LEAD",
+    "title": "Chico's FAS, Inc."
+  },
+  "lead:the heineken company": {
+    "firstSeen": "2026-08-17T07:17:42.440Z",
+    "label": "LEAD",
+    "title": "The HEINEKEN Company"
   }
 }
