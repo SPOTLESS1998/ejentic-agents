@@ -708,5 +708,45 @@
     "firstSeen": "2026-08-21T07:09:03.993Z",
     "label": "LEAD",
     "title": "Srikara Hospitals"
+  },
+  "lead:shatterproof": {
+    "firstSeen": "2026-08-22T07:00:32.496Z",
+    "label": "LEAD",
+    "title": "Shatterproof"
+  },
+  "lead:kent removals &amp; storage": {
+    "firstSeen": "2026-08-22T07:00:32.496Z",
+    "label": "LEAD",
+    "title": "Kent Removals &amp; Storage"
+  },
+  "lead:uzeats": {
+    "firstSeen": "2026-08-22T07:00:32.496Z",
+    "label": "LEAD",
+    "title": "UzEats"
+  },
+  "lead:retail fx": {
+    "firstSeen": "2026-08-22T07:00:32.496Z",
+    "label": "LEAD",
+    "title": "Retail FX"
+  },
+  "lead:shoppers drug mart": {
+    "firstSeen": "2026-08-22T07:00:32.496Z",
+    "label": "LEAD",
+    "title": "Shoppers Drug Mart"
+  },
+  "lead:h&amp;m": {
+    "firstSeen": "2026-08-22T07:00:32.496Z",
+    "label": "LEAD",
+    "title": "H&amp;M"
+  },
+  "lead:gpc asia pacific": {
+    "firstSeen": "2026-08-22T07:00:32.496Z",
+    "label": "LEAD",
+    "title": "GPC Asia Pacific"
+  },
+  "lead:tipsy topsy": {
+    "firstSeen": "2026-08-22T07:00:32.496Z",
+    "label": "LEAD",
+    "title": "Tipsy Topsy"
   }
 }
