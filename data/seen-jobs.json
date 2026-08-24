@@ -763,5 +763,35 @@
     "firstSeen": "2026-08-23T07:02:36.281Z",
     "label": "LEAD",
     "title": "Cable Bahamas Ltd."
+  },
+  "lead:rowan": {
+    "firstSeen": "2026-08-24T07:29:53.236Z",
+    "label": "LEAD",
+    "title": "Rowan"
+  },
+  "lead:orca bio": {
+    "firstSeen": "2026-08-24T07:29:53.236Z",
+    "label": "LEAD",
+    "title": "Orca Bio"
+  },
+  "lead:edspired.tech": {
+    "firstSeen": "2026-08-24T07:29:53.236Z",
+    "label": "LEAD",
+    "title": "Edspired.Tech"
+  },
+  "lead:tesco": {
+    "firstSeen": "2026-08-24T07:29:53.236Z",
+    "label": "LEAD",
+    "title": "Tesco"
+  },
+  "lead:jobtrade": {
+    "firstSeen": "2026-08-24T07:29:53.236Z",
+    "label": "LEAD",
+    "title": "JobTrade"
+  },
+  "lead:platypus shoes": {
+    "firstSeen": "2026-08-24T07:29:53.236Z",
+    "label": "LEAD",
+    "title": "Platypus Shoes"
   }
 }
