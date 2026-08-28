@@ -863,5 +863,45 @@
     "firstSeen": "2026-08-27T17:39:09.793Z",
     "label": "LEAD",
     "title": "s1jobs"
+  },
+  "lead:vertu motors plc": {
+    "firstSeen": "2026-08-28T18:44:26.462Z",
+    "label": "LEAD",
+    "title": "Vertu Motors plc"
+  },
+  "lead:virtuhire": {
+    "firstSeen": "2026-08-28T18:44:26.462Z",
+    "label": "LEAD",
+    "title": "VirtuHire"
+  },
+  "lead:sisal hub albania": {
+    "firstSeen": "2026-08-28T18:44:26.462Z",
+    "label": "LEAD",
+    "title": "Sisal Hub Albania"
+  },
+  "lead:royal caribbean group": {
+    "firstSeen": "2026-08-28T18:44:26.462Z",
+    "label": "LEAD",
+    "title": "Royal Caribbean Group"
+  },
+  "lead:storage king group": {
+    "firstSeen": "2026-08-28T18:44:26.462Z",
+    "label": "LEAD",
+    "title": "Storage King Group"
+  },
+  "lead:blackbird interactive": {
+    "firstSeen": "2026-08-28T18:44:26.462Z",
+    "label": "LEAD",
+    "title": "Blackbird Interactive"
+  },
+  "lead:scotsman hospitality": {
+    "firstSeen": "2026-08-28T18:44:26.462Z",
+    "label": "LEAD",
+    "title": "Scotsman Hospitality"
+  },
+  "lead:transportation partners &amp; logistics": {
+    "firstSeen": "2026-08-28T18:44:26.462Z",
+    "label": "LEAD",
+    "title": "Transportation Partners &amp; Logistics"
   }
 }
