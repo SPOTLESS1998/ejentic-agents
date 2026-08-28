@@ -428,5 +428,15 @@
     "firstSeen": "2026-08-27T17:58:59.132Z",
     "label": "RESEARCH",
     "title": "LLM Cost Optimization Techniques for Up to 70% Savings"
+  },
+  "https://levelop.dev/blog/ai-cost-optimization-llm-inference-guide-2026": {
+    "firstSeen": "2026-08-28T19:09:10.697Z",
+    "label": "RESEARCH",
+    "title": "AI Cost Optimization: Cut LLM Costs in 2026"
+  },
+  "https://www.youtube.com/watch?v=iyzl5xb6x6i": {
+    "firstSeen": "2026-08-28T19:09:10.697Z",
+    "label": "RESEARCH",
+    "title": "Engineering Techniques to Reduce Cost of LLMs in Production ..."
   }
 }
