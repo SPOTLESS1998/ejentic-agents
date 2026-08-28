@@ -8,6 +8,7 @@
     "job": "tsx src/agents/job.ts",
     "scholarship": "tsx src/agents/scholarship.ts",
     "research": "tsx src/agents/research.ts",
+    "content": "tsx src/agents/content.ts",
     "chat-id": "tsx src/tools/getChatId.ts",
     "ping": "tsx src/tools/ping.ts",
     "selftest": "tsx src/tools/selftest.ts",

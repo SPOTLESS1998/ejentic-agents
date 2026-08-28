@@ -34,5 +34,12 @@ async function main() {
   const muse = await themuse(['Data Science', 'Software Engineering'], 1);
   console.log('Muse sample:');
   muse.slice(0, 4).forEach((j) => console.log('  -', j.title, '|', j.company));
+  // 5. Calendar & brand consistency (no network needed):
+  const { calendarIsComplete, cycleDayFor, CYCLE_DAYS } = await import('../context/calendar.js');
+  const { SLOT_PROFILES } = await import('../context/brand.js');
+  console.log('\ncalendar complete (30 days × 3 slots):', calendarIsComplete());
+  const cd = cycleDayFor(new Date());
+  console.log(`today's cycle day: ${cd} (must be 1..${CYCLE_DAYS}):`, cd >= 1 && cd <= CYCLE_DAYS);
+  console.log('slot profiles present:', Object.keys(SLOT_PROFILES).length === 3);
 }
 main();

@@ -4,7 +4,10 @@ import { requireEnv, optionalEnv } from './env.js';
 
 const api = (token: string, method: string) => `https://api.telegram.org/bot${token}/${method}`;
 
-function token(): string {
+// Which bot token to use. Callers can pass an explicit token (e.g. the Content
+// agent's dedicated bot); everything else keeps using TELEGRAM_BOT_TOKEN.
+function token(explicit?: string): string {
+  if (explicit && explicit.trim()) return explicit.trim();
   return requireEnv('TELEGRAM_BOT_TOKEN');
 }
 
@@ -17,11 +20,11 @@ export function esc(s: string): string {
  * Work out which chat to message. Prefer an explicit TELEGRAM_CHAT_ID; otherwise
  * auto-detect from the most recent person who messaged the bot (getUpdates).
  */
-export async function resolveChatId(): Promise<string> {
+export async function resolveChatId(explicitToken?: string): Promise<string> {
   const explicit = optionalEnv('TELEGRAM_CHAT_ID');
   if (explicit) return explicit;
 
-  const res = await fetch(api(token(), 'getUpdates'));
+  const res = await fetch(api(token(explicitToken), 'getUpdates'));
   const data = await res.json();
   const updates: unknown[] = data?.result ?? [];
   for (let i = updates.length - 1; i >= 0; i--) {
@@ -35,9 +38,9 @@ export async function resolveChatId(): Promise<string> {
 }
 
 /** Send a message (auto-split if it's too long for one Telegram message). */
-export async function sendMessage(chatId: string, html: string): Promise<void> {
+export async function sendMessage(chatId: string, html: string, explicitToken?: string): Promise<void> {
   for (const chunk of splitForTelegram(html, 3900)) {
-    const res = await fetch(api(token(), 'sendMessage'), {
+    const res = await fetch(api(token(explicitToken), 'sendMessage'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

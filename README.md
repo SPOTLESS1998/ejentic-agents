@@ -1,6 +1,6 @@
 # Ejentic Agents
 
-Three small autonomous agents that hunt the web for you and message you on **Telegram**.
+Four small autonomous agents that hunt the web (and now the calendar) for you and message you on **Telegram**.
 They run on a schedule (GitHub Actions), verify their findings before reporting, and
 remember what they've already sent so you never see a duplicate.
 
@@ -9,13 +9,21 @@ remember what they've already sent so you never see a duplicate.
 | 1 | **Job agent** | Finds remote **jobs** that fit your resume **and** business **leads** for Ejentic AI. Each item comes with a ready-to-review draft email. | ✅ Built |
 | 2 | **Scholarship agent** | Finds funded **Master's scholarships** (China-focused, global too) in AI/ML/CS, with funding, deadline and eligibility for each. | ✅ Built |
 | 3 | **Researcher agent** | Scans the web for tools, techniques, market moves and strategies to strengthen Ejentic AI — a short briefing with a "so what" takeaway per item. | ✅ Built |
+| 4 | **Content Creator agent** | Runs three times a day (morning/afternoon/evening). Follows the 30-day content calendar, grounds each post in the **Researcher agent's freshest findings**, and drafts the **same topic as two platform variations** — X (Twitter) + LinkedIn — dropped on a dedicated Telegram bot for review. | ✅ Built |
 
 Agents **2 and 3 discover things via web search (Firecrawl)** instead of job boards,
 but otherwise share the exact same frugal pipeline as the Job agent below: search
-→ **one** batched AI call to screen → verify links → Telegram → remember. They all
-message the **same** Telegram bot; each keeps its own memory (`data/seen-*.json`).
+→ **one** batched AI call to screen → verify links → Telegram → remember. Agents
+1–3 all message the **same** Telegram bot; each keeps its own memory (`data/seen-*.json`).
+
+**The symbiosis:** the Researcher agent commits its findings to `data/seen-research.json`
+after every run; the Content Creator agent reads that file as its raw material. Research
+feeds content — the system is closed-loop and keeps running even if no human (or Claude)
+touches it: GitHub Actions is the engine, the repo is the memory.
 
 The agents **never send anything on your behalf** — they draft, you review and send.
+The Content Creator additionally **never posts to social media itself**; every draft
+waits for a human.
 
 ---
 
@@ -82,8 +90,11 @@ npm run job                        # the real thing — messages you on Telegram
 
 npm run scholarship -- --dry-run   # agent #2 (needs FIRECRAWL_API_KEY)
 npm run research -- --dry-run      # agent #3 (needs FIRECRAWL_API_KEY)
+
+npm run content -- --dry-run       # agent #4 — drafts today's post pair, prints them
+npm run content -- --day=1 --slot=morning --dry-run   # force any calendar day & slot
 ```
-> Tip: add `-- --list` to any agent (e.g. `npm run scholarship -- --list`) to see
+> Tip: add `-- --list` to any search agent (e.g. `npm run scholarship -- --list`) to see
 > the raw search hits with **no AI call** — handy for tuning without spending quota.
 
 ---
@@ -92,13 +103,21 @@ npm run research -- --dry-run      # agent #3 (needs FIRECRAWL_API_KEY)
 
 1. Create a **private** GitHub repo and push this folder to it.
 2. In the repo: **Settings → Secrets and variables → Actions → New repository secret**,
-   and add these three secrets:
+   and add these secrets:
    - `GEMINI_API_KEY`
-   - `TELEGRAM_BOT_TOKEN`
-   - `TELEGRAM_CHAT_ID`
+   - `FIRECRAWL_API_KEY` (agents 2–4)
+   - `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` (the main bot, agents 1–3)
+   - For the Content Creator (agent #4): create a **second bot** with @BotFather
+     (`/newbot` — e.g. "Ejentic Content Studio"), message it once, run `npm run chat-id`
+     against its token, then add secrets `TELEGRAM_CONTENT_BOT_TOKEN` and
+     `TELEGRAM_CONTENT_CHAT_ID`. (If left unset, agent #4 falls back to the main bot
+     with a warning — fine for testing.)
    - *(optional)* add a **variable** `GEMINI_MODEL` if you want to override the default.
-3. The workflow in `.github/workflows/job-agent.yml` runs **daily**. To run it now,
-   go to the **Actions** tab → **Job Agent** → **Run workflow**.
+3. The workflow in `.github/workflows/job-agent.yml` runs **daily**. The Content
+   Creator's workflow (`.github/workflows/content-agent.yml`) runs **three times a
+   day** (09:03 / 14:03 / 19:03 Nigeria time). To run any of them now, go to the
+   **Actions** tab → pick the workflow → **Run workflow** (you can force a
+   calendar day / slot there too).
 
 > Keep the repo **private** — it contains your resume details.
 
@@ -109,8 +128,20 @@ Edit these in `.env` (all optional):
 - `MAX_JOBS` / `MAX_LEADS` (default 4 each) — how many of each to report per run.
 - `GEMINI_MODEL` (default `gemini-flash-lite-latest` — most generous free-tier
   daily quota). Run `npm run probe-models` to see which models have quota today.
+- `RESEARCH_LOOKBACK_DAYS` (default 3) — how far back the Content Creator mines
+  the Researcher agent's findings for source material.
+- `RESEARCH_PER_RUN` (default 2) — how many articles it reads per post.
+- `CONSULTATION_URL` — the link used by the "Book a free consultation" CTAs.
+- `CONTENT_CYCLE_START` (e.g. `2026-08-28`) — pins calendar day 1 to a real date.
+  Without it, days are picked deterministically per date (never crashes, but the
+  campaign order is not guaranteed — set this for the real launch).
 
 Want different roles or lead targets? Edit `src/context/candidate.ts` and
 `src/context/ejentic.ts` — they're written in plain English. To change which job
 boards or search terms are used, edit `src/agents/job.ts` (the keyword lists at
 the top) and `src/lib/jobboards.ts`.
+
+**Content team:** the Content Creator's "what to post" is `src/context/calendar.ts`
+(all 30 days × 3 slots, with per-post guidance — edit freely, it validates itself)
+and its "how to sound" is `src/context/brand.ts` (voice, services, demo-video links,
+founder personas, hashtag pools). Both are plain English on purpose.

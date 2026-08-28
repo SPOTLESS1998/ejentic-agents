@@ -1,0 +1,76 @@
+name: Content Creator Agent
+
+# The Ejentic content studio: three runs a day (Nigeria / WAT = UTC+1):
+#   morning   09:03 WAT  → educational & thought leadership (the "Why")
+#   afternoon 14:03 WAT  → technical showcase & offers      (the "What")
+#   evening   19:03 WAT  → vision, culture & impact         (the "Who")
+# Each run drafts one topic as TWO platform variations (X + LinkedIn) and drops
+# them on the dedicated content bot in Telegram for human review. Fully
+# autonomous: the repo is the memory, Actions is the engine — no Claude/Cline
+# needed on any day. You can also trigger a run by hand (workflow_dispatch).
+on:
+  schedule:
+    - cron: '3 8 * * *'
+    - cron: '3 13 * * *'
+    - cron: '3 18 * * *'
+  workflow_dispatch:
+    inputs:
+      day:
+        description: 'Force a calendar day (1-30). Leave empty for automatic.'
+        required: false
+        default: ''
+      slot:
+        description: 'Force a slot (morning/afternoon/evening). Leave empty for automatic.'
+        required: false
+        default: ''
+
+# Needed so the run can commit the updated "seen" list back to the repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: content-agent
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm ci
+
+      - name: Run content creator agent
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          # Dedicated content bot (falls back to the main bot if unset).
+          TELEGRAM_CONTENT_BOT_TOKEN: ${{ secrets.TELEGRAM_CONTENT_BOT_TOKEN }}
+          TELEGRAM_CONTENT_CHAT_ID: ${{ secrets.TELEGRAM_CONTENT_CHAT_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          # Optional tuning (repo variables, all have safe defaults):
+          RESEARCH_LOOKBACK_DAYS: ${{ vars.RESEARCH_LOOKBACK_DAYS }}
+          RESEARCH_PER_RUN: ${{ vars.RESEARCH_PER_RUN }}
+          CONSULTATION_URL: ${{ vars.CONSULTATION_URL }}
+          CONTENT_CYCLE_START: ${{ vars.CONTENT_CYCLE_START }}
+        run: npm run content -- ${{ github.event.inputs.day && format('--day={0}', github.event.inputs.day) || '' }} ${{ github.event.inputs.slot && format('--slot={0}', github.event.inputs.slot) || '' }}
+
+      # Persist the "already delivered" memory so a repeated run won't resend.
+      - name: Save seen list
+        if: always()
+        run: |
+          if ! git diff --quiet -- data/seen-content.json; then
+            git config user.name "ejentic-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add data/seen-content.json
+            git commit -m "chore: update content agent seen list [skip ci]"
+            git push
+          else
+            echo "No change to the seen list."
+          fi
