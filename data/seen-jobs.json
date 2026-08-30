@@ -918,5 +918,15 @@
     "firstSeen": "2026-08-29T12:43:05.120Z",
     "label": "LEAD",
     "title": "Crocs, Inc."
+  },
+  "lead:acumentis group": {
+    "firstSeen": "2026-08-30T11:56:37.979Z",
+    "label": "LEAD",
+    "title": "Acumentis Group"
+  },
+  "lead:places for people": {
+    "firstSeen": "2026-08-30T11:56:37.979Z",
+    "label": "LEAD",
+    "title": "Places for People"
   }
 }
