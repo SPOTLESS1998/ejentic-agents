@@ -928,5 +928,20 @@
     "firstSeen": "2026-08-30T11:56:37.979Z",
     "label": "LEAD",
     "title": "Places for People"
+  },
+  "lead:thrifty car and van rental": {
+    "firstSeen": "2026-08-31T13:55:17.045Z",
+    "label": "LEAD",
+    "title": "Thrifty Car and Van Rental"
+  },
+  "lead:clarks international": {
+    "firstSeen": "2026-08-31T13:55:17.045Z",
+    "label": "LEAD",
+    "title": "Clarks International"
+  },
+  "lead:trant engineering limited": {
+    "firstSeen": "2026-08-31T13:55:17.045Z",
+    "label": "LEAD",
+    "title": "TRANT ENGINEERING LIMITED"
   }
 }
