@@ -43,5 +43,10 @@
     "firstSeen": "2026-09-01T17:18:12.994Z",
     "label": "CONTENT",
     "title": "Day 2 evening"
+  },
+  "2026-09-02:morning": {
+    "firstSeen": "2026-09-02T12:34:27.827Z",
+    "label": "CONTENT",
+    "title": "Day 3 morning"
   }
 }
