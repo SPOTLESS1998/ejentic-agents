@@ -963,5 +963,40 @@
     "firstSeen": "2026-09-01T11:41:21.688Z",
     "label": "LEAD",
     "title": "Guardian Electrical Compliance Ltd"
+  },
+  "lead:food basics": {
+    "firstSeen": "2026-09-02T11:21:45.982Z",
+    "label": "LEAD",
+    "title": "Food Basics"
+  },
+  "lead:brooks brothers": {
+    "firstSeen": "2026-09-02T11:21:45.982Z",
+    "label": "LEAD",
+    "title": "Brooks Brothers"
+  },
+  "lead:gildan": {
+    "firstSeen": "2026-09-02T11:21:45.982Z",
+    "label": "LEAD",
+    "title": "Gildan"
+  },
+  "lead:streamline search": {
+    "firstSeen": "2026-09-02T11:21:45.982Z",
+    "label": "LEAD",
+    "title": "Streamline Search"
+  },
+  "lead:linsco ltd": {
+    "firstSeen": "2026-09-02T11:21:45.982Z",
+    "label": "LEAD",
+    "title": "Linsco Ltd"
+  },
+  "lead:fronix services": {
+    "firstSeen": "2026-09-02T11:21:45.982Z",
+    "label": "LEAD",
+    "title": "Fronix Services"
+  },
+  "lead:copa airlines": {
+    "firstSeen": "2026-09-02T11:21:45.982Z",
+    "label": "LEAD",
+    "title": "Copa Airlines"
   }
 }
