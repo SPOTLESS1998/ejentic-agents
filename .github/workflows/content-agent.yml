@@ -44,6 +44,19 @@ jobs:
 
       - run: npm ci
 
+      # Which of the three daily crons fired? Pass the slot EXPLICITLY so the run
+      # never has to guess it from the wall clock (the old guess put the 13:03
+      # afternoon cron in the "morning" band, so it was skipped as a duplicate).
+      - name: Resolve slot from the cron trigger
+        id: trig
+        run: |
+          case "${{ github.event.schedule }}" in
+            "3 8 * * *")  echo "slot=morning"   >> "$GITHUB_OUTPUT" ;;
+            "3 13 * * *") echo "slot=afternoon" >> "$GITHUB_OUTPUT" ;;
+            "3 18 * * *") echo "slot=evening"   >> "$GITHUB_OUTPUT" ;;
+            *)            echo "slot="          >> "$GITHUB_OUTPUT" ;;
+          esac
+
       - name: Run content creator agent
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -59,7 +72,7 @@ jobs:
           RESEARCH_PER_RUN: ${{ vars.RESEARCH_PER_RUN }}
           CONSULTATION_URL: ${{ vars.CONSULTATION_URL }}
           CONTENT_CYCLE_START: ${{ vars.CONTENT_CYCLE_START }}
-        run: npm run content -- ${{ github.event.inputs.day && format('--day={0}', github.event.inputs.day) || '' }} ${{ github.event.inputs.slot && format('--slot={0}', github.event.inputs.slot) || '' }}
+        run: npm run content -- ${{ github.event.inputs.day && format('--day={0}', github.event.inputs.day) || '' }} ${{ github.event.inputs.slot && format('--slot={0}', github.event.inputs.slot) || (steps.trig.outputs.slot && format('--slot={0}', steps.trig.outputs.slot)) || '' }}
 
       # Persist the "already delivered" memory so a repeated run won't resend.
       - name: Save seen list

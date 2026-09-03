@@ -33,6 +33,12 @@ export const SLOT_ORDER: Slot[] = ['morning', 'afternoon', 'evening'];
 // How many days one full cycle runs (a "content month").
 export const CYCLE_DAYS = 30;
 
+// The campaign's Day 1 (ISO date). The cycle day is counted FORWARD from here so
+// the 30-day narrative always runs in order (Day 1 → 2 → 3 …). CI/production can
+// re-anchor the launch with the CONTENT_CYCLE_START repo variable; this constant
+// is the version-controlled default so the order is never left to chance.
+export const DEFAULT_CYCLE_START = '2026-09-03';
+
 export const CALENDAR: DayPlan[] = [
   // ===========================================================================
   //  WEEK 1 — THE FOUNDATION: "Who is Ejentic AI?"
@@ -604,20 +610,17 @@ export const CALENDAR: DayPlan[] = [
  * so runs never crash and still spread across the calendar.
  */
 export function cycleDayFor(date: Date): number {
-  const start = optionalEnv('CONTENT_CYCLE_START');
-  if (start) {
-    const startDay = Date.parse(`${start.slice(0, 10)}T00:00:00Z`);
-    if (!Number.isNaN(startDay)) {
-      const today = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
-      const elapsed = Math.floor((today - startDay) / 86_400_000);
-      if (elapsed >= 0) return (elapsed % CYCLE_DAYS) + 1;
-    }
-  }
-  // Deterministic fallback: hash YYYY-MM-DD into 1..30 (stable all day, varies daily).
-  const key = date.toISOString().slice(0, 10);
-  let h = 0;
-  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
-  return (h % CYCLE_DAYS) + 1;
+  // Count the cycle day FORWARD from a fixed launch anchor. We never fall back to
+  // a random hash: an unset env used to scramble the 30-day narrative into a
+  // different day every run (Day 18 one day, Day 10 the next), so followers never
+  // saw the story in order. CONTENT_CYCLE_START overrides the built-in default.
+  const start = optionalEnv('CONTENT_CYCLE_START') || DEFAULT_CYCLE_START;
+  let startDay = Date.parse(`${start.slice(0, 10)}T00:00:00Z`);
+  if (Number.isNaN(startDay)) startDay = Date.parse(`${DEFAULT_CYCLE_START}T00:00:00Z`);
+  const today = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
+  const elapsed = Math.floor((today - startDay) / 86_400_000);
+  if (elapsed <= 0) return 1; // before/at launch → start the story at Day 1
+  return (elapsed % CYCLE_DAYS) + 1;
 }
 
 /** The day plan for a given calendar day (1..30). */
@@ -629,10 +632,16 @@ export function dayPlan(cycleDay: number): DayPlan {
 
 /** Which slot (morning/afternoon/evening) is the current run responsible for? */
 export function currentSlot(date: Date): Slot {
+  // The three daily crons fire at 08:03 / 13:03 / 18:03 UTC (09:03 / 14:03 /
+  // 19:03 WAT). The OLD cutoffs put 13:00 UTC in the morning band, so the
+  // afternoon SHOWCASE run resolved to "morning" and was swallowed by the dedup
+  // gate — the sales pillar almost never fired. These wider bands map 13:xx →
+  // afternoon and tolerate GitHub's cron delays. (Scheduled runs also get their
+  // slot passed explicitly by the workflow; this is the local/manual fallback.)
   const hour = date.getUTCHours(); // CI machines run UTC; WAT = UTC+1
-  if (hour >= 7 && hour < 14) return 'morning';    // 08:00–14:59 WAT → morning post
-  if (hour >= 14 && hour < 17) return 'afternoon'; // 15:00–17:59 WAT → afternoon post
-  return 'evening';                                // 18:00+ / night catch-up
+  if (hour < 13) return 'morning';   // 08:03 UTC / 09:03 WAT → EDUCATE
+  if (hour < 18) return 'afternoon'; // 13:03 UTC / 14:03 WAT → SHOWCASE (sell)
+  return 'evening';                  // 18:03 UTC / 19:03 WAT → INSPIRE
 }
 
 /** Sanity check used by the self-test: every day has all three slots. */
