@@ -998,5 +998,70 @@
     "firstSeen": "2026-09-02T11:21:45.982Z",
     "label": "LEAD",
     "title": "Copa Airlines"
+  },
+  "lead:ampol": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "Ampol"
+  },
+  "lead:sigma": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "Sigma"
+  },
+  "lead:go auto": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "Go Auto"
+  },
+  "lead:clutch": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "Clutch"
+  },
+  "lead:pvh group inc": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "PVH Group Inc"
+  },
+  "lead:city of york council": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "City of York Council"
+  },
+  "lead:buffalo wild wings - fralich, inc.": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "Buffalo Wild Wings - Fralich, Inc."
+  },
+  "lead:halfords": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "Halfords"
+  },
+  "lead:st. regis hotels &amp; resorts": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "St. Regis Hotels &amp; Resorts"
+  },
+  "lead:marriott international": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "Marriott International"
+  },
+  "lead:delta hotels by marriott edinburgh": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "Delta Hotels by Marriott Edinburgh"
+  },
+  "lead:the russell inn hotel &amp; conference centre": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "The Russell Inn Hotel &amp; Conference Centre"
+  },
+  "lead:canada post / postes canada": {
+    "firstSeen": "2026-09-03T11:17:31.677Z",
+    "label": "LEAD",
+    "title": "Canada Post / Postes Canada"
   }
 }
