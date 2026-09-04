@@ -1,0 +1,18 @@
+{
+  "2026-09-04:afternoon": {
+    "date": "2026-09-04",
+    "slot": "afternoon",
+    "cycleDay": 5,
+    "theme": "The Invisible Hand of Automation",
+    "pillar": "SHOWCASE",
+    "topic": "Enterprise Workflow Automation — case study: connecting Stripe, a CRM, and an LLM to automate invoicing and lead routing.",
+    "angle": "Enterprise workflow automation using Stripe, CRMs, and LLMs to handle invoicing and lead routing reliably.",
+    "xPost": "What does real automation look like? We connect Stripe, your CRM, and LLM pipelines to handle invoicing and lead routing autonomously. No dropped leads, zero manual data entry. See our lead-gen system in action: https://youtu.be/4DcFtp6amjs #EjenticAI #Automation",
+    "linkedinPost": "Automation isn't just about sending automated emails. In practice, it means building resilient pipelines that connect your core business tools without manual intervention.\n\nHere is what our Enterprise Workflow Automation looks like in architecture: we integrate Stripe, your CRM, and LLM pipelines into a single continuous loop. When a payment clears or a new prospect enters your ecosystem, the system instantly processes the invoice, categorizes lead intent, and routes high-value prospects straight to human sales.\n\nDavid Chen, our Chief Architect, designs these systems with strict fallbacks and graceful degradation so your operations never skip a beat. You eliminate manual data entry, cut down response times to seconds, and let your team focus on high-value work.\n\nWatch our autonomous lead-generation system demo here: https://youtu.be/4DcFtp6amjs\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #ROI",
+    "citedSourceUrls": [
+      "https://youtu.be/4DcFtp6amjs"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-04T16:50:55.217Z"
+  }
+}
