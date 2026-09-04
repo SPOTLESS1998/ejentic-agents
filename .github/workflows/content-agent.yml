@@ -72,21 +72,26 @@ jobs:
           RESEARCH_PER_RUN: ${{ vars.RESEARCH_PER_RUN }}
           CONSULTATION_URL: ${{ vars.CONSULTATION_URL }}
           CONTENT_CYCLE_START: ${{ vars.CONTENT_CYCLE_START }}
+          # Optional stronger model JUST for drafting (unset → shared default).
+          CONTENT_MODEL: ${{ vars.CONTENT_MODEL }}
+          # The editor rewrites a draft once if it scores below this (default 8/10).
+          CONTENT_QUALITY_GATE: ${{ vars.CONTENT_QUALITY_GATE }}
         run: npm run content -- ${{ github.event.inputs.day && format('--day={0}', github.event.inputs.day) || '' }} ${{ github.event.inputs.slot && format('--slot={0}', github.event.inputs.slot) || (steps.trig.outputs.slot && format('--slot={0}', steps.trig.outputs.slot)) || '' }}
 
-      # Persist the "already delivered" memory so a repeated run won't resend.
-      - name: Save seen list
+      # Persist the "already delivered" memory AND the durable post log so a
+      # repeated run won't resend and the weekly newsletter has its source data.
+      - name: Save content state
         if: always()
         run: |
           # git diff --quiet misses UNTRACKED files (e.g. the very first run,
-          # before this file exists in the repo) — use git status instead,
+          # before these files exist in the repo) — use git status instead,
           # which catches both new and modified files.
-          if [ -n "$(git status --porcelain -- data/seen-content.json)" ]; then
+          if [ -n "$(git status --porcelain -- data/seen-content.json data/content-posts.json)" ]; then
             git config user.name "ejentic-bot"
             git config user.email "bot@users.noreply.github.com"
-            git add data/seen-content.json
-            git commit -m "chore: update content agent seen list [skip ci]"
+            git add data/seen-content.json data/content-posts.json
+            git commit -m "chore: update content agent state [skip ci]"
             git push
           else
-            echo "No change to the seen list."
+            echo "No change to the content state."
           fi

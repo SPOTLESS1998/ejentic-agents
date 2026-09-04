@@ -25,9 +25,10 @@ export function isQuotaError(e: unknown): boolean {
 }
 
 // Core call with a small retry loop for transient errors (rate limits, 5xx).
-async function call(prompt: string, opts: { json: boolean; temperature?: number }): Promise<string> {
+async function call(prompt: string, opts: { json: boolean; temperature?: number; model?: string }): Promise<string> {
   const key = requireEnv('GEMINI_API_KEY');
   if (quotaTripped) throw new Error('Gemini 429: daily quota already exhausted this run');
+  const model = opts.model || MODEL;
   const body = {
     contents: [{ parts: [{ text: prompt }] }],
     generationConfig: {
@@ -39,7 +40,7 @@ async function call(prompt: string, opts: { json: boolean; temperature?: number 
   let lastErr = '';
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      const res = await fetch(`${endpoint(MODEL)}?key=${key}`, {
+      const res = await fetch(`${endpoint(model)}?key=${key}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
@@ -68,13 +69,13 @@ async function call(prompt: string, opts: { json: boolean; temperature?: number 
 }
 
 /** Ask Gemini for free-form text. */
-export async function geminiText(prompt: string, temperature = 0.4): Promise<string> {
-  return (await call(prompt, { json: false, temperature })).trim();
+export async function geminiText(prompt: string, temperature = 0.4, model?: string): Promise<string> {
+  return (await call(prompt, { json: false, temperature, model })).trim();
 }
 
 /** Ask Gemini for JSON and parse it into an object. */
-export async function geminiJSON<T = unknown>(prompt: string, temperature = 0.2): Promise<T> {
-  const raw = await call(prompt, { json: true, temperature });
+export async function geminiJSON<T = unknown>(prompt: string, temperature = 0.2, model?: string): Promise<T> {
+  const raw = await call(prompt, { json: true, temperature, model });
   return safeParse<T>(raw);
 }
 

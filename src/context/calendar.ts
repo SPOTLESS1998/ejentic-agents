@@ -605,9 +605,10 @@ export const CALENDAR: DayPlan[] = [
 
 /**
  * Which calendar day (1..30) is "today" for a given date?
- * Day 1 of the cycle is the deployment anniversary (env CONTENT_CYCLE_START,
- * ISO date, e.g. "2026-08-28"). No env set → deterministic hash of the date,
- * so runs never crash and still spread across the calendar.
+ * Day 1 of the cycle is the launch anchor (env CONTENT_CYCLE_START, ISO date,
+ * e.g. "2026-09-03"; falls back to DEFAULT_CYCLE_START). The day is counted
+ * FORWARD from there and wraps every 30 days, so the narrative always runs in
+ * order. Dates on or before the anchor return Day 1.
  */
 export function cycleDayFor(date: Date): number {
   // Count the cycle day FORWARD from a fixed launch anchor. We never fall back to
