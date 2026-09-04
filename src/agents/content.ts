@@ -20,7 +20,8 @@
 import { geminiJSON, quotaExhausted, isQuotaError } from '../lib/gemini.js';
 import { resolveChatId, sendMessage, esc } from '../lib/telegram.js';
 import { loadSeen, saveSeen, type SeenMap } from '../lib/store.js';
-import { appendPost } from '../lib/content-log.js';
+import { appendPost, type ContentPost } from '../lib/content-log.js';
+import { pushToWebsite } from '../lib/ingest-bridge.js';
 import { scrape } from '../lib/firecrawl.js';
 import { cleanText } from '../lib/websearch.js';
 import { optionalEnv } from '../lib/env.js';
@@ -428,7 +429,7 @@ async function main() {
     saveSeen(CONTENT_SEEN_PATH, seen);
     // Persist the finished post: audit trail + the weekly newsletter's source.
     const plan = dayPlan(cycleDay);
-    appendPost(CONTENT_POSTS_PATH, slotKey, {
+    const post: ContentPost = {
       date: now.toISOString().slice(0, 10),
       slot,
       cycleDay,
@@ -441,7 +442,12 @@ async function main() {
       citedSourceUrls: draft.citedSourceUrls,
       score,
       createdAt: new Date().toISOString(),
-    });
+    };
+    appendPost(CONTENT_POSTS_PATH, slotKey, post);
+    // Mirror it to the website's weekly-newsletter store. Best-effort and
+    // env-gated (see ingest-bridge.ts) — a no-op until CONTENT_INGEST_URL /
+    // CONTENT_INGEST_TOKEN are set, and it never throws into this flow.
+    await pushToWebsite(post);
   } else {
     const day = now.toISOString().slice(0, 10);
     await sendMessage(
