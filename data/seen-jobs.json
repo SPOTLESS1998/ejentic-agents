@@ -1063,5 +1063,30 @@
     "firstSeen": "2026-09-03T11:17:31.677Z",
     "label": "LEAD",
     "title": "Canada Post / Postes Canada"
+  },
+  "https://www.themuse.com/jobs/crowdstrike/threat-analyst-machine-learning-operations-detection-efficacy-remote-77168d": {
+    "firstSeen": "2026-09-04T11:23:17.160Z",
+    "label": "JOB",
+    "title": "Threat Analyst, Machine Learning Operations & Detection Efficacy (Remote)"
+  },
+  "lead:hacksaw gaming": {
+    "firstSeen": "2026-09-04T11:23:18.565Z",
+    "label": "LEAD",
+    "title": "Hacksaw Gaming"
+  },
+  "lead:scottish police authority": {
+    "firstSeen": "2026-09-04T11:23:18.565Z",
+    "label": "LEAD",
+    "title": "Scottish Police Authority"
+  },
+  "lead:emplyfy": {
+    "firstSeen": "2026-09-04T11:23:18.565Z",
+    "label": "LEAD",
+    "title": "Emplyfy"
+  },
+  "lead:orderyoyo": {
+    "firstSeen": "2026-09-04T11:23:18.565Z",
+    "label": "LEAD",
+    "title": "OrderYOYO"
   }
 }
