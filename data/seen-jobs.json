@@ -1088,5 +1088,20 @@
     "firstSeen": "2026-09-04T11:23:18.565Z",
     "label": "LEAD",
     "title": "OrderYOYO"
+  },
+  "lead:warehance": {
+    "firstSeen": "2026-09-05T10:37:31.711Z",
+    "label": "LEAD",
+    "title": "Warehance"
+  },
+  "lead:hugo boss": {
+    "firstSeen": "2026-09-05T10:37:31.711Z",
+    "label": "LEAD",
+    "title": "HUGO BOSS"
+  },
+  "lead:u.p.pro": {
+    "firstSeen": "2026-09-05T10:37:31.711Z",
+    "label": "LEAD",
+    "title": "U.P.PRO"
   }
 }
