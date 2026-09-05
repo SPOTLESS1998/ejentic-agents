@@ -28,5 +28,21 @@
     "citedSourceUrls": [],
     "score": 5,
     "createdAt": "2026-09-04T20:42:24.843Z"
+  },
+  "2026-09-05:morning": {
+    "date": "2026-09-05",
+    "slot": "morning",
+    "cycleDay": 6,
+    "theme": "Demystifying the Buzzwords",
+    "pillar": "EDUCATE",
+    "topic": "AI Glossary: What is a \"Vector Database\"? A simple, visual explanation of how we store company knowledge (Pinecone/pgvector).",
+    "angle": "Connecting enterprise AI resilience and operational action to how we structure underlying data through vector databases.",
+    "xPost": "What is a Vector Database? Think of it like a library that searches your company knowledge by meaning, not spelling. It's how AI finds exact answers in private SOPs without leaking data. #EjenticAI #AIAgents",
+    "linkedinPost": "Ever wonder how an AI instantly finds the exact company policy you need out of thousands of messy PDFs without guessing?\n\nIt comes down to a simple concept: the Vector Database.\n\nForget traditional keyword search that breaks if you misspell a word or use a different phrasing. Imagine a massive library where books aren't sorted by title, but by meaning. Concepts that mean similar things are placed right next to each other on the shelves.\n\nWhen your team queries an internal knowledge base like our Air-Gapped RAG Vault, the vector database maps the meaning of the question and points straight to the right shelf. It is how we build secure, reliable systems that turn static enterprise data into active, usable knowledge.\n\nNo hype. Just better architecture for enterprise resilience.\n\n#EjenticAI #AIAgents #RAG #AIExplained #FutureOfWork",
+    "citedSourceUrls": [
+      "https://www.redwood.com/article/ai-automation-trends"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-05T11:40:05.121Z"
   }
 }
