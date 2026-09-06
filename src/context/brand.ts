@@ -9,6 +9,8 @@
 //  "what to post when") — brand.ts is the "how it should sound".
 // =============================================================================
 
+import { EJENTIC } from './ejentic.js';
+
 // The three daily publishing windows (West Africa Time). The GitHub Actions
 // cron fires inside each window; the agent picks the slot from the clock.
 export type Slot = 'morning' | 'afternoon' | 'evening';
@@ -23,14 +25,20 @@ export const BRAND = {
     'Not by copying Silicon Valley, but by building ethical, human-centric systems that ' +
     'speak our languages, respect our data, and augment our people instead of replacing them.',
 
-  // What Ejentic sells (mirrors src/context/ejentic.ts — kept in sync by hand).
-  services: [
-    'Autonomous multilingual customer-service agents (Pidgin, Hausa, Yoruba, Igbo + English) embeddable in websites, apps, and social media.',
-    'The Air-Gapped RAG Vault — a secure internal knowledge base so employees can query private SOPs without data leaking.',
-    'Enterprise workflow automation — e.g. Stripe + CRM + LLM pipelines for invoicing, lead routing, and reconciliation.',
-    'The Inbound Lead Concierge — an agent that greets visitors 24/7, qualifies intent, and routes high-value prospects to human sales.',
-    'Managed AI services & retainers — we deploy, train your team, and optimize long-term.',
-  ],
+  // What Ejentic sells. IMPORTED, not restated.
+  //
+  // This used to be a second hand-written copy of the list in
+  // src/context/ejentic.ts, with the comment "kept in sync by hand" — and by the
+  // time anyone checked, it wasn't: NOT ONE of the five entries matched. The two
+  // lists had drifted into describing different companies. That mattered because
+  // the two copies feed different agents: ejentic.ts drives the job agent's LEAD
+  // hunt (which businesses to approach, and what to pitch them), while this file
+  // drives the content agent (what we tell the public we sell). So the agency was
+  // hunting customers for one menu while advertising another.
+  //
+  // A list that must be "kept in sync by hand" will eventually not be. One source
+  // of truth removes the possibility rather than relying on someone remembering.
+  services: EJENTIC.services,
 
   // Real proof the posts can point to. Never invent customer results — use these.
   proofPoints: [

@@ -38,7 +38,10 @@ async function call(prompt: string, opts: { json: boolean; temperature?: number;
   };
 
   let lastErr = '';
-  for (let attempt = 0; attempt < 3; attempt++) {
+  // Named so the retry count and the "is there another attempt coming?" check
+  // below can never drift apart.
+  const MAX_ATTEMPTS = 3;
+  for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
     try {
       const res = await fetch(`${endpoint(model)}?key=${key}`, {
         method: 'POST',
@@ -63,7 +66,10 @@ async function call(prompt: string, opts: { json: boolean; temperature?: number;
     } catch (e) {
       lastErr = `Gemini network error: ${(e as Error).message}`;
     }
-    await new Promise((r) => setTimeout(r, 1500 * (attempt + 1)));
+    // Back off only BETWEEN attempts. Sleeping after the LAST attempt would burn
+    // ~4.5s doing nothing before we throw — and this is the timeout path of every
+    // agent, so that delay lands on every single failure.
+    if (attempt < MAX_ATTEMPTS - 1) await new Promise((r) => setTimeout(r, 1500 * (attempt + 1)));
   }
   throw new Error(lastErr || 'Gemini call failed');
 }

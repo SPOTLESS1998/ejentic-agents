@@ -15,14 +15,28 @@ export const EJENTIC = {
   // The core industries the agency positions around.
   industries: ['Healthcare', 'Fintech', 'E-commerce', 'Logistics', 'SMEs'],
 
-  // The concrete things Ejentic can build/sell. The LEAD hunt looks for
-  // businesses whose pain these solve.
+  // THE SINGLE SOURCE OF TRUTH FOR WHAT WE SELL.
+  //
+  // src/context/brand.ts (the content agent's voice) now imports this list
+  // instead of restating it. It used to keep its own hand-written copy, and the
+  // two had silently drifted until not one of the five entries matched — the job
+  // agent was hunting customers for one menu while the content agent advertised
+  // a different one to the public. Edit here and both agents follow.
+  //
+  // This list is the MERGE of the two former copies: the named products came from
+  // brand.ts, the lead-gen / AI-strategy / market-research entries from here.
+  // Neither copy was complete on its own, so neither was simply discarded.
+  //
+  // The LEAD hunt looks for businesses whose pain these solve.
   services: [
-    'Autonomous multilingual customer-service agents (embeddable in websites, apps, and social media) that greet clients, advertise services, answer questions, log complaints, and capture leads.',
+    'Autonomous multilingual customer-service agents (Pidgin, Hausa, Yoruba, Igbo + English) embeddable in websites, apps, and social media — they greet clients, advertise services, answer questions, log complaints, and capture leads.',
+    'The Air-Gapped RAG Vault — a secure internal knowledge base so employees can query private SOPs and documents without data leaking.',
     'Autonomous lead-generation systems that scrape the web for prospects, craft personalized pitches, and perform outreach.',
-    'Custom agentic workflows that automate repetitive business operations to cut cost, error rate, and turnaround time.',
+    'The Inbound Lead Concierge — an agent that greets website visitors 24/7, qualifies intent, and routes high-value prospects to human sales.',
+    'Custom agentic workflows and enterprise automation (e.g. Stripe + CRM + LLM pipelines for invoicing, lead routing, and reconciliation) that cut cost, error rate, and turnaround time.',
     'LLM integration and AI strategy for companies that want to adopt AI but do not know where to start.',
     'AI-powered market analysis and research tools.',
+    'Managed AI services & retainers — we deploy, train your team, and optimize long-term.',
   ],
 
   // Signals that a business is a good LEAD (the agent looks for these).

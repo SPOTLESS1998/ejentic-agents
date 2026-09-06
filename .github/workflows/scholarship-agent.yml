@@ -41,7 +41,10 @@ jobs:
       - name: Save seen list
         if: always()
         run: |
-          if ! git diff --quiet -- data/seen-scholarships.json; then
+          # git diff --quiet misses UNTRACKED files (e.g. the very first run,
+          # before this file exists in the repo) — use git status instead,
+          # which catches both new and modified files.
+          if [ -n "$(git status --porcelain -- data/seen-scholarships.json)" ]; then
             git config user.name "ejentic-bot"
             git config user.email "bot@users.noreply.github.com"
             git add data/seen-scholarships.json
