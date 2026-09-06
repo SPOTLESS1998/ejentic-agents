@@ -92,5 +92,21 @@
     ],
     "score": 8,
     "createdAt": "2026-09-06T11:58:29.270Z"
+  },
+  "2026-09-06:afternoon": {
+    "date": "2026-09-06",
+    "slot": "afternoon",
+    "cycleDay": 7,
+    "theme": "Weekly Recap & Engagement",
+    "pillar": "SHOWCASE",
+    "topic": "Demo Reel — a short video snippet of our \"Watch Agents in Action\" prototypes (Lead Gen or Multilingual Support).",
+    "angle": "Connecting enterprise resilience and ERP-to-action trends directly to our custom agentic workflows and demo reels.",
+    "xPost": "Enterprise AI is moving from chat to execution. See our autonomous agents in action across multilingual customer support and lead generation. Watch the demos: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "As enterprise AI moves from basic chat to real-world execution, the focus is shifting to resilience, trust, and deep system integration. Standalone tools no longer cut it.\n\nAt Ejentic AI, we build autonomous agents and workflows that bridge insight and action. Whether it is custom ERP integrations, secure internal knowledge bases with our Air-Gapped RAG Vault, or automated lead generation, our systems are designed to augment your teams securely and reliably.\n\nTake a look at our prototypes in action:\n- Multilingual Support Agents: https://youtu.be/gbXhZMTdnkM\n- Autonomous Lead Generation: https://youtu.be/4DcFtp6amjs\n\nCurious how resilient automation can transform your operations? Book a free consultation\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #AIAutomation",
+    "citedSourceUrls": [
+      "https://www.redwood.com/article/ai-automation-trends"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-06T16:09:53.579Z"
   }
 }
