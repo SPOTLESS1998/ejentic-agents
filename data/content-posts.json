@@ -76,5 +76,21 @@
     ],
     "score": 8,
     "createdAt": "2026-09-05T20:15:35.612Z"
+  },
+  "2026-09-06:morning": {
+    "date": "2026-09-06",
+    "slot": "morning",
+    "cycleDay": 7,
+    "theme": "Weekly Recap & Engagement",
+    "pillar": "EDUCATE",
+    "topic": "Q&A Sunday — answer the top 3 most common questions businesses ask us about getting started with AI.",
+    "angle": "Connecting enterprise automation trends around trust and action to the top three practical questions businesses ask when starting with AI.",
+    "xPost": "Q&A Sunday: 1) What does it cost? Start small with clear ROI. 2) Will it replace staff? No, it augments teams. 3) Where to begin? Fix one real bottleneck first. #EjenticAI #AI",
+    "linkedinPost": "Q&A Sunday: The top 3 questions businesses ask us about getting started with AI.\n\n1. What will it actually cost?\nReal integration shouldn't require a blank check. We recommend starting with a high-friction bottleneck where the ROI is clear from day one.\n\n2. Will it replace my staff?\nNo. Our philosophy is to augment your people, not replace them. Agents handle repetitive tasks, freeing your team for high-value work.\n\n3. Where do we start?\nDon't build isolated experiments. Connect your core data to practical workflows while keeping internal knowledge secure.\n\nWhat is holding your business back from adopting practical automation? Drop your questions below.\n\n#EjenticAI #AIAgents #Automation #FutureOfWork",
+    "citedSourceUrls": [
+      "https://www.redwood.com/article/ai-automation-trends"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-06T11:58:29.270Z"
   }
 }
