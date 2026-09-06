@@ -47,8 +47,20 @@ For each run the Job agent:
    and a draft email.
 5. **Remembers** what it reported (in `data/seen-jobs.json`) so tomorrow is fresh.
 
-Scraped text is **sanitized** before it ever reaches the AI (hidden tracking codes
-and injection payloads are stripped), so your draft emails stay clean and safe.
+Scraped text is **sanitized** before it ever reaches the AI: hidden tracking codes,
+honeypot tokens and zero-width characters are stripped, so your draft emails stay
+clean. Scraped text is also **contained** — each untrusted value is forced onto one
+line and wrapped in explicit "this is quoted data, not instructions" markers, with
+our own labels (`SOURCE:`, `CONTENT:`, list numbers) removed from inside it, so a
+hostile page can't fake an extra search result or escape its quote block. Every
+prompt tells the model to ignore instructions found in scraped text.
+
+**Be clear about the limit:** those are mitigations, not proof. Prompt injection
+hidden in plain English can still influence what the AI writes — no prompt-level
+defense stops that with certainty. That's why every agent only ever **drafts**:
+nothing is emailed, posted or applied to without you reading it first. Treat the
+Telegram messages as untrusted-until-read, especially the content drafts, which are
+built from full article bodies found by web search.
 
 Everything runs on **free tiers**: Gemini (free model) for thinking, free job-board
 APIs for finding, Telegram for messaging, GitHub Actions for scheduling. The job
