@@ -26,25 +26,42 @@ import {
 import { geminiJSON } from '../lib/gemini.js';
 import { quotaExhausted, isQuotaError } from '../lib/gemini.js';
 import { resolveChatId, sendMessage, esc } from '../lib/telegram.js';
-import { loadSeen, saveSeen, normalizeUrl, type SeenMap } from '../lib/store.js';
+import { loadSeen, saveSeen, normalizeUrl, isSuppressed, type SeenMap } from '../lib/store.js';
 import { candidateSummary } from '../context/candidate.js';
 import { ejenticSummary } from '../context/ejentic.js';
 import { optionalEnv } from '../lib/env.js';
 
 const SEEN_PATH = 'data/seen-jobs.json';
 
-// Search terms fed to the job boards. Small on purpose — stays inside free tiers.
-// The Muse categories that hold AI/ML/automation roles:
-const MUSE_CATEGORIES = ['Data Science', 'Data and Analytics', 'Software Engineering', 'Software Engineer'];
+// Search terms fed to the job boards. Widened 2026-09 after the daily pool had
+// shrunk to ~6 roles (all long-since "seen"), leaving the user with empty
+// digests. Still bounded — a handful of API pages — so it stays inside free tiers.
+// The Muse categories that hold AI/ML/automation-adjacent roles. Broader than
+// before: "AI Engineer" work shows up under several category names, so casting
+// wider here and letting the TITLE gate + Gemini do the precise filtering finds
+// more real fits than a narrow category list did.
+const MUSE_CATEGORIES = [
+  'Data Science',
+  'Data and Analytics',
+  'Software Engineering',
+  'Software Engineer',
+  'Engineering',
+  'Machine Learning',
+  'Product Management',
+  'IT',
+];
 // Seniority filter for The Muse — the candidate is early-career, so we pull from
 // the entry/mid pool and skip the Principal/Senior/Lead roles he can't take.
 const MUSE_LEVELS = ['Entry Level', 'Mid Level'];
 // TITLE gate — a role counts as a fit only if its TITLE announces AI/ML work.
 // Deliberately excludes bare "agent"/"ml" (too many false hits like "Customs
 // Agent") — those are matched only via RemoteOK's curated tags, not free text.
-const TITLE_KEYWORDS = ['ai', 'a.i.', 'llm', 'llms', 'genai', 'gen ai', 'generative ai', 'machine learning', 'ml engineer', 'ml scientist', 'automation', 'agentic', 'prompt engineer', 'artificial intelligence', 'nlp', 'chatbot', 'data scientist', 'data science', 'deep learning', 'mlops'];
+// Widened with the concrete titles from the candidate profile (candidate.ts
+// targetRoles) so postings that name the actual job — "AI Solutions Engineer",
+// "Forward-Deployed Engineer", "Applied Scientist" — are no longer missed.
+const TITLE_KEYWORDS = ['ai', 'a.i.', 'llm', 'llms', 'genai', 'gen ai', 'generative ai', 'machine learning', 'ml engineer', 'ml scientist', 'automation', 'agentic', 'prompt engineer', 'artificial intelligence', 'nlp', 'chatbot', 'data scientist', 'data science', 'deep learning', 'mlops', 'applied scientist', 'applied ai', 'ai engineer', 'ai developer', 'solutions engineer', 'forward deployed', 'forward-deployed', 'conversational', 'computer vision', 'data engineer', 'research engineer'];
 // Broader set for RemoteOK's tag/keyword filter (tags are curated, so safe).
-const JOB_KEYWORDS = [...TITLE_KEYWORDS, 'agent', 'agents', 'ml', 'rag'];
+const JOB_KEYWORDS = [...TITLE_KEYWORDS, 'agent', 'agents', 'ml', 'rag', 'python', 'langchain'];
 // Companies hiring for these = leads for Ejentic's AI customer-service agent.
 const LEAD_TERMS = ['customer support', 'customer service'];
 const LEAD_KEYWORDS = ['customer support', 'customer service', 'support specialist', 'virtual assistant', 'customer success', 'support agent', 'help desk', 'helpdesk', 'client support'];
@@ -74,6 +91,10 @@ interface Confirmed {
   url: string;
   emailSubject: string;
   emailBody: string;
+  // The seen-store key of the candidate this came from, so run() can mark the
+  // ones we actually report as 'reported' (long suppression) and the rest as
+  // 'screened' (short). Not shown to the user.
+  seenKey: string;
 }
 
 // Dedup key: jobs by URL, leads by company (so one company isn't pitched twice).
@@ -91,10 +112,18 @@ async function gatherJobs(): Promise<Candidate[]> {
   const jobs: BoardJob[] = [];
   // The Muse: reliable category+remote filtering (our anchor source), limited
   // to entry/mid seniority so senior-only roles don't crowd out real fits.
-  // 3 pages widens the daily pool (AI-title roles are a thin slice of it).
-  jobs.push(...(await themuse(MUSE_CATEGORIES, 3, true, MUSE_LEVELS)));
+  // 4 pages widens the daily pool (AI-title roles are a thin slice of it).
+  jobs.push(...(await themuse(MUSE_CATEGORIES, 4, true, MUSE_LEVELS)));
   // RemoteOK: tech-native, whole-word keyword filtered inside the lib.
-  jobs.push(...(await remoteOK(JOB_KEYWORDS, 25)));
+  jobs.push(...(await remoteOK(JOB_KEYWORDS, 40)));
+  // Remotive, added as a THIRD job source (it was previously used only for
+  // leads). Its free API ignores the search term and just returns the latest
+  // ~batch of remote jobs — useless for targeted search, but that is fine here:
+  // we title-filter everything below anyway, so it acts as a general feed of
+  // newly-posted remote roles. Cheap way to add churn to a stale pool.
+  for (const term of ['ai', 'machine learning', 'automation']) {
+    jobs.push(...(await remotive(term, 25)));
+  }
 
   // Keep only rows whose TITLE announces AI/ML/automation work. Matching the
   // title (not the whole description) avoids "Java Developer" / "Customs Agent"
@@ -212,6 +241,7 @@ ${list}`;
       url: c.url,
       emailSubject: cleanText(String(p.emailSubject || '')),
       emailBody: cleanText(String(p.emailBody || '')),
+      seenKey: seenKey(label, c),
     });
   }
   return out;
@@ -266,28 +296,47 @@ function render(c: Confirmed): string {
 
 // --- Orchestration ----------------------------------------------------------
 async function run(label: Label, candidatesAll: Candidate[], cap: number, seen: SeenMap): Promise<Confirmed[]> {
-  const fresh = candidatesAll.filter((c) => !seen[seenKey(label, c)]).slice(0, 45);
-  console.log(`[${label}] ${candidatesAll.length} found, ${fresh.length} new; screening…`);
+  // "Fresh" now means "not currently suppressed" — NOT "never seen". A role that
+  // was only screened-out (not reported) becomes eligible again after a short
+  // TTL, and a long-ago reported one after a longer one. This is the fix for the
+  // dry pipeline: the boards return the same ~6 AI roles for weeks, and marking
+  // them seen-forever meant nothing was ever new. See store.ts SEEN_TTL_DAYS.
+  const now = Date.now();
+  const fresh = candidatesAll.filter((c) => !isSuppressed(seen[seenKey(label, c)], now)).slice(0, 45);
+  console.log(`[${label}] ${candidatesAll.length} found, ${fresh.length} eligible; screening…`);
   if (fresh.length === 0 || quotaExhausted()) return [];
 
   // ONE Gemini call screens + drafts for the whole batch. If it throws (quota /
   // network) it propagates to safeRun and nothing below runs — so nothing is
   // marked seen and the whole batch is retried on the next run.
   const drafted = await screenAndDraft(fresh, label, cap);
-
-  // Call succeeded → the batch was evaluated as a unit, so mark every input seen
-  // (we won't re-screen these tomorrow). A winner with a dead link is still
-  // "seen" — it was evaluated; we just won't report it.
-  const stamp = new Date().toISOString();
-  for (const c of fresh) seen[seenKey(label, c)] = { firstSeen: stamp, label, title: c.title };
   console.log(`[${label}] ${drafted.length} passed screening; verifying links…`);
 
   // Verify links (free fetches) only on the winners; keep up to `cap` live ones.
   const confirmed: Confirmed[] = [];
+  const reportedKeys = new Set<string>();
   for (const d of drafted) {
     if (confirmed.length >= cap) break;
-    if (await isLive(d.url)) confirmed.push(d);
-    else console.error(`  dropped (dead link): ${d.url}`);
+    if (await isLive(d.url)) {
+      confirmed.push(d);
+      reportedKeys.add(d.seenKey);
+    } else {
+      console.error(`  dropped (dead link): ${d.url}`);
+    }
+  }
+
+  // Mark the batch seen — but distinguish the two cases, because they suppress
+  // for very different lengths of time (store.ts SEEN_TTL_DAYS):
+  //   • REPORTED (a live winner we're about to send)  → suppress ~60 days.
+  //   • SCREENED (everything else in the batch)        → suppress ~10 days, so a
+  //     rejected-today role can be re-judged after boards refresh it. This is the
+  //     audit fix: a low-fit verdict is no longer permanent. A winner whose link
+  //     was dead falls in here too — evaluated, not reported, so it can return.
+  const stamp = new Date().toISOString();
+  for (const c of fresh) {
+    const key = seenKey(label, c);
+    const kind = reportedKeys.has(key) ? 'reported' : 'screened';
+    seen[key] = { firstSeen: stamp, label, title: c.title, kind };
   }
   console.log(`[${label}] ${confirmed.length} confirmed.`);
   return confirmed;
