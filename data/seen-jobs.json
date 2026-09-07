@@ -1103,5 +1103,23 @@
     "firstSeen": "2026-09-05T10:37:31.711Z",
     "label": "LEAD",
     "title": "U.P.PRO"
+  },
+  "https://remoteok.com/remote-jobs/remote-ai-response-analyst-imerit-technology-1137309": {
+    "firstSeen": "2026-09-07T12:36:49.252Z",
+    "label": "JOB",
+    "title": "AI Response Analyst",
+    "kind": "screened"
+  },
+  "https://remotive.com/remote-jobs/software-development/senior-data-engineer-2091097": {
+    "firstSeen": "2026-09-07T12:36:49.252Z",
+    "label": "JOB",
+    "title": "Senior Data Engineer",
+    "kind": "screened"
+  },
+  "https://remotive.com/remote-jobs/software-development/senior-independent-ai-engineer-architect-1919266": {
+    "firstSeen": "2026-09-07T12:36:49.252Z",
+    "label": "JOB",
+    "title": "Senior Independent AI Engineer / Architect",
+    "kind": "screened"
   }
 }
