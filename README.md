@@ -109,6 +109,31 @@ npm run content -- --day=1 --slot=morning --dry-run   # force any calendar day &
 > Tip: add `-- --list` to any search agent (e.g. `npm run scholarship -- --list`) to see
 > the raw search hits with **no AI call** — handy for tuning without spending quota.
 
+### 5. Optional: deliver to a teammate too
+
+A bot chat is always 1-to-1 — there is no "add someone to my bot" switch in
+Telegram. The link is simply: **they message the bot once, and from then on the
+agents can message them back.**
+
+1. Send them the bot's username (the @handle from @BotFather). They open it and
+   press **Start** (bots can never message someone first).
+2. Get their chat id — no laptop needed: on GitHub, run the **Telegram chat-id
+   helper** workflow (Actions tab → pick it → Run workflow) and open its log;
+   it prints every chat id (with names) that has messaged each bot. Locally,
+   `TELEGRAM_BOT_TOKEN=<token> npm run chat-id` does the same.
+3. List **both** chat ids, comma-separated, in the GitHub secrets (Settings →
+   Secrets and variables → Actions → update the secret):
+   ```bash
+   TELEGRAM_CHAT_ID="your-id,their-id"           # agents 1–3 (main bot)
+   TELEGRAM_CONTENT_CHAT_ID="your-id,their-id"   # content agent (its own bot)
+   ```
+4. Run the helper workflow again — its second half pings every linked chat on
+   both bots, so each phone can confirm delivery works.
+
+Prefer one shared thread instead of private copies? Make a Telegram **group**,
+add the bot + everyone to it, then set the chat-id secret to the group's chat id
+(a negative number — the helper's log prints it after anyone posts in the group).
+
 ---
 
 ## Running it 24/7 on GitHub Actions

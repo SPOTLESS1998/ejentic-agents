@@ -1,5 +1,7 @@
 // Telegram Bot API client — how the agents reach you on your phone.
 // Messages use HTML formatting and are split to respect Telegram's 4096-char limit.
+// A chat id may also be a comma-separated LIST ("111,222") to deliver the same
+// message to several people — e.g. the owner and a teammate reviewing drafts.
 import { requireEnv, optionalEnv } from './env.js';
 
 const api = (token: string, method: string) => `https://api.telegram.org/bot${token}/${method}`;
@@ -26,7 +28,9 @@ function isUnattended(): boolean {
 }
 
 /**
- * Work out which chat to message. Prefer an explicit TELEGRAM_CHAT_ID.
+ * Work out which chat to message. Prefer an explicit TELEGRAM_CHAT_ID (the value
+ * may be a comma-separated LIST of several people — it is passed through
+ * untouched and split per-recipient at send time; see sendMessage).
  *
  * The fallback (auto-detect from whoever most recently messaged the bot) is a
  * convenience for a human doing first-run setup on their own laptop. It is NOT
@@ -75,8 +79,20 @@ export async function resolveChatId(explicitToken?: string): Promise<string> {
   );
 }
 
-/** Send a message (auto-split if it's too long for one Telegram message). */
-export async function sendMessage(chatId: string, html: string, explicitToken?: string): Promise<void> {
+/**
+ * One person's DM chat id, or several comma-separated ("111,222,333") to deliver
+ * the same message to multiple people (e.g. the owner + a teammate reviewing
+ * drafts). Everyone in the list must have pressed Start on the bot first —
+ * Telegram bots can never message someone who hasn't contacted them.
+ */
+export function splitRecipients(chatId: string): string[] {
+  const ids = [...new Set(chatId.split(',').map((s) => s.trim()).filter(Boolean))];
+  if (!ids.length) throw new Error('No Telegram chat id(s) to send to — check your TELEGRAM_*_CHAT_ID value.');
+  return ids;
+}
+
+/** Send to ONE chat (auto-split if it's too long for a single Telegram message). */
+async function sendToOne(chatId: string, html: string, explicitToken?: string): Promise<void> {
   for (const chunk of splitForTelegram(html, 3900)) {
     const res = await fetch(api(token(explicitToken), 'sendMessage'), {
       method: 'POST',
@@ -91,6 +107,36 @@ export async function sendMessage(chatId: string, html: string, explicitToken?: 
     if (!res.ok) {
       throw new Error(`Telegram sendMessage HTTP ${res.status}: ${(await res.text().catch(() => '')).slice(0, 300)}`);
     }
+  }
+}
+
+/**
+ * Send a message to every recipient: one chat id, or a comma-separated list.
+ * Delivery is independent per person — if one recipient blocked the bot or never
+ * pressed Start, everyone else still receives it. Throws only when EVERY
+ * recipient fails: agents mark a run as "delivered" after this call, so a throw
+ * must mean "nobody got it" (a partial success would otherwise re-send and
+ * duplicate messages on the next run).
+ */
+export async function sendMessage(chatId: string, html: string, explicitToken?: string): Promise<void> {
+  const recipients = splitRecipients(chatId);
+  const failures: string[] = [];
+  for (const recipient of recipients) {
+    try {
+      await sendToOne(recipient, html, explicitToken);
+    } catch (e) {
+      failures.push(`${recipient}: ${(e as Error).message}`);
+    }
+  }
+  if (failures.length === recipients.length) {
+    throw new Error(
+      `Telegram sendMessage failed for all ${failures.length} recipient(s):\n  ${failures.join('\n  ')}`,
+    );
+  }
+  if (failures.length) {
+    console.error(
+      `⚠️ Telegram: delivered to ${recipients.length - failures.length}/${recipients.length} — failed: ${failures.join(' | ')}`,
+    );
   }
 }
 

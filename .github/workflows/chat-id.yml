@@ -1,0 +1,76 @@
+name: Telegram chat-id helper
+
+# On-demand helper for LINKING PEOPLE to the bots (no AI quota spent, manual
+# trigger only — there is deliberately no schedule, so this never fires alone).
+#
+#   1. DISCOVERY — `npm run chat-id` against BOTH bot tokens prints every chat
+#      id (with names) that has messaged each bot. Run this after someone new
+#      has pressed Start on a bot, then copy their id into the matching
+#      TELEGRAM_*_CHAT_ID secret (comma-separated to deliver to several people).
+#
+#   2. PING — sends one short test message to EVERY id listed in
+#      TELEGRAM_CHAT_ID (main bot) and TELEGRAM_CONTENT_CHAT_ID (content bot),
+#      so each linked phone can confirm delivery actually works.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  helper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm ci
+
+      - name: DISCOVERY — who has messaged the MAIN bot (agents 1–3)?
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: npm run chat-id
+
+      - name: DISCOVERY — who has messaged the CONTENT bot (agent #4)?
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_CONTENT_BOT_TOKEN }}
+        run: npm run chat-id
+
+      - name: PING — every chat linked to the MAIN bot
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          for id in $(echo "$TELEGRAM_CHAT_ID" | tr ',' ' '); do
+            if [ -z "$id" ]; then continue; fi
+            echo "→ pinging $id …"
+            if curl -fsS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+                 --data-urlencode "chat_id=${id}" \
+                 --data-urlencode "text=✅ Ejentic agents: this chat is linked to the MAIN bot (job / scholarship / research digests). If you can read this, delivery to you works." \
+                 > /dev/null; then
+              echo "  delivered ✔"
+            else
+              echo "  ✗ FAILED — has this chat pressed Start on the bot?"
+            fi
+          done
+
+      - name: PING — every chat linked to the CONTENT bot
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_CONTENT_BOT_TOKEN }}
+          TELEGRAM_CONTENT_CHAT_ID: ${{ secrets.TELEGRAM_CONTENT_CHAT_ID }}
+        run: |
+          for id in $(echo "$TELEGRAM_CONTENT_CHAT_ID" | tr ',' ' '); do
+            if [ -z "$id" ]; then continue; fi
+            echo "→ pinging $id (content bot) …"
+            if curl -fsS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+                 --data-urlencode "chat_id=${id}" \
+                 --data-urlencode "text=✍️ Ejentic Content Studio: this chat is linked to the CONTENT bot. If you can read this, draft delivery to you works." \
+                 > /dev/null; then
+              echo "  delivered ✔"
+            else
+              echo "  ✗ FAILED — has this chat pressed Start on the content bot?"
+            fi
+          done
