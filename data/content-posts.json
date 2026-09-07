@@ -108,5 +108,21 @@
     ],
     "score": 8,
     "createdAt": "2026-09-06T16:09:53.579Z"
+  },
+  "2026-09-07:morning": {
+    "date": "2026-09-07",
+    "slot": "morning",
+    "cycleDay": 8,
+    "theme": "Finance",
+    "pillar": "EDUCATE",
+    "topic": "Fraud detection AI vs. legacy systems — why rule-based checks lose against adaptive agents.",
+    "angle": "Using insights from enterprise AI governance and reliability trends to contrast rigid legacy rule-based fraud detection with adaptive, resilient agentic systems.",
+    "xPost": "Why do legacy fraud systems keep failing? Static rules only catch yesterday's tricks. Adaptive AI models judge intent and context in real-time. Trust is the real currency. #EjenticAI #AIAgents",
+    "linkedinPost": "Why do legacy fraud detection systems still lose against modern threats? \n\nFor decades, financial systems relied on static, rule-based checks. If a transaction hit a specific threshold or matched a rigid blacklist, it got flagged. But fraudsters don't stay inside pre-drawn lines. When reality shifts, static rules break—either missing new patterns entirely or drowning teams in false positives.\n\nEnterprise resilience requires systems that can adapt. Unlike rigid scripts, adaptive agentic models evaluate context, behavior, and intent dynamically. They evolve as operations change, ensuring your business stays secure without sacrificing speed.\n\nAs our Chief Architect David Chen emphasizes, building reliable systems means designing for the realities of the real world, not just ideal conditions. When automation handles risk, governance must operate as a living model, not just a policy deck.\n\nIn financial operations, trust is the real currency. Are your systems built to protect it?\n\n#EjenticAI #AIAgents #Automation #EthicalAI #FutureOfWork",
+    "citedSourceUrls": [
+      "https://www.redwood.com/article/ai-automation-trends"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-07T13:58:56.541Z"
   }
 }
