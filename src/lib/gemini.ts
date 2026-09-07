@@ -16,9 +16,23 @@ const endpoint = (model: string) =>
 // making more calls this run) is futile and just wastes time — so the first
 // daily-quota 429 trips this flag and every later call fails fast. Callers can
 // check isQuotaError() to degrade gracefully instead of crashing.
-let quotaTripped = false;
-export function quotaExhausted(): boolean {
-  return quotaTripped;
+//
+// The cap is PER MODEL, so the breaker is too. It used to be one global boolean,
+// which quietly undid the whole point of splitting work across tiers: the content
+// agent drafts on a stronger CONTENT_MODEL and judges on the cheap default
+// precisely because they have SEPARATE daily budgets — but one 429 from the cheap
+// judge locked out the strong model for the rest of the run, even though its own
+// budget was untouched. Tracking the tripped models individually keeps one
+// exhausted model from spending another model's quota for it.
+const trippedModels = new Set<string>();
+
+/** Is the daily quota spent? With no argument: "has ANY model tripped this run?"
+ *  (the original meaning, which is what the single-model agents want). With a
+ *  model name: just that model. Pass nothing for the model to ask about the
+ *  configured default. */
+export function quotaExhausted(model?: string): boolean {
+  if (model === undefined) return trippedModels.size > 0;
+  return trippedModels.has(model || MODEL);
 }
 export function isQuotaError(e: unknown): boolean {
   return /\b429\b|quota|rate limit/i.test((e as Error)?.message ?? '');
@@ -27,8 +41,8 @@ export function isQuotaError(e: unknown): boolean {
 // Core call with a small retry loop for transient errors (rate limits, 5xx).
 async function call(prompt: string, opts: { json: boolean; temperature?: number; model?: string }): Promise<string> {
   const key = requireEnv('GEMINI_API_KEY');
-  if (quotaTripped) throw new Error('Gemini 429: daily quota already exhausted this run');
   const model = opts.model || MODEL;
+  if (trippedModels.has(model)) throw new Error(`Gemini 429: daily quota for ${model} already exhausted this run`);
   const body = {
     contents: [{ parts: [{ text: prompt }] }],
     generationConfig: {
@@ -55,9 +69,10 @@ async function call(prompt: string, opts: { json: boolean; temperature?: number;
         lastErr = 'Gemini returned an empty response';
       } else {
         lastErr = `Gemini HTTP ${res.status}: ${(await res.text().catch(() => '')).slice(0, 300)}`;
-        // A quota 429 means the daily cap is spent — trip the breaker, don't retry.
+        // A quota 429 means THIS model's daily cap is spent — trip its breaker
+        // (not every model's) and stop retrying it.
         if (res.status === 429 && /quota/i.test(lastErr)) {
-          quotaTripped = true;
+          trippedModels.add(model);
           break;
         }
         // Otherwise only retry on transient rate-limit / server errors.

@@ -76,6 +76,9 @@ jobs:
           CONTENT_MODEL: ${{ vars.CONTENT_MODEL }}
           # The editor rewrites a draft once if it scores below this (default 8/10).
           CONTENT_QUALITY_GATE: ${{ vars.CONTENT_QUALITY_GATE }}
+          # Ceiling on Gemini calls per run (default 4 = full editor pass). Turn it
+          # down to 3 or 2 if the free daily quota gets tight — see the README.
+          CONTENT_MAX_AI_CALLS: ${{ vars.CONTENT_MAX_AI_CALLS }}
         run: npm run content -- ${{ github.event.inputs.day && format('--day={0}', github.event.inputs.day) || '' }} ${{ github.event.inputs.slot && format('--slot={0}', github.event.inputs.slot) || (steps.trig.outputs.slot && format('--slot={0}', steps.trig.outputs.slot)) || '' }}
 
       # Persist the "already delivered" memory AND the durable post log so a

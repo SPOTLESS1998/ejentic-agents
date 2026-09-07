@@ -16,7 +16,8 @@
     "probe-models": "tsx src/tools/probeModels.ts",
     "typecheck": "tsc --noEmit",
     "injection-test": "tsx src/tools/injectionTest.ts",
-    "store-test": "tsx src/tools/storeTest.ts"
+    "store-test": "tsx src/tools/storeTest.ts",
+    "content-test": "tsx src/tools/contentTest.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.7"

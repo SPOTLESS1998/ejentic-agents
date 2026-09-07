@@ -107,8 +107,27 @@ npm run research -- --dry-run      # agent #3 (needs FIRECRAWL_API_KEY)
 npm run content -- --dry-run       # agent #4 — drafts today's post pair, prints them
 npm run content -- --day=1 --slot=morning --dry-run   # force any calendar day & slot
 ```
+> `--day` must be a whole number in **1–30** and `--slot` one of
+> **morning / afternoon / evening**. Anything else *stops the run* with a clear
+> message instead of quietly falling back to today — the same two flags are exposed
+> as **workflow_dispatch inputs** on GitHub, and a typo there used to draft *day 1's*
+> topic under a "Calendar day 99/30" heading. A red run is easy to spot; a
+> plausible-looking wrong post is not.
+
 > Tip: add `-- --list` to any search agent (e.g. `npm run scholarship -- --list`) to see
 > the raw search hits with **no AI call** — handy for tuning without spending quota.
+
+### 4b. Offline tests (no keys, no network, no quota)
+```bash
+npm run typecheck        # tsc --noEmit
+npm run selftest         # calendar/slot sanity + text helpers
+npm run injection-test   # prompt-injection containment (fence + label forgery)
+npm run store-test       # the seen-store's time-to-live rules
+npm run content-test     # post length limits + strict --day/--slot parsing
+```
+Each prints `RESULT: N passed, M failed` and exits non-zero on failure, so they
+work in CI as-is. They're deliberately offline: every one of them tests a pure
+transformation, so none needs a key or a paid call to be meaningful.
 
 ### 5. Optional: deliver to a teammate too
 
@@ -172,8 +191,20 @@ Edit these in `.env` (all optional):
 - `RESEARCH_PER_RUN` (default 2) — how many articles it reads per post.
 - `CONSULTATION_URL` — the link used by the "Book a free consultation" CTAs.
 - `CONTENT_CYCLE_START` (e.g. `2026-08-28`) — pins calendar day 1 to a real date.
-  Without it, days are picked deterministically per date (never crashes, but the
-  campaign order is not guaranteed — set this for the real launch).
+  Without it the cycle counts forward from the built-in `DEFAULT_CYCLE_START` in
+  `src/context/calendar.ts`, so the 30-day story still runs in order — set this
+  when you want day 1 to land on a specific launch date.
+- `CONTENT_MODEL` — an optional stronger model used **only** for drafting and
+  rewriting. The editor's scoring stays on the cheap default. Worth setting because
+  the free quota is counted **per model**: splitting the work gives the agent two
+  separate daily budgets instead of one.
+- `CONTENT_QUALITY_GATE` (default 8, out of 10) — the editor rewrites a draft once
+  if it scores below this.
+- `CONTENT_MAX_AI_CALLS` (default 4) — ceiling on Gemini calls per content run, and
+  the dial to reach for when quota gets tight. The free tier is ~20 requests/day
+  **per model** and this agent runs 3× a day, so its default worst case spends 12 of
+  that budget — more than the other four agents put together. `3` keeps the rewrite
+  but skips the verification re-score; `2` still scores the draft but never rewrites it.
 
 Want different roles or lead targets? Edit `src/context/candidate.ts` and
 `src/context/ejentic.ts` — they're written in plain English. To change which job

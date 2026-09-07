@@ -111,14 +111,34 @@ export const SLOT_PROFILES: Record<
 
 // Hard platform rules. X has a hard 280-char limit (we aim ≤270 for safety);
 // LinkedIn rewards longer, structured storytelling.
+//
+// The NUMBERS live here as numbers, not just inside the English `target` strings,
+// because two different places need them: the prompt (which asks the model for a
+// length) and the code (which has to do something when the model ignores it).
+// When the only copy of "1100" was prose inside a prompt, nothing enforced it —
+// that is exactly how the LinkedIn limit ended up being advertised in three files
+// and checked in none. Same lesson as BRAND.services above: one source of truth.
+//
+// Note the two kinds of limit, because they deserve different treatment:
+//   • hardLimit — the PLATFORM's own ceiling. Over it, the post cannot be
+//     published at all, so trimming in code is strictly better than shipping it.
+//   • min / softMax — OUR house style. Outside that band a post is publishable but
+//     off-brand, so code warns the human instead of silently cutting good prose
+//     mid-argument; the editor pass (LLM-as-judge) is what actually pushes the
+//     draft back into range.
 export const PLATFORMS = {
   x: {
     name: 'X (Twitter)',
     target: '≤270 characters (hard limit 280). Punchy. 0–2 hashtags. At most one link, and only if it truly helps.',
+    softMax: 270, // what we ask the model for
+    hardLimit: 280, // X's real ceiling — enforced in code
   },
   linkedin: {
     name: 'LinkedIn',
     target: '400–1100 characters. 3–6 short paragraphs with line breaks. 3–5 hashtags at the end. End with a question or soft CTA.',
+    min: 400, // below this reads thin for the platform — warn the human
+    softMax: 1100, // above this gets folded behind "…see more" — warn the human
+    hardLimit: 3000, // LinkedIn's real ceiling — enforced in code
   },
 };
 
