@@ -124,5 +124,19 @@
     ],
     "score": 8,
     "createdAt": "2026-09-07T13:58:56.541Z"
+  },
+  "2026-09-07:afternoon": {
+    "date": "2026-09-07",
+    "slot": "afternoon",
+    "cycleDay": 8,
+    "theme": "Finance",
+    "pillar": "SHOWCASE",
+    "topic": "AI Payment Reconciliation via Vision AI for OPay/Moniepoint receipts.",
+    "angle": "Using vision AI receipt reconciliation for local payment rails like OPay and Moniepoint to eliminate manual matching errors and cut processing turnaround time.",
+    "xPost": "Manual receipt matching on OPay and Moniepoint is slowing finance teams down. Our custom agentic workflows use Vision AI to instantly reconcile receipts against your CRM and ledgers. Cut error rates and turnaround time today. Book a free consultation #EjenticAI #Automation",
+    "linkedinPost": "Manual payment reconciliation on local rails like OPay and Moniepoint drains hours from finance teams. Staring at screenshots, cross-referencing bank alerts, and updating spreadsheets manually leads to costly errors and delayed fulfillment.\n\nAt Ejentic AI, we build custom enterprise automation and agentic workflows that solve this. By integrating Vision AI into your pipelines—connecting Stripe, your CRM, and LLM processing—our systems read incoming payment receipts, match them against transaction logs, and handle reconciliation automatically.\n\nDavid Chen, our Chief Architect, designs these resilient pipelines with built-in fallbacks to ensure uptime and zero data leakage. The result is a drastic reduction in cost, error rates, and turnaround time for your back-office operations.\n\nReady to automate your financial reconciliation? Book a free consultation\n\n#EjenticAI #AIAutomation #FutureOfWork #NigeriaTech #BuildWithAI",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-09-07T18:13:36.922Z"
   }
 }
