@@ -1,6 +1,6 @@
 # Ejentic Agents
 
-Four small autonomous agents that hunt the web (and now the calendar) for you and message you on **Telegram**.
+Five small autonomous agents that hunt the web (and now the calendar) for you and message you on **Telegram**.
 They run on a schedule (GitHub Actions), verify their findings before reporting, and
 remember what they've already sent so you never see a duplicate.
 
@@ -10,11 +10,12 @@ remember what they've already sent so you never see a duplicate.
 | 2 | **Scholarship agent** | Finds funded **Master's scholarships** (China-focused, global too) in AI/ML/CS, with funding, deadline and eligibility for each. | ✅ Built |
 | 3 | **Researcher agent** | Scans the web for tools, techniques, market moves and strategies to strengthen Ejentic AI — a short briefing with a "so what" takeaway per item. | ✅ Built |
 | 4 | **Content Creator agent** | Runs three times a day (morning/afternoon/evening). Follows the 30-day content calendar, grounds each post in the **Researcher agent's freshest findings**, and drafts the **same topic as two platform variations** — X (Twitter) + LinkedIn — dropped on a dedicated Telegram bot for review. | ✅ Built |
+| 5 | **Hackathon agent** | Hunts **Web3 × AI hackathons** we can still enter — including events hosted on X/Twitter by protocols and communities — with prizes, registration deadline, format (online/onsite) and build requirements for each. | ✅ Built |
 
-Agents **2 and 3 discover things via web search (Firecrawl)** instead of job boards,
+Agents **2, 3 and 5 discover things via web search (Firecrawl)** instead of job boards,
 but otherwise share the exact same frugal pipeline as the Job agent below: search
 → **one** batched AI call to screen → verify links → Telegram → remember. Agents
-1–3 all message the **same** Telegram bot; each keeps its own memory (`data/seen-*.json`).
+1–3 and 5 all message the **same** Telegram bot; each keeps its own memory (`data/seen-*.json`).
 
 **The symbiosis:** the Researcher agent commits its findings to `data/seen-research.json`
 after every run; the Content Creator agent reads that file as its raw material. Research
@@ -163,6 +164,7 @@ add the bot + everyone to it, then set the chat-id secret to the group's chat id
 ## Tuning
 Edit these in `.env` (all optional):
 - `MAX_JOBS` / `MAX_LEADS` (default 4 each) — how many of each to report per run.
+- `MAX_HACKATHONS` (default 4) — how many hackathons the Hackathon agent reports per run.
 - `GEMINI_MODEL` (default `gemini-flash-lite-latest` — most generous free-tier
   daily quota). Run `npm run probe-models` to see which models have quota today.
 - `RESEARCH_LOOKBACK_DAYS` (default 3) — how far back the Content Creator mines
