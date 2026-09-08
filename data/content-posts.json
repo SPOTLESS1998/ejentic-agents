@@ -155,5 +155,21 @@
     ],
     "score": 8,
     "createdAt": "2026-09-07T21:27:11.830Z"
+  },
+  "2026-09-08:morning": {
+    "date": "2026-09-08",
+    "slot": "morning",
+    "cycleDay": 2,
+    "theme": "The Holistic Approach",
+    "pillar": "EDUCATE",
+    "topic": "Why tech needs a \"herbalist\" approach — we look at businesses as ecosystems, diagnosing root causes before prescribing AI.",
+    "angle": "Using the herbalist metaphor to diagnose business ecosystems and root causes before prescribing AI, mirroring how engineering teams must diagnose token waste and cost drivers before blindly throwing frontier models at production.",
+    "xPost": "Why tech needs a 'herbalist' approach. We look at businesses as ecosystems—diagnosing root causes before prescribing AI. No blind token waste or hype, just systems built right. #EjenticAI #AIAgents",
+    "linkedinPost": "Why does tech need a 'herbalist' approach?\n\nIn our communities, a good herbalist doesn't just hand you bitter leaves because you walked in. They look at the whole person, diagnose the root cause, and prescribe what actually heals the ecosystem.\n\nYet in business technology, the default move is often the opposite: slapping a frontier model or an expensive API onto a broken workflow without checking where the waste is.\n\nWhether it's burning budget on unoptimized tokens or trying to automate a process that hasn't been mapped yet, treating AI like a magic powder always backfires. At Ejentic AI, we believe in diagnosing root causes before prescribing systems.\n\nTrue engineering starts with instrumentation and understanding the workflow. Only then do you build autonomous agents that augment people instead of adding friction.\n\n#EjenticAI #AIAgents #Automation #FutureOfWork #AIAutomation",
+    "citedSourceUrls": [
+      "https://bigdataboutique.com/blog/llm-cost-optimization-techniques"
+    ],
+    "score": 9,
+    "createdAt": "2026-09-08T04:14:28.819Z"
   }
 }
