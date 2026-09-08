@@ -2,7 +2,7 @@ import { scrubInjection, makeMatcher, remoteOK, themuse } from '../lib/jobboards
 
 async function main() {
   // 1. The exact honeypot that leaked into the email signature:
-  const bad = 'Sincerely, Ejeh Adanu Peter #RMTAyLjkxLjEzMy4zNw==';
+  const bad = 'Sincerely, A Candidate #RMTAyLjkxLjEzMy4zNw==';
   console.log('scrub honeypot:', JSON.stringify(scrubInjection(bad)));
 
   // 2. Zero-width + long base64 blob:

@@ -1,0 +1,36 @@
+{
+  "_comment": "TEMPLATE — copy to profile/candidate.json and fill in your own details. profile/candidate.json is gitignored and never committed. The job agent feeds this to the LLM so it can judge whether a posting genuinely fits and draft an application email in your real voice.",
+
+  "name": "Your Full Name",
+  "email": "you@example.com",
+  "phone": "+000-000-0000000",
+  "location": "City, Country",
+  "twitter": "@yourhandle",
+
+  "headline": "One-line pitch used in email openers, e.g. 'AI Solutions & Automation Engineer — I build autonomous agents that run with little to no supervision.'",
+
+  "preferences": {
+    "remote": true,
+    "locationPreference": "Where you want to work. This drives the search queries, so be specific — e.g. 'Remote, global. Prefers roles open to applicants outside the EU/US.'",
+    "employmentTypes": ["Full-time", "Contract"]
+  },
+
+  "targetRoles": [
+    "The job titles worth flagging. The agent matches loosely —",
+    "a posting does not need the exact title, just the same kind of work."
+  ],
+
+  "strengths": [
+    "Proof points the email draft can pull from. Concrete beats abstract:",
+    "name the system you built, what it does, and link a demo if you have one."
+  ],
+
+  "education": "Degree, class of honours, institution. Add any study in progress.",
+
+  "dealbreakers": [
+    "Hard filters the agent respects when judging fit, e.g.",
+    "'Skip senior/principal roles requiring 8+ years.'",
+    "'Skip roles requiring on-site presence with no remote option.'",
+    "'Skip unpaid roles.'"
+  ]
+}

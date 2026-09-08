@@ -1,9 +1,14 @@
 // WHAT THE SCHOLARSHIP AGENT IS HUNTING FOR.
 // Plain-English preferences fed to the AI so it can judge whether a scholarship
 // genuinely fits — and skip the ones that don't. Edit freely as plans change.
+//
+// The applicant's name comes from profile/candidate.json (gitignored), so this
+// file carries no personal details of its own.
+
+import { CANDIDATE } from './candidate.js';
 
 export const SCHOLAR = {
-  applicant: 'Ejeh Adanu Peter',
+  applicant: CANDIDATE.name,
   nationality: 'Nigerian',
   level: "Master's (MSc)",
 

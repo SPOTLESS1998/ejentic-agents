@@ -2,7 +2,7 @@
 //  JOB AGENT  (agent #1 of 3)
 //
 //  Once per run it finds two kinds of opportunity and messages you on Telegram:
-//    • JOB  — remote roles that fit Ejeh's resume (from real job boards, so the
+//    • JOB  — remote roles that fit the candidate's profile (from real job boards, so the
 //             links go straight to the actual posting).
 //    • LEAD — businesses actively hiring for customer-support roles: a precise,
 //             honest signal that they could use Ejentic AI's customer-service
@@ -27,8 +27,8 @@ import { geminiJSON } from '../lib/gemini.js';
 import { quotaExhausted, isQuotaError } from '../lib/gemini.js';
 import { resolveChatId, sendMessage, esc } from '../lib/telegram.js';
 import { loadSeen, saveSeen, normalizeUrl, isSuppressed, type SeenMap } from '../lib/store.js';
-import { candidateSummary } from '../context/candidate.js';
-import { ejenticSummary } from '../context/ejentic.js';
+import { candidateSummary, CANDIDATE } from '../context/candidate.js';
+import { ejenticSummary, EJENTIC } from '../context/ejentic.js';
 import { optionalEnv } from '../lib/env.js';
 
 const SEEN_PATH = 'data/seen-jobs.json';
@@ -194,18 +194,18 @@ export async function screenAndDraft(candidates: Candidate[], label: Label, cap:
 
   const criteria =
     label === 'JOB'
-      ? `remote roles that genuinely fit the candidate's expertise (AI / automation / AI agents / LLM / prompt engineering). He is in Nigeria and works remotely: KEEP roles open worldwide or to his timezone; DROP roles that legally require living/authorization in a specific other country (e.g. "US only"). Full-time or contract are both fine. DROP senior/principal-only roles far beyond him.`
-      : `companies that could realistically buy an AI customer-service / automation agent from Ejentic AI. Their hiring of support staff is the buy-signal. DROP staffing agencies, recruiters, and cases where an AI agent clearly wouldn't help.`;
+      ? `remote roles that genuinely fit the candidate's stated target roles and strengths (see CONTEXT). LOCATION RULE — ${CANDIDATE.preferences.locationPreference} KEEP roles open worldwide or to the candidate's own region; DROP roles that legally require living in, or holding work authorization for, a specific other country (e.g. "US only", "EU nationals only"). Acceptable arrangements: ${CANDIDATE.preferences.employmentTypes.join(' or ')}. Respect these hard filters: ${CANDIDATE.dealbreakers.join(' ')}`
+      : `companies that could realistically buy an AI customer-service / automation agent from ${EJENTIC.name}. Their hiring of support staff is the buy-signal. DROP staffing agencies, recruiters, and cases where an AI agent clearly wouldn't help.`;
 
   const emailInstr =
     label === 'JOB'
-      ? `write a concise (<=150 words) personalized APPLICATION email FROM the candidate TO the employer, leading with his most relevant experience, signed "Ejeh Adanu Peter".`
-      : `write a concise (<=150 words) personalized COLD OUTREACH email FROM Ejentic AI: note they're scaling support, offer the autonomous AI customer-service agent to handle volume 24/7, propose a short call. Warm and specific, not spammy. Signed "Ejeh Adanu Peter, Ejentic AI".`;
+      ? `write a concise (<=150 words) personalized APPLICATION email FROM the candidate TO the employer, leading with their most relevant experience, signed "${CANDIDATE.name}".`
+      : `write a concise (<=150 words) personalized COLD OUTREACH email FROM ${EJENTIC.name}: note they're scaling support, offer the autonomous AI customer-service agent to handle volume 24/7, propose a short call. Warm and specific, not spammy. Signed "${CANDIDATE.name}, ${EJENTIC.name}".`;
 
   const senderNote =
     label === 'JOB'
       ? 'the candidate / sender'
-      : 'what Ejentic AI sells; sender: Ejeh Adanu Peter, Spotless1998@gmail.com';
+      : `what ${EJENTIC.name} sells; sender: ${CANDIDATE.name}, ${EJENTIC.contactEmail}`;
 
   const prompt = `You are screening ${candidates.length} ${label === 'JOB' ? 'job postings for one candidate' : 'companies (via their job posts) as sales leads'}.
 STEP 1 — SELECT only ${criteria}

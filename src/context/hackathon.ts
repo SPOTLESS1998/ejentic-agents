@@ -2,9 +2,16 @@
 // Plain-English preferences fed to the AI so it can judge whether a hackathon
 // is one we could genuinely enter and win — and skip the ones that aren't.
 // Edit freely as plans change.
+//
+// The builder's name and the agency name come from the gitignored profile files
+// (profile/candidate.json, profile/company.json), so this file holds no
+// personal details of its own.
+
+import { CANDIDATE } from './candidate.js';
+import { EJENTIC } from './ejentic.js';
 
 export const HACKATHON = {
-  builder: 'Ejeh Adanu Peter, building as Ejentic AI (solo, or with a small team if the hackathon matches us).',
+  builder: `${CANDIDATE.name}, building as ${EJENTIC.name} (solo, or with a small team if the hackathon matches us).`,
 
   // What we can realistically ship in a hackathon window.
   skills: [

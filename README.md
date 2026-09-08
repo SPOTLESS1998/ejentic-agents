@@ -206,9 +206,23 @@ Edit these in `.env` (all optional):
   that budget — more than the other four agents put together. `3` keeps the rewrite
   but skips the verification re-score; `2` still scores the draft but never rewrites it.
 
-Want different roles or lead targets? Edit `src/context/candidate.ts` and
-`src/context/ejentic.ts` — they're written in plain English. To change which job
-boards or search terms are used, edit `src/agents/job.ts` (the keyword lists at
+## Your profile lives outside the repo
+
+The agents need real details about you — your name, email, target roles, what your agency sells — but
+those must never be committed, so they live in two **gitignored** JSON files. Only the templates are
+tracked. First run, copy them:
+
+```bash
+cp profile/candidate.example.json profile/candidate.json   # who the job/scholarship hunt is for
+cp profile/company.example.json   profile/company.json     # what the lead hunt is selling
+```
+
+Then edit those two files in plain English. If either is missing the agents refuse to start rather
+than emailing a real employer signed "Your Full Name".
+
+Want different roles or lead targets? Edit `profile/candidate.json` and `profile/company.json` — not
+the TypeScript. `src/context/candidate.ts` and `src/context/ejentic.ts` are just typed loaders now.
+To change which job boards or search terms are used, edit `src/agents/job.ts` (the keyword lists at
 the top) and `src/lib/jobboards.ts`.
 
 **Content team:** the Content Creator's "what to post" is `src/context/calendar.ts`

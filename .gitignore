@@ -6,6 +6,11 @@ node_modules/
 .env.local
 !.env.example
 
+# your private profile — real name, phone, email, and what you sell. Only the
+# *.example.json templates are tracked, which is what lets this repo be public.
+profile/*.json
+!profile/*.example.json
+
 # logs / os junk
 *.log
 .DS_Store

@@ -1,0 +1,26 @@
+{
+  "_comment": "TEMPLATE — copy to profile/company.json and fill in your own agency's details. profile/company.json is gitignored. Used by the LEAD hunt (find businesses who need these services and draft a pitch) and by the content agent's brand voice.",
+
+  "name": "Your Agency",
+  "tagline": "One line on what the agency does.",
+  "founder": "Founder Name",
+  "contactEmail": "hello@example.com",
+
+  "industries": ["Healthcare", "Fintech", "E-commerce", "Logistics", "SMEs"],
+
+  "services": [
+    "THE SINGLE SOURCE OF TRUTH FOR WHAT YOU SELL.",
+    "src/context/brand.ts (the content agent's voice) imports this list rather than restating it —",
+    "the two used to keep separate hand-written copies and had silently drifted apart, so the lead",
+    "agent hunted customers for one menu while the content agent advertised a different one.",
+    "Edit here and both agents follow."
+  ],
+
+  "idealCustomerSignals": [
+    "Signals that a business is a good lead — the agent looks for these.",
+    "e.g. 'Handles high volumes of customer inquiries.'",
+    "e.g. 'Actively hiring for support/ops roles (a sign they are drowning in manual work).'"
+  ],
+
+  "targetSegments": "Who to prioritise when the lead search would otherwise be too broad."
+}
