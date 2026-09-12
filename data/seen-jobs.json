@@ -1157,5 +1157,11 @@
     "label": "LEAD",
     "title": "Thatchers Cider",
     "kind": "screened"
+  },
+  "lead:copenhagen optimization": {
+    "firstSeen": "2026-09-12T10:49:44.312Z",
+    "label": "LEAD",
+    "title": "Copenhagen Optimization",
+    "kind": "screened"
   }
 }
