@@ -96,6 +96,20 @@ Paste the number into `.env` as `TELEGRAM_CHAT_ID`, then confirm it all works:
 npm run ping        # you should get a "test message" in Telegram
 ```
 
+### 3b. Give GitHub Actions your profile
+`profile/candidate.json` and `profile/company.json` are **gitignored**, so the
+agents can't see them on GitHub Actions. There, their contents come from two
+**repo secrets** instead (Settings → Secrets and variables → Actions):
+
+```bash
+gh secret set CANDIDATE_PROFILE_JSON < profile/candidate.json
+gh secret set COMPANY_PROFILE_JSON   < profile/company.json
+```
+
+Every agent workflow copies these secrets to disk at the start of a run and
+fails fast with a clear message if either is missing — the same
+"refuse rather than send placeholder details" rule the loader enforces locally.
+
 ### 4. Try the agent locally
 ```bash
 npm run job -- --dry-run           # prints results to your terminal, sends nothing

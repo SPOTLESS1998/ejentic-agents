@@ -26,6 +26,27 @@ jobs:
         with:
           node-version: 22
 
+      # The profile files are gitignored (real name/email/phone), so they never
+      # reach GitHub. Their contents come from repo secrets instead; this step
+      # writes them to disk for this run only, and fails fast — before npm ci —
+      # if either secret is missing.
+      - name: Materialize profile files from secrets
+        env:
+          CANDIDATE_PROFILE_JSON: ${{ secrets.CANDIDATE_PROFILE_JSON }}
+          COMPANY_PROFILE_JSON: ${{ secrets.COMPANY_PROFILE_JSON }}
+        run: |
+          if [ -z "$CANDIDATE_PROFILE_JSON" ] || [ -z "$COMPANY_PROFILE_JSON" ]; then
+            echo "::error::Missing repo secrets CANDIDATE_PROFILE_JSON / COMPANY_PROFILE_JSON."
+            echo "  Add them (Settings → Secrets and variables → Actions) with:"
+            echo "    gh secret set CANDIDATE_PROFILE_JSON < profile/candidate.json"
+            echo "    gh secret set COMPANY_PROFILE_JSON   < profile/company.json"
+            echo "  Those files are gitignored, so CI has no other way to see them."
+            exit 1
+          fi
+          mkdir -p profile
+          printf '%s' "$CANDIDATE_PROFILE_JSON" > profile/candidate.json
+          printf '%s' "$COMPANY_PROFILE_JSON"   > profile/company.json
+
       - run: npm ci
 
       - name: Run job agent
