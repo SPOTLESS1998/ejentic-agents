@@ -202,5 +202,21 @@
     ],
     "score": 8,
     "createdAt": "2026-09-12T16:12:59.006Z"
+  },
+  "2026-09-12:evening": {
+    "date": "2026-09-12",
+    "slot": "evening",
+    "cycleDay": 6,
+    "theme": "Demystifying the Buzzwords",
+    "pillar": "INSPIRE",
+    "topic": "Ethical AI — algorithmic transparency, preventing bias, and our commitment to equitable outcomes.",
+    "angle": "Small businesses are rapidly adopting AI stacks, making our commitment to ethical, human-centric systems and algorithmic transparency more critical than ever.",
+    "xPost": "Ethical AI isn't just an afterthought—it's our foundation. As businesses build AI stacks, we're committed to algorithmic transparency and equitable outcomes for Africa and beyond. #EjenticAI #EthicalAI",
+    "linkedinPost": "As small businesses rapidly adopt AI stacks to power daily operations, research shows AI is no longer just experimental. But adoption without intention creates hidden risks.\n\nAt Ejentic AI, our Lead ML Engineer, Elena Rodriguez, treats data hygiene, evaluation before shipping, and bias checks as a moral duty. Ethical AI means algorithmic transparency, preventing bias, and ensuring our systems augment our people rather than replace them.\n\nWe believe Africa can lead the world in AI by building human-centric systems that respect our data and speak our languages. This is our commitment when nobody is watching.\n\nHow is your organization approaching AI transparency in your daily workflows?\n\n#EjenticAI #EthicalAI #AIAgents #AfricanTech #ResponsibleAI",
+    "citedSourceUrls": [
+      "https://sbecouncil.org/2026/04/25/the-ai-tools-small-businesses-are-using"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-12T20:28:48.023Z"
   }
 }
