@@ -1121,5 +1121,41 @@
     "label": "JOB",
     "title": "Senior Independent AI Engineer / Architect",
     "kind": "screened"
+  },
+  "https://www.themuse.com/jobs/gevernova/compliance-innovation-ai-lead": {
+    "firstSeen": "2026-09-12T03:04:27.834Z",
+    "label": "JOB",
+    "title": "Compliance Innovation & AI Lead",
+    "kind": "screened"
+  },
+  "https://www.themuse.com/jobs/crowdstrike/software-engineer-product-security-security-automation-remote": {
+    "firstSeen": "2026-09-12T03:04:27.834Z",
+    "label": "JOB",
+    "title": "Software Engineer, Product Security - Security Automation (Remote)",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-principal-data-engineer-vomela-1136860": {
+    "firstSeen": "2026-09-12T03:04:27.834Z",
+    "label": "JOB",
+    "title": "Principal Data Engineer",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-senior-data-engineer-lemon-io-1136594": {
+    "firstSeen": "2026-09-12T03:04:27.834Z",
+    "label": "JOB",
+    "title": "Senior Data Engineer",
+    "kind": "screened"
+  },
+  "lead:harper": {
+    "firstSeen": "2026-09-12T03:04:28.305Z",
+    "label": "LEAD",
+    "title": "Harper",
+    "kind": "screened"
+  },
+  "lead:thatchers cider": {
+    "firstSeen": "2026-09-12T03:04:28.305Z",
+    "label": "LEAD",
+    "title": "Thatchers Cider",
+    "kind": "screened"
   }
 }
