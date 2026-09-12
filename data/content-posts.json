@@ -185,5 +185,22 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-12T05:53:46.883Z"
+  },
+  "2026-09-12:afternoon": {
+    "date": "2026-09-12",
+    "slot": "afternoon",
+    "cycleDay": 6,
+    "theme": "Demystifying the Buzzwords",
+    "pillar": "SHOWCASE",
+    "topic": "The Inbound Lead Concierge — our AI greets visitors 24/7, qualifies intent, and routes high-value prospects to human sales reps.",
+    "angle": "Connecting small business adoption trends from the SBE Council report to the ROI of deploying an Inbound Lead Concierge that captures 24/7 revenue.",
+    "xPost": "That 2 AM website lead nobody answered? They went to your competitor. Our Inbound Lead Concierge greets visitors 24/7, qualifies intent, and routes high-value prospects instantly. Watch it in action: https://youtu.be/4DcFtp6amjs #EjenticAI #AIAgents",
+    "linkedinPost": "With 82% of small business employers now investing in AI tools to build operational tech stacks, the conversation has shifted from experimentation to core execution. Yet, many growing businesses are still losing high-value revenue simply by missing after-hours website traffic.\n\nThat 2 AM lead nobody answers? They usually don't wait until morning. They move on.\n\nThat is why we built the Inbound Lead Concierge at Ejentic AI. It acts as an autonomous front door for your business—greeting website visitors 24/7, qualifying their intent in real-time, and seamlessly routing high-value prospects straight to your human sales reps.\n\nAs our Chief Architect David Chen notes, resilient systems are built to handle the unpredictable flow of modern commerce without missing a beat. Stop letting after-hours traffic slip through the cracks.\n\nWatch our autonomous lead-generation and concierge systems in action here: https://youtu.be/4DcFtp6amjs\n\nHow is your current tech stack handling after-hours prospect engagement?\n\n#EjenticAI #AIAgents #Automation #CustomerExperience #FutureOfWork",
+    "citedSourceUrls": [
+      "https://sbecouncil.org/2026/04/25/the-ai-tools-small-businesses-are-using",
+      "https://youtu.be/4DcFtp6amjs"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-12T16:12:59.006Z"
   }
 }
