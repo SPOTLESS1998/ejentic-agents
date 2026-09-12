@@ -171,5 +171,19 @@
     ],
     "score": 9,
     "createdAt": "2026-09-08T04:14:28.819Z"
+  },
+  "2026-09-12:morning": {
+    "date": "2026-09-12",
+    "slot": "morning",
+    "cycleDay": 6,
+    "theme": "Demystifying the Buzzwords",
+    "pillar": "EDUCATE",
+    "topic": "AI Glossary: What is a \"Vector Database\"? A simple, visual explanation of how we store company knowledge (Pinecone/pgvector).",
+    "angle": "Demystifying AI buzzwords by explaining vector databases using an intuitive library analogy for enterprise knowledge retrieval.",
+    "xPost": "Ever wondered how AI searches internal documents instantly? Think of a vector database like a library organized by meaning, not spelling. It understands context, making it ideal for secure business knowledge bases. #EjenticAI #AIAgents",
+    "linkedinPost": "When building secure internal knowledge bases, teams often encounter a term: the Vector Database.\n\nWhat is it, really? \n\nThink of a massive library where books are organized by meaning and concepts, rather than alphabetically or by keyword.\n\nTraditional databases hunt for exact words. If you search \"client onboarding\" but your SOP says \"new customer setup,\" standard search misses it. \n\nVector databases convert text into mathematical coordinates based on meaning. Similar concepts sit close together. When your team queries private documents, the system finds answers by concept, not spelling.\n\nThis powers tools like our Air-Gapped RAG Vault, letting employees query private SOPs securely without data leaks.\n\nWhat AI terminology should we demystify next?\n\n#EjenticAI #AIAgents #RAG #AIExplained",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-12T05:53:46.883Z"
   }
 }
