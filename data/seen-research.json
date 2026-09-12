@@ -478,5 +478,15 @@
     "firstSeen": "2026-09-07T13:08:45.965Z",
     "label": "RESEARCH",
     "title": "The Technical Guide to Managing LLM Costs - Maxim AI"
+  },
+  "https://medium.com/codetodeploy/8-llm-cost-optimization-techniques-every-ai-engineer-should-know-a45a1cb1d838": {
+    "firstSeen": "2026-09-12T06:00:21.075Z",
+    "label": "RESEARCH",
+    "title": "8 LLM Cost Optimization Techniques Every AI Engineer Should Know"
+  },
+  "https://www.youtube.com/watch?v=pzntpznj4e0": {
+    "firstSeen": "2026-09-12T06:00:21.075Z",
+    "label": "RESEARCH",
+    "title": "LLM Cost Optimization: Token Economics for Agentic FinOps"
   }
 }
