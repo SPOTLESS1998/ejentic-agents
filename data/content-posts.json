@@ -249,5 +249,21 @@
     ],
     "score": 8,
     "createdAt": "2026-09-13T16:56:38.141Z"
+  },
+  "2026-09-13:evening": {
+    "date": "2026-09-13",
+    "slot": "evening",
+    "cycleDay": 7,
+    "theme": "Weekly Recap & Engagement",
+    "pillar": "INSPIRE",
+    "topic": "The Week Ahead — a teaser of next week’s discussions, focusing on specific industry use-cases.",
+    "angle": "Connecting our vision of African-led ethical AI with a preview of next week's practical industry use cases for business growth.",
+    "xPost": "Africa can lead the world in AI by building human-centric systems that respect our data and speak our languages. Next week, we are diving deep into specific industry use-cases for AI automation. #EjenticAI #AfricanTech",
+    "linkedinPost": "We believe Africa—starting right here in Nigeria—can lead the world in AI. Not by copying Silicon Valley, but by building ethical, human-centric systems that speak our languages, respect our data, and augment our people instead of replacing them.\n\nAI is no longer just experimental; small businesses are rapidly building tech stacks to handle everything from research to customer engagement. But adoption works best when it solves real operational pain points without losing the human touch.\n\nAs we look ahead to next week, we are pulling back the curtain on specific industry use-cases. Expect deep dives into how autonomous workflows, multilingual agents, and secure RAG vaults solve operational bottlenecks across sectors.\n\nWhat industry are you most eager to see AI transform next?\n\n#EjenticAI #AIAgents #AfricanTech #EthicalAI #FutureOfWork",
+    "citedSourceUrls": [
+      "https://sbecouncil.org/2026/04/25/the-ai-tools-small-businesses-are-using"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-13T20:41:57.452Z"
   }
 }
