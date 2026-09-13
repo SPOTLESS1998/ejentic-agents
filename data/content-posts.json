@@ -218,5 +218,19 @@
     ],
     "score": 8,
     "createdAt": "2026-09-12T20:28:48.023Z"
+  },
+  "2026-09-13:morning": {
+    "date": "2026-09-13",
+    "slot": "morning",
+    "cycleDay": 7,
+    "theme": "Weekly Recap & Engagement",
+    "pillar": "EDUCATE",
+    "topic": "Q&A Sunday — answer the top 3 most common questions businesses ask us about getting started with AI.",
+    "angle": "Answering top business questions about AI adoption—cost, staffing fears, and where to start—using practical realities.",
+    "xPost": "Wondering where to start with AI without breaking the bank or replacing your team? Here are the answers to the 3 most common questions businesses ask us. #EjenticAI #FutureOfWork",
+    "linkedinPost": "Getting started with AI raises a lot of questions for business leaders. Let's tackle the top three we hear most often at Ejentic AI.\n\n1. Will it cost a fortune? Not necessarily. When built with efficient workflows and proper token management, AI automation scales logically to fit your operational budget rather than draining it.\n\n2. Will it replace my staff? No. Our philosophy is about augmentation, not replacement. Autonomous agents handle repetitive, tedious tasks so your people can focus on high-value human work, strategy, and customer relationships.\n\n3. Where do I actually start? Don't try to transform everything overnight. Pick one high-friction bottleneck—like fielding repetitive customer inquiries or searching internal documents—and deploy a targeted solution there first.\n\nAI should feel invisible, effortless, and practical. What questions do you have about bringing AI into your operations?\n\n#EjenticAI #AIAgents #FutureOfWork #AIAutomation",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-13T13:06:54.136Z"
   }
 }
