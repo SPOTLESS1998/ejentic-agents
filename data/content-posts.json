@@ -232,5 +232,22 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-13T13:06:54.136Z"
+  },
+  "2026-09-13:afternoon": {
+    "date": "2026-09-13",
+    "slot": "afternoon",
+    "cycleDay": 7,
+    "theme": "Weekly Recap & Engagement",
+    "pillar": "SHOWCASE",
+    "topic": "Demo Reel — a short video snippet of our \"Watch Agents in Action\" prototypes (Lead Gen or Multilingual Support).",
+    "angle": "Demonstrating how efficient autonomous agents and robust workflows eliminate token waste and deliver enterprise-grade performance without bloat.",
+    "xPost": "Most AI apps waste thousands on oversized prompts and token bloat. See how our multilingual support agents deliver clean, fast results instead: https://youtu.be/gbXhZMTdnkM\n\n#EjenticAI #AIAgents",
+    "linkedinPost": "Most AI applications bleed money every month on unnecessary tokens, oversized prompts, and expensive model calls. Building autonomous systems isn't just about making things work—it's about engineering resilient systems that optimize resources without sacrificing reliability.\n\nAt Ejentic AI, our Chief Architect David Chen focuses on seamless, resilient systems with proper fallbacks and graceful degradation, ensuring enterprise pipelines run efficiently. Whether it's cutting turnaround times or optimizing operational costs, our agents are built to perform.\n\nWatch our autonomous multilingual customer-service agents in action handling real inquiries across English, Nigerian Pidgin, Hausa, Yoruba, and Igbo: https://youtu.be/gbXhZMTdnkM\n\nCurious how we can optimize your workflows? Book a free consultation\n\n#EjenticAI #AIAgents #Automation #CustomerExperience #ROI",
+    "citedSourceUrls": [
+      "https://medium.com/codetodeploy/8-llm-cost-optimization-techniques-every-ai-engineer-should-know-a45a1cb1d838",
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-13T16:56:38.141Z"
   }
 }
