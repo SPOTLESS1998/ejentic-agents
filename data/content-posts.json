@@ -265,5 +265,19 @@
     ],
     "score": 8,
     "createdAt": "2026-09-13T20:41:57.452Z"
+  },
+  "2026-09-14:morning": {
+    "date": "2026-09-14",
+    "slot": "morning",
+    "cycleDay": 8,
+    "theme": "Finance",
+    "pillar": "EDUCATE",
+    "topic": "Fraud detection AI vs. legacy systems — why rule-based checks lose against adaptive agents.",
+    "angle": "Contrast rigid rule-based fraud detection with adaptive AI agents that catch evolving threats, reinforcing that trust is the real currency.",
+    "xPost": "Why do traditional fraud systems keep failing? Static rules only catch yesterday's tricks. Adaptive AI agents learn behavioral patterns in real time, protecting transactions without blocking legitimate customers. Trust is the real currency. #EjenticAI #AI",
+    "linkedinPost": "Why do legacy fraud detection systems keep missing sophisticated attacks?\n\nTraditional systems rely on rigid, rule-based checks. If a transaction matches a hardcoded list of suspicious flags, it gets blocked. If an attacker slightly alters their method, it slips right through.\n\nAdaptive autonomous agents work differently. Instead of waiting for a known rule violation, they analyze complex behavioral contexts and continuously learn from new transaction streams. They spot subtle anomalies that static rulebooks miss.\n\nWhen a fraudster tests a stolen card by making three small purchases across different merchants within minutes, a rule engine often treats them as isolated, safe events. An adaptive agent connects those dispersed signals immediately.\n\nIn digital commerce, security defines your reputation. Are your detection systems built for static rules, or real-time reality?\n\n#EjenticAI #AI #MachineLearning #CyberSecurity #DataScience",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-14T14:44:32.990Z"
   }
 }
