@@ -293,5 +293,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-14T18:32:45.994Z"
+  },
+  "2026-09-14:evening": {
+    "date": "2026-09-14",
+    "slot": "evening",
+    "cycleDay": 8,
+    "theme": "Finance",
+    "pillar": "INSPIRE",
+    "topic": "Trust and security in Fintech.",
+    "angle": "Connecting the need for security and trust in fintech automation back to our human-centric, ethical AI vision rooted in Africa.",
+    "xPost": "Automation without trust is a liability. In fintech, secure, ethical AI isn't just about compliance—it's about protecting people. #EjenticAI #EthicalAI",
+    "linkedinPost": "Automation without trust is worthless. \n\nAs we build the future of finance across Nigeria and the wider continent, the real challenge isn't just deploying autonomous workflows—it is ensuring that every system is built on a foundation of absolute security and data integrity.\n\nAt Ejentic AI, our vision is Wakanda-inspired: we believe Africa can lead the world in AI by building ethical, human-centric systems that respect our data and augment our people. Elena Rodriguez, our Lead ML Engineer, treats data hygiene and rigorous evaluation as a moral duty, not an afterthought. \n\nWhen we integrate AI into financial pipelines—from secure record reconciliation to sensitive document handling—trust is non-negotiable. Technology should protect the people it serves.\n\nHow is your organization balancing the speed of automation with the necessity of trust?\n\n#EjenticAI #EthicalAI #FutureOfWork #NigeriaTech #AIAgents",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-09-14T21:44:56.186Z"
   }
 }
