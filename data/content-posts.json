@@ -279,5 +279,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-14T14:44:32.990Z"
+  },
+  "2026-09-14:afternoon": {
+    "date": "2026-09-14",
+    "slot": "afternoon",
+    "cycleDay": 8,
+    "theme": "Finance",
+    "pillar": "SHOWCASE",
+    "topic": "AI Payment Reconciliation via Vision AI for OPay/Moniepoint receipts.",
+    "angle": "Connecting reliable agentic workflows and Vision AI to solve local operational bottlenecks like manual OPay and Moniepoint receipt matching.",
+    "xPost": "Manual OPay and Moniepoint receipt matching is slowing down African businesses. Our custom agentic workflows automate payment reconciliation with Vision AI, cutting errors and turnaround time. #EjenticAI #Automation",
+    "linkedinPost": "Manual payment reconciliation on OPay and Moniepoint receipts is a massive time sink for growing businesses across Nigeria. Staring at screenshots, checking reference numbers, and matching bank alerts shouldn't require human manual labor.\n\nAt Ejentic AI, we build custom agentic workflows that integrate Stripe, local CRMs, and LLM pipelines to handle payment reconciliation natively. Using Vision AI, our systems read local transfer screenshots, verify data, and update your records automatically.\n\nWe focus on building resilient systems with graceful degradation—cutting operational costs, errors, and turnaround times so your team can focus on growth instead of bookkeeping.\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #NigeriaTech #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-14T18:32:45.994Z"
   }
 }
