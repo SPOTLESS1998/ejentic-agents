@@ -1193,5 +1193,17 @@
     "label": "JOB",
     "title": "Technical Product Lead AI Finance App",
     "kind": "screened"
+  },
+  "lead:sleek": {
+    "firstSeen": "2026-09-15T11:46:17.020Z",
+    "label": "LEAD",
+    "title": "Sleek",
+    "kind": "screened"
+  },
+  "lead:prop firm match global â fzco": {
+    "firstSeen": "2026-09-15T11:46:17.020Z",
+    "label": "LEAD",
+    "title": "Prop Firm Match Global â FZCO",
+    "kind": "reported"
   }
 }
