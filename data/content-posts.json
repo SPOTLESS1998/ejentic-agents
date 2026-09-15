@@ -321,5 +321,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-15T13:09:48.730Z"
+  },
+  "2026-09-15:afternoon": {
+    "date": "2026-09-15",
+    "slot": "afternoon",
+    "cycleDay": 9,
+    "theme": "HR & Recruiting",
+    "pillar": "SHOWCASE",
+    "topic": "Automated resume screening & onboarding KYC.",
+    "angle": "Using our enterprise automation framework to tackle HR bottlenecks like resume screening and KYC onboarding, cutting weeks down to a weekend while keeping fairness at the core.",
+    "xPost": "400 CVs processed over a single weekend instead of weeks. Our HR automation handles resume screening and KYC onboarding while protecting fairness. Book a free consultation #EjenticAI #FutureOfWork",
+    "linkedinPost": "HR teams are drowning in manual resume screening and onboarding KYC checks. When hundreds of applications roll in, qualified talent gets stuck in the queue and burnout hits hard.\n\nAt Ejentic AI, we built custom enterprise automation that changes the math. Imagine processing 400 CVs in a single weekend instead of spending weeks sorting them manually. Our workflows handle the heavy lifting while embedding rigorous fairness safeguards designed to protect against bias.\n\nElena Rodriguez, our Lead ML Engineer, obsesses over responsible AI—meaning rigorous evaluation before shipping, constant bias checks, and treating data hygiene as a moral duty. You get speed without sacrificing integrity.\n\nStop letting manual admin slow down your hiring pipeline. Book a free consultation\n\n#EjenticAI #AIAgents #Automation #FutureOfWork #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-09-15T17:38:34.875Z"
   }
 }
