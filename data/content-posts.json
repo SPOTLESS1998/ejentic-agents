@@ -335,5 +335,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-09-15T17:38:34.875Z"
+  },
+  "2026-09-15:evening": {
+    "date": "2026-09-15",
+    "slot": "evening",
+    "cycleDay": 9,
+    "theme": "HR & Recruiting",
+    "pillar": "INSPIRE",
+    "topic": "Sentiment analysis for employee well-being.",
+    "angle": "Using anonymized sentiment analysis in HR and recruiting to understand employee well-being, building ethical systems that care for our people.",
+    "xPost": "Like the vibranium shields of Wakanda that protect without walling off, our sentiment tools use strict anonymization. Catch burnout early and tune into team well-being while keeping privacy sacred. #EjenticAI #EthicalAI",
+    "linkedinPost": "Technology should shield our people, not scan them. In HR and recruiting, building systems that truly listen means embedding privacy as our absolute baseline—much like the protective architecture of Wakanda, where strength serves the community rather than exposing it.\n\nAt Ejentic AI, we believe African innovation honors the human spirit first. By fully anonymizing sentiment data, organizations can tune into workplace morale, catch burnout before it spreads, and support their teams without ever compromising individual trust.\n\nTrue progress is forged when our data sovereignty mirrors our cultural values: protective, respectful, and deeply human.\n\n#EjenticAI #FutureOfWork #EthicalAI #AfricanInnovation #HumanCentricAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-15T21:13:45.459Z"
   }
 }
