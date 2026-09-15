@@ -307,5 +307,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-09-14T21:44:56.186Z"
+  },
+  "2026-09-15:morning": {
+    "date": "2026-09-15",
+    "slot": "morning",
+    "cycleDay": 9,
+    "theme": "HR & Recruiting",
+    "pillar": "EDUCATE",
+    "topic": "The bias in human recruiting — we like to think humans are neutral; the data says otherwise.",
+    "angle": "Debunking the myth of human neutrality in recruiting by examining data-driven HR practices and the need for auditable screening.",
+    "xPost": "We like to think humans are neutral when reviewing resumes. The data says otherwise. Unconscious bias creeps into every manual screen. Structured, auditable systems help level the playing field. #EjenticAI #FutureOfWork",
+    "linkedinPost": "We like to think humans are objective when screening candidates. We want to believe our intuition is fair. But the data tells a different story. Unconscious bias consistently shapes human hiring decisions, often without us realizing it.\n\nAt Ejentic AI, led by our Lead ML Engineer Elena Rodriguez who treats data hygiene as a moral duty, we know that technology isn't automatically unbiased. But when built responsibly with evaluation before shipping and strict bias checks, structured screening tools can help reduce the arbitrary human filters that shut qualified talent out.\n\nBuilding ethical systems means looking honestly at where our manual processes fall short. How does your team currently audit your hiring pipeline for fairness?\n\n#EjenticAI #EthicalAI #FutureOfWork #AIAutomation #AfricanInnovation",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-15T13:09:48.730Z"
   }
 }
