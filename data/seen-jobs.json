@@ -1205,5 +1205,11 @@
     "label": "LEAD",
     "title": "Prop Firm Match Global â FZCO",
     "kind": "reported"
+  },
+  "lead:extrahop": {
+    "firstSeen": "2026-09-16T11:37:54.315Z",
+    "label": "LEAD",
+    "title": "ExtraHop",
+    "kind": "screened"
   }
 }
