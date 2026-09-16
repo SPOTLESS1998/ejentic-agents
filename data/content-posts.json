@@ -349,5 +349,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-15T21:13:45.459Z"
+  },
+  "2026-09-16:morning": {
+    "date": "2026-09-16",
+    "slot": "morning",
+    "cycleDay": 10,
+    "theme": "Operations & Logistics",
+    "pillar": "EDUCATE",
+    "topic": "Supply chain fragility — the pandemic showed us what happens when operations run on spreadsheets and prayer.",
+    "angle": "Connecting modern supply chain fragility and operations built on spreadsheets to the practical need for robust, resilient agentic workflows and automated systems.",
+    "xPost": "Remember when global supply chains broke because they ran on spreadsheets and prayer? Modern operations need more than fragile manual tracking. Resilient, automated agentic workflows keep business moving when disruptions hit. #EjenticAI #Operations",
+    "linkedinPost": "The pandemic taught businesses a harsh lesson about modern logistics: global supply chains and local operations cannot run on spreadsheets and prayer.\n\nWhen unexpected disruptions hit, manual processes break down. Spreadsheets don't talk to inventory systems, and human teams get overwhelmed trying to manually reconcile invoices, track shipments, and update partners in real time.\n\nBuilding resilience isn't about replacing people. It's about designing autonomous workflows and robust systems that handle the repetitive operational friction. When your core logistics pipelines are integrated—connecting your CRM, ERP, and payment rails—your business keeps moving even when external conditions shift.\n\nAt Ejentic AI, our Chief Architect David Chen builds for systems that are resilient by design, prioritizing fallbacks and graceful degradation so your operations stay online when it matters most.\n\nHow is your team modernizing its operational backbone this year?\n\n#EjenticAI #Automation #FutureOfWork #AIAutomation #AfricanInnovation",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-16T13:10:10.896Z"
   }
 }
