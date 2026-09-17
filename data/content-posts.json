@@ -410,5 +410,19 @@
     ],
     "score": 9,
     "createdAt": "2026-09-17T13:03:18.777Z"
+  },
+  "2026-09-17:afternoon": {
+    "date": "2026-09-17",
+    "slot": "afternoon",
+    "cycleDay": 11,
+    "theme": "Customer Service",
+    "pillar": "SHOWCASE",
+    "topic": "The multi-agent architecture: Researcher, Writer, Editor bots working together.",
+    "angle": "Showcasing enterprise customer service agents and multi-agent orchestration (Researcher, Writer, Editor bots working together) to drive efficiency.",
+    "xPost": "How do you scale enterprise customer service without losing nuance? Our multi-agent architecture—Researcher, Writer, and Editor bots working in sync—powers 24/7 multilingual support in English, Pidgin, Hausa, Yoruba, and Igbo.",
+    "linkedinPost": "Scaling enterprise customer service requires more than a basic chatbot. At Ejentic AI, we orchestrate multi-agent systems where specialized bots—a Researcher, a Writer, and an Editor—collaborate seamlessly behind the scenes to deliver precise, context-aware responses.\n\nFor customer support, this architecture powers our autonomous multilingual agents. They greet clients, answer complex questions, log complaints, and capture leads seamlessly in English, Nigerian Pidgin, Hausa, Yoruba, and Igbo. Whether embedded in your website, apps, or social media, they ensure your business operates 24/7 without losing local nuance.\n\nAs our Chief Architect David Chen notes, resilient systems require careful design and graceful handling. By combining our multi-agent orchestration with secure infrastructure like our Air-Gapped RAG Vault, your teams get fast, accurate answers while your private data remains fully protected.\n\nWatch our multilingual support agents in action here: https://youtu.be/gbXhZMTdnkM\n\nReady to upgrade your customer operations? Book a free consultation.\n\n#EjenticAI #AIAgents #CustomerExperience #Automation #NigeriaTech",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-17T17:35:52.730Z"
   }
 }
