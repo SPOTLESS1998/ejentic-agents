@@ -424,5 +424,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-17T17:35:52.730Z"
+  },
+  "2026-09-17:evening": {
+    "date": "2026-09-17",
+    "slot": "evening",
+    "cycleDay": 11,
+    "theme": "Customer Service",
+    "pillar": "INSPIRE",
+    "topic": "Empathetic AI design.",
+    "angle": "Aligning empathetic AI design with the Ejentic Vision of technology serving community and honoring human data sovereignty, steering away from generic CX tropes.",
+    "xPost": "By 2026, most companies run AI support. But scale without soul is just noise. True progress demands empathetic design rooted in human dignity. Technology must serve our communities, not replace them. #EjenticAI #EthicalAI",
+    "linkedinPost": "As AI customer service scales rapidly heading into 2026, the real measure of progress isn't just ticket deflection. It is how technology respects and elevates the human experience.\n\nAt Ejentic, we design with a different worldview. We believe AI should feel invisible, intuitive, and deeply respectful of human context. When an automated system engages with a community or a customer, it cannot merely process data. It must listen, adapt, and reflect genuine care.\n\nTrue innovation bridges the gap between advanced capability and cultural resonance. We are building systems where data sovereignty is protected and every interaction honors the human spirit.\n\nHow is your organization ensuring that your technology serves people rather than transactional metrics?\n\n#EjenticAI #EthicalAI #FutureOfWork #HumanCentricAI",
+    "citedSourceUrls": [
+      "https://azeon.ai/state-of-ai-customer-service"
+    ],
+    "score": 5,
+    "createdAt": "2026-09-17T21:16:23.699Z"
   }
 }
