@@ -1211,5 +1211,17 @@
     "label": "LEAD",
     "title": "ExtraHop",
     "kind": "screened"
+  },
+  "https://www.themuse.com/jobs/gitlab/fullstack-engineer-typescript-ai-engineering-duo-client-sdk": {
+    "firstSeen": "2026-09-17T11:44:24.456Z",
+    "label": "JOB",
+    "title": "Fullstack Engineer (TypeScript), AI Engineering: Duo Client SDK",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-ai-trainer-image-qa-evaluator-imerit-technology-1137398": {
+    "firstSeen": "2026-09-17T11:44:24.456Z",
+    "label": "JOB",
+    "title": "AI Trainer Image QA Evaluator",
+    "kind": "screened"
   }
 }
