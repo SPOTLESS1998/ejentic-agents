@@ -188,5 +188,15 @@
     "firstSeen": "2026-09-16T12:38:11.208Z",
     "label": "HACKATHON",
     "title": "Beginner's Workshop: What to Expect at ETHGlobal New York 2026"
+  },
+  "https://allthingsagentichackathon.devpost.com": {
+    "firstSeen": "2026-09-17T12:37:24.655Z",
+    "label": "HACKATHON",
+    "title": "All Things Agentic Hackathon: Ready, Set, Agent! Build next ..."
+  },
+  "https://devpost.com": {
+    "firstSeen": "2026-09-17T12:37:24.655Z",
+    "label": "HACKATHON",
+    "title": "Devpost - The home for hackathons"
   }
 }
