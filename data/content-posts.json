@@ -473,5 +473,21 @@
     ],
     "score": 8,
     "createdAt": "2026-09-18T17:02:45.002Z"
+  },
+  "2026-09-18:evening": {
+    "date": "2026-09-18",
+    "slot": "evening",
+    "cycleDay": 12,
+    "theme": "Marketing & Sales",
+    "pillar": "INSPIRE",
+    "topic": "Data privacy in marketing.",
+    "angle": "Connecting the explosive growth of AI customer service in 2026 with our core belief that personalization in marketing and sales must never cross the line into data surveillance.",
+    "xPost": "As AI service agent adoption hits 66% in 2026, personalization can never cross into surveillance. We build systems that respect your data. #EjenticAI #EthicalAI",
+    "linkedinPost": "As adoption of AI service agents reaches 66% across enterprises in 2026, the rush to hyper-personalize customer interactions is accelerating. But here is the ethical line we must hold: personalization must never become surveillance.\n\nAt Ejentic AI, our vision is rooted in systems that respect data privacy as a moral duty. When building marketing workflows and autonomous agents, we believe technology should augment human relationships, not exploit private information.\n\nTrue innovation means protecting user trust while driving efficiency. How is your team balancing data privacy with AI-driven engagement this year?\n\n#EjenticAI #EthicalAI #CustomerExperience #FutureOfWork #AIAutomation",
+    "citedSourceUrls": [
+      "https://azeon.ai/state-of-ai-customer-service"
+    ],
+    "score": 6,
+    "createdAt": "2026-09-18T20:50:26.846Z"
   }
 }
