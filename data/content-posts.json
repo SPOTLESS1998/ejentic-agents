@@ -456,5 +456,22 @@
     ],
     "score": 8,
     "createdAt": "2026-09-18T12:43:42.130Z"
+  },
+  "2026-09-18:afternoon": {
+    "date": "2026-09-18",
+    "slot": "afternoon",
+    "cycleDay": 12,
+    "theme": "Marketing & Sales",
+    "pillar": "SHOWCASE",
+    "topic": "The Autonomous Researcher agent for competitive analysis.",
+    "angle": "Using our Autonomous Researcher agent to track enterprise AI growth trends and competitive intelligence in real-time.",
+    "xPost": "Enterprise AI service agent adoption jumped to 66% in 2026. Our Autonomous Researcher agent scans and briefs our team on market shifts daily. See how we build custom agents: https://youtu.be/gbXhZMTdnkM\n\n#EjenticAI #AIAgents",
+    "linkedinPost": "In 2026, enterprise adoption of AI service agents reached 66%, moving past simple chatbots into full production workflows. Staying ahead of this rapid market shift requires continuous intelligence.\n\nThat is why we built our Autonomous Researcher agent. Instead of manual monitoring, our system scans the web, verifies data, and briefs our team daily on market movements, competitor strategies, and emerging tech trends.\n\nWe build these same practical, autonomous workflows for businesses—from multilingual customer service agents to secure internal RAG vaults. Elena Rodriguez, our Lead ML Engineer, focuses our work on data hygiene and rigorous evaluation before deployment.\n\nWatch our agents in action here: https://youtu.be/gbXhZMTdnkM\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #CustomerExperience #FutureOfWork",
+    "citedSourceUrls": [
+      "https://azeon.ai/state-of-ai-customer-service",
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-18T17:02:45.002Z"
   }
 }
