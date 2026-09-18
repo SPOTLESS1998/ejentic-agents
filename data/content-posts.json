@@ -440,5 +440,21 @@
     ],
     "score": 5,
     "createdAt": "2026-09-17T21:16:23.699Z"
+  },
+  "2026-09-18:morning": {
+    "date": "2026-09-18",
+    "slot": "morning",
+    "cycleDay": 12,
+    "theme": "Marketing & Sales",
+    "pillar": "EDUCATE",
+    "topic": "Why cold outreach is dying — and what is replacing it.",
+    "angle": "Shifting from high-volume cold outreach noise to precise, intent-driven agentic systems, aligning with PwC's call for disciplined value over sporadic AI bets.",
+    "xPost": "I got a cold pitch today addressing me as a VP of a company I left three years ago. That’s why cold email is dead. Volume isn't a strategy anymore; it's noise. Autonomous agents that actually read firmographics are replacing the blast. #EjenticAI #FutureOfWork",
+    "linkedinPost": "I received a cold pitch this morning addressed to a role I left three years ago. It read like a template, hit every spam trigger, and went straight to the trash. \n\nThat lazy approach is why cold outreach is dying. When buyers are drowning in automated noise, brute-force volume stops working.\n\nPwC's recent AI predictions highlight that moving from vibe to value requires precision and disciplined orchestration—not sporadic, scattershot efforts.\n\nThat reality is shifting how pipelines are built. Instead of blasting thousands of unpersonalized emails, teams are deploying autonomous lead-generation systems. These agents scrape live data, verify current context, and craft deeply relevant outreach tailored to an individual's actual situation.\n\nWhen every message is genuinely relevant, response rates change entirely. It is no longer about sending more.\n\nAre you still relying on brute-force volume, or has your team shifted toward precision?\n\n#EjenticAI #AIAgents #Automation #AIAutomation #FutureOfWork",
+    "citedSourceUrls": [
+      "https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-predictions.html"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-18T12:43:42.130Z"
   }
 }
