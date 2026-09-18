@@ -1105,19 +1105,19 @@
     "title": "U.P.PRO"
   },
   "https://remoteok.com/remote-jobs/remote-ai-response-analyst-imerit-technology-1137309": {
-    "firstSeen": "2026-09-07T12:36:49.252Z",
+    "firstSeen": "2026-09-18T11:18:13.416Z",
     "label": "JOB",
     "title": "AI Response Analyst",
     "kind": "screened"
   },
   "https://remotive.com/remote-jobs/software-development/senior-data-engineer-2091097": {
-    "firstSeen": "2026-09-07T12:36:49.252Z",
+    "firstSeen": "2026-09-18T11:18:13.416Z",
     "label": "JOB",
     "title": "Senior Data Engineer",
     "kind": "screened"
   },
   "https://remotive.com/remote-jobs/software-development/senior-independent-ai-engineer-architect-1919266": {
-    "firstSeen": "2026-09-07T12:36:49.252Z",
+    "firstSeen": "2026-09-18T11:18:13.416Z",
     "label": "JOB",
     "title": "Senior Independent AI Engineer / Architect",
     "kind": "screened"
@@ -1222,6 +1222,24 @@
     "firstSeen": "2026-09-17T11:44:24.456Z",
     "label": "JOB",
     "title": "AI Trainer Image QA Evaluator",
+    "kind": "screened"
+  },
+  "https://www.themuse.com/jobs/experian/teach-lead-data-engineer-brazil-based": {
+    "firstSeen": "2026-09-18T11:18:13.416Z",
+    "label": "JOB",
+    "title": "Teach Lead Data Engineer (Brazil Based)",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-ai-agent-engineer-sticker-mule-1137399": {
+    "firstSeen": "2026-09-18T11:18:13.416Z",
+    "label": "JOB",
+    "title": "AI agent engineer",
+    "kind": "screened"
+  },
+  "https://remotive.com/remote-jobs/data/senior-data-scientist-2091129": {
+    "firstSeen": "2026-09-18T11:18:13.416Z",
+    "label": "JOB",
+    "title": "Senior Data Scientist",
     "kind": "screened"
   }
 }
