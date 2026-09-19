@@ -517,5 +517,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-19T16:23:07.401Z"
+  },
+  "2026-09-19:evening": {
+    "date": "2026-09-19",
+    "slot": "evening",
+    "cycleDay": 13,
+    "theme": "Legal & Compliance",
+    "pillar": "INSPIRE",
+    "topic": "Governance and Accountability.",
+    "angle": "Connecting governance and accountability to our core vision: an AI decision you cannot audit is a liability, and traceability is non-negotiable for human-centric systems.",
+    "xPost": "An AI decision you can't audit is a liability. For us, traceability is non-negotiable. #EjenticAI #EthicalAI",
+    "linkedinPost": "An AI decision you cannot audit is a liability. Across industries, organizations are moving from experimental AI to operational reality, but chasing speed without accountability creates blind spots.\n\nAt Ejentic AI, we believe governance and accountability are non-negotiable. Elena Rodriguez, our Lead ML Engineer, approaches data hygiene and bias checks as a moral duty—evaluation must happen before shipping.\n\nWhether you are deploying multilingual customer-service agents or an internal RAG vault, traceably knowing how a system reaches a decision is essential. True transformation requires systems that augment our people while respecting our data.\n\nHow is your organization approaching traceability in your AI workflows?\n\n#EjenticAI #EthicalAI #FutureOfWork #AIAutomation",
+    "citedSourceUrls": [
+      "https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-predictions.html"
+    ],
+    "score": 9,
+    "createdAt": "2026-09-19T20:31:23.335Z"
   }
 }
