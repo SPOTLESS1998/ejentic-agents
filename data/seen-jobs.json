@@ -1241,5 +1241,47 @@
     "label": "JOB",
     "title": "Senior Data Scientist",
     "kind": "screened"
+  },
+  "https://www.themuse.com/jobs/atlassian/ai-productivity-lead-sales-development": {
+    "firstSeen": "2026-09-20T11:27:50.028Z",
+    "label": "JOB",
+    "title": "AI Productivity Lead, Sales Development",
+    "kind": "screened"
+  },
+  "https://remotive.com/remote-jobs/artificial-intelligence/senior-ai-engineer-2091131": {
+    "firstSeen": "2026-09-20T11:27:50.028Z",
+    "label": "JOB",
+    "title": "Senior AI Engineer",
+    "kind": "screened"
+  },
+  "lead:kobotoolbox": {
+    "firstSeen": "2026-09-20T11:27:52.382Z",
+    "label": "LEAD",
+    "title": "KoboToolbox",
+    "kind": "screened"
+  },
+  "lead:sanctuary computer inc": {
+    "firstSeen": "2026-09-20T11:27:52.382Z",
+    "label": "LEAD",
+    "title": "Sanctuary Computer Inc",
+    "kind": "screened"
+  },
+  "lead:hey contact heroes gmbh": {
+    "firstSeen": "2026-09-20T11:27:52.382Z",
+    "label": "LEAD",
+    "title": "hey contact heroes GmbH",
+    "kind": "reported"
+  },
+  "lead:kpi solutions": {
+    "firstSeen": "2026-09-20T11:27:52.382Z",
+    "label": "LEAD",
+    "title": "KPI Solutions",
+    "kind": "screened"
+  },
+  "lead:jumpcloud": {
+    "firstSeen": "2026-09-20T11:27:52.382Z",
+    "label": "LEAD",
+    "title": "JumpCloud",
+    "kind": "reported"
   }
 }
