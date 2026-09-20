@@ -533,5 +533,21 @@
     ],
     "score": 9,
     "createdAt": "2026-09-19T20:31:23.335Z"
+  },
+  "2026-09-20:morning": {
+    "date": "2026-09-20",
+    "slot": "morning",
+    "cycleDay": 14,
+    "theme": "Weekly Recap & African Tech Excellence",
+    "pillar": "EDUCATE",
+    "topic": "Favorite case study of the week — the one post that shows what automation really changes.",
+    "angle": "Reflecting on mainstream AI adoption trends where 88% of enterprises use automation, highlighting how localized agentic workflows solve real operational friction in African business.",
+    "xPost": "With 88% of enterprises now using AI automation, the shift from experimentation to production is real. But real value comes from building systems that respect our data and speak our languages. #EjenticAI #AIAgents",
+    "linkedinPost": "As we review the week's progress, one number stands out: 88% of enterprises now use AI automation in at least function, moving well past the pilot phase.\n\nWhen we look at what this actually changes on the ground, it is not about replacing teams. It is about removing the operational friction that slows businesses down.\n\nWhether it is multilingual support agents handling inquiries in Nigerian Pidgin, English, Hausa, Yoruba, and Igbo, or secure internal knowledge bases protecting private SOPs, automation works best when it is built for the context it operates in.\n\nAt Ejentic AI, our focus remains on ethical, human-centric systems that augment our people instead of replacing them. Technology should feel invisible and effortless.\n\nHow is your team approaching automation this quarter?\n\n#EjenticAI #AIAgents #Automation #NigeriaTech #FutureOfWork",
+    "citedSourceUrls": [
+      "https://orbilontech.com/ai-automation-stats-2026"
+    ],
+    "score": null,
+    "createdAt": "2026-09-20T12:52:07.822Z"
   }
 }
