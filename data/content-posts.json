@@ -549,5 +549,22 @@
     ],
     "score": null,
     "createdAt": "2026-09-20T12:52:07.822Z"
+  },
+  "2026-09-20:afternoon": {
+    "date": "2026-09-20",
+    "slot": "afternoon",
+    "cycleDay": 14,
+    "theme": "Weekly Recap & African Tech Excellence",
+    "pillar": "SHOWCASE",
+    "topic": "The numbers behind the week — lessons and takeaways from seven days of industry deep dives.",
+    "angle": "Reviewing weekly industry data reveals identical support and workflow leaks across businesses, solved by robust RAG and multilingual automation.",
+    "xPost": "This week's deep dives revealed the same leaks across businesses: slow support and manual bottlenecks. The fix? Multilingual AI agents and air-gapped RAG. Watch them in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "After analyzing seven days of industry data, a clear pattern emerged. Across sectors, businesses are bleeding hours and revenue to the exact same operational leaks: manual lead routing, siloed knowledge bases, and support queues that can't scale.\n\nOur deep dives show that companies scaling successfully aren't guessing. They are deploying autonomous multilingual customer-service agents and secure Air-Gapped RAG Vaults to query private documents without data leaks.\n\nThe math is simple. When you replace rigid deflection with human-centric AI systems that speak English, Pidgin, Hausa, Yoruba, and Igbo, turnaround times drop and customer resistance fades.\n\nWatch our multilingual support agents in action: https://youtu.be/gbXhZMTdnkM\n\nWhat workflow leak is costing your team the most time this week?\n\n#EjenticAI #AIAgents #Automation #AfricanTech #CustomerExperience",
+    "citedSourceUrls": [
+      "https://www.assembled.com/page/companies-using-ai-for-customer-service",
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-20T16:45:41.269Z"
   }
 }
