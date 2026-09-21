@@ -594,5 +594,23 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-21T14:52:57.697Z"
+  },
+  "2026-09-21:afternoon": {
+    "date": "2026-09-21",
+    "slot": "afternoon",
+    "cycleDay": 15,
+    "theme": "Privacy by Architecture",
+    "pillar": "SHOWCASE",
+    "topic": "A day in the life of Nova (our front-end agent).",
+    "angle": "Connecting privacy-by-architecture enterprise requirements with a day-in-the-life look at Nova, our multilingual front-end customer service agent.",
+    "xPost": "Meet Nova, our autonomous multilingual customer-service agent. She greets, qualifies intent, routes high-value prospects, and logs complaints 24/7. Watch Nova in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "A day in the life of Nova, our front-end customer-service agent, looks a bit like managing a bustling digital storefront that never sleeps.\n\nNova handles inbound website visitors 24/7. She greets clients, answers questions, advertises services, logs complaints, and captures leads in English, Nigerian Pidgin, Hausa, Yoruba, and Igbo. When a visitor's intent is high-value, Nova qualifies them instantly and routes them straight to human sales.\n\nBuilt with our privacy-by-architecture approach, she ensures your customer data remains secure while cutting response times to zero. Gartner projects that 40% of enterprise applications will feature task-professional AI agents soon, and production environments are already driving efficiency.\n\nWatch Agents in Action here: https://youtu.be/gbXhZMTdnkM\n\nHow is your team handling after-hours lead capture today?\n\n#EjenticAI #AIAgents #CustomerExperience #Automation #NigeriaTech",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM",
+      "https://orbilontech.com/ai-automation-stats-2026",
+      "https://vocal.media/lifehack/how-to-start-an-ai-automation-agency-in-2026-with-0-budget"
+    ],
+    "score": 9,
+    "createdAt": "2026-09-21T18:37:13.134Z"
   }
 }
