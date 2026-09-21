@@ -243,3 +243,7 @@ the top) and `src/lib/jobboards.ts`.
 (all 30 days × 3 slots, with per-post guidance — edit freely, it validates itself)
 and its "how to sound" is `src/context/brand.ts` (voice, services, demo-video links,
 founder personas, hashtag pools). Both are plain English on purpose.
+
+---
+
+Built by [Ejentic AI](https://ejentic.xyz) — AI agents and automation for businesses. Abuja, Nigeria.
