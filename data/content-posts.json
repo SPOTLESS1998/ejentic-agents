@@ -612,5 +612,22 @@
     ],
     "score": 9,
     "createdAt": "2026-09-21T18:37:13.134Z"
+  },
+  "2026-09-21:evening": {
+    "date": "2026-09-21",
+    "slot": "evening",
+    "cycleDay": 15,
+    "theme": "Privacy by Architecture",
+    "pillar": "INSPIRE",
+    "topic": "Sarah Jenkins on why UI/UX makes or breaks AI adoption.",
+    "angle": "Connecting Sarah Jenkins' UX-first philosophy to how respectful, invisible design bridges the gap between AI customer service potential and customer resistance.",
+    "xPost": "Most AI customer service fails because users have to think about the tool. \n\nAs our Head of Design Sarah Jenkins puts it: \"If users have to think about the AI, we failed.\"\n\nTrue integration is invisible.\n\n#EjenticAI #CustomerExperience",
+    "linkedinPost": "When Gartner reveals that the majority of customers still prefer companies didn't use AI for customer service, it isn't an indictment of technology. It is an indictment of bad implementation.\n\nBolting a rigid chatbot onto a broken knowledge base creates friction. Users shouldn't have to navigate syntax, decipher prompt boxes, or feel like they are talking to a wall. \n\nSarah Jenkins, our Head of Design & Experience, puts it simply: \"If users have to think about the AI, we failed.\"\n\nAt Ejentic AI, we believe artificial intelligence should feel effortless. Conversations, not screens. Systems that speak our languages, respect our data, and embed so naturally into your website or app that your clients simply feel supported.\n\nAI adoption isn't won by how complex the model is. It's won by how invisible the friction is.\n\n#EjenticAI #CustomerExperience #FutureOfWork #AIAutomation #EthicalAI",
+    "citedSourceUrls": [
+      "https://www.assembled.com/page/companies-using-ai-for-customer-service",
+      "https://www.tommasomariaricci.com/blog/ai-for-customer-service-guide-2026"
+    ],
+    "score": 9,
+    "createdAt": "2026-09-21T21:55:57.111Z"
   }
 }
