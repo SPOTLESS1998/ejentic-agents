@@ -657,5 +657,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-22T17:38:49.226Z"
+  },
+  "2026-09-22:evening": {
+    "date": "2026-09-22",
+    "slot": "evening",
+    "cycleDay": 16,
+    "theme": "Resilience Engineering",
+    "pillar": "INSPIRE",
+    "topic": "David Chen on building systems that never leave users stranded.",
+    "angle": "Connecting David Chen's resilience engineering and graceful degradation philosophy to the reality that enterprise AI must never leave users stranded when systems fail.",
+    "xPost": "\"Downtiness isn’t an accident; it’s a design choice you didn’t make.\" — David Chen, Chief Architect at Ejentic AI. We build resilient systems with fallbacks so your users are never left stranded. #EjenticAI #AIAgents",
+    "linkedinPost": "When automated systems fail, customers are the ones left holding the broken piece.\n\n\"Downtime isn’t an accident; it’s a design choice you didn’t make.\"\n\nThat is our Chief Architect David Chen’s baseline at Ejentic AI. While the market rushes to deploy agents into production, too many deployments ignore fallback architecture and graceful degradation.\n\nWhen you are building autonomous workflows and RAG vaults that handle core business logic, hope is not a strategy. True engineering means expecting API limits, network drops, and model timeouts—and handling them invisibly before they reach your user.\n\nAfrica is building the future of enterprise automation. We are building it to last.\n\nHow does your current tech stack handle downstream LLM failures? Let's talk about resilient architecture.\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-22T21:12:45.246Z"
   }
 }
