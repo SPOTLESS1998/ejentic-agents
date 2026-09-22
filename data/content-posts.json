@@ -643,5 +643,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-22T13:07:32.566Z"
+  },
+  "2026-09-22:afternoon": {
+    "date": "2026-09-22",
+    "slot": "afternoon",
+    "cycleDay": 16,
+    "theme": "Resilience Engineering",
+    "pillar": "SHOWCASE",
+    "topic": "How our fallback system works if a model goes down.",
+    "angle": "Demonstrating Ejentic AI's resilience engineering where primary model fails and backup seamlessly takes over, protecting enterprise RAG and automated workflows from downtime.",
+    "xPost": "When your primary AI model goes down, what happens? Our instant fallback system kicks in in milliseconds, protecting your automated RAG pipelines. Users never notice a blip. 🛡️ #EjenticAI #AIAgents",
+    "linkedinPost": "Enterprise uptime cannot rely on a single point of failure. When deploying mission-critical automated RAG pipelines and multilingual bots, model outages can disrupt operations and impact revenue.\n\nThat is why resilience is engineered directly into our infrastructure at Ejentic AI. If your primary AI model encounters an unexpected outage, our fallback architecture instantly reroutes traffic to a secondary model in milliseconds.\n\nThe before and after is clear: instead of stalled workflows and frustrated users, your automated systems maintain continuous operation without manual intervention.\n\nProtect your enterprise infrastructure from downtime. How is your current AI stack handling fallback scenarios?\n\n#EjenticAI #AIAgents #Automation #AIAutomation",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-22T17:38:49.226Z"
   }
 }
