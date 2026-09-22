@@ -629,5 +629,19 @@
     ],
     "score": 9,
     "createdAt": "2026-09-21T21:55:57.111Z"
+  },
+  "2026-09-22:morning": {
+    "date": "2026-09-22",
+    "slot": "morning",
+    "cycleDay": 16,
+    "theme": "Resilience Engineering",
+    "pillar": "EDUCATE",
+    "topic": "How prompt engineering actually works — demystified.",
+    "angle": "Demystifying prompt engineering as a structured method of context, constraints, and examples rather than magic, echoing our focus on reliable, resilient engineering.",
+    "xPost": "Prompt engineering isn't magic. It's a method: set clear context, define constraints, provide examples, and verify the output. No hype, just system design. #EjenticAI #AIAgents",
+    "linkedinPost": "There is no magic wand in prompt engineering. Whether you are deploying conversational virtual agents or building automated workflows, getting consistent output from an LLM comes down to a clear, repeatable method.\n\nThink of it less like whispering a spell and more like writing a precise technical specification. It relies on four practical pillars:\n\n1. Context: Give the model a clear role and background.\n2. Constraints: Explicitly state what it should not do or say.\n3. Examples: Show it what good looks like through few-shot prompting.\n4. Verification: Test outputs rigorously before deployment.\n\nAt Ejentic AI, our engineering approach focuses on building resilient systems with proper guardrails. By treating prompts as code rather than guesswork, businesses can cut down on hallucinations and build dependable automation.\n\nHow does your team currently structure prompts for internal tools or customer service?\n\n#EjenticAI #AIAgents #AIExplained #Automation #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-22T13:07:32.566Z"
   }
 }
