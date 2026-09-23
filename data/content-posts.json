@@ -671,5 +671,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-22T21:12:45.246Z"
+  },
+  "2026-09-23:morning": {
+    "date": "2026-09-23",
+    "slot": "morning",
+    "cycleDay": 17,
+    "theme": "RAG, Internally",
+    "pillar": "EDUCATE",
+    "topic": "Anatomy of a RAG pipeline: from PDF to instant answers.",
+    "angle": "Explaining how RAG pipelines process private documents into secure, instant answers for internal teams, with a focus on engineering details like chunking overlap.",
+    "xPost": "Bad RAG chunking breaks your AI's context. If you split PDFs without an overlap, you slice thoughts in half. True RAG anatomy: smart chunking, embeddings, vector search, and grounded generation. #EjenticAI #RAG",
+    "linkedinPost": "Ever wonder how an internal knowledge base fetches the right answer from thousands of messy PDFs in milliseconds without hallucinating?\n\nThe secret lies in the anatomy of a Retrieval-Augmented Generation (RAG) pipeline. But generic setups fail because of poor engineering at step one.\n\nFirst, raw documents undergo text chunking. If you split a 500-word SOP blindly every 100 words without a 20% chunking overlap, you slice critical context right down the middle. \n\nNext, those segments are converted into numerical embeddings for semantic search, then stored in a vector database. When a query comes in, the system retrieves only the most relevant chunks, and the model generates a precise answer grounded purely in those files.\n\nThis is how teams safely query private documents without leaking sensitive data or relying on guesswork.\n\nHow does your current setup handle document chunking?\n\n#EjenticAI #RAG #AIArchitecture #MachineLearning #DataEngineering",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-09-23T13:22:45.622Z"
   }
 }
