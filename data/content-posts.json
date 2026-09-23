@@ -685,5 +685,21 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-09-23T13:22:45.622Z"
+  },
+  "2026-09-23:afternoon": {
+    "date": "2026-09-23",
+    "slot": "afternoon",
+    "cycleDay": 17,
+    "theme": "RAG, Internally",
+    "pillar": "SHOWCASE",
+    "topic": "Meet our multilingual support agent — how it switches between Pidgin, Hausa, Yoruba & Igbo mid-conversation.",
+    "angle": "Using cost-effective agent architectures to power multilingual support agents that fluidly handle local African languages.",
+    "xPost": "How do you build customer support that speaks English, Pidgin, Hausa, Yoruba, and Igbo natively? Watch our autonomous multilingual agent in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "Enterprise AI shouldn't force your customers to translate their thoughts. That is why we built autonomous multilingual customer-service agents that switch seamlessly between English, Nigerian Pidgin, Hausa, Yoruba, and Igbo mid-conversation.\n\nHere is a quick look at how it flows:\n\nCustomer: \"Biko, my delivery never show up yet.\"\nAgent: \"Eeya, sorry for that delay! Let me check your tracking number sharp sharp. Drop am here make I trace am.\"\nCustomer: \"O di mma, here is the order ID...\"\n\nEmbedded directly in your website, apps, or social media, these agents greet clients, answer questions, log complaints, and capture leads around the clock.\n\nWatch the full demo here: https://youtu.be/gbXhZMTdnkM\n\nBook a free consultation\n\n#EjenticAI #AIAgents #CustomerExperience #NigerianTech #BuildWithAI",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 9,
+    "createdAt": "2026-09-23T17:50:26.916Z"
   }
 }
