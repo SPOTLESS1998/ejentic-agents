@@ -568,5 +568,15 @@
     "firstSeen": "2026-09-21T13:28:33.049Z",
     "label": "RESEARCH",
     "title": "Piyush Ranjan - LLM Cost Optimization Strategies - LinkedIn"
+  },
+  "https://www.requesty.ai/blog/ai-agent-cost-optimization-how-to-cut-llm-spend-by-80-percent-with-routing": {
+    "firstSeen": "2026-09-23T12:26:14.247Z",
+    "label": "RESEARCH",
+    "title": "AI Agent Cost Optimization: How to Cut LLM Spend by 80% with Routing"
+  },
+  "https://www.merge.dev/blog/llm-cost-optimization": {
+    "firstSeen": "2026-09-23T12:26:14.247Z",
+    "label": "RESEARCH",
+    "title": "How to optimize your LLM costs (5 best practices) - Merge.dev"
   }
 }
