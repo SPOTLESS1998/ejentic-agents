@@ -748,5 +748,19 @@
     ],
     "score": 8,
     "createdAt": "2026-09-24T17:50:24.422Z"
+  },
+  "2026-09-24:evening": {
+    "date": "2026-09-24",
+    "slot": "evening",
+    "cycleDay": 18,
+    "theme": "How We Test",
+    "pillar": "INSPIRE",
+    "topic": "Sarah Jenkins on designing conversations, not screens.",
+    "angle": "Connecting Sarah Jenkins' philosophy on invisible UI/UX and conversational interfaces to how we design human-centric AI workflows that respect our people.",
+    "xPost": "AI should feel invisible and effortless. As our Head of Design Sarah Jenkins puts it, the interface is the dialogue itself—conversations, not screens. #EjenticAI #AI",
+    "linkedinPost": "When building autonomous agents for businesses, the biggest mistake is treating AI like just another software interface with more buttons and tabs.\n\nAt Ejentic AI, our Head of Design & Experience, Sarah Jenkins, reminds us of a core truth: AI should feel invisible and effortless. The interface is the dialogue itself. Conversations, not screens.\n\nWhen a customer interacts with our multilingual agents in English, Nigerian Pidgin, Hausa, Yoruba, or Igbo, they aren't navigating menus. They are simply talking to someone who understands them. When employees query our Air-Gapped RAG Vault for internal SOPs, it flows naturally like asking a colleague.\n\nWe believe Africa can lead the world in AI by building ethical, human-centric systems that augment our people instead of replacing them. \n\nHow is your team designing human-first AI experiences?\n\n#EjenticAI #AIAgents #CustomerExperience #EthicalAI #AfricanTech",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-09-24T21:26:36.300Z"
   }
 }
