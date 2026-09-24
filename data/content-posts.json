@@ -715,5 +715,21 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-09-23T21:25:55.282Z"
+  },
+  "2026-09-24:morning": {
+    "date": "2026-09-24",
+    "slot": "morning",
+    "cycleDay": 18,
+    "theme": "How We Test",
+    "pillar": "EDUCATE",
+    "topic": "Why we test agents like pilots: evals, simulations, and guardrails.",
+    "angle": "Connecting how customer service AI needs rigorous flight-simulator testing (evals and guardrails) rather than hopeful deployment.",
+    "xPost": "Why do we test AI agents like pilots? Because quality is engineered, not hoped for. Evals, simulations, and strict guardrails keep systems reliable before they touch a single customer. ✈️ #EjenticAI #AIAgents",
+    "linkedinPost": "Reliability in customer service AI isn't something you simply hope for. It has to be engineered from the ground up.\n\nThat is why autonomous agents should be tested the way the aviation industry tests pilots. Before any customer-facing workflow goes live, it must pass through rigorous evaluations, stress-simulations, and multi-layered guardrails.\n\nTreating data hygiene, bias checks, and fallback mechanisms as strict engineering requirements ensures systems handle edge cases gracefully. When building AI that handles sensitive user intent, guesswork is never an option.\n\nQuality is designed, not hoped for. How does your team validate AI reliability before deployment?\n\n#EjenticAI #AIAgents #EthicalAI #CustomerExperience #AIFutureOfWork",
+    "citedSourceUrls": [
+      "https://blog.webex.com/customer-experience/how-ai-is-revolutionizing-customer-service"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-24T13:15:54.426Z"
   }
 }
