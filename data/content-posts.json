@@ -731,5 +731,22 @@
     ],
     "score": 8,
     "createdAt": "2026-09-24T13:15:54.426Z"
+  },
+  "2026-09-24:afternoon": {
+    "date": "2026-09-24",
+    "slot": "afternoon",
+    "cycleDay": 18,
+    "theme": "How We Test",
+    "pillar": "SHOWCASE",
+    "topic": "The agent toolbox we reach for (and why the boring choice usually wins).",
+    "angle": "Using intelligent model routing to show how production agent stacks rely on simple, cost-effective components over expensive frontier models.",
+    "xPost": "Why use an expensive frontier model for every agent task? 70% of workflows—like classification and extraction—only need a fast nano model. Smart routing cuts LLM spend by up to 80% without sacrificing quality. The boring choice wins. Book a free consultation",
+    "linkedinPost": "When building autonomous agent workflows, the hype tells you to throw the most expensive frontier model at every single task. But in production, the boring choice almost always wins.\n\nOur engineering approach leans on model routing to keep enterprise AI budgets under control. Not every step needs top-tier reasoning. In fact, production data shows a clear pattern: about 70% of tasks—like basic classification, extraction, and filtering—run efficiently on fast nano models that cost a fraction of a cent per million tokens.\n\nAnother 20% handles drafting and summarization, leaving just 10% for complex architecture or deep reasoning. By routing requests dynamically based on intent, teams routinely cut LLM spend by 60 to 80 percent without sacrificing quality. Frugality is a feature, not a compromise.\n\nHow is your team managing inference costs as your agent workflows scale?\n\nBook a free consultation\n\n#EjenticAI #AIAgents #AIAutomation #FutureOfWork",
+    "citedSourceUrls": [
+      "https://www.requesty.ai/blog/ai-agent-cost-optimization-how-to-cut-llm-spend-by-80-percent-with-routing",
+      "https://www.merge.dev/blog/llm-cost-optimization"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-24T17:50:24.422Z"
   }
 }
