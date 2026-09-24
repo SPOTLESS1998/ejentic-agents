@@ -1171,19 +1171,19 @@
     "kind": "screened"
   },
   "https://remotive.com/remote-jobs/artificial-intelligence/ai-response-evaluator-2091126": {
-    "firstSeen": "2026-09-13T11:55:17.713Z",
+    "firstSeen": "2026-09-24T11:48:57.648Z",
     "label": "JOB",
     "title": "AI Response Evaluator",
     "kind": "screened"
   },
   "lead:imerit technology": {
-    "firstSeen": "2026-09-13T11:55:18.209Z",
+    "firstSeen": "2026-09-24T11:48:58.274Z",
     "label": "LEAD",
     "title": "iMerit Technology",
     "kind": "screened"
   },
   "lead:law offices of sabrina li": {
-    "firstSeen": "2026-09-13T11:55:18.209Z",
+    "firstSeen": "2026-09-24T11:48:58.274Z",
     "label": "LEAD",
     "title": "Law Offices of Sabrina Li",
     "kind": "screened"
@@ -1294,6 +1294,12 @@
     "firstSeen": "2026-09-23T11:40:16.013Z",
     "label": "LEAD",
     "title": "Ashby",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-technical-product-manager-ai-stockbroking-app-bjak-1137421": {
+    "firstSeen": "2026-09-24T11:48:57.648Z",
+    "label": "JOB",
+    "title": "Technical Product Manager AI Stockbroking App",
     "kind": "screened"
   }
 }
