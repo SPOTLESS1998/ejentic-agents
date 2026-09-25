@@ -762,5 +762,22 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-09-24T21:26:36.300Z"
+  },
+  "2026-09-25:morning": {
+    "date": "2026-09-25",
+    "slot": "morning",
+    "cycleDay": 19,
+    "theme": "Security Choices",
+    "pillar": "EDUCATE",
+    "topic": "Air-gapped vs. cloud RAG: choosing by risk, not hype.",
+    "angle": "Using insights on production efficiency and token management to frame a secure architecture decision: matching RAG deployment (air-gapped vs cloud) strictly to data risk and privacy needs.",
+    "xPost": "Cloud RAG or Air-Gapped RAG? Stop buying hype and look at risk. Regulated internal SOPs belong in an air-gapped vault. Public knowledge goes to the cloud. Build for your security baseline, not the trend. #EjenticAI #RAG",
+    "linkedinPost": "In 2026, the rush to deploy AI often leads to a false binary: either use public cloud models for everything or build everything from scratch. When it comes to internal knowledge retrieval, the architecture decision shouldn't be driven by hype.\n\nIt comes down to risk.\n\nIf your team is querying public knowledge, product docs, or general marketing assets, cloud-based RAG is fast, efficient, and cost-effective. But when you are processing proprietary SOPs, financial ledgers, or confidential client records, data leakage is not an option.\n\nThat is why we design systems like our Air-Gapped RAG Vault. For regulated or secret data, an isolated local vault ensures your documents never leave your secure perimeter while still giving employees instant, accurate answers.\n\nMatch your security architecture to your risk tolerance, not the latest tech trend.\n\n#EjenticAI #RAG #AIAutomation #FutureOfWork #EthicalAI",
+    "citedSourceUrls": [
+      "https://monday.com/blog/ai-agents/ai-agent-frameworks",
+      "https://alpacked.io/blog/llm-deployment-cost-optimization"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-25T13:15:57.929Z"
   }
 }
