@@ -779,5 +779,21 @@
     ],
     "score": 8,
     "createdAt": "2026-09-25T13:15:57.929Z"
+  },
+  "2026-09-25:afternoon": {
+    "date": "2026-09-25",
+    "slot": "afternoon",
+    "cycleDay": 19,
+    "theme": "Security Choices",
+    "pillar": "SHOWCASE",
+    "topic": "From missed message to booked call: anatomy of our lead concierge.",
+    "angle": "Using structured AI frameworks to turn casual visitors into booked calls instead of just chatting.",
+    "xPost": "From missed message to booked call: see how our Inbound Lead Concierge greets visitors 24/7, qualifies intent, and routes high-value leads. Book a free consultation #EjenticAI #AIAgents",
+    "linkedinPost": "A chatbot answers questions. An agent completes work.\n\nHere is the exact anatomy of how our Inbound Lead Concierge takes a visitor from a missed message to a booked call without human friction.\n\nStep one: A potential client lands on your site after hours. Instead of hitting a static contact form, they are greeted instantly by an autonomous agent.\n\nStep two: The agent qualifies intent in real-time, asking the right discovery questions tailored to your business rules.\n\nStep three: Once high-value intent is confirmed, the agent checks availability and seamlessly books the consultation directly into your team's calendar.\n\nStop losing leads to delayed response times. \n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #CustomerExperience #ROI",
+    "citedSourceUrls": [
+      "https://monday.com/blog/ai-agents/ai-agent-frameworks"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-25T17:55:53.845Z"
   }
 }
