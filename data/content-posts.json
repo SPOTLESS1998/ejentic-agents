@@ -795,5 +795,19 @@
     ],
     "score": 8,
     "createdAt": "2026-09-25T17:55:53.845Z"
+  },
+  "2026-09-25:evening": {
+    "date": "2026-09-25",
+    "slot": "evening",
+    "cycleDay": 19,
+    "theme": "Security Choices",
+    "pillar": "INSPIRE",
+    "topic": "David Chen on the unglamorous work: logs, retries, uptime.",
+    "angle": "Connecting the rigorous, unglamorous engineering work of managing system reliability and uptime to the broader vision of ethical, human-centric AI infrastructure.",
+    "xPost": "Reliability isn't flashy. As our Chief Architect David Chen says, it’s a thousand boring decisions done right—logs, retries, and uptime. That’s how we build AI systems Africa can trust. #EjenticAI #AIAgents",
+    "linkedinPost": "Everyone wants to talk about the brilliance of frontier models. Few want to talk about the logs, the retries, and the silent failures at 3 AM.\n\nOur Chief Architect, David Chen, puts it best: reliability is a thousand boring decisions done right. When you are building autonomous agents and enterprise workflows that businesses depend on every single day, magic isn't enough. You need resilience.\n\nThat unglamorous work is the foundation of ethical, human-centric AI. If our systems aren't stable, predictable, and secure, they aren't serving our people. We believe Africa can lead the world in AI—not just through bold vision, but through rigorous engineering that respects data and earns trust.\n\nWhat is the most critical unglamorous system check your team runs every week?\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-09-25T21:28:06.133Z"
   }
 }
