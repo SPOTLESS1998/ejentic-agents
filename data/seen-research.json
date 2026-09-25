@@ -578,5 +578,15 @@
     "firstSeen": "2026-09-23T12:26:14.247Z",
     "label": "RESEARCH",
     "title": "How to optimize your LLM costs (5 best practices) - Merge.dev"
+  },
+  "https://monday.com/blog/ai-agents/ai-agent-frameworks": {
+    "firstSeen": "2026-09-25T12:25:29.424Z",
+    "label": "RESEARCH",
+    "title": "AI agent frameworks that actually work for cross-functional teams in 2026"
+  },
+  "https://alpacked.io/blog/llm-deployment-cost-optimization": {
+    "firstSeen": "2026-09-25T12:25:29.424Z",
+    "label": "RESEARCH",
+    "title": "LLM Deployment Cost Optimization in 2026 - Alpacked"
   }
 }
