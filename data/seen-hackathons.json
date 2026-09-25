@@ -233,5 +233,20 @@
     "firstSeen": "2026-09-23T12:47:07.585Z",
     "label": "HACKATHON",
     "title": "Find a Project - ETHGlobal"
+  },
+  "https://www.encodeclub.com/programmes/kites-hackathon-ai-agentic-economy": {
+    "firstSeen": "2026-09-25T12:48:23.670Z",
+    "label": "HACKATHON",
+    "title": "Kite AI Global Hackathon 2026 - Encode Club"
+  },
+  "https://www.kaggle.com/competitions/ai-builder-hackathon-2026": {
+    "firstSeen": "2026-09-25T12:48:23.670Z",
+    "label": "HACKATHON",
+    "title": "# AI Builder Hackathon 2026 | Kaggle"
+  },
+  "https://hackindia.org/2026/hackindia-ai-web3-builders-hackathon-2026": {
+    "firstSeen": "2026-09-25T12:48:23.670Z",
+    "label": "HACKATHON",
+    "title": "HackIndia AI & Web3 Builders Hackathon 2026"
   }
 }
