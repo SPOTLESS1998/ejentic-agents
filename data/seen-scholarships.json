@@ -558,5 +558,15 @@
     "firstSeen": "2026-09-24T12:07:30.486Z",
     "label": "SCHOLARSHIP",
     "title": "Apply for a Unicaf Scholarship"
+  },
+  "https://www.applykite.com/search/scholarships/master/all/computer-science": {
+    "firstSeen": "2026-09-26T11:42:51.446Z",
+    "label": "SCHOLARSHIP",
+    "title": "Master's Scholarships in computer science - ApplyKite"
+  },
+  "https://www.lanternpost.org/30-fully-funded-masters-scholarships-for-international-students-in-2026": {
+    "firstSeen": "2026-09-26T11:42:51.446Z",
+    "label": "SCHOLARSHIP",
+    "title": "30 Fully Funded Master's Scholarships for International ..."
   }
 }
