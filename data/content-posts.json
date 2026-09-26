@@ -825,5 +825,22 @@
     ],
     "score": 9,
     "createdAt": "2026-09-26T12:41:45.590Z"
+  },
+  "2026-09-26:afternoon": {
+    "date": "2026-09-26",
+    "slot": "afternoon",
+    "cycleDay": 20,
+    "theme": "Clean Inputs, Trustworthy Outputs",
+    "pillar": "SHOWCASE",
+    "topic": "Workflow automation in the wild: Stripe + CRM + LLM, revisited step-by-step.",
+    "angle": "Using clean inputs, strict data hygiene, and structured pipelines (Stripe + CRM + LLM) to turn messy enterprise workflows into efficient, measurable ROI.",
+    "xPost": "Clean inputs mean trustworthy outputs. See how our Stripe + CRM + LLM pipeline automates invoicing and reconciliation while cutting errors. Watch agents in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAutomation",
+    "linkedinPost": "A large language model on its own is just answering prompts. To actually run work across your business, you need structure around the model: memory, reasoning, tools, and orchestration.\n\nThat is why enterprise automation requires clean inputs and rigorous data hygiene. Take our Stripe + CRM + LLM workflow integration as an example. Instead of letting different departments rack up unmonitored token spend or messy manual data entry, we build reliable pipelines for invoicing, lead routing, and reconciliation.\n\nBy treating every transaction with control and clear logic, businesses cut error rates, reduce turnaround time, and turn unpredictable cloud costs into measurable return on investment.\n\nBook a free consultation\n\n#EjenticAI #AIAutomation #FutureOfWork #ROI #AIExplained",
+    "citedSourceUrls": [
+      "https://monday.com/blog/ai-agents/ai-agent-frameworks",
+      "https://alpacked.io/blog/llm-deployment-cost-optimization"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-26T17:04:51.607Z"
   }
 }
