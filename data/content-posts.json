@@ -874,5 +874,21 @@
     ],
     "score": 9,
     "createdAt": "2026-09-27T13:32:25.263Z"
+  },
+  "2026-09-27:afternoon": {
+    "date": "2026-09-27",
+    "slot": "afternoon",
+    "cycleDay": 21,
+    "theme": "Radical Transparency",
+    "pillar": "SHOWCASE",
+    "topic": "Cost design: how we keep agents inside free tiers without cutting corners.",
+    "angle": "Frugal engineering as craft keeps our autonomous agents efficient by focusing on cost per successful outcome and strict token hygiene.",
+    "xPost": "Inference inflation is real. We design autonomous agents to stay lean through batched AI calls, smart verification, and strict token hygiene—keeping costs predictable without cutting corners. #EjenticAI #AIAutomation",
+    "linkedinPost": "In 2026, many companies fear the invoice more than falling behind on AI. Uncontrolled token waste and rising inference costs can quickly turn an enterprise deployment into a financial black hole if token hygiene isn't enforced.\n\nAt Ejentic AI, our Chief Architect David Chen builds for resilience and efficiency. We treat frugal engineering as a craft. By using batched AI calls, strict verification before spend, and graceful degradation, we keep our autonomous agents and workflows operating efficiently.\n\nThe goal is not just raw token management, but focusing on cost per successful outcome. You pay for results that work, not bloated context windows or runaway queries.\n\nBook a free consultation\n\n#EjenticAI #AIAgents #AIAutomation #ROI #EthicalAI",
+    "citedSourceUrls": [
+      "https://alpacked.io/blog/llm-deployment-cost-optimization"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-27T17:40:51.070Z"
   }
 }
