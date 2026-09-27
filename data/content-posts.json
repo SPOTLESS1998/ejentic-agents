@@ -890,5 +890,19 @@
     ],
     "score": 8,
     "createdAt": "2026-09-27T17:40:51.070Z"
+  },
+  "2026-09-27:evening": {
+    "date": "2026-09-27",
+    "slot": "evening",
+    "cycleDay": 21,
+    "theme": "Radical Transparency",
+    "pillar": "INSPIRE",
+    "topic": "The builders’ roundtable — Sarah, David & Elena on what’s next.",
+    "angle": "Sarah, David, and Elena gather at the builders' roundtable to discuss what's next for Ejentic's ethical, Wakanda-inspired vision of human-centric AI.",
+    "xPost": "At our builders' roundtable, Sarah, David & Elena mapped what's next. True progress isn't just about compute; it's about an ethical, human-centric future shaped by African innovation. #Ejentic #EthicalAI",
+    "linkedinPost": "What happens when builders sit down to chart the future of ethical technology? At our recent roundtable, Sarah, David, and Elena gathered to discuss what's next for Ejentic, looking beyond standard deployments toward a deeply human-centric horizon.\n\nSarah grounded the conversation in natural interaction, reminding us that true technological advancement should feel seamless and intuitive to the communities it serves. David focused on resilient architecture, emphasizing that robust systems must support sustainable growth without compromising core values.\n\nElena anchored the discussion in our moral duty, reinforcing that rigorous evaluation and data sovereignty are non-negotiable foundations for meaningful progress. Together, they reaffirmed our vision: building an ethical, Wakanda-inspired technological ecosystem right here in Africa that respects our data and amplifies our people.\n\nHow is your team shaping the next wave of human-centric innovation?\n\n#Ejentic #EthicalAI #FutureOfWork #AfricanInnovation #TechLeadership",
+    "citedSourceUrls": [],
+    "score": 7,
+    "createdAt": "2026-09-27T21:16:19.028Z"
   }
 }
