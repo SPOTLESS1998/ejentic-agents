@@ -858,5 +858,21 @@
     ],
     "score": 9,
     "createdAt": "2026-09-26T21:02:05.512Z"
+  },
+  "2026-09-27:morning": {
+    "date": "2026-09-27",
+    "slot": "morning",
+    "cycleDay": 21,
+    "theme": "Radical Transparency",
+    "pillar": "EDUCATE",
+    "topic": "Behind the scenes: this very content is co-written by our agents (transparency post).",
+    "angle": "Our daily content pipeline is transparently built using our own research and content generation agents, proving that AI agents complete real operational work when properly orchestrated.",
+    "xPost": "Radical transparency: this post was researched by our web-scraping agent, drafted by our content agent, and reviewed by a human. Our pipeline is our product demo. #EjenticAI #AIAgents",
+    "linkedinPost": "Radical transparency: we believe in showing, not just telling.\n\nThis very post is a live product demo. Every morning, our research agent scans industry developments and technical briefs. From those findings, our content agent drafts the post. Then, a human reviews it for accuracy, voice, and tone before it goes live.\n\nWe don't just build autonomous workflows for clients—we run them ourselves. When you see our content, you are seeing our agentic infrastructure in action.\n\nCurious how autonomous workflows can run securely inside your business? Let's talk.\n\n#EjenticAI #AIAgents #Automation #BuildWithAI",
+    "citedSourceUrls": [
+      "https://monday.com/blog/ai-agents/ai-agent-frameworks"
+    ],
+    "score": 9,
+    "createdAt": "2026-09-27T13:32:25.263Z"
   }
 }
