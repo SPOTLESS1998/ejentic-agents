@@ -904,5 +904,19 @@
     "citedSourceUrls": [],
     "score": 7,
     "createdAt": "2026-09-27T21:16:19.028Z"
+  },
+  "2026-09-28:afternoon": {
+    "date": "2026-09-28",
+    "slot": "afternoon",
+    "cycleDay": 22,
+    "theme": "Cost vs. Investment",
+    "pillar": "SHOWCASE",
+    "topic": "The SME vs. Enterprise Playbook, part 1: quick-win automations for small businesses.",
+    "angle": "SME quick-win automations like inbound lead concierges and invoice pipelines deliver rapid ROI in days rather than months.",
+    "xPost": "Why wait months for software projects? Our Inbound Lead Concierge and automated invoice pipelines go live in days, cutting costs and manual errors immediately. \n\n#EjenticAI #Automation",
+    "linkedinPost": "Enterprise-grade automation isn't just for multinational corporations with massive budgets and lengthy deployment cycles. For growing businesses, the real metric is time-to-value: waiting six months for custom software is a luxury nobody has.\n\nThat is why we built our SME playbook around rapid deployments. Solutions like the Inbound Lead Concierge and automated Stripe-to-CRM invoicing pipelines go live in days, not months. They greet visitors 24/7, qualify intent, and handle reconciliation automatically.\n\nInstead of viewing tech as a heavy capital expense, treat it as an immediate operational upgrade that cuts error rates and turnaround times from day one.\n\nReady to see what goes live this week? Book a free consultation\n\n#EjenticAI #Automation #CustomerExperience #ROI #BuildInNigeria",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-28T20:06:01.851Z"
   }
 }
