@@ -932,5 +932,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-09-28T23:11:56.795Z"
+  },
+  "2026-09-29:afternoon": {
+    "date": "2026-09-29",
+    "slot": "afternoon",
+    "cycleDay": 23,
+    "theme": "The Playbook, Part 2",
+    "pillar": "SHOWCASE",
+    "topic": "The SME vs. Enterprise Playbook, part 2: integrating with bureaucratic legacy systems.",
+    "angle": "Integrating autonomous workflows with bureaucratic legacy systems through a phased, zero-disruption approach.",
+    "xPost": "Legacy systems shouldn't block AI adoption. Our enterprise playbook uses phased pilots and zero-disruption deployment to integrate autonomous workflows into bureaucratic setups safely. Book a free consultation #EjenticAI #AIAgents",
+    "linkedinPost": "Integrating AI into bureaucratic legacy systems requires more than just good code. It demands respect for existing infrastructure and zero operational disruption.\n\nOur enterprise playbook follows a proven path: rigorous technical assessment, controlled phased pilots, and seamless integration with your current stack. As our Chief Architect David Chen emphasizes, resilient systems need graceful degradation and infallible fallbacks—especially when bridging old software with modern LLM pipelines.\n\nWhether you need custom CRM-to-Stripe automation or an Air-Gapped RAG Vault for secure internal document querying, we deploy enterprise AI without breaking your current workflow. \n\nBook a free consultation\n\n#EjenticAI #Automation #AIAutomation #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-09-29T18:34:41.992Z"
   }
 }
