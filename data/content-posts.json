@@ -976,5 +976,21 @@
     ],
     "score": 9,
     "createdAt": "2026-09-30T14:37:59.724Z"
+  },
+  "2026-09-30:afternoon": {
+    "date": "2026-09-30",
+    "slot": "afternoon",
+    "cycleDay": 24,
+    "theme": "Proof Before Promise",
+    "pillar": "SHOWCASE",
+    "topic": "Case walkthrough: from first call to working agent in 30 days.",
+    "angle": "Proof Before Promise: Walking through a 30-day engagement model from first call to a secure, working agent with clear guardrails.",
+    "xPost": "Gartner says 40% of agentic AI projects will fail by 2027 from poor risk controls. Here is how we build custom agents with strict guardrails in 30 days. Proof before promise. Book a free consultation",
+    "linkedinPost": "Many enterprise AI projects fail before they even hit production because of unclear business value and inadequate risk controls. Gartner notes that poor guardrails sink deployments long before technical bugs do.\n\nThat is why at Ejentic AI, we believe in Proof Before Promise. Our end-to-end engagement takes you from first discovery call to a working, secure agent in just 30 days.\n\nPhase one focuses on architecture and alignment—defining clear goals, mapping your private data, and establishing the exact guardrails our Chief Architect David Chen demands for resilient systems. Phase two builds your custom solution, whether that is an Air-Gapped RAG Vault for internal SOPs or a multilingual customer service agent.\n\nPhase three involves rigorous evaluation before shipping, ensuring bias checks and data hygiene as Elena Rodriguez leads our responsible AI standards. By day 30, your team is trained and your workflows are automated.\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #EthicalAI",
+    "citedSourceUrls": [
+      "https://www.voiceflow.com/blog/ai-agents"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-30T18:24:17.029Z"
   }
 }
