@@ -960,5 +960,21 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-09-29T22:10:15.866Z"
+  },
+  "2026-09-30:morning": {
+    "date": "2026-09-30",
+    "slot": "morning",
+    "cycleDay": 24,
+    "theme": "Proof Before Promise",
+    "pillar": "EDUCATE",
+    "topic": "Why we show demos before we show decks.",
+    "angle": "Using research on enterprise AI project failures to emphasize why Ejentic AI prioritizes watchable prototypes and open demos over pitch decks.",
+    "xPost": "Why do 40% of agentic AI projects get canceled before production? Because claims are cheap. That is why we show working demos before pitch decks. Watch our multilingual support agents in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "Why do over 40% of enterprise agentic AI projects fail or get canceled before hitting production? Often, it is because decisions are made on pitch decks rather than working proof.\n\nClaims are easy to write in a slide deck. But an autonomous agent that handles live context, respects guardrails, and completes business processes requires actual engineering.\n\nAt Ejentic AI, our team believes in proof before promise. Our Chief Architect, David Chen, designs for resilience and graceful fallbacks, while our Lead ML Engineer, Elena Rodriguez, runs rigorous evaluations before anything ships.\n\nInstead of asking you to trust a theoretical presentation, we let you test the work yourself. Watch our multilingual support agent demo here: https://youtu.be/gbXhZMTdnkM\n\nWhat is the most common reason you have seen technology projects stall out during procurement?\n\n#EjenticAI #AIAgents #Automation #EthicalAI #FutureOfWork",
+    "citedSourceUrls": [
+      "https://www.voiceflow.com/blog/ai-agents"
+    ],
+    "score": 9,
+    "createdAt": "2026-09-30T14:37:59.724Z"
   }
 }
