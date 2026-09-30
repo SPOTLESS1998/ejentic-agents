@@ -1243,25 +1243,25 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/atlassian/ai-productivity-lead-sales-development": {
-    "firstSeen": "2026-09-20T11:27:50.028Z",
+    "firstSeen": "2026-09-30T12:37:30.026Z",
     "label": "JOB",
     "title": "AI Productivity Lead, Sales Development",
     "kind": "screened"
   },
   "https://remotive.com/remote-jobs/artificial-intelligence/senior-ai-engineer-2091131": {
-    "firstSeen": "2026-09-20T11:27:50.028Z",
+    "firstSeen": "2026-09-30T12:37:30.026Z",
     "label": "JOB",
     "title": "Senior AI Engineer",
     "kind": "screened"
   },
   "lead:kobotoolbox": {
-    "firstSeen": "2026-09-20T11:27:52.382Z",
+    "firstSeen": "2026-09-30T12:37:30.610Z",
     "label": "LEAD",
     "title": "KoboToolbox",
     "kind": "screened"
   },
   "lead:sanctuary computer inc": {
-    "firstSeen": "2026-09-20T11:27:52.382Z",
+    "firstSeen": "2026-09-30T12:37:30.610Z",
     "label": "LEAD",
     "title": "Sanctuary Computer Inc",
     "kind": "screened"
@@ -1273,7 +1273,7 @@
     "kind": "reported"
   },
   "lead:kpi solutions": {
-    "firstSeen": "2026-09-20T11:27:52.382Z",
+    "firstSeen": "2026-09-30T12:37:30.610Z",
     "label": "LEAD",
     "title": "KPI Solutions",
     "kind": "screened"
@@ -1318,6 +1318,12 @@
     "firstSeen": "2026-09-29T12:56:44.775Z",
     "label": "LEAD",
     "title": "SIHO Insurance Services",
+    "kind": "screened"
+  },
+  "https://www.themuse.com/jobs/libertymutualinsurance/analyst-data-science-personal-lines-auto-modeling": {
+    "firstSeen": "2026-09-30T12:37:30.026Z",
+    "label": "JOB",
+    "title": "Analyst, Data Science, Personal Lines Auto Modeling",
     "kind": "screened"
   }
 }
