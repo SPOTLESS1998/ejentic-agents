@@ -992,5 +992,21 @@
     ],
     "score": 8,
     "createdAt": "2026-09-30T18:24:17.029Z"
+  },
+  "2026-09-30:evening": {
+    "date": "2026-09-30",
+    "slot": "evening",
+    "cycleDay": 24,
+    "theme": "Proof Before Promise",
+    "pillar": "INSPIRE",
+    "topic": "Direct CTA: Bring us your ugliest process. The one everyone hates.",
+    "angle": "Using responsible, human-centric evaluation to tackle the ugliest enterprise processes first instead of chasing overhyped AI projects.",
+    "xPost": "Gartner says 40% of agentic AI projects fail before production due to poor risk controls. Stop chasing hype. Bring us your ugliest process—the one everyone hates. The worst process is the best first project. #EjenticAI #Automation",
+    "linkedinPost": "Most enterprise AI projects do not fail because the technology is flawed. They fail in procurement because nobody asked what happens when an agent is wrong in front of a customer, or why they are trying to automate a shiny process instead of fixing a broken one.\n\nAt Ejentic AI, our Lead ML Engineer Elena Rodriguez champions responsible AI: evaluation, bias checks, and data hygiene before shipping anything. AI should augment our people, not replace them, and it must respect our data.\n\nThat is why we believe in proof before promise. Do not start with your cleanest workflow. Bring us your ugliest process. The one everyone in your office hates, the manual bottleneck that wastes hours every single week.\n\nThe worst process is always the best first project.\n\n#EjenticAI #AIAgents #Automation #EthicalAI #FutureOfWork",
+    "citedSourceUrls": [
+      "https://www.voiceflow.com/blog/ai-agents"
+    ],
+    "score": 8,
+    "createdAt": "2026-09-30T22:09:33.815Z"
   }
 }
