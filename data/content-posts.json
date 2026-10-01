@@ -1022,5 +1022,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-01T15:07:09.267Z"
+  },
+  "2026-10-01:afternoon": {
+    "date": "2026-10-01",
+    "slot": "afternoon",
+    "cycleDay": 25,
+    "theme": "Objections, Answered",
+    "pillar": "SHOWCASE",
+    "topic": "\"We tried a chatbot and it embarrassed us\" — why agent design makes the difference.",
+    "angle": "Explaining how rigorous design, evals, and graceful escalation prevent the embarrassing hallucinations of off-the-shelf chatbots, turning AI into reliable enterprise infrastructure.",
+    "xPost": "\"We tried a chatbot and it embarrassed us.\" Off-the-shelf bots fail because they lack proper evals, tone control, and human escalation. Real autonomous agents require rigorous design, guardrails, and seamless handoffs. #EjenticAI #AIAgents",
+    "linkedinPost": "\"We tried a chatbot and it embarrassed us.\" It is the most common reason enterprise leaders write off AI. The culprit is almost always a rigid, off-the-shelf bot shipped without rigorous evaluation, tone controls, or proper escalation paths.\n\nAs our Lead ML Engineer Elena Rodriguez champions, responsible AI requires evaluation before shipping, strict bias checks, and treating data hygiene as a moral duty. Chief Architect David Chen also builds for failure with resilient systems that feature graceful degradation and human handoffs.\n\nA designed autonomous agent does not just guess answers. It knows when it is out of its depth, logs complaints accurately, and routes high-value prospects to your human sales team seamlessly.\n\nStop settling for bots that damage your brand trust. Build robust, human-centric systems with Ejentic AI.\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #EthicalAI #CustomerExperience",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-01T18:48:40.409Z"
   }
 }
