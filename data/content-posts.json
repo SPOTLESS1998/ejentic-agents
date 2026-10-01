@@ -1036,5 +1036,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-01T18:48:40.409Z"
+  },
+  "2026-10-01:evening": {
+    "date": "2026-10-01",
+    "slot": "evening",
+    "cycleDay": 25,
+    "theme": "Objections, Answered",
+    "pillar": "INSPIRE",
+    "topic": "Direct CTA: A 30-minute conversation, zero obligation.",
+    "angle": "Connecting the vision of ethical, human-centric African innovation directly to a zero-obligation conversation about AI integration.",
+    "xPost": "AI should respect our cultures and augment our people, not replace them. We're building ethical systems rooted in African strength. Let's have a 30-minute conversation, zero obligation. #EjenticAI #BuildInNigeria",
+    "linkedinPost": "We believe Africa can lead the world in AI. Not by copying Silicon Valley, but by building ethical, human-centric systems that speak our languages, respect our data, and augment our people instead of replacing them.\n\nFrom autonomous multilingual customer-service agents in English, Nigerian Pidgin, Hausa, Yoruba, and Igbo to secure internal RAG vaults, technology should feel like an extension of our communities.\n\nElena Rodriguez, our Lead ML Engineer, treats data hygiene and bias checks as a moral duty. Sarah Jenkins designs conversations, not screens, so AI feels invisible and effortless.\n\nIf you want to explore how autonomous agents and workflows can fit your operations, let us connect for a 30-minute conversation, zero obligation.\n\n#EjenticAI #AfricanTech #EthicalAI #BuildWithAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-01T22:37:05.280Z"
   }
 }
