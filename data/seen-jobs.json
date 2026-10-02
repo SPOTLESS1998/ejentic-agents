@@ -1129,7 +1129,7 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/crowdstrike/software-engineer-product-security-security-automation-remote": {
-    "firstSeen": "2026-09-22T11:41:42.198Z",
+    "firstSeen": "2026-10-02T12:38:24.874Z",
     "label": "JOB",
     "title": "Software Engineer, Product Security - Security Automation (Remote)",
     "kind": "screened"
@@ -1153,13 +1153,13 @@
     "kind": "screened"
   },
   "lead:thatchers cider": {
-    "firstSeen": "2026-09-22T11:41:49.252Z",
+    "firstSeen": "2026-10-02T12:38:25.422Z",
     "label": "LEAD",
     "title": "Thatchers Cider",
     "kind": "screened"
   },
   "lead:copenhagen optimization": {
-    "firstSeen": "2026-09-22T11:41:49.252Z",
+    "firstSeen": "2026-10-02T12:38:25.422Z",
     "label": "LEAD",
     "title": "Copenhagen Optimization",
     "kind": "screened"
@@ -1342,6 +1342,12 @@
     "firstSeen": "2026-10-01T13:19:32.279Z",
     "label": "JOB",
     "title": "Staff Forward Deployed Engineer",
+    "kind": "screened"
+  },
+  "lead:toptal": {
+    "firstSeen": "2026-10-02T12:38:25.422Z",
+    "label": "LEAD",
+    "title": "Toptal",
     "kind": "screened"
   }
 }
