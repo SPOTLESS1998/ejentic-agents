@@ -1078,5 +1078,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-02T22:06:22.456Z"
+  },
+  "2026-10-03:morning": {
+    "date": "2026-10-03",
+    "slot": "morning",
+    "cycleDay": 27,
+    "theme": "Who This Is For",
+    "pillar": "EDUCATE",
+    "topic": "The businesses we serve best — and the ones we honestly refer elsewhere.",
+    "angle": "Transparency builds trust: defining who benefits from Ejentic AI agents and who we honestly refer elsewhere.",
+    "xPost": "Not every business needs autonomous AI agents today. We serve scaling teams with high-volume customer touchpoints or complex internal data silos. If you just need a basic static chatbot, we will gladly point you elsewhere. Honesty builds better tech. #EjenticAI #AIAgents",
+    "linkedinPost": "One of the hardest parts of building an AI integration agency is knowing when to say no. Trust comes from honesty, not selling tools to businesses that aren't ready.\n\nAt Ejentic AI, we serve scaling businesses with high-volume customer inquiries across multiple channels, or teams bogged down by manual document searches and repetitive lead generation.\n\nIf you have clear processes, repetitive workflows, and data you need secured in an air-gapped vault, autonomous agents will transform your operations. Watch our multilingual support agents in action here: https://youtu.be/gbXhZMTdnkM\n\nIf you are a very early-stage solo venture looking for a basic static chatbot, or your team isn't ready to integrate automated workflows into daily operations, we will honestly refer you elsewhere. AI should augment your people, not add unnecessary complexity.\n\nWho on your team spends the most time on repetitive operational tasks?\n\n#EjenticAI #AIAgents #Automation #EthicalAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-03T13:02:41.299Z"
   }
 }
