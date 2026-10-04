@@ -1171,19 +1171,19 @@
     "kind": "screened"
   },
   "https://remotive.com/remote-jobs/artificial-intelligence/ai-response-evaluator-2091126": {
-    "firstSeen": "2026-09-24T11:48:57.648Z",
+    "firstSeen": "2026-10-04T12:24:15.062Z",
     "label": "JOB",
     "title": "AI Response Evaluator",
     "kind": "screened"
   },
   "lead:imerit technology": {
-    "firstSeen": "2026-09-24T11:48:58.274Z",
+    "firstSeen": "2026-10-04T12:24:15.550Z",
     "label": "LEAD",
     "title": "iMerit Technology",
     "kind": "screened"
   },
   "lead:law offices of sabrina li": {
-    "firstSeen": "2026-09-24T11:48:58.274Z",
+    "firstSeen": "2026-10-04T12:24:15.550Z",
     "label": "LEAD",
     "title": "Law Offices of Sabrina Li",
     "kind": "screened"
@@ -1297,7 +1297,7 @@
     "kind": "screened"
   },
   "https://remoteok.com/remote-jobs/remote-technical-product-manager-ai-stockbroking-app-bjak-1137421": {
-    "firstSeen": "2026-09-24T11:48:57.648Z",
+    "firstSeen": "2026-10-04T12:24:15.062Z",
     "label": "JOB",
     "title": "Technical Product Manager AI Stockbroking App",
     "kind": "screened"
@@ -1348,6 +1348,12 @@
     "firstSeen": "2026-10-02T12:38:25.422Z",
     "label": "LEAD",
     "title": "Toptal",
+    "kind": "screened"
+  },
+  "https://www.themuse.com/jobs/gitlab/ai-transformation-owner-product-design": {
+    "firstSeen": "2026-10-04T12:24:15.062Z",
+    "label": "JOB",
+    "title": "AI Transformation Owner, Product & Design",
     "kind": "screened"
   }
 }
