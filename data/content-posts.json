@@ -1122,5 +1122,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-10-03T21:07:06.012Z"
+  },
+  "2026-10-04:morning": {
+    "date": "2026-10-04",
+    "slot": "morning",
+    "cycleDay": 28,
+    "theme": "Weekly Recap — The Partnership Week",
+    "pillar": "EDUCATE",
+    "topic": "Recap: seven days of straight talk about ROI, objections, and readiness.",
+    "angle": "Reflecting on a week of straight talk about AI ROI, debunking objections, and building true partnerships over pitches.",
+    "xPost": "Is your business ready for AI, or just buying the hype? This week we broke down real ROI, tackled hard objections, and explored what true tech partnership looks like. Real systems require real readiness. #EjenticAI #AIAgents",
+    "linkedinPost": "Are you implementing AI for the right reasons, or just chasing the hype? \n\nThis week at Ejentic AI, we spent seven days having straight conversations about what it actually takes to bring autonomous agents and workflows into a business. We looked past the buzzwords to focus on what matters: real ROI, addressing valid operational objections, and evaluating true organizational readiness.\n\nAI is not a magic fix for broken processes. It is a tool that requires clear strategy, data hygiene, and a foundation of partnership rather than a quick software pitch. When Elena Rodriguez, our Lead ML Engineer, talks about responsible AI, she emphasizes that evaluation and guardrails come long before deployment. That means knowing where automation helps and where human oversight is essential.\n\nThank you to everyone who joined the conversation this week. Building robust systems means asking the tough questions upfront.\n\nWhat is the biggest hurdle your team faces when evaluating new automation tools?\n\n#EjenticAI #AIAgents #Automation #EthicalAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-04T13:41:55.576Z"
   }
 }
