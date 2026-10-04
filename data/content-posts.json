@@ -1136,5 +1136,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-04T13:41:55.576Z"
+  },
+  "2026-10-04:afternoon": {
+    "date": "2026-10-04",
+    "slot": "afternoon",
+    "cycleDay": 28,
+    "theme": "Weekly Recap — The Partnership Week",
+    "pillar": "SHOWCASE",
+    "topic": "What an Ejentic partnership actually looks like: phases, check-ins, results.",
+    "angle": "Connecting our partnership framework (phases, check-ins, results) to enterprise adoption and technical delivery.",
+    "xPost": "What does an Ejentic partnership look like? We map your workflows, deploy custom autonomous agents or Air-Gapped RAG vaults, and optimize continuously. Real systems, real support. Book a free consultation #EjenticAI #Automation",
+    "linkedinPost": "When companies adopt AI, the biggest fear is getting abandoned with a complex, unmanageable system. At Ejentic AI, we built our partnership model to solve that exact problem.\n\nAn Ejentic partnership is not just a software handoff. It starts with a rigorous audit of your operations, followed by custom deployment—whether you need autonomous multilingual customer service agents that speak Pidgin, Hausa, Yoruba, Igbo, and English, secure Air-Gapped RAG vaults for internal SOPs, or full enterprise automation pipelines.\n\nOur operating model focuses on the relationship, not just the code. We establish clear check-ins, train your team directly, and provide managed AI retainers to ensure long-term optimization. Elena Rodriguez's focus on responsible AI evaluation before shipping means your systems are vetted for data hygiene and reliability from day one.\n\nReady to see how a structured AI integration transforms your operations? Watch our support agent demo here: https://youtu.be/gbXhZMTdnkM\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #AfricanTech #AIAutomation",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 8,
+    "createdAt": "2026-10-04T17:27:02.073Z"
   }
 }
