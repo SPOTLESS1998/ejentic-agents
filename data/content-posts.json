@@ -1152,5 +1152,19 @@
     ],
     "score": 8,
     "createdAt": "2026-10-04T17:27:02.073Z"
+  },
+  "2026-10-04:evening": {
+    "date": "2026-10-04",
+    "slot": "evening",
+    "cycleDay": 28,
+    "theme": "Weekly Recap — The Partnership Week",
+    "pillar": "INSPIRE",
+    "topic": "Direct CTA: The last push of partnership week — book your slot.",
+    "angle": "Closing Partnership Week with a vision of ethical, human-centric African innovation, inviting businesses to book their consultation.",
+    "xPost": "As Partnership Week closes, we reflect on building AI that speaks our languages and respects our data. The future is human-centric. Book a free consultation #EjenticAI #AfricanTech",
+    "linkedinPost": "As we close out Partnership Week, we have been thinking deeply about what it means to build technology that truly serves us. At Ejentic AI, our vision is rooted right here in Nigeria — building ethical, human-centric systems that speak our languages, respect our data, and augment our people instead of replacing them.\n\nTechnology should feel invisible and effortless, like a natural conversation. That is why Sarah Jenkins, David Chen, and Elena Rodriguez built our autonomous agents and secure RAG vaults with resilience, rigorous data hygiene, and deep cultural resonance in mind.\n\nThis week was about forging partnerships with businesses ready to step into that future. If you want to integrate autonomous workflows, customer service agents that speak Nigerian Pidgin, Hausa, Yoruba, Igbo, and English, or secure internal vaults without losing the human touch, your window to join us is open.\n\nBook a free consultation\n\n#EjenticAI #NigeriaTech #AfricanTech #BuildWithAI #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-10-04T21:15:39.859Z"
   }
 }
