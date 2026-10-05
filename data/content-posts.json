@@ -1182,5 +1182,19 @@
     ],
     "score": 8,
     "createdAt": "2026-10-05T16:48:34.640Z"
+  },
+  "2026-10-05:evening": {
+    "date": "2026-10-05",
+    "slot": "evening",
+    "cycleDay": 29,
+    "theme": "Where This Is Going",
+    "pillar": "INSPIRE",
+    "topic": "A reflection on the Ejentic AI mission — how far we’ve come and where we are taking Nigeria.",
+    "angle": "Reflecting on the Ejentic AI mission to lead the world in ethical, human-centric AI starting from Nigeria.",
+    "xPost": "When we started Ejentic AI, our vision was clear: build systems that respect our data, speak our languages, and augment our people. This journey isn't just commercial—it's national. Here is to where we are taking Nigeria. #EjenticAI #NigeriaTech",
+    "linkedinPost": "When we started Ejentic AI, we didn't set out to copy Silicon Valley. Our vision was rooted in something much deeper: a belief that Africa, starting right here in Nigeria, can lead the world in artificial intelligence.\n\nFrom day one, our mission has been to build ethical, human-centric systems that speak our languages—from Nigerian Pidgin to Hausa, Yoruba, and Igbo—and respect our data. We are building technology that augments our people instead of replacing them.\n\nLooking back at how far we've come, the journey has always been about more than just business. It is a national mission. Led by Sarah's obsession with invisible, effortless UX, David's demand for resilient systems, and Elena's commitment to responsible AI, we are shaping a future where technology serves our communities on our own terms.\n\nThis is only the beginning. Where do you see the greatest opportunity for homegrown AI in Nigeria over the next five years?\n\n#EjenticAI #NigeriaTech #AfricanTech #WakandaForever #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-05T23:59:35.174Z"
   }
 }
