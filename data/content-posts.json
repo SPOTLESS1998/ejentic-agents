@@ -1210,5 +1210,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-06T14:45:13.289Z"
+  },
+  "2026-10-06:afternoon": {
+    "date": "2026-10-06",
+    "slot": "afternoon",
+    "cycleDay": 30,
+    "theme": "The Grand Finale",
+    "pillar": "SHOWCASE",
+    "topic": "The ultimate pitch for the Ejentic Academy — train your team on real AI systems.",
+    "angle": "Upskilling teams through the Ejentic Academy bridges the gap between fear and fluency in adopting autonomous agents and workflows.",
+    "xPost": "Fear of AI holds teams back. The Ejentic Academy bridges the gap between fear and fluency by training your people on real autonomous agents and workflows. Build internal capability, don't just outsource. Book a free consultation #EjenticAI #AIAgents",
+    "linkedinPost": "The biggest barrier to enterprise AI adoption is not the technology itself. It is the gap between fear and fluency among your team members. Organizations often deploy powerful autonomous agents and automated workflows, but leave their internal staff guessing how to interact with and manage them.\n\nThat is why we built the Ejentic Academy. We train your team on real AI systems—from multilingual customer-service agents to secure internal knowledge vaults and custom automation pipelines. Instead of creating dependence on external vendors, our hands-on training equips your people to understand, trust, and leverage AI effectively.\n\nUpskilling is the true bridge to scaling efficiently. When your team speaks the language of modern automation, error rates drop and turnaround times shrink, all while augmenting your people instead of replacing them.\n\nReady to transform your workforce into an AI-fluent organization? Book a free consultation\n\n#EjenticAI #AIAgents #Automation #FutureOfWork #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-06T18:52:44.871Z"
   }
 }
