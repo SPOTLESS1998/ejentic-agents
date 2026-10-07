@@ -1254,5 +1254,19 @@
     ],
     "score": 8,
     "createdAt": "2026-10-07T19:18:46.652Z"
+  },
+  "2026-10-07:evening": {
+    "date": "2026-10-07",
+    "slot": "evening",
+    "cycleDay": 1,
+    "theme": "The Grand Introduction",
+    "pillar": "INSPIRE",
+    "topic": "The Wakanda Vision — why we believe Africa has what it takes to lead the world in technology, starting in Nigeria.",
+    "angle": "Framing our foundational belief that Africa, starting in Nigeria, will lead the global AI revolution through ethical, human-centric systems rather than mere imitation.",
+    "xPost": "We don’t need to copy Silicon Valley. Africa—starting right here in Nigeria—has what it takes to lead the world in AI. By building ethical, human-centric systems that speak our languages and respect our data, we augment our people instead of replacing them. #EjenticAI",
+    "linkedinPost": "There is a persistent myth that the future of technology is written in just one corner of the world. We reject that entirely.\n\nAt Ejentic AI, our vision is inspired by a future where Africa leads the global AI landscape. Not by copying Silicon Valley, but by building ethical, human-centric systems rooted right here in Nigeria.\n\nWe believe in technology that speaks our languages, respects our data, and amplifies our people instead of replacing them. This is about building autonomous agents and workflows that honor our culture while solving real operational challenges for businesses.\n\nThe future of AI is human-centric. And it is being built right here.\n\n#EjenticAI #NigeriaTech #AfricanTech #BuildInNigeria #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-07T23:00:42.777Z"
   }
 }
