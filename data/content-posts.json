@@ -1282,5 +1282,21 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-10-08T15:13:41.805Z"
+  },
+  "2026-10-08:afternoon": {
+    "date": "2026-10-08",
+    "slot": "afternoon",
+    "cycleDay": 2,
+    "theme": "The Holistic Approach",
+    "pillar": "SHOWCASE",
+    "topic": "What is \"Adaptogenic AI\"? Our philosophy of building resilient AI systems that adapt to market changes, not rigid deployments.",
+    "angle": "Introducing Adaptogenic AI as our philosophy for resilient enterprise automation, replacing rigid bots with systems that adapt to market shifts.",
+    "xPost": "Rigid bots break when markets shift. We build Adaptogenic AI: resilient autonomous agents designed to adapt, not fail. See our multilingual support agents in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "Most enterprise AI deployments fail because they are built like glass: rigid, brittle, and unable to handle real-world variance. When market conditions shift, static prompts and hardcoded workflows break.\n\nAt Ejentic AI, we build 'Adaptogenic AI'—our philosophy of creating resilient autonomous systems that adapt to market changes rather than requiring constant manual rewrites. Led by Chief Architect David Chen, our systems are engineered with robust fallbacks, graceful degradation, and continuous context handling.\n\nWhether you need the Air-Gapped RAG Vault for secure internal knowledge retrieval, our Inbound Lead Concierge for 24/7 qualification, or multilingual support agents handling English, Pidgin, Hausa, Yoruba, and Igbo, your infrastructure should flex, not fracture.\n\nWatch our multilingual support agents in action here: https://youtu.be/gbXhZMTdnkM\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #AIAutomation #FutureOfWork",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 9,
+    "createdAt": "2026-10-08T19:14:50.581Z"
   }
 }
