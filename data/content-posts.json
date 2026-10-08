@@ -1268,5 +1268,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-07T23:00:42.777Z"
+  },
+  "2026-10-08:morning": {
+    "date": "2026-10-08",
+    "slot": "morning",
+    "cycleDay": 2,
+    "theme": "The Holistic Approach",
+    "pillar": "EDUCATE",
+    "topic": "Why tech needs a \"herbalist\" approach — we look at businesses as ecosystems, diagnosing root causes before prescribing AI.",
+    "angle": "Why tech needs a herbalist approach: diagnosing business root causes before prescribing AI rather than rushing into tool adoption.",
+    "xPost": "Why does tech need a herbalist approach? Because prescribing AI without diagnosing root causes is just expensive guesswork. Look at businesses as ecosystems first. #EjenticAI #AI",
+    "linkedinPost": "Why does technology need a herbalist approach?\n\nIn many traditional practices, a good herbalist doesn't just hand you a random root when you cough. They look at your whole body, your environment, and your daily habits to find the root cause.\n\nToo many companies treat AI the opposite way. They grab the newest tool off the shelf because it is trending, hoping it fixes a broken process. That is like putting a plaster on a deep infection.\n\nAt Ejentic AI, we look at businesses as living ecosystems. Before we build a single autonomous workflow or deploy a multilingual customer service agent, we diagnose the actual bottlenecks.\n\nIs your team drowning in repetitive data entry because of bad SOPs? Is your lead generation failing due to poor messaging or lack of reach? \n\nDiagnosis before prescription. That is the whole point of building sustainable tech.\n\nHow does your team evaluate a new tool before bringing it in?\n\n#EjenticAI #AIAgents #Automation #EthicalAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-10-08T15:13:41.805Z"
   }
 }
