@@ -1298,5 +1298,19 @@
     ],
     "score": 9,
     "createdAt": "2026-10-08T19:14:50.581Z"
+  },
+  "2026-10-08:evening": {
+    "date": "2026-10-08",
+    "slot": "evening",
+    "cycleDay": 2,
+    "theme": "The Holistic Approach",
+    "pillar": "INSPIRE",
+    "topic": "Data Nurturing (Soil Quality) — your AI is only as good as your data, and why we prioritize data hygiene.",
+    "angle": "Connecting data nurturing to soil quality and ethical, human-centric AI development rooted in Africa",
+    "xPost": "Your AI is only as good as its soil. Data hygiene isn't just technical—it's a moral duty. Treat your data like living earth, and your autonomous systems will actually nurture your people. #EjenticAI #EthicalAI",
+    "linkedinPost": "In farming, the soil decides the harvest. You can plant the finest seed, but if the earth is dry and poisoned, nothing grows.\n\nThe same goes for intelligence. We talk endlessly about autonomous agents, workflows, and pipelines, but we forget the ground they grow in. Your AI is only as good as your data.\n\nAt Ejentic AI, we believe data hygiene is a moral duty, not just a cleanup chore. As Elena Rodriguez reminds us, responsible systems require rigorous evaluation and clean inputs long before anything ships.\n\nIf we want African innovation to lead the world—starting here in Nigeria—we cannot build on fractured, toxic data. We must cultivate information that respects our people, protects our privacy, and honors our stories.\n\nThe soil decides the harvest. What are you planting today?\n\n#EjenticAI #EthicalAI #RAG #AfricanInnovation #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-08T23:16:06.018Z"
   }
 }
