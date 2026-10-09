@@ -1340,5 +1340,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-09T18:45:29.700Z"
+  },
+  "2026-10-09:evening": {
+    "date": "2026-10-09",
+    "slot": "evening",
+    "cycleDay": 3,
+    "theme": "The Problem with Basic AI",
+    "pillar": "INSPIRE",
+    "topic": "Digital Detox & Pruning — streamline existing processes and cut redundant software before adding AI.",
+    "angle": "Using the 2026 small business AI growth insight to highlight the counter-intuitive wisdom that dropping redundant software and fixing process chaos must come before adding intelligence.",
+    "xPost": "AI on top of broken workflows just automates the chaos. Before you add tools, prune the redundant software and detox your processes. AI amplifies what is already there. Fix the foundation first. #EjenticAI #AIAgents",
+    "linkedinPost": "There is a rush to layer AI onto every existing process because 2026 is a defining era for small business growth engines. But here is the counter-intuitive truth: AI on top of chaos just automates the chaos.\n\nBefore you adopt new tools, you need a digital detox. Prune the redundant software, audit your manual bottlenecks, and streamline your underlying workflows. If your current systems are broken, artificial intelligence will only speed up the mistakes.\n\nAt Ejentic AI, our Chief Architect David Chen is obsessed with resilient, seamless systems because technology should never hide bad foundations. We believe in building ethical, human-centric workflows that augment our people instead of replacing them.\n\nSimplify first. Automate second.\n\nHow is your team decluttering your tech stack this season?\n\n#EjenticAI #AIAgents #Automation #EthicalAI #FutureOfWork",
+    "citedSourceUrls": [
+      "https://www.uschamber.com/co/run/technology/ai-powered-growth-engines"
+    ],
+    "score": 8,
+    "createdAt": "2026-10-09T22:33:28.410Z"
   }
 }
