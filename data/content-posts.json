@@ -1326,5 +1326,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-09T14:58:53.509Z"
+  },
+  "2026-10-09:afternoon": {
+    "date": "2026-10-09",
+    "slot": "afternoon",
+    "cycleDay": 3,
+    "theme": "The Problem with Basic AI",
+    "pillar": "SHOWCASE",
+    "topic": "Introducing the Air-Gapped RAG Vault — our internal knowledge base offer: employees query private SOPs securely.",
+    "angle": "Introducing the Air-Gapped RAG Vault as a secure alternative to basic AI, transforming enterprise search from hidden SOPs to instant answers without data leaks, using local vector embeddings and strict network isolation.",
+    "xPost": "Basic AI risks your data. The Air-Gapped RAG Vault gives your team instant access to private SOPs via local vector embeddings and complete network isolation. Before: SOPs lost in drawers. After: secure answers in seconds. Book a consultation. #EjenticAI #RAG",
+    "linkedinPost": "Most companies want to leverage AI for internal knowledge, but generic tools risk leaking private documents to external model providers. That is why we built the Air-Gapped RAG Vault.\n\nWe engineered this system to run entirely on isolated infrastructure, utilizing local vector embeddings so your data never touches the public internet. Instead of keeping standard operating procedures locked away in static folders, your employees can securely query private internal documents in real time.\n\nThe operational shift is stark: searching through endless shared drives that take minutes to navigate, versus receiving precise answers in seconds with cryptographic proof of zero data leaks.\n\nHow is your team currently handling secure internal search for sensitive SOPs?\n\n#EjenticAI #AIAgents #RAG #FutureOfWork #EnterpriseSecurity",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-09T18:45:29.700Z"
   }
 }
