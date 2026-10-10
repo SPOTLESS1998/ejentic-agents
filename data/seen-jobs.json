@@ -25,14 +25,16 @@
     "title": "Principal Machine Learning Engineer (MLE)"
   },
   "lead:credit wellness, llc": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
+    "firstSeen": "2026-10-10T12:35:07.301Z",
     "label": "LEAD",
-    "title": "Credit Wellness, LLC"
+    "title": "Credit Wellness, LLC",
+    "kind": "screened"
   },
   "lead:unio digital": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
+    "firstSeen": "2026-10-10T12:35:07.301Z",
     "label": "LEAD",
-    "title": "Unio Digital"
+    "title": "Unio Digital",
+    "kind": "reported"
   },
   "lead:creative force": {
     "firstSeen": "2026-08-10T15:30:02.030Z",
@@ -40,19 +42,22 @@
     "title": "Creative Force"
   },
   "lead:iapwe": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
+    "firstSeen": "2026-10-10T12:35:07.301Z",
     "label": "LEAD",
-    "title": "IAPWE"
+    "title": "IAPWE",
+    "kind": "screened"
   },
   "lead:coalition technologies": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
+    "firstSeen": "2026-10-10T12:35:07.301Z",
     "label": "LEAD",
-    "title": "Coalition Technologies"
+    "title": "Coalition Technologies",
+    "kind": "screened"
   },
   "lead:lemon.io": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
+    "firstSeen": "2026-10-10T12:35:07.301Z",
     "label": "LEAD",
-    "title": "Lemon.io"
+    "title": "Lemon.io",
+    "kind": "screened"
   },
   "lead:workada": {
     "firstSeen": "2026-08-10T15:30:02.030Z",
@@ -65,9 +70,10 @@
     "title": "Outsite"
   },
   "lead:telus digital": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
+    "firstSeen": "2026-10-10T12:35:07.301Z",
     "label": "LEAD",
-    "title": "TELUS Digital"
+    "title": "TELUS Digital",
+    "kind": "screened"
   },
   "lead:tribe wellness": {
     "firstSeen": "2026-08-10T15:30:02.030Z",
@@ -80,9 +86,10 @@
     "title": "STATLINX"
   },
   "lead:a.team": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
+    "firstSeen": "2026-10-10T12:35:07.301Z",
     "label": "LEAD",
-    "title": "A.Team"
+    "title": "A.Team",
+    "kind": "screened"
   },
   "lead:garden3d": {
     "firstSeen": "2026-08-10T15:30:02.030Z",
@@ -90,9 +97,10 @@
     "title": "garden3d"
   },
   "lead:mitre media": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
+    "firstSeen": "2026-10-10T12:35:07.301Z",
     "label": "LEAD",
-    "title": "Mitre Media"
+    "title": "Mitre Media",
+    "kind": "screened"
   },
   "lead:clipster": {
     "firstSeen": "2026-08-10T15:30:02.030Z",
@@ -180,9 +188,10 @@
     "title": "Healthcare Data Scientist"
   },
   "https://www.themuse.com/jobs/gitlab/ai-transformation-owner-cro": {
-    "firstSeen": "2026-08-10T16:23:45.713Z",
+    "firstSeen": "2026-10-10T12:35:05.837Z",
     "label": "JOB",
-    "title": "AI Transformation Owner, CRO"
+    "title": "AI Transformation Owner, CRO",
+    "kind": "screened"
   },
   "https://www.themuse.com/jobs/generalmotors/staff-software-engineer-machine-learning": {
     "firstSeen": "2026-08-10T16:23:45.713Z",
@@ -1372,6 +1381,18 @@
     "firstSeen": "2026-10-06T13:20:51.090Z",
     "label": "LEAD",
     "title": "Fortanix",
+    "kind": "screened"
+  },
+  "https://www.themuse.com/jobs/liftoff/machine-learning-engineer-f6d7cf": {
+    "firstSeen": "2026-10-10T12:35:05.837Z",
+    "label": "JOB",
+    "title": "Machine Learning Engineer ",
+    "kind": "screened"
+  },
+  "lead:fuel50": {
+    "firstSeen": "2026-10-10T12:35:07.301Z",
+    "label": "LEAD",
+    "title": "Fuel50",
     "kind": "screened"
   }
 }
