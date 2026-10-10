@@ -1370,5 +1370,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-10-10T14:14:15.759Z"
+  },
+  "2026-10-10:afternoon": {
+    "date": "2026-10-10",
+    "slot": "afternoon",
+    "cycleDay": 4,
+    "theme": "Bridging the Cultural Gap",
+    "pillar": "SHOWCASE",
+    "topic": "Showcase: Localized Multilingual Agents — our bots that fluently speak Pidgin, Hausa, Yoruba, and Igbo.",
+    "angle": "Using our multilingual localized agents to bridge cultural gaps and scale customer engagement natively in English, Nigerian Pidgin, Hausa, Yoruba, and Igbo.",
+    "xPost": "Ready to scale customer support across Nigeria? Our autonomous multilingual agents fluently speak Pidgin, Hausa, Yoruba, and Igbo to greet, answer, and capture leads 24/7. Watch them in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #NigeriaTech",
+    "linkedinPost": "Enterprise customer service in Africa needs to reflect the linguistic diversity of our markets. Too many businesses lose valuable prospects because their digital touchpoints only speak one language.\n\nAt Ejentic AI, we built localized multilingual agents that fluently converse in English, Nigerian Pidgin, Hausa, Yoruba, and Igbo. They integrate smoothly into websites, apps, and social channels to greet clients, answer questions, log complaints, and capture leads around the clock.\n\nWhen your systems speak the language of your customers, trust grows and operational friction drops. It is about building technology that respects our data and augments our people.\n\nWatch our multilingual agents in action here: https://youtu.be/gbXhZMTdnkM\n\nHow is your current customer support handling linguistic diversity across your markets?\n\n#EjenticAI #AIAgents #NigeriaTech #AfricanTech #CustomerExperience",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-10T17:47:46.896Z"
   }
 }
