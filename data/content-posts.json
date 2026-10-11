@@ -1398,5 +1398,19 @@
     "citedSourceUrls": [],
     "score": null,
     "createdAt": "2026-10-10T21:32:49.471Z"
+  },
+  "2026-10-11:morning": {
+    "date": "2026-10-11",
+    "slot": "morning",
+    "cycleDay": 5,
+    "theme": "The Invisible Hand of Automation",
+    "pillar": "EDUCATE",
+    "topic": "How much time do you spend copy-pasting? An interactive post about mundane administrative tasks.",
+    "angle": "Demystifying administrative friction by highlighting the hidden time cost of manual copy-pasting and routine workflows.",
+    "xPost": "How much of your workday vanishes into copy-pasting data between spreadsheets, CRMs, and invoices? The invisible hand of automation shouldn't replace your team—it should take over the clipboard. #EjenticAI #Automation",
+    "linkedinPost": "How much of your day actually goes into high-value work, versus simple administrative copy-pasting?\n\nIf you track the hours, a shocking amount of time gets lost moving data between spreadsheets, updating CRMs, and manually routing emails. It feels productive because you are working, but it is mechanical execution disguised as business operations.\n\nThe invisible hand of automation isn't about replacing people. It is about removing the repetitive friction that exhausts your team.\n\nWhen systems talk to each other seamlessly, those manual loops disappear. Your people get back to strategy, client relationships, and actual problem-solving.\n\nWhat is one repetitive task you would gladly hand off to a background workflow today?\n\n#EjenticAI #AIAgents #Automation #FutureOfWork #AIAutomation",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-10-11T14:39:13.405Z"
   }
 }
