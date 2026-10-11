@@ -1412,5 +1412,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-10-11T14:39:13.405Z"
+  },
+  "2026-10-11:afternoon": {
+    "date": "2026-10-11",
+    "slot": "afternoon",
+    "cycleDay": 5,
+    "theme": "The Invisible Hand of Automation",
+    "pillar": "SHOWCASE",
+    "topic": "Enterprise Workflow Automation — case study: connecting Stripe, a CRM, and an LLM to automate invoicing and lead routing.",
+    "angle": "Connecting technical architecture to real enterprise ROI through a concrete automation walkthrough of Stripe, CRM, and LLM pipelines.",
+    "xPost": "What does enterprise automation actually look like? We connect Stripe, your CRM, and LLM pipelines to handle invoicing, lead routing, and reconciliation automatically. Cut errors and turnaround time. \n\n#EjenticAI #Automation",
+    "linkedinPost": "When people hear \"automation,\" they often picture basic IF-THEN triggers that break the moment a workflow gets complicated. That is not what we build at Ejentic AI.\n\nHere is what actual enterprise workflow automation looks like in practice. Our Chief Architect, David Chen, focuses on resilient systems with built-in fallbacks. A prime example is our custom pipeline connecting Stripe, your CRM, and an LLM.\n\nWhen a payment clears in Stripe, the event triggers an LLM-powered pipeline. The system parses invoice details, updates your CRM records instantly, categorizes the transaction, and routes high-value leads directly to the right human sales rep—all without manual data entry.\n\nThis architecture cuts operational costs, eliminates human error rates in billing, and drastically reduces turnaround time for incoming prospects.\n\nIf you want to move beyond basic scripts and build resilient, revenue-generating workflows, let's talk. Book a free consultation\n\n#EjenticAI #Automation #AIAutomation #ROI #EnterpriseAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-11T18:00:28.561Z"
   }
 }
