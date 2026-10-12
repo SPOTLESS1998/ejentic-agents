@@ -1440,5 +1440,22 @@
     "citedSourceUrls": [],
     "score": 7,
     "createdAt": "2026-10-11T21:48:24.112Z"
+  },
+  "2026-10-12:morning": {
+    "date": "2026-10-12",
+    "slot": "morning",
+    "cycleDay": 6,
+    "theme": "Demystifying the Buzzwords",
+    "pillar": "EDUCATE",
+    "topic": "AI Glossary: What is a \"Vector Database\"? A simple, visual explanation of how we store company knowledge (Pinecone/pgvector).",
+    "angle": "Demystifying AI buzzwords by explaining vector databases through a simple library analogy, grounded in the context of effective enterprise knowledge management.",
+    "xPost": "What is a vector database? Think of it like a library that searches by meaning, not spelling. It's how we store company knowledge so AI systems actually understand context. #EjenticAI #AIAgents",
+    "linkedinPost": "Ever wondered how AI systems instantly find the exact internal document or SOP your team is looking for without needing exact keywords?\n\nIt comes down to a fundamental piece of architecture: the vector database (like Pinecone or pgvector).\n\nThink of a vector database like a massive, highly organized library. But instead of organizing books by alphabetical order or exact spelling, it organizes them by meaning.\n\nConcepts that mean similar things are placed close to each other on the shelves. When your internal AI queries your company knowledge base, it isn't just matching strings of text. It is navigating this semantic map to retrieve the exact context needed to answer accurately.\n\nGood AI integration isn't just about the model you choose; it's about how cleanly you structure and store your company's data.\n\nHow is your team handling internal knowledge retrieval right now?\n\n#EjenticAI #AIAgents #RAG #AIExplained #FutureOfWork",
+    "citedSourceUrls": [
+      "https://monday.com/blog/ai-agents/ai-agent-frameworks",
+      "https://alpacked.io/blog/llm-deployment-cost-optimization"
+    ],
+    "score": 8,
+    "createdAt": "2026-10-12T17:23:48.030Z"
   }
 }
