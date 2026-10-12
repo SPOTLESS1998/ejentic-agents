@@ -1138,7 +1138,7 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/crowdstrike/software-engineer-product-security-security-automation-remote": {
-    "firstSeen": "2026-10-02T12:38:24.874Z",
+    "firstSeen": "2026-10-12T15:29:43.882Z",
     "label": "JOB",
     "title": "Software Engineer, Product Security - Security Automation (Remote)",
     "kind": "screened"
@@ -1162,13 +1162,13 @@
     "kind": "screened"
   },
   "lead:thatchers cider": {
-    "firstSeen": "2026-10-02T12:38:25.422Z",
+    "firstSeen": "2026-10-12T15:29:44.383Z",
     "label": "LEAD",
     "title": "Thatchers Cider",
     "kind": "screened"
   },
   "lead:copenhagen optimization": {
-    "firstSeen": "2026-10-02T12:38:25.422Z",
+    "firstSeen": "2026-10-12T15:29:44.383Z",
     "label": "LEAD",
     "title": "Copenhagen Optimization",
     "kind": "screened"
@@ -1336,7 +1336,7 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/sonatype/data-engineer-7d1f58": {
-    "firstSeen": "2026-10-01T13:19:32.279Z",
+    "firstSeen": "2026-10-12T15:29:43.882Z",
     "label": "JOB",
     "title": "Data Engineer",
     "kind": "screened"
@@ -1348,13 +1348,13 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/gitlab/staff-forward-deployed-engineer-c40f2f": {
-    "firstSeen": "2026-10-01T13:19:32.279Z",
+    "firstSeen": "2026-10-12T15:29:43.882Z",
     "label": "JOB",
     "title": "Staff Forward Deployed Engineer",
     "kind": "screened"
   },
   "lead:toptal": {
-    "firstSeen": "2026-10-02T12:38:25.422Z",
+    "firstSeen": "2026-10-12T15:29:44.383Z",
     "label": "LEAD",
     "title": "Toptal",
     "kind": "screened"
@@ -1411,6 +1411,18 @@
     "firstSeen": "2026-10-11T12:53:27.916Z",
     "label": "LEAD",
     "title": "Tether Operations Limited",
+    "kind": "screened"
+  },
+  "lead:hunt st": {
+    "firstSeen": "2026-10-12T15:29:44.383Z",
+    "label": "LEAD",
+    "title": "Hunt St",
+    "kind": "screened"
+  },
+  "lead:deuna": {
+    "firstSeen": "2026-10-12T15:29:44.383Z",
+    "label": "LEAD",
+    "title": "DEUNA",
     "kind": "screened"
   }
 }
