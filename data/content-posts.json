@@ -1457,5 +1457,19 @@
     ],
     "score": 8,
     "createdAt": "2026-10-12T17:23:48.030Z"
+  },
+  "2026-10-13:evening": {
+    "date": "2026-10-13",
+    "slot": "evening",
+    "cycleDay": 7,
+    "theme": "Weekly Recap & Engagement",
+    "pillar": "INSPIRE",
+    "topic": "The Week Ahead — a teaser of next week’s discussions, focusing on specific industry use-cases.",
+    "angle": "Closing week 1 with our foundational vision of human-centric, ethical African AI, and teasing industry-specific agent use-cases for week 2.",
+    "xPost": "As week 1 wraps up, we remember why we build: AI that speaks our languages and augments our people. Next week, we dive deep into specific industry use-cases for autonomous agents. #EjenticAI #AfricanTech",
+    "linkedinPost": "As we wrap up our first week exploring autonomous agents and workflows, it is worth grounding ourselves in the 'why' behind Ejentic AI.\n\nWe believe Africa — starting right here in Nigeria — can lead the world in AI. Not by copying Silicon Valley, but by building ethical, human-centric systems that speak our languages, respect our data, and augment our people instead of replacing them.\n\nTechnology should feel invisible and effortless, built on resilient architecture and responsible engineering from day one.\n\nLooking ahead, next week we are shifting from our foundations into practical action. We will be breaking down specific industry use-cases for autonomous agents, showing exactly how businesses can deploy multilingual support, secure RAG vaults, and automated workflows in their specific sectors.\n\nWhat industry are you most eager to see transformed by AI next?\n\n#EjenticAI #NigeriaTech #AfricanTech #FutureOfWork #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-13T00:32:43.801Z"
   }
 }
