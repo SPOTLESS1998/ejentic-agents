@@ -30,6 +30,7 @@ import { loadSeen, saveSeen, normalizeUrl, isSuppressed, type SeenMap } from '..
 import { candidateSummary, CANDIDATE } from '../context/candidate.js';
 import { ejenticSummary, EJENTIC } from '../context/ejentic.js';
 import { optionalEnv } from '../lib/env.js';
+import { appendRun } from '../lib/runlog.js';
 
 const SEEN_PATH = 'data/seen-jobs.json';
 
@@ -69,6 +70,11 @@ const LEAD_KEYWORDS = ['customer support', 'customer service', 'support speciali
 const MAX_JOBS = Number(optionalEnv('MAX_JOBS', '4'));
 const MAX_LEADS = Number(optionalEnv('MAX_LEADS', '4'));
 const CONFIDENCE_FLOOR = 55; // Gemini must be at least this sure before we report.
+
+// How many candidates actually reached Gemini this run. Incremented inside
+// run(), read when writing the reason. Without it, "the boards had nothing new"
+// and "it all matched nothing" produce the same log line — see RunEntry.screened.
+let screenedCount = 0;
 
 type Label = 'JOB' | 'LEAD';
 
@@ -305,6 +311,7 @@ async function run(label: Label, candidatesAll: Candidate[], cap: number, seen: 
   const fresh = candidatesAll.filter((c) => !isSuppressed(seen[seenKey(label, c)], now)).slice(0, 45);
   console.log(`[${label}] ${candidatesAll.length} found, ${fresh.length} eligible; screening…`);
   if (fresh.length === 0 || quotaExhausted()) return [];
+  screenedCount += fresh.length;
 
   // ONE Gemini call screens + drafts for the whole batch. If it throws (quota /
   // network) it propagates to safeRun and nothing below runs — so nothing is
@@ -363,11 +370,19 @@ async function main() {
   // Never let one label's failure (e.g. AI quota) kill the whole run — the user
   // should always get a Telegram message, even if it's just "couldn't finish".
   let degraded = false;
+  // Passes that threw. Kept separately from `degraded` because `degraded` is set
+  // only for quota errors, and an auth failure is not a quota error. Without
+  // this, a dead API key produces a run that reports "nothing today" — which is
+  // indistinguishable from a genuinely quiet day, and stays that way forever.
+  const aborted: string[] = [];
   const safeRun = async (label: Label, cands: Candidate[], cap: number): Promise<Confirmed[]> => {
     try {
       return await run(label, cands, cap, seen);
     } catch (e) {
       if (isQuotaError(e)) degraded = true;
+      // Collapse to one bounded line: the underlying message is a multi-line
+      // JSON blob, and the log renders one line per failure.
+      aborted.push(`${label}: ${(e as Error).message.replace(/\s+/g, ' ').trim().slice(0, 180)}`);
       console.error(`[${label}] aborted: ${(e as Error).message}`);
       return [];
     }
@@ -399,6 +414,29 @@ async function main() {
   }
 
   console.log(`\nDone. Jobs: ${jobs.length}, Leads: ${leads.length}. Seen-store size: ${Object.keys(seen).length}.`);
+
+  // Write the run to the fleet log. This is the only place the fleet's history
+  // is recorded, and it is what keeps "quiet today" distinguishable from "broke
+  // three weeks ago" — a zero from either looks identical in Telegram. appendRun
+  // refuses dry runs itself and never throws, so it needs no guard here.
+  appendRun({
+    agent: 'job',
+    found: jobCands.length + leadCands.length,
+    screened: screenedCount,
+    reported: all.length,
+    degraded,
+    aborted,
+    reason:
+      all.length > 0
+        ? undefined
+        : aborted.length > 0
+          ? 'A pass threw before it could screen anything — this zero is not real information.'
+          : degraded
+            ? 'AI quota ran out mid-run — this zero is not real information.'
+            : screenedCount === 0
+              ? 'Nothing was screened: every candidate the boards returned was already in the seen-store. This zero says there was nothing NEW, not that nothing matched.'
+              : 'Nothing passed screening and link verification today.',
+  });
 }
 
 main().catch((e) => {

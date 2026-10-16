@@ -15,6 +15,7 @@
 import { geminiJSON, quotaExhausted, isQuotaError } from '../lib/gemini.js';
 import { resolveChatId, sendMessage, esc } from '../lib/telegram.js';
 import { loadSeen, saveSeen, normalizeUrl, type SeenMap } from '../lib/store.js';
+import { appendRun } from '../lib/runlog.js';
 import { gatherSearch, isLive, cleanText, type Finding } from '../lib/websearch.js';
 import { flattenUntrusted } from '../lib/jobboards.js';
 import { ejenticSummary } from '../context/ejentic.js';
@@ -124,10 +125,16 @@ function render(c: Confirmed): string {
 }
 
 // --- Orchestration ----------------------------------------------------------
+// How many candidates actually reached Gemini this run (see RunEntry.screened).
+// Without it, "the sources had nothing new" and "it all matched nothing" write
+// the same log line, and they need opposite fixes.
+let screenedCount = 0;
+
 async function run(items: Finding[], cap: number, seen: SeenMap): Promise<Confirmed[]> {
   const fresh = items.filter((c) => !seen[normalizeUrl(c.url)]).slice(0, 45);
   console.log(`${items.length} found, ${fresh.length} new; screening…`);
   if (fresh.length === 0 || quotaExhausted()) return [];
+  screenedCount += fresh.length;
 
   // ONE Gemini call for the whole batch. If it throws, nothing below runs, so
   // nothing is marked seen and the batch is retried next run.
@@ -166,11 +173,16 @@ async function main() {
 
   // Never let a failure leave you with silence — you always get a message.
   let degraded = false;
+  // Passes that threw, kept apart from `degraded`: `degraded` is only set for
+  // quota errors, and an auth failure is not one. Without this, a dead key is
+  // logged as "nothing sent", which reads exactly like a genuinely quiet day.
+  const aborted: string[] = [];
   let items: Confirmed[] = [];
   try {
     items = await run(found, MAX_ITEMS, seen);
   } catch (e) {
     if (isQuotaError(e)) degraded = true;
+    aborted.push((e as Error).message.replace(/\s+/g, ' ').trim().slice(0, 180));
     console.error(`aborted: ${(e as Error).message}`);
   }
   if (quotaExhausted()) degraded = true;
@@ -197,6 +209,26 @@ async function main() {
   }
 
   console.log(`\nDone. Research items: ${items.length}. Seen-store size: ${Object.keys(seen).length}.`);
+
+  // Record the run in the fleet log — see runlog.ts for why a zero needs a reason.
+  appendRun({
+    agent: 'research',
+    found: found.length,
+    screened: screenedCount,
+    reported: items.length,
+    degraded,
+    aborted,
+    reason:
+      items.length > 0
+        ? undefined
+        : aborted.length > 0
+          ? 'A pass threw before it could screen anything — this zero is not real information.'
+          : degraded
+            ? 'AI quota ran out mid-run — this zero is not real information.'
+            : screenedCount === 0
+              ? 'Nothing was screened: every result the search returned was already in the seen-store. This zero says there was nothing NEW, not that nothing matched.'
+              : 'Nothing passed screening today.',
+  });
 }
 
 main().catch((e) => {

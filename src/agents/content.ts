@@ -20,6 +20,7 @@
 import { geminiJSON, quotaExhausted, isQuotaError } from '../lib/gemini.js';
 import { resolveChatId, sendMessage, esc } from '../lib/telegram.js';
 import { loadSeen, saveSeen, type SeenMap } from '../lib/store.js';
+import { appendRun } from '../lib/runlog.js';
 import { appendPost, type ContentPost } from '../lib/content-log.js';
 import { pushToWebsite } from '../lib/ingest-bridge.js';
 import { scrape } from '../lib/firecrawl.js';
@@ -478,6 +479,10 @@ async function main() {
   // 3. Draft, then run the editor pass (judge → one guided rewrite → keep the
   //    higher-scoring of the two). Never leave the human with silence on failure.
   let degraded = false;
+  // Failures other than quota, kept apart from `degraded` — see runlog.ts. A
+  // missed slot is invisible until you notice the feed has a hole in it, so the
+  // reason it failed is the only thing worth reading later.
+  const aborted: string[] = [];
   let draft: Draft | null = null;
   let score: number | null = null;
   try {
@@ -487,6 +492,7 @@ async function main() {
     score = reviewed.score;
   } catch (e) {
     if (isQuotaError(e)) degraded = true;
+    aborted.push((e as Error).message.replace(/\s+/g, ' ').trim().slice(0, 180));
     console.error(`drafting failed: ${(e as Error).message}`);
   }
   if (quotaExhausted()) degraded = true;
@@ -533,6 +539,23 @@ async function main() {
   }
 
   console.log(`\nDone. Slot ${slot} of calendar day ${cycleDay}. Seen-store size: ${Object.keys(seen).length}.`);
+
+  // Record the run in the fleet log. This agent is the one where a silent zero
+  // costs most: a missed slot is invisible until you notice the feed has a hole
+  // in it, so the reason it failed is the only thing worth reading later.
+  appendRun({
+    agent: 'content',
+    reported: draft ? 1 : 0,
+    degraded,
+    aborted,
+    reason: draft
+      ? undefined
+      : aborted.length > 0
+        ? 'Drafting threw for a reason other than quota — see the recorded error.'
+        : degraded
+          ? 'Free-tier AI quota ran out — no draft produced for this slot.'
+          : 'Drafting failed for a reason other than quota.',
+  });
 }
 
 main().catch((e) => {

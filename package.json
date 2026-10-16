@@ -17,7 +17,8 @@
     "typecheck": "tsc --noEmit",
     "injection-test": "tsx src/tools/injectionTest.ts",
     "store-test": "tsx src/tools/storeTest.ts",
-    "content-test": "tsx src/tools/contentTest.ts"
+    "content-test": "tsx src/tools/contentTest.ts",
+    "log-test": "tsx src/tools/runlogTest.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.7"

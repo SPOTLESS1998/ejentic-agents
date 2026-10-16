@@ -15,5 +15,7 @@ profile/*.json
 *.log
 .DS_Store
 
-# NOTE: data/seen-*.json is intentionally NOT ignored — it stores which
-# opportunities were already reported, so it must persist between runs.
+# NOTE: data/seen-*.json, data/content-posts.json and the run log
+# (data/run-log.jsonl + the generated data/AGENT-LOG.md) are intentionally NOT
+# ignored — they are the fleet's memory and its history, and they must persist
+# between runs. The workflows commit data/ back to the repo after each run.

@@ -60,18 +60,20 @@ jobs:
           MAX_HACKATHONS: ${{ vars.MAX_HACKATHONS }}
         run: npm run hackathon
 
-      # Persist the "already reported" memory so tomorrow's run won't repeat itself.
-      - name: Save seen list
+      # Persist the "already reported" memory so tomorrow's run won't repeat itself,
+      # AND the run log (see job-agent.yml for why the log had to be added here:
+      # it was written on the runner and thrown away).
+      - name: Save seen list and run log
         if: always()
         run: |
           # git diff --quiet misses UNTRACKED files (e.g. the very first run,
           # before this file exists in the repo) — use git status instead,
           # which catches both new and modified files.
-          if [ -n "$(git status --porcelain -- data/seen-hackathons.json)" ]; then
+          if [ -n "$(git status --porcelain -- data/seen-hackathons.json data/run-log.jsonl data/AGENT-LOG.md)" ]; then
             git config user.name "ejentic-bot"
             git config user.email "bot@users.noreply.github.com"
-            git add data/seen-hackathons.json
-            git commit -m "chore: update hackathon agent seen list [skip ci]"
+            git add data/seen-hackathons.json data/run-log.jsonl data/AGENT-LOG.md
+            git commit -m "chore: update hackathon agent state [skip ci]"
             # Another agent run may have committed its own state to main while
             # this run was working — rebase on top of it instead of failing the
             # state save (a push race did exactly that to a content run).
