@@ -20,8 +20,8 @@ times because it has three daily slots.
 
 | Agent | Schedule (UTC) | Job | Source |
 |---|---|---|---|
-| `job` | 06:17 daily | Remote roles that fit the candidate, **plus** companies hiring support staff as sales leads for the customer-service agent | The Muse, RemoteOK, Remotive |
-| `scholarship` | 06:37 daily | Scholarships the candidate can actually apply for | Web search |
+| `job` | 06:17 daily | Remote roles that fit the candidate, **plus** companies hiring for work Ejentic sells against | The Muse, RemoteOK, Remotive, Hacker News "Who is hiring?", Jobicy |
+| `scholarship` | 06:37 daily | Fully-funded Master's scholarships in Canada, the USA, New Zealand and China | Web search |
 | `research` | 06:57 daily | Papers and benchmarks worth reading | Web search |
 | `hackathon` | 07:17 daily | Hackathons worth entering | Web search |
 | `content` | 08:03, 13:03, 18:03 daily | One draft post per slot (morning / afternoon / evening) | The research agent's findings |
@@ -168,6 +168,52 @@ impossible.
 
 ---
 
+## The job agent runs two hunts off one fetch
+
+Both hunts read the same pool of postings. They used to fetch separately, which
+was waste — and worse than waste for the lead side, which only ever saw Remotive
+and RemoteOK, so a lead could never come from a US employer.
+
+- **JOB** (`jobCandidates`) — postings whose TITLE announces AI/ML/automation
+  work. These are roles for the candidate.
+- **LEAD** (`leadCandidates`) — companies hiring humans for work an Ejentic agent
+  does. These are buyers.
+
+**The lead compass is `LEAD_SIGNALS`.** It maps a hiring signal to the service
+that answers it — support staff → the support agent, SDRs → the lead-generation
+system, ops/billing/data-entry → automation, documentation → the RAG vault,
+analysts → market analysis, AI roles → consultation. Each lead carries its
+service, and the screening prompt names it so the drafted email opens with the
+right offer. Until 2026-10-16 the only signal was "customer support", so five of
+the six service lines had never produced a single lead.
+
+**Signals match the TITLE, not the description** — same reason the job side does.
+Every company's blurb mentions "customer support" somewhere as a perk, and
+matching prose turns that into a false buy-signal.
+
+### The location rule is three cases, not one
+
+It used to be one line — *drop anything restricted to US-only* — inherited from
+the candidate profile. That filter worked so well the job side went quiet: no US
+role ever reached him, including the US companies that hire worldwide or take
+contractors, which is where the high-paying work is. The rule is now:
+
+1. **Keep** worldwide-remote, or anything open to Africa / Nigeria / EMEA / AMER.
+2. **Keep** US/UK/EU/Canada companies open to international applicants, worldwide
+   remote, or offered as contract/freelance. A US company hiring a contractor
+   does not need to sponsor anyone. **This is the case that was missing.**
+3. **Drop** roles requiring authorisation or residency he does not have: "US
+   only", "US citizens/PRs only", "EU nationals only", onsite with no remote route.
+
+A US city plus "remote"/"worldwide"/"contractor" is case 2, not case 3. When a
+posting is ambiguous, keep it: the digest is a shortlist he reviews, and a
+wrongly-dropped US role is invisible to him.
+
+The same three-way distinction lives in `profile/candidate.json`
+(`locationPreference` + the authorisation dealbreaker). **If you change one,
+change the other** — the profile is fed to the model alongside the prompt, and
+two instructions that disagree produce whichever the model prefers that day.
+
 ## Banked working methods
 
 Dead ends already paid for. Do not re-walk them.
@@ -189,6 +235,26 @@ Dead ends already paid for. Do not re-walk them.
 - **Content is grounded in research.** The content agent reads
   `data/seen-research.json`, which the research agent commits after its run. That
   is the symbiosis: content is written from what was actually found, not invented.
+- **Remotive's free API ignores the search term.** Measured 2026-10-16:
+  `search=ai` and `search=customer support` returned the identical 15 job ids. It
+  is one call, used as a general feed. The code used to call it five times a run
+  (three for jobs, two for leads) for the same page.
+- **Hacker News "Who is hiring?" is the highest-signal source we have, and only
+  the top-level comments are postings.** 111 of 130 top-level comments in the
+  October 2026 thread (85%) use the house `Company | Role | Location` format, so
+  require pipes; replies are mostly job-seekers. Read the header from the RAW
+  text before collapsing whitespace — `stripHtml()` flattens newlines, and doing
+  it first swallowed the whole comment into the location field.
+- **Jobicy is the only source that publishes salary.** `salaryMin`/`salaryMax`
+  are carried into the description, which is what makes a US role worth judging
+  at a glance. Its `geo=usa` filter is a direct request, not a hope.
+- **Scholarship destinations are four, and one of them is weak.** Canada, USA,
+  New Zealand, China. New Zealand's government scheme (Manaaki) is **closed to
+  Nigerians** — verified against nzscholarships.govt.nz 2026-10-16: eligible
+  countries are Pacific nations plus a fixed Asian list, and Africa does not
+  appear. Canada's national Master's awards are domestic-only (CGS-M) or doctoral
+  (Vanier). So for both of those, the route is university-level funding, and the
+  screener is told to drop the closed schemes rather than spend a pick on them.
 
 ---
 

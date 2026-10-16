@@ -4,20 +4,36 @@
 //  Once per run it finds two kinds of opportunity and messages you on Telegram:
 //    • JOB  — remote roles that fit the candidate's profile (from real job boards, so the
 //             links go straight to the actual posting).
-//    • LEAD — businesses actively hiring for customer-support roles: a precise,
-//             honest signal that they could use Ejentic AI's customer-service
-//             agent. Each comes with a ready-to-review draft outreach email.
+//    • LEAD — businesses hiring for work Ejentic already sells against: a precise,
+//             honest signal that they could use one of our agents. Each comes
+//             with a ready-to-review draft outreach email.
 //
 //  Pipeline:  gather (structured APIs)  →  screen with Gemini (cheap batch pass)
 //             →  verify link is live  →  Gemini confirms fit + drafts the email
 //             →  Telegram digest  →  remember what was sent (no duplicates).
 //
 //  It NEVER sends an email itself — it drafts, you review and send.
+//
+//  CHANGED 2026-10-16, because the job side had gone quiet and the lead side
+//  could only ever pitch one of the six things we sell:
+//    1. Both hunts now draw from ONE fetch of the boards. They were separate, so
+//       the lead hunt only ever saw Remotive and RemoteOK — which is why no lead
+//       ever came from a US company.
+//    2. Two US-heavy sources added (Hacker News "Who is hiring?", Jobicy). The
+//       candidate profile said to skip US-only roles, and that filter was working
+//       so well that US employers never appeared at all — including the ones that
+//       hire worldwide. See the LOCATION RULE in screenAndDraft.
+//    3. The lead compass is now every service we sell, not just support. Hiring a
+//       support person signals the support agent; hiring SDRs signals the
+//       lead-generation system; hiring for ops/admin signals automation; and so
+//       on. See LEAD_SIGNALS.
 // =============================================================================
 import {
   remotive,
   remoteOK,
   themuse,
+  jobicy,
+  hackerNewsHiring,
   makeMatcher,
   scrubTrackingBlobs,
   flattenUntrusted,
@@ -63,9 +79,46 @@ const MUSE_LEVELS = ['Entry Level', 'Mid Level'];
 const TITLE_KEYWORDS = ['ai', 'a.i.', 'llm', 'llms', 'genai', 'gen ai', 'generative ai', 'machine learning', 'ml engineer', 'ml scientist', 'automation', 'agentic', 'prompt engineer', 'artificial intelligence', 'nlp', 'chatbot', 'data scientist', 'data science', 'deep learning', 'mlops', 'applied scientist', 'applied ai', 'ai engineer', 'ai developer', 'solutions engineer', 'forward deployed', 'forward-deployed', 'conversational', 'computer vision', 'data engineer', 'research engineer'];
 // Broader set for RemoteOK's tag/keyword filter (tags are curated, so safe).
 const JOB_KEYWORDS = [...TITLE_KEYWORDS, 'agent', 'agents', 'ml', 'rag', 'python', 'langchain'];
-// Companies hiring for these = leads for Ejentic's AI customer-service agent.
-const LEAD_TERMS = ['customer support', 'customer service'];
-const LEAD_KEYWORDS = ['customer support', 'customer service', 'support specialist', 'virtual assistant', 'customer success', 'support agent', 'help desk', 'helpdesk', 'client support'];
+
+// THE LEAD COMPASS. Each entry is a hiring signal mapped to the thing we sell
+// against it. Before 2026-10-16 the lead hunt only knew one signal — "customer
+// support" — so the outreach pitch could only ever be the support agent, and
+// five of our six service lines never produced a single lead. The mapping is
+// what lets the drafted email open with the right offer instead of a generic one.
+//
+// Signals are matched against the POSTING TITLE, not the description, for the
+// same reason the job side screens by title: every company's blurb mentions
+// "customer support" somewhere as a perk, and matching prose turned that into a
+// false buy-signal.
+const LEAD_SIGNALS: { service: string; keywords: string[] }[] = [
+  {
+    service: 'Autonomous multilingual customer-service agent',
+    keywords: ['customer support', 'customer service', 'support specialist', 'support agent', 'help desk', 'helpdesk', 'client support', 'customer success', 'virtual assistant', 'call center', 'call centre'],
+  },
+  {
+    service: 'Autonomous lead-generation and outreach system',
+    keywords: ['sales development', 'business development', 'sdr', 'bdr', 'appointment setter', 'lead generation', 'demand generation', 'outbound'],
+  },
+  {
+    service: 'Custom agentic workflows and enterprise automation',
+    keywords: ['operations', 'data entry', 'back office', 'billing', 'reconciliation', 'invoicing', 'order processing', 'process automation', 'data operations'],
+  },
+  {
+    service: 'The Air-Gapped RAG Vault (internal knowledge base)',
+    keywords: ['documentation', 'technical writer', 'knowledge management', 'internal tools', 'content operations'],
+  },
+  {
+    service: 'AI-powered market analysis and research tools',
+    keywords: ['market research', 'business analyst', 'data analyst', 'competitive intelligence', 'research analyst'],
+  },
+  {
+    service: 'LLM integration and AI strategy (consultation)',
+    keywords: ['artificial intelligence', 'machine learning', 'ai engineer', 'automation engineer', 'digital transformation'],
+  },
+];
+
+// Flat list for the matcher; the service mapping is looked up per posting.
+const LEAD_KEYWORDS = [...new Set(LEAD_SIGNALS.flatMap((s) => s.keywords))];
 
 const MAX_JOBS = Number(optionalEnv('MAX_JOBS', '4'));
 const MAX_LEADS = Number(optionalEnv('MAX_LEADS', '4'));
@@ -84,6 +137,9 @@ interface Candidate {
   description: string;
   company: string;
   location: string;
+  /** LEAD only: the Ejentic service this hiring signal points at. Drives which
+   *  offer the draft email opens with — see LEAD_SIGNALS. */
+  service?: string;
 }
 export type { Candidate };
 
@@ -113,50 +169,63 @@ function boardToCandidate(j: BoardJob): Candidate {
   return { url: j.url, title: j.title, description: j.description, company: j.company, location: j.location };
 }
 
-// --- Step 1: gather candidates from structured job boards -------------------
-async function gatherJobs(): Promise<Candidate[]> {
+// --- Step 1: gather EVERYTHING once -----------------------------------------
+// One fetch, two hunts. Both sides draw from the same pool of postings, because
+// a company hiring support staff is simultaneously a posting worth reading AND a
+// signal worth pitching — and fetching the boards twice for that was waste. It
+// was worse than waste for the lead side: it only ever read Remotive and
+// RemoteOK, so a lead could never come from a US employer, which is exactly the
+// market the outreach is now aimed at.
+async function gatherAll(): Promise<BoardJob[]> {
   const jobs: BoardJob[] = [];
   // The Muse: reliable category+remote filtering (our anchor source), limited
   // to entry/mid seniority so senior-only roles don't crowd out real fits.
   // 4 pages widens the daily pool (AI-title roles are a thin slice of it).
   jobs.push(...(await themuse(MUSE_CATEGORIES, 4, true, MUSE_LEVELS)));
-  // RemoteOK: tech-native, whole-word keyword filtered inside the lib.
-  jobs.push(...(await remoteOK(JOB_KEYWORDS, 40)));
-  // Remotive, added as a THIRD job source (it was previously used only for
-  // leads). Its free API ignores the search term and just returns the latest
-  // ~batch of remote jobs — useless for targeted search, but that is fine here:
-  // we title-filter everything below anyway, so it acts as a general feed of
-  // newly-posted remote roles. Cheap way to add churn to a stale pool.
-  for (const term of ['ai', 'machine learning', 'automation']) {
-    jobs.push(...(await remotive(term, 25)));
-  }
-
-  // Keep only rows whose TITLE announces AI/ML/automation work. Matching the
-  // title (not the whole description) avoids "Java Developer" / "Customs Agent"
-  // roles that merely mention "AI" once in passing.
-  const titleIsAiRole = makeMatcher(TITLE_KEYWORDS);
-  const relevant = jobs.filter((j) => titleIsAiRole(j.title));
-  return dedupeByUrl(relevant).map(boardToCandidate);
+  // RemoteOK: tech-native, whole-word keyword filtered inside the lib. Limit
+  // raised to 60 because it is now the single feed for both hunts (it used to be
+  // 40 for jobs plus a separate 20 for leads).
+  jobs.push(...(await remoteOK(JOB_KEYWORDS, 60)));
+  // Remotive: ONE call. Its free API ignores the search term — measured
+  // 2026-10-16, `search=ai` and `search=customer support` returned the identical
+  // 15 job ids — so this used to be five calls a run (three here, two for leads)
+  // all fetching the same page.
+  jobs.push(...(await remotive('remote', 30)));
+  // The two US-heavy sources, added 2026-10-16. See jobboards.ts for why.
+  jobs.push(...(await hackerNewsHiring(60)));
+  jobs.push(...(await jobicy('usa', 'dev', 50)));
+  return jobs;
 }
 
-async function gatherLeads(): Promise<Candidate[]> {
-  const posts: BoardJob[] = [];
-  for (const term of LEAD_TERMS) posts.push(...(await remotive(term, 12)));
-  posts.push(...(await remoteOK(LEAD_KEYWORDS, 20)));
+/** The JOB hunt: postings whose TITLE announces AI/ML/automation work.
+ *  Matching the title (not the whole description) avoids "Java Developer" /
+ *  "Customs Agent" roles that merely mention "AI" once in passing. */
+function jobCandidates(all: BoardJob[]): Candidate[] {
+  const titleIsAiRole = makeMatcher(TITLE_KEYWORDS);
+  return dedupeByUrl(all.filter((j) => titleIsAiRole(j.title))).map(boardToCandidate);
+}
 
-  // Collapse to one candidate per company; keep the role they're hiring for.
+/** The LEAD hunt: companies hiring for work we already sell against. */
+function leadCandidates(all: BoardJob[]): Candidate[] {
+  const matches = makeMatcher(LEAD_KEYWORDS);
+  // Collapse to one candidate per company, keeping the role they are hiring for
+  // and the service that signal points at.
   const byCompany = new Map<string, Candidate>();
-  for (const j of posts) {
+  for (const j of all) {
+    // Title only — see LEAD_SIGNALS for why prose is not a buy-signal.
+    if (!matches(j.title)) continue;
     const company = j.company.trim();
     if (!company) continue;
     const key = company.toLowerCase();
     if (byCompany.has(key)) continue;
+    const signal = LEAD_SIGNALS.find((s) => makeMatcher(s.keywords)(j.title));
     byCompany.set(key, {
       url: j.url,
       title: company,
       company,
       location: j.location,
       description: `This company is currently hiring for: "${j.title}" (${j.location}). Role details: ${j.description}`,
+      service: signal?.service,
     });
   }
   return [...byCompany.values()];
@@ -188,25 +257,44 @@ export async function screenAndDraft(candidates: Candidate[], label: Label, cap:
   // "99. Dream Role" line and pose as an item we found. flattenUntrusted() forces
   // each value onto one line and strips our label/numbering vocabulary, so the
   // shape of this list is ours alone.
+  // Leads carry the service their hiring signal points at, so the model pitches
+  // the RIGHT offer instead of a generic one. Marked [signals: …] and named in
+  // the criteria below.
   const list = candidates
     .map(
       (c, i) =>
-        `${i}. ${flattenUntrusted(c.title)}${c.company ? ' @ ' + flattenUntrusted(c.company) : ''} [${flattenUntrusted(c.location)}]\n   ${flattenUntrusted(c.description).slice(0, 900)}`,
+        `${i}. ${flattenUntrusted(c.title)}${c.company ? ' @ ' + flattenUntrusted(c.company) : ''} [${flattenUntrusted(c.location)}]` +
+        (c.service ? ` [signals: ${flattenUntrusted(c.service)}]` : '') +
+        `\n   ${flattenUntrusted(c.description).slice(0, 900)}`,
     )
     .join('\n\n');
 
   const context = label === 'JOB' ? candidateSummary() : ejenticSummary();
   const want = cap + 2; // ask for a couple extra; a few links may turn out dead
 
+  // THE LOCATION RULE. Rewritten 2026-10-16. It used to be one line — "drop
+  // anything restricted to US-only" — inherited from the candidate profile, and
+  // it worked so well that the job side went quiet: no US role ever reached him,
+  // including the US companies that hire worldwide or take contractors, which is
+  // where the high-paying work is. The three cases below are the actual
+  // distinction. Case 2 is the one that was missing.
+  const locationRule = [
+    'THREE CASES, and getting the middle one right is the whole point:',
+    '1. KEEP roles open to worldwide / "remote anywhere" applicants, or explicitly open to Africa, Nigeria, EMEA or AMER time zones.',
+    '2. KEEP roles at US / UK / EU / Canada companies that are open to international applicants, are worldwide-remote, or are offered as a contract / contractor / freelance engagement. A US company hiring a contractor does not need the candidate to have US work authorisation, and these are the highest-paying roles available to him.',
+    '3. DROP roles that require authorisation or residency he does not have: "US only", "must be authorised to work in the US", "US citizens/PRs only", "EU nationals only", or onsite in a named city with no remote route.',
+    'A posting that states a US city but also says remote, worldwide or contractor is CASE 2, not case 3 — the location is where the company sits, not a restriction on him. When a posting is ambiguous, prefer keeping it: the digest is a shortlist he reviews, and a wrongly-dropped US role is invisible to him.',
+  ].join(' ');
+
   const criteria =
     label === 'JOB'
-      ? `remote roles that genuinely fit the candidate's stated target roles and strengths (see CONTEXT). LOCATION RULE — ${CANDIDATE.preferences.locationPreference} KEEP roles open worldwide or to the candidate's own region; DROP roles that legally require living in, or holding work authorization for, a specific other country (e.g. "US only", "EU nationals only"). Acceptable arrangements: ${CANDIDATE.preferences.employmentTypes.join(' or ')}. Respect these hard filters: ${CANDIDATE.dealbreakers.join(' ')}`
-      : `companies that could realistically buy an AI customer-service / automation agent from ${EJENTIC.name}. Their hiring of support staff is the buy-signal. DROP staffing agencies, recruiters, and cases where an AI agent clearly wouldn't help.`;
+      ? `remote roles that genuinely fit the candidate's stated target roles and strengths (see CONTEXT). LOCATION RULE — the candidate works from Abuja, Nigeria and needs no sponsorship. ${locationRule} Candidate's own stated preference: ${CANDIDATE.preferences.locationPreference} Acceptable arrangements: ${CANDIDATE.preferences.employmentTypes.join(' or ')}. Respect these hard filters: ${CANDIDATE.dealbreakers.join(' ')}`
+      : `companies that could realistically buy ONE of the services ${EJENTIC.name} sells (see CONTEXT for the full list). Each item is tagged [signals: <service>] — that tag is the offer to lead with, and it is our own annotation, not the poster's words. The buy-signal is that they are hiring humans for work one of our agents does: support staff (support agent), sales development or appointment setters (lead-generation system), operations / billing / data-entry / reconciliation (automation), documentation or knowledge roles (RAG vault), research or analyst roles (market analysis), or AI/ML roles they may not be able to staff (consultation). DROP staffing agencies, recruiters, and companies where an AI agent clearly would not help.`;
 
   const emailInstr =
     label === 'JOB'
       ? `write a concise (<=150 words) personalized APPLICATION email FROM the candidate TO the employer, leading with their most relevant experience, signed "${CANDIDATE.name}".`
-      : `write a concise (<=150 words) personalized COLD OUTREACH email FROM ${EJENTIC.name}: note they're scaling support, offer the autonomous AI customer-service agent to handle volume 24/7, propose a short call. Warm and specific, not spammy. Signed "${CANDIDATE.name}, ${EJENTIC.name}".`;
+      : `write a concise (<=150 words) personalized COLD OUTREACH email FROM ${EJENTIC.name}: name the specific role they are hiring for, note that hiring a person for that work is the expensive version, and offer the service named in that item's [signals: …] tag as the alternative that runs 24/7 without adding headcount. Propose a short call. Warm and specific, not spammy — no generic "I came across your company". Signed "${CANDIDATE.name}, ${EJENTIC.name}".`;
 
   const senderNote =
     label === 'JOB'
@@ -354,8 +442,13 @@ async function main() {
   const chatId = dryRun ? '(dry-run)' : await resolveChatId();
   const seen = loadSeen(SEEN_PATH);
 
+  // ONE fetch of the boards, then both hunts filter that same pool. See
+  // gatherAll() for why this is not two independent gathers any more.
   console.log('Gathering…');
-  const [jobCands, leadCands] = await Promise.all([gatherJobs(), gatherLeads()]);
+  const pool = await gatherAll();
+  const jobCands = jobCandidates(pool);
+  const leadCands = leadCandidates(pool);
+  console.log(`Boards returned ${pool.length} postings → ${jobCands.length} job candidates, ${leadCands.length} lead candidates.`);
 
   // Free diagnostic (no AI): `npm run job -- --list` shows exactly what the job
   // boards returned today, so we can see the raw candidates before screening.
@@ -363,7 +456,7 @@ async function main() {
     console.log(`\nJOBS (${jobCands.length}):`);
     jobCands.forEach((c, i) => console.log(`  ${i}. ${c.title}  @ ${c.company}  [${c.location}]`));
     console.log(`\nLEADS (${leadCands.length}):`);
-    leadCands.forEach((c, i) => console.log(`  ${i}. ${c.company}  — ${c.title}  [${c.location}]`));
+    leadCands.forEach((c, i) => console.log(`  ${i}. ${c.company}  — ${c.title}  [${c.location}]  → ${c.service ?? '(no service mapped)'}`));
     return;
   }
 

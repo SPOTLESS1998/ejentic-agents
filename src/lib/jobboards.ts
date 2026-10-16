@@ -10,6 +10,13 @@
 //  • Remotive  — its free API IGNORES search/category and always returns the latest
 //                ~20 remote jobs. Useless for targeted role search, but perfectly
 //                fine for scanning the latest *support* roles (our lead signal).
+// Added 2026-10-16, both for the same reason — the three above are
+// globally-oriented and under-represent US employers:
+//  • HN       — "Ask HN: Who is hiring?" (monthly). Highest-signal source we have:
+//                house format, salary often stated, US startups. Top-level comments
+//                only — replies are job-seekers, not postings.
+//  • Jobicy   — has a real `geo` filter, so `geo=usa` is a direct request rather
+//                than a hope. The only source that gives us salaryMin/salaryMax.
 const UA = 'Mozilla/5.0 (compatible; EjenticAgent/1.0)';
 
 export interface BoardJob {
@@ -28,17 +35,44 @@ export interface BoardJob {
 // NOTE: this is a CLEANLINESS pass, not a security boundary. It does not remove
 // prompt-injection instructions written in plain English. Anything that reaches
 // a prompt must ALSO go through fenceUntrusted() / flattenUntrusted() below.
+/**
+ * Decode the HTML entities the boards emit. Exported because Hacker News needs
+ * it separately: its comment API returns `&#x27;` for an apostrophe and `&#x2F;`
+ * for a slash, and its `Company | Role | Location` header has to be read BEFORE
+ * whitespace is collapsed (see hackerNewsHiring).
+ */
+export function decodeEntities(s: string): string {
+  return s
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&#39;|&rsquo;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&gt;/g, '>')
+    .replace(/&lt;/g, '<')
+    // Numeric forms. No source emitted these until Hacker News.
+    .replace(/&#x([0-9a-f]{1,6});/gi, (_, hex: string) => fromCodePoint(hex, 16))
+    .replace(/&#(\d{1,7});/g, (_, dec: string) => fromCodePoint(dec, 10));
+}
+
 function stripHtml(s: string): string {
   return scrubTrackingBlobs(
-    s
-      .replace(/<[^>]+>/g, ' ')
-      .replace(/&nbsp;/g, ' ')
-      .replace(/&amp;/g, '&')
-      .replace(/&#39;|&rsquo;/g, "'")
-      .replace(/&quot;/g, '"')
+    decodeEntities(s.replace(/<[^>]+>/g, ' '))
       .replace(/\s+/g, ' ')
       .trim(),
   );
+}
+
+/** Decode one HTML numeric entity, or drop it. Never throws: a scraped page can
+ *  contain any digits at all, and `String.fromCodePoint` throws on an invalid
+ *  one — which would take down the whole gather pass over a single bad byte. */
+function fromCodePoint(digits: string, radix: number): string {
+  const n = parseInt(digits, radix);
+  if (!Number.isFinite(n) || n < 0 || n > 0x10ffff) return '';
+  try {
+    return String.fromCodePoint(n);
+  } catch {
+    return '';
+  }
 }
 
 /**
@@ -293,6 +327,166 @@ export async function remoteOK(keywords: string[], limit = 25): Promise<BoardJob
       if (out.length >= limit) break;
     }
     return out;
+  } catch {
+    return [];
+  }
+}
+
+// --- Hacker News "Who is hiring?" ------------------------------------------
+// Added 2026-10-16. The candidate's profile was written to skip US-only roles,
+// and that filter was working so well the job side went quiet — nothing from the
+// US ever reached him, including the US companies that hire worldwide. RemoteOK,
+// Remotive and The Muse are all globally-oriented feeds that under-represent US
+// employers, so widening the *rule* alone would not have surfaced them. This
+// source is where US startups actually post: one thread a month, hundreds of
+// top-level comments, salary stated as often as not.
+//
+// Two things make it usable rather than noisy:
+//   • The thread has a house format — `Company | Role | Location | Remote |
+//     Salary` — so company/role/location come out structurally instead of being
+//     guessed from prose.
+//   • Only TOP-LEVEL comments are postings. Replies are mostly job-seekers
+//     ("Would you be open to a full-stack engineer…", which was the very first
+//     row we saw), so `parent_id === story id` is the filter that separates a
+//     posting from a candidate.
+// The apply link usually sits inside the comment body, but we deliberately use
+// the HN permalink as the job URL: it always resolves, it can never be a
+// tracking redirect, and the real apply link is still readable in the digest.
+const HN_API = 'https://hn.algolia.com/api/v1';
+
+/** The most recent "Ask HN: Who is hiring?" story, or null if we can't find one. */
+async function latestHiringStory(): Promise<{ id: string; title: string } | null> {
+  try {
+    const res = await fetch(
+      `${HN_API}/search_by_date?query=${encodeURIComponent('"Who is hiring"')}&tags=story&hitsPerPage=20`,
+      { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(15000) },
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    for (const h of data?.hits ?? []) {
+      const title = String(h?.title ?? '');
+      // `search_by_date` returns newest first, so the first match is the current
+      // month's thread. The "Show HN"/analysis posts that mention the same words
+      // are excluded by requiring the thread's exact title shape.
+      if (/^Ask HN: Who is hiring\?/i.test(title) && h?.objectID) {
+        return { id: String(h.objectID), title };
+      }
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Parse one `Company | Role | Location | …` header into its parts.
+ *
+ * The pipe format is a convention rather than a schema, so the question is
+ * whether to be forgiving or strict. Measured on the October 2026 thread: 111 of
+ * 130 top-level comments (85%) use pipes. Of the 19 that do not, the ones that
+ * carry any signal are three first-person job-seeker posts and one comment using
+ * `Company:` labels — no real postings. So strictness costs ~nothing and buys
+ * clean entries, and a lenient fallback actively hurts: it turned
+ * "I'm applying for the Growth Lead role" into a reported opportunity, which
+ * then spends one of the ~20 daily screening slots on a person looking for work.
+ *
+ * Hence: pipes or nothing, and never a first-person opener. A posting speaks as
+ * a company ("We're hiring"), a seeker speaks as an individual ("I'm applying").
+ */
+function parseHiringHeader(firstLine: string): { company: string; title: string; location: string } | null {
+  const clean = firstLine.replace(/^[-*\s]+/, '').trim();
+  if (!clean) return null;
+  if (/^I\b|^I['’]/.test(clean)) return null; // a person, not a posting
+  const parts = clean.split('|').map((p) => p.trim()).filter(Boolean);
+  if (parts.length < 2) return null; // no pipes: not the house format
+  const title = parts[1].slice(0, 160);
+  if (title.length < 3) return null;
+  return {
+    company: parts[0].slice(0, 120),
+    title,
+    // Everything from the third field on, because the remote/onsite and the
+    // work-authorisation restriction are the parts the location rule needs.
+    location: parts.slice(2).join(' | ').slice(0, 200) || 'not stated',
+  };
+}
+
+/** Hacker News "Ask HN: Who is hiring?" — the current month's thread. */
+export async function hackerNewsHiring(limit = 40): Promise<BoardJob[]> {
+  const story = await latestHiringStory();
+  if (!story) return [];
+  try {
+    // 200 is enough to clear the top-level postings (the October 2026 thread had
+    // 395 comments, of which 130 were top-level) and stays a single request.
+    const res = await fetch(`${HN_API}/search?tags=comment,story_${story.id}&hitsPerPage=200`, {
+      headers: { 'User-Agent': UA },
+      signal: AbortSignal.timeout(20000),
+    });
+    if (!res.ok) return [];
+    const data = await res.json();
+    const out: BoardJob[] = [];
+    for (const c of data?.hits ?? []) {
+      if (String(c?.parent_id) !== story.id) continue; // a reply, not a posting
+      const raw = String(c?.comment_text ?? '').replace(/<[^>]+>/g, ' ');
+      // The header must be read BEFORE whitespace is collapsed. stripHtml()
+      // flattens newlines to spaces by design, and running it first turned the
+      // whole comment into "line one" — so `parts.slice(2)` swallowed the entire
+      // body into the location field, and the digest printed a paragraph where
+      // "Remote (US only)" belonged.
+      const firstRawLine = raw.split('\n').map((l) => l.trim()).find((l) => l.length > 0) ?? '';
+      const parsed = parseHiringHeader(decodeEntities(firstRawLine));
+      if (!parsed) continue;
+      const body = stripHtml(raw);
+      if (body.length < 40) continue;
+      const job: BoardJob = {
+        url: `https://news.ycombinator.com/item?id=${c.objectID}`,
+        title: parsed.title,
+        company: parsed.company,
+        location: parsed.location,
+        type: /full-?time/i.test(firstRawLine) ? 'Full-time' : '',
+        description: body.slice(0, 3500),
+      };
+      if (!looksLikeRealJob(job)) continue;
+      out.push(job);
+      if (out.length >= limit) break;
+    }
+    return out;
+  } catch {
+    return [];
+  }
+}
+
+// --- Jobicy ----------------------------------------------------------------
+// Added 2026-10-16, alongside Hacker News, for the same reason: reach US
+// employers. Jobicy exposes a `geo` filter, so `geo=usa` is a direct answer to
+// "widen the search to the USA" rather than a hope that a global feed happens to
+// include them. It also publishes salaryMin/salaryMax/salaryCurrency, which is
+// the only salary data any of our sources provides — worth carrying into the
+// description, because "is this worth applying to" is the question the digest
+// should answer at a glance.
+export async function jobicy(geo = 'usa', tag = 'dev', count = 50): Promise<BoardJob[]> {
+  try {
+    const res = await fetch(
+      `https://jobicy.com/api/v2/remote-jobs?count=${count}&geo=${encodeURIComponent(geo)}&tag=${encodeURIComponent(tag)}`,
+      { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20000) },
+    );
+    if (!res.ok) return [];
+    const data = await res.json();
+    return (data?.jobs ?? [])
+      .map((j: Record<string, any>) => {
+        const salary =
+          j.salaryMin && j.salaryMax
+            ? `Salary: ${j.salaryCurrency || ''} ${j.salaryMin}–${j.salaryMax} ${j.salaryPeriod || ''}. `.replace(/\s+/g, ' ')
+            : '';
+        return {
+          url: String(j.url ?? ''),
+          title: String(j.jobTitle ?? ''),
+          company: String(j.companyName ?? ''),
+          location: String(j.jobGeo ?? 'Remote'),
+          type: Array.isArray(j.jobType) ? j.jobType.join(', ') : String(j.jobType ?? ''),
+          description: salary + stripHtml(String(j.jobDescription || j.jobExcerpt || '')).slice(0, 3500),
+        } satisfies BoardJob;
+      })
+      .filter(looksLikeRealJob);
   } catch {
     return [];
   }

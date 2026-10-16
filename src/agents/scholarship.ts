@@ -1,16 +1,22 @@
 // =============================================================================
 //  SCHOLARSHIP AGENT  (agent #2 of 3)
 //
-//  Once per run it hunts the web for Master's scholarships that fit the
-//  applicant (China-focused, but strong global fully-funded options too) and
-//  messages you on Telegram — each with the link and a short, honest why-it-fits
-//  plus the key facts (funding, deadline, eligibility) it could find.
+//  Once per run it hunts the web for fully-funded Master's scholarships that fit
+//  the applicant and messages you on Telegram — each with the link and a short,
+//  honest why-it-fits plus the key facts (funding, deadline, eligibility) it
+//  could find.
 //
 //  Pipeline (identical shape to the Job agent, so it's just as frugal):
 //    search (Firecrawl) → screen with ONE batched Gemini call → verify link is
 //    live → Telegram digest → remember what was sent (no duplicates).
 //
 //  It NEVER applies for anything — it surfaces opportunities, you decide.
+//
+//  WIDENED 2026-10-16 from China-first to four destinations — Canada, USA, New
+//  Zealand and China. The queries are grouped per country so that adding or
+//  dropping a destination is a one-line edit rather than a rewrite, and so it is
+//  obvious which searches are buying what. Each query is one Firecrawl call, so
+//  the list is kept to two per country: this is the only cost lever here.
 // =============================================================================
 import { geminiJSON, quotaExhausted, isQuotaError } from '../lib/gemini.js';
 import { resolveChatId, sendMessage, esc } from '../lib/telegram.js';
@@ -23,18 +29,65 @@ import { optionalEnv } from '../lib/env.js';
 
 const SEEN_PATH = 'data/seen-scholarships.json';
 
-// Search queries fed to Firecrawl. Small on purpose (each is one API call) but
-// angled to surface named, fully-funded Master's scholarships open to Nigerians.
-// The current year is injected so results skew to open, not-yet-closed intakes.
+// Search queries fed to Firecrawl, grouped by destination. Small on purpose
+// (each is one API call) but angled to surface named, fully-funded Master's
+// scholarships open to Nigerians. The current year is injected so results skew
+// to open, not-yet-closed intakes.
+//
+// Why these four: the applicant is Nigerian and early-career, so the countries
+// that actually fund international Master's students outright are the ones worth
+// spending calls on. Named flagship schemes are included because a query that
+// names the funder returns the funder's own page; a query that says "scholarship
+// in Canada" returns listicles, which the screener then has to throw away.
+const DESTINATIONS: { country: string; queries: string[] }[] = [
+  {
+    // The richest source of fully-funded Master's places for Nigerians.
+    country: 'China',
+    queries: [
+      'Chinese Government Scholarship CSC master\'s {year} international students apply',
+      'China university master\'s scholarship {year} fully funded computer science AI international students',
+    ],
+  },
+  {
+    // Mostly university funding rather than one national scheme: the big
+    // federal awards (Fulbright aside) are US-citizen-only, so the query aims at
+    // graduate assistantships and fellowships that internationals can hold.
+    country: 'USA',
+    queries: [
+      'Fulbright Foreign Student Program master\'s {year} Nigeria fully funded apply',
+      'fully funded master\'s USA graduate assistantship scholarship {year} international students computer science AI',
+    ],
+  },
+  {
+    // Canada's national Master\'s awards are domestic-only (see scholar.ts), so
+    // this aims at university-level funding packages for international students.
+    country: 'Canada',
+    queries: [
+      'Canada university master\'s scholarship {year} international students fully funded computer science',
+      'University of Toronto UBC McGill Waterloo master\'s funding international students {year} AI machine learning',
+    ],
+  },
+  {
+    // WEAKEST OF THE FOUR, and aimed accordingly. New Zealand's flagship
+    // government scheme (Manaaki) is closed to Nigerians — verified against
+    // nzscholarships.govt.nz on 2026-10-16: its eligible countries are Pacific
+    // nations plus a fixed Asian list (Cambodia, Indonesia, Lao PDR, Malaysia,
+    // Nepal, Philippines, Thailand, Timor-Leste, Viet Nam). Africa does not
+    // appear. So the queries target UNIVERSITY awards instead, which are usually
+    // partial (a tuition discount, not tuition + stipend), and the screener is
+    // told to drop Manaaki outright rather than spend a pick on it.
+    country: 'New Zealand',
+    queries: [
+      'New Zealand university master\'s scholarship {year} international students Africa apply',
+      'University of Auckland Otago Victoria Wellington master\'s scholarship international students {year}',
+    ],
+  },
+];
+
+/** Every query, with the current year substituted in. */
 function queries(): string[] {
   const year = new Date().getFullYear();
-  return [
-    `fully funded Chinese Government Scholarship CSC master's ${year} international students`,
-    `China university master's scholarship ${year} computer science AI international students apply`,
-    `fully funded master's scholarship ${year} artificial intelligence machine learning international students`,
-    `master's scholarship for Nigerian students ${year} fully funded computer science`,
-    `fully funded MSc scholarship data science ${year} international students deadline`,
-  ];
+  return DESTINATIONS.flatMap((d) => d.queries.map((q) => q.replace('{year}', String(year))));
 }
 
 const MAX_ITEMS = Number(optionalEnv('MAX_SCHOLARSHIPS', '5'));
@@ -70,8 +123,13 @@ async function screen(items: Finding[], cap: number): Promise<Confirmed[]> {
 
   const want = cap + 3; // ask for a few extra; some links will be dead/closed.
 
-  const prompt = `You are screening ${items.length} web search results for genuine MASTER'S SCHOLARSHIP opportunities.
-STEP 1 — SELECT only results that are a specific, named scholarship the applicant could realistically apply for. DROP aggregator/listicle pages with no single named scholarship, PhD-only or Bachelor-only awards, clearly-closed intakes, and anything that excludes African/Nigerian/international students.
+  const prompt = `You are screening ${items.length} web search results for genuine FULLY-FUNDED MASTER'S SCHOLARSHIP opportunities.
+STEP 1 — SELECT only results that are a specific, named scholarship the applicant could realistically apply for.
+  PREFER scholarships hosted in Canada, the USA, New Zealand or China — those are the four destinations being hunted. Scholarships elsewhere are still welcome if they are genuinely open to a Nigerian applicant and fully funded, but they are lower priority.
+  DROP aggregator/listicle pages with no single named scholarship, PhD-only or Bachelor-only awards, clearly-closed intakes, and anything that excludes African/Nigerian/international students.
+  DROP domestic-only national awards the applicant cannot hold. Three that come up constantly and are NOT open to him: Canada's Canada Graduate Scholarships-Master's (CGS-M) is restricted to Canadian citizens and permanent residents; the Vanier CGS is doctoral; and the Manaaki New Zealand Scholarships are open only to Pacific and a fixed list of Asian countries, with no African country eligible. Treat a national award as eligible only if its own eligibility text names international students.
+  For New Zealand specifically, prefer university-level awards (Auckland, Otago, Victoria Wellington) over the government scheme, which cannot accept him.
+  "Fully funded" means tuition plus a living stipend. Partial or tuition-only awards are acceptable ONLY if the award is large enough to matter; say so honestly in the funding field rather than calling it fully funded.
 STEP 2 — For each selected item (at most ${want}, best first), extract the key facts from the snippet. If a fact isn't stated, use "not stated" — NEVER invent a deadline, funding amount, or eligibility.
 
 Return STRICT JSON: {"picks":[{"i":<index>,"genuine":<bool>,"confidence":<0-100>,"title":"","org":"host institution/sponsor","country":"","funding":"e.g. fully funded / tuition+stipend / partial / not stated","deadline":"as stated or 'not stated'","eligibility":"<=20 words","summary":"<=30 words why it fits","url":"copy the item's url exactly"}]}
