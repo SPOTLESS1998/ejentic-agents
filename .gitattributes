@@ -1,0 +1,14 @@
+# The run log is APPEND-ONLY, and several agents can finish within the same
+# second — which is exactly what happens when the schedule's cron lateness
+# bunches runs together. A rebase on top of a concurrent append produced a
+# content conflict on 2026-10-16 and failed the whole state save, losing the run
+# entry. `union` is a built-in git merge driver that keeps BOTH sides' lines,
+# which is the correct semantic for an append-only file: the alternative is
+# silently dropping a run from the fleet's history.
+data/run-log.jsonl merge=union
+
+# The index is GENERATED from the log above, so a conflict on it carries no
+# information worth keeping. Resolve it by taking one side and rebuild it from
+# the (now unioned) log with `npm run regen-log` — see the save step in each
+# agent workflow.
+data/AGENT-LOG.md merge=ours

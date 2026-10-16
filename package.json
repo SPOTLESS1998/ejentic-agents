@@ -19,7 +19,8 @@
     "store-test": "tsx src/tools/storeTest.ts",
     "content-test": "tsx src/tools/contentTest.ts",
     "log-test": "tsx src/tools/runlogTest.ts",
-    "parse-test": "tsx src/tools/parseTest.ts"
+    "parse-test": "tsx src/tools/parseTest.ts",
+    "regen-log": "tsx src/tools/regenLog.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.7"

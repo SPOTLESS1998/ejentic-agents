@@ -61,22 +61,47 @@ jobs:
       # Persist the "already reported" memory so tomorrow's run won't repeat itself,
       # AND the run log (see job-agent.yml for why the log had to be added here:
       # it was written on the runner and thrown away).
-      - name: Save seen list and run log
+      - name: Save scholarship state and run log
         if: always()
         run: |
           # git diff --quiet misses UNTRACKED files (e.g. the very first run,
-          # before this file exists in the repo) — use git status instead,
+          # before these files exist in the repo) — use git status instead,
           # which catches both new and modified files.
-          if [ -n "$(git status --porcelain -- data/seen-scholarships.json data/run-log.jsonl data/AGENT-LOG.md)" ]; then
-            git config user.name "ejentic-bot"
-            git config user.email "bot@users.noreply.github.com"
-            git add data/seen-scholarships.json data/run-log.jsonl data/AGENT-LOG.md
-            git commit -m "chore: update scholarship agent state [skip ci]"
-            # Another agent run may have committed its own state to main while
-            # this run was working — rebase on top of it instead of failing the
-            # state save (a push race did exactly that to a content run).
-            git pull --rebase origin main
-            git push
-          else
-            echo "No change to the seen list."
+          FILES="data/seen-scholarships.json data/run-log.jsonl data/AGENT-LOG.md"
+          if [ -z "$(git status --porcelain -- $FILES)" ]; then
+            echo "No change to the scholarship state."
+            exit 0
           fi
+          git config user.name "ejentic-bot"
+          git config user.email "bot@users.noreply.github.com"
+          # The run log is append-only and SHARED by all five agents, so two runs
+          # finishing within the same second used to conflict here and fail the
+          # whole save, losing the run entry. On 2026-10-16 that is exactly what
+          # happened to a scholarship run and a hackathon run. The log now merges
+          # by union (.gitattributes) and the index is rebuilt below.
+          git config merge.ours.driver true
+          git add $FILES
+          git commit -m "chore: update scholarship agent state [skip ci]"
+          # Another agent may commit to main while this run is working. Retry the
+          # rebase+push instead of failing the state save.
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin main; then
+              # The log may have unioned another agent's lines in. The index is a
+              # RENDERING of the log, so rebuild it — otherwise the table a human
+              # reads goes stale and omits runs, which is the exact failure the
+              # log exists to prevent.
+              npm run regen-log
+              git add data/AGENT-LOG.md
+              git diff --cached --quiet || git commit --amend --no-edit
+              if git push; then
+                echo "State saved (attempt $attempt)."
+                exit 0
+              fi
+            else
+              git rebase --abort || true
+            fi
+            echo "Save attempt $attempt lost the race; retrying…"
+            sleep $((attempt * 3))
+          done
+          echo "::error::Could not save state after 5 attempts — this run's log entry may be lost."
+          exit 1
