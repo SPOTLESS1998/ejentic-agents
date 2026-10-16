@@ -1198,7 +1198,7 @@
     "kind": "screened"
   },
   "https://remoteok.com/remote-jobs/remote-technical-product-lead-ai-finance-app-bjak-1137388": {
-    "firstSeen": "2026-10-05T14:44:02.688Z",
+    "firstSeen": "2026-10-16T16:07:07.957Z",
     "label": "JOB",
     "title": "Technical Product Lead AI Finance App",
     "kind": "screened"
@@ -1294,19 +1294,19 @@
     "kind": "reported"
   },
   "https://remoteok.com/remote-jobs/remote-senior-growth-product-manager-ai-native-magic-eden-1137414": {
-    "firstSeen": "2026-10-03T11:41:56.185Z",
+    "firstSeen": "2026-10-16T16:07:07.957Z",
     "label": "JOB",
     "title": "Senior Growth Product Manager AI Native",
     "kind": "screened"
   },
   "lead:ashby": {
-    "firstSeen": "2026-10-03T11:41:56.658Z",
+    "firstSeen": "2026-10-16T16:07:25.340Z",
     "label": "LEAD",
     "title": "Ashby",
     "kind": "screened"
   },
   "https://remoteok.com/remote-jobs/remote-technical-product-manager-ai-stockbroking-app-bjak-1137421": {
-    "firstSeen": "2026-10-04T12:24:15.062Z",
+    "firstSeen": "2026-10-16T16:07:07.957Z",
     "label": "JOB",
     "title": "Technical Product Manager AI Stockbroking App",
     "kind": "screened"
@@ -1360,7 +1360,7 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/gitlab/ai-transformation-owner-product-design": {
-    "firstSeen": "2026-10-04T12:24:15.062Z",
+    "firstSeen": "2026-10-16T16:07:07.957Z",
     "label": "JOB",
     "title": "AI Transformation Owner, Product & Design",
     "kind": "screened"
@@ -1378,7 +1378,7 @@
     "kind": "screened"
   },
   "lead:fortanix": {
-    "firstSeen": "2026-10-06T13:20:51.090Z",
+    "firstSeen": "2026-10-16T16:07:25.340Z",
     "label": "LEAD",
     "title": "Fortanix",
     "kind": "screened"
@@ -1424,5 +1424,191 @@
     "label": "LEAD",
     "title": "DEUNA",
     "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-senior-software-engineer-ii-applied-ai-wrapbook-1137527": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "Senior Software Engineer II Applied AI",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-ai-trainer-imerit-technology-1137513": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "AI Trainer",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50063001": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "AI Application Engineer + Product Engineer",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50059584": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "AI Engineer Apprentice",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=49995549": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "AI Engineer",
+    "kind": "reported"
+  },
+  "https://news.ycombinator.com/item?id=49986633": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "Research Engineer",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=49980976": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "Sr/Staff Software Engineers, Data Scientist, FDE, PM",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=49976516": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "Senior AI infra, Machine Learning Egineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153333-solutions-engineer-us": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "Solutions Engineer - US",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153341-forward-deployed-engineer-python": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "Forward Deployed Engineer, Python",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153338-staff-software-engineer-ai-native-systems": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "Staff Software Engineer, AI-Native Systems",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/149199-customer-solutions-engineer-payments": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "Customer Solutions Engineer – Payments",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/150667-data-scientist-product-analytics": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "Data Scientist, Product Analytics",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/150666-data-engineer-product-analytics": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "Data Engineer, Product Analytics",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/155385-ai-platform-engineer": {
+    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "label": "JOB",
+    "title": "AI Platform Engineer",
+    "kind": "reported"
+  },
+  "lead:crowdstrike": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "CrowdStrike",
+    "kind": "screened"
+  },
+  "lead:atlassian": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "Atlassian",
+    "kind": "reported"
+  },
+  "lead:liftoff": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "Liftoff",
+    "kind": "screened"
+  },
+  "lead:utopia": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "Utopia",
+    "kind": "screened"
+  },
+  "lead:quickmail": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "QuickMail",
+    "kind": "reported"
+  },
+  "lead:huzzle": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "Huzzle",
+    "kind": "screened"
+  },
+  "lead:benzinga": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "Benzinga",
+    "kind": "screened"
+  },
+  "lead:aweber": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "AWeber",
+    "kind": "screened"
+  },
+  "lead:seahub asia": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "SEAhub Asia",
+    "kind": "screened"
+  },
+  "lead:irash tech": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "Irash Tech",
+    "kind": "screened"
+  },
+  "lead:startuphakk": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "StartupHakk",
+    "kind": "screened"
+  },
+  "lead:mastra": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "Mastra",
+    "kind": "screened"
+  },
+  "lead:rivian automotive": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "Rivian Automotive",
+    "kind": "screened"
+  },
+  "lead:early-stage startup": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "Early-stage Startup",
+    "kind": "screened"
+  },
+  "lead:elation health": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "Elation Health",
+    "kind": "screened"
+  },
+  "lead:motive": {
+    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "label": "LEAD",
+    "title": "Motive",
+    "kind": "reported"
   }
 }
