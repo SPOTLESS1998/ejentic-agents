@@ -218,6 +218,21 @@ two instructions that disagree produce whichever the model prefers that day.
 
 Dead ends already paid for. Do not re-walk them.
 
+- **The run log is SHARED, and a per-agent `concurrency` group does not protect
+  it.** Every workflow has its own `concurrency: group: <agent>-agent`, which
+  stops two runs of the *same* agent overlapping and does nothing about two
+  *different* agents writing `data/run-log.jsonl` at once. On 2026-10-16 four
+  agents finished within the same 90 seconds, every save step ran
+  `git pull --rebase` over the same two files, and scholarship, hackathon and
+  content all failed their state save — losing three run entries, which is the
+  exact loss the log exists to prevent. Fixed by merging instead of serialising:
+  `data/run-log.jsonl` is `merge=union` in `.gitattributes` (a built-in git
+  driver, so a concurrent append keeps **both** sides' lines), the generated
+  index is `merge=ours`, `npm run regen-log` rebuilds the index from the unioned
+  log right after the rebase, and the save step retries rebase+push five times
+  and fails with `::error::` rather than silently dropping. **If you add a
+  shared file to a save step, it needs a merge driver — the concurrency group
+  will not save you.**
 - **The free tier is ~20 requests/day *per model*.** Never design one AI call per
   item. The job agent screens the entire batch *and* drafts the emails for the
   winners in **one** call. The previous per-item design cost up to 18 calls a
