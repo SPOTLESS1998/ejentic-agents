@@ -143,6 +143,8 @@ interface Health {
   lastAbort: string | null;
   lastNonZero: string | null;
   daysSinceNonZero: number | null;
+  /** status() of the newest real run — 'ok' | 'nothing sent' | 'degraded' | 'aborted'. */
+  lastStatus: string;
 }
 
 function healthOf(runs: StoredRun[], now: number): Health[] {
@@ -190,6 +192,7 @@ function healthOf(runs: StoredRun[], now: number): Health[] {
       ? Math.floor((now - new Date(nonZero.ts).getTime()) / 86400000)
       : null;
     const newestAbort = ordered.find((r) => r.aborted?.length);
+    const newestReal = ordered.find((r) => !r.dryRun);
 
     out.push({
       agent,
@@ -200,6 +203,7 @@ function healthOf(runs: StoredRun[], now: number): Health[] {
       lastAbort: newestAbort?.aborted?.[0] ?? null,
       lastNonZero,
       daysSinceNonZero,
+      lastStatus: newestReal ? status(newestReal) : 'no real run',
     });
   }
   return out.sort((a, b) => a.agent.localeCompare(b.agent));
@@ -237,6 +241,13 @@ function renderIndex(runs: StoredRun[], now: number): string {
 
   // Write the sentence you would otherwise have to derive from the table.
   const flags: string[] = [];
+  // Below the threshold, but not nothing. Added 2026-10-16 after reading this
+  // file's own output from a real run: one aborted run had just been recorded
+  // (job, HTTP 401), the streak was 1 so no flag fired, and the index closed
+  // with "Nothing flagged. Every agent that has run recently has sent
+  // something." That sentence was false, and it was false in the one place a
+  // reader looks first. A single failure is worth one line, not silence.
+  const watch: string[] = [];
   for (const h of health) {
     // A run that threw is the loudest possible signal and sorts first: the agent
     // is not quiet, it is broken, and no amount of waiting will fix it.
@@ -255,6 +266,16 @@ function renderIndex(runs: StoredRun[], now: number): string {
     } else if (h.daysSinceNonZero !== null && h.daysSinceNonZero >= 21) {
       flags.push(
         `- **${h.agent}** has sent nothing for **${h.daysSinceNonZero} days** (last: ${h.lastNonZero}).`,
+      );
+    } else if (h.lastStatus === 'aborted') {
+      watch.push(
+        `- **${h.agent}** failed its most recent run.` +
+          (h.lastAbort ? ` Error: \`${h.lastAbort}\`` : '') +
+          ' One failure is not yet a pattern, but the "nothing today" message that run sent was false.',
+      );
+    } else if (h.lastStatus === 'degraded') {
+      watch.push(
+        `- **${h.agent}** was cut short on its most recent run (quota or network), so its reported count measured nothing.`,
       );
     }
   }
@@ -298,7 +319,19 @@ function renderIndex(runs: StoredRun[], now: number): string {
     '',
     ...(flags.length
       ? ['**Worth a look:**', '', ...flags, '']
-      : ['Nothing flagged. Every agent that has run recently has sent something.', '']),
+      : watch.length
+        ? [
+            '**Heads up — below the alert threshold, but the most recent run did not',
+            'complete cleanly:**',
+            '',
+            ...watch,
+            '',
+          ]
+        : [
+            'Nothing to flag. No agent has failed twice in a row or been silent for',
+            `${STREAK_ALERT} runs, and every agent's most recent run completed.`,
+            '',
+          ]),
     '## Detail — last 10 runs',
     '',
     detail || '_No runs recorded yet._',

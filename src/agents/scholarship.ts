@@ -225,7 +225,7 @@ async function main() {
       items.length > 0
         ? undefined
         : aborted.length > 0
-          ? 'A pass threw before it could screen anything — this zero is not real information.'
+          ? 'A pass threw — this zero is not real information. See the recorded error.'
           : degraded
             ? 'AI quota ran out mid-run — this zero is not real information.'
             : screenedCount === 0

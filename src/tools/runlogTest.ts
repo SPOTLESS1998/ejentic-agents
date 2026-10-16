@@ -185,7 +185,38 @@ check('the flag refuses to call it idle', amd.includes('it is broken'));
 check('the error is rendered in the detail', amd.includes('failed: `JOB: Gemini HTTP 401'));
 // The trap this guards: every run aborts, so nothing ever *completes*, so a
 // zero-streak of 0 would report a dead fleet as healthy.
-check('a fully-aborted agent is NOT reported as healthy', !amd.includes('Nothing flagged'));
+check('a fully-aborted agent is NOT reported as healthy', !amd.includes('Nothing to flag'));
+
+console.log('\n--- ONE failure is reported, not swallowed ---');
+// Found by reading this file's own output from a real run on 2026-10-16. A job
+// run aborted with HTTP 401; the abort-streak was 1, so no flag fired, and the
+// index closed with "Nothing flagged. Every agent that has run recently has sent
+// something." — a false sentence in the first place a reader looks. A single
+// failure is now a heads-up rather than silence.
+const one = mkdtempSync(join(tmpdir(), 'runlog-onefail-'));
+const ol = join(one, 'l.jsonl');
+const oi = join(one, 'i.md');
+appendRun({ agent: 'job', reported: 2, found: 40, screened: 20 }, { logPath: ol, indexPath: oi, now: daysAgo(1) });
+appendRun({ agent: 'job', reported: 0, found: 45, screened: 14, aborted: [AUTH_ERR] }, { logPath: ol, indexPath: oi, now: daysAgo(0) });
+const omd = render(ol, NOW);
+check('a single failure is surfaced', omd.includes('below the alert threshold'));
+check('it names the agent that failed', omd.includes('**job** failed its most recent run'));
+check('it carries the error', omd.includes('Gemini HTTP 401'));
+check('it does NOT claim the fleet is clean', !omd.includes('Nothing to flag'));
+check('it is not escalated to "Worth a look" yet', !omd.includes('**Worth a look:**'));
+// The funnel is what makes the entry readable: 14 candidates reached the AI and
+// the call then failed, which is a different situation from never reaching it.
+check('the funnel records candidates that reached the AI', omd.includes('| job | 45 | 14 | 0 | aborted |'));
+
+console.log('\n--- a clean fleet still says so ---');
+const cl2 = mkdtempSync(join(tmpdir(), 'runlog-clean-'));
+const cll = join(cl2, 'l.jsonl');
+const cli = join(cl2, 'i.md');
+appendRun({ agent: 'job', reported: 3, found: 40, screened: 20 }, { logPath: cll, indexPath: cli, now: daysAgo(1) });
+appendRun({ agent: 'research', reported: 2, found: 30, screened: 30 }, { logPath: cll, indexPath: cli, now: daysAgo(0) });
+const clmd = render(cll, NOW);
+check('an actually-clean fleet reports itself clean', clmd.includes('Nothing to flag'));
+check('and does not claim more than it checked', clmd.includes('most recent run completed'));
 
 console.log('\n--- aborted runs do not extend the silent-run streak either ---');
 const b = mkdtempSync(join(tmpdir(), 'runlog-abort2-'));
@@ -216,7 +247,7 @@ const emd = render(join(e, 'nothing.jsonl'), NOW);
 check('says so instead of rendering a broken table', emd.includes('No runs recorded yet'));
 check('still names the fleet', emd.includes('# Agent fleet log'));
 
-for (const d of [dir, s, g, r, c, p, e, z]) {
+for (const d of [dir, s, g, r, c, p, e, z, one, cl2]) {
   try {
     rmSync(d, { recursive: true, force: true });
   } catch {

@@ -23,11 +23,14 @@ had not already absorbed.**
 |---|---|---|---|---|---|
 | job | 2026-10-16 | 0 | 0 | 1 | never |
 
-Nothing flagged. Every agent that has run recently has sent something.
+**Heads up — below the alert threshold, but the most recent run did not
+complete cleanly:**
+
+- **job** failed its most recent run. Error: `JOB: Gemini HTTP 401: { "error": { "code": 401, "message": "The bound service account is deleted or disabled. The service account bound to the API key must be active.", "status": "UNAUT` One failure is not yet a pattern, but the "nothing today" message that run sent was false.
 
 ## Detail — last 10 runs
 
 - **2026-10-16 10:13 UTC · job** — found 45, screened 14, reported 0 · aborted
-  - A pass threw before it could screen anything — this zero is not real information.
+  - A pass threw — this zero is not real information. See the recorded error.
   - failed: `JOB: Gemini HTTP 401: { "error": { "code": 401, "message": "The bound service account is deleted or disabled. The service account bound to the API key must be active.", "status": "UNAUT`
   - failed: `LEAD: Gemini HTTP 401: { "error": { "code": 401, "message": "The bound service account is deleted or disabled. The service account bound to the API key must be active.", "status": "UNAUT`
