@@ -96,18 +96,139 @@ export async function geminiText(prompt: string, temperature = 0.4, model?: stri
 
 /** Ask Gemini for JSON and parse it into an object. */
 export async function geminiJSON<T = unknown>(prompt: string, temperature = 0.2, model?: string): Promise<T> {
-  const raw = await call(prompt, { json: true, temperature, model });
-  return safeParse<T>(raw);
+  // Two samples. A model that emits a JSON defect is not reliably broken — it is
+  // usually a one-off sampling artefact, and a second draw normally parses. This
+  // matters more than it looks: on 2026-10-16 the JOB pass died on a single bad
+  // character while the LEAD pass in the SAME run returned four good leads off the
+  // same key, so one unlucky sample was throwing away an entire batch of work.
+  // Retrying here is cheaper than losing the batch, and it is the only retry that
+  // can recover from a defect the repair table below does not know about.
+  let lastErr: unknown;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const raw = await call(prompt, { json: true, temperature, model });
+    try {
+      return safeParse<T>(raw);
+    } catch (e) {
+      lastErr = e;
+    }
+  }
+  throw lastErr;
 }
 
 // Gemini usually honours responseMimeType, but occasionally wraps JSON in prose
-// or ``` fences. This digs the JSON out either way.
-function safeParse<T>(raw: string): T {
+// or ``` fences, and sometimes emits small syntax defects. This digs the JSON
+// out and repairs the defects we have actually seen, rather than throwing on the
+// first bad character.
+//
+// Why this is not paranoia: the second `JSON.parse` used to be unguarded, so any
+// defect it could not handle escaped as a raw SyntaxError ("Expected double-quoted
+// property name in JSON at position 32") — which aborted the WHOLE pass, discarding
+// every good pick in the batch because of one bad comma. Measured on 2026-10-16:
+// the LEAD pass returned 3 confirmed leads while the JOB pass died on exactly this,
+// in the same run, off the same key.
+export function safeParse<T>(raw: string): T {
+  // 1. Straight parse — the common case.
   try {
     return JSON.parse(raw) as T;
-  } catch {
-    const m = raw.match(/\{[\s\S]*\}|\[[\s\S]*\]/);
-    if (m) return JSON.parse(m[0]) as T;
-    throw new Error('Could not parse Gemini JSON output: ' + raw.slice(0, 200));
+  } catch { /* fall through */ }
+
+  // 2. Dig the outermost object/array out of surrounding prose or ``` fences.
+  const fenced = raw.replace(/^\s*```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '');
+  const m = fenced.match(/\{[\s\S]*\}|\[[\s\S]*\]/);
+  const candidates = m ? [m[0], fenced] : [fenced];
+  for (const c of candidates) {
+    try {
+      return JSON.parse(c) as T;
+    } catch { /* try the repair */ }
+    const repaired = repairJson(c);
+    try {
+      return JSON.parse(repaired) as T;
+    } catch { /* next candidate */ }
   }
+
+  // 3. Nothing worked. Say WHAT was wrong and keep enough raw text to diagnose,
+  //    instead of a bare position number that tells the reader nothing.
+  throw new Error(
+    `Could not parse Gemini JSON output (${raw.length} chars). Raw head: ` + raw.slice(0, 500),
+  );
+}
+
+// The syntax defects a model actually produces, repaired with a scanner that
+// tracks whether it is inside a string literal.
+//
+// It is a scanner and not a handful of regexes because the regex version was
+// WRONG in a way that would have shipped silently. `{"body":"Hi, team: hello"}`
+// contains both a `, ` and a `word:` sequence — inside a string. The regex
+// `,(\s*[}\]])` and `([{,]\s*)(\w+)(\s*:)` both matched inside the email body and
+// rewrote the CONTENT of a draft: `"Hi, }"` lost its comma, `"team: hello"` gained
+// quotes around `team`. A repair broad enough to fix anything is broad enough to
+// silently change the data, and a corrupted outreach email is worse than a loud
+// parse failure — the human reviewing it would never know.
+//
+// Only three defects are handled, each one measured rather than imagined:
+// trailing commas, `//` comments, and bare keys. Anything else still throws.
+//
+// Smart quotes are deliberately NOT handled. An earlier draft of this function
+// rewrote them, and the test caught what that would have cost: `"He said "ship
+// it" and left"` is ordinary email prose, so treating a smart quote as a
+// delimiter corrupts the body of the very drafts this parser exists to deliver.
+// There was also no evidence the model emits them — the defect was invented, and
+// an invented defect is not worth a real corruption risk.
+export function repairJson(s: string): string {
+  let out = '';
+  let inStr = false;
+  for (let i = 0; i < s.length; i++) {
+    const ch = s[i];
+
+    if (inStr) {
+      out += ch;
+      if (ch === '\\') {
+        // Copy the escaped character verbatim so `\"` does not close the string.
+        if (i + 1 < s.length) out += s[++i];
+        continue;
+      }
+      if (ch === '"') inStr = false;
+      continue;
+    }
+
+    // --- outside a string ---
+    if (ch === '"') {
+      inStr = true;
+      out += ch;
+      continue;
+    }
+    // A `//` comment a model added out of habit. Skip to end of line.
+    if (ch === '/' && s[i + 1] === '/') {
+      while (i < s.length && s[i] !== '\n') i++;
+      continue;
+    }
+    // A trailing comma: drop it only when the next significant char closes a
+    // structure. This is the defect that actually aborted a run.
+    if (ch === ',') {
+      let j = i + 1;
+      while (j < s.length && /\s/.test(s[j])) j++;
+      if (s[j] === '}' || s[j] === ']') continue; // omit the comma
+      out += ch;
+      continue;
+    }
+    // A bare object key: `{picks:` → `{"picks":`. Only after `{` or `,`, so a
+    // colon anywhere else in the document is left alone.
+    if (/[A-Za-z_$]/.test(ch)) {
+      let prev = out.length - 1;
+      while (prev >= 0 && /\s/.test(out[prev])) prev--;
+      if (prev >= 0 && (out[prev] === '{' || out[prev] === ',')) {
+        let j = i;
+        while (j < s.length && /[A-Za-z0-9_$]/.test(s[j])) j++;
+        let k = j;
+        while (k < s.length && /\s/.test(s[k])) k++;
+        if (s[k] === ':') {
+          out += '"' + s.slice(i, j) + '"';
+          i = j - 1;
+          continue;
+        }
+      }
+    }
+    out += ch;
+  }
+  return out;
 }

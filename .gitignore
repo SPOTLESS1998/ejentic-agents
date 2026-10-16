@@ -19,3 +19,6 @@ profile/*.json
 # (data/run-log.jsonl + the generated data/AGENT-LOG.md) are intentionally NOT
 # ignored — they are the fleet's memory and its history, and they must persist
 # between runs. The workflows commit data/ back to the repo after each run.
+
+# Local env backups (never commit — may hold retired keys)
+*.env.bak-*

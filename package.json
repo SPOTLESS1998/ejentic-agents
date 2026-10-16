@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Autonomous agents for Ejentic AI — job/lead hunting (agent 1), scholarships (agent 2), research (agent 3), content (agent 4), and hackathons (agent 5). Findings are verified before they notify you on Telegram.",
+  "description": "Autonomous agents for Ejentic AI \u2014 job/lead hunting (agent 1), scholarships (agent 2), research (agent 3), content (agent 4), and hackathons (agent 5). Findings are verified before they notify you on Telegram.",
   "scripts": {
     "job": "tsx src/agents/job.ts",
     "scholarship": "tsx src/agents/scholarship.ts",
@@ -18,7 +18,8 @@
     "injection-test": "tsx src/tools/injectionTest.ts",
     "store-test": "tsx src/tools/storeTest.ts",
     "content-test": "tsx src/tools/contentTest.ts",
-    "log-test": "tsx src/tools/runlogTest.ts"
+    "log-test": "tsx src/tools/runlogTest.ts",
+    "parse-test": "tsx src/tools/parseTest.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.7"

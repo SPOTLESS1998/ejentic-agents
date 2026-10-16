@@ -222,6 +222,21 @@ Dead ends already paid for. Do not re-walk them.
   item. The job agent screens the entire batch *and* drafts the emails for the
   winners in **one** call. The previous per-item design cost up to 18 calls a
   run; this costs 1.
+- **A model's JSON can be slightly broken, and one broken character used to throw
+  away the whole batch.** Measured 2026-10-16: the JOB pass aborted with
+  `Expected double-quoted property name in JSON at position 32` and lost all 17
+  screened candidates, while the LEAD pass in the *same run*, off the *same key*,
+  returned four good leads. `safeParse` now repairs three defects — trailing
+  commas, `//` comments, bare keys — and `geminiJSON` draws a second sample when
+  the first will not parse. **Repair with a scanner that tracks string state, not
+  with regexes.** The regex version was written first and was wrong: `,(\s*[}\]])`
+  and `([{,]\s*)(\w+)(\s*:)` both match *inside* a string, so
+  `"Thanks for your time, }"` lost its comma and `"Hi, team: hello"` had `team`
+  quoted — silently rewriting the body of an outreach email a human was about to
+  send. `npm run parse-test` pins both halves: the repairs, and the guarantee that
+  string content is never rewritten. **Smart quotes are deliberately not
+  repaired** — they are ordinary email prose, so treating them as delimiters
+  corrupts real drafts, and no run has ever been observed emitting them.
 - **Screen by title, not by description.** Matching the whole description pulls
   in "Java Developer" and "Customs Agent" because they mention "AI" once.
 - **Widen the source, filter precisely.** The daily pool once shrank to ~6 roles,
@@ -262,7 +277,8 @@ Dead ends already paid for. Do not re-walk them.
 
 1. `npm run typecheck` — must be clean.
 2. `npm run selftest`, `store-test`, `content-test`, `injection-test`,
-   `log-test` — all must pass. They are offline: no keys, no network, no quota.
+   `log-test`, `parse-test` — all must pass. They are offline: no keys, no
+   network, no quota.
 3. If you changed what a run *means*, update this file in the same pass.
 4. Deploy by pushing. The workflows commit `data/` back, so the seen-store and
    the run log survive between runs.
