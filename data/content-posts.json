@@ -1502,5 +1502,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-16T20:56:57.784Z"
+  },
+  "2026-10-17:morning": {
+    "date": "2026-10-17",
+    "slot": "morning",
+    "cycleDay": 11,
+    "theme": "Customer Service",
+    "pillar": "EDUCATE",
+    "topic": "The cost of a lost lead at 2 AM — nobody answers, the buyer moves on.",
+    "angle": "Using data on customer expectations and retention to calculate the silent financial leak of unanswered 2 AM inquiries.",
+    "xPost": "What does a 2 AM inquiry cost you? When a buyer needs answers and hits a dead end, they don't wait for your office to open. They just go to the next tab. Unanswered leads are simply unpaid invoices.",
+    "linkedinPost": "Ever look at your site analytics around 3 AM? People are browsing, comparing, and trying to buy. \n\nWhen an interested buyer lands on your page with a specific question at midnight, they expect a response. If your team is offline and nobody replies, they rarely wait until morning. They close the tab and message the next business on Google.\n\nMost companies focus heavily on top-of-funnel traffic generation, yet completely ignore what happens to visitors who arrive after hours. It is an everyday leak that quietly turns interested prospects into missed revenue.\n\nYou don't need a night-shift support team to fix this. Simple conversational setups can handle late-night questions instantly, communicating naturally in English, Pidgin, Hausa, Yoruba, or Igbo the moment a visitor arrives.\n\nHow many inquiries do you think slip past your team after hours each week?\n\n#EjenticAI #AIAgents #Automation #CustomerExperience #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-17T11:58:38.999Z"
   }
 }
