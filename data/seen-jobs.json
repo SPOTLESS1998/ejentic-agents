@@ -1610,5 +1610,59 @@
     "label": "LEAD",
     "title": "Motive",
     "kind": "reported"
+  },
+  "https://remoteok.com/remote-jobs/remote-associate-data-scientist-algaecal-1137531": {
+    "firstSeen": "2026-10-17T10:47:23.054Z",
+    "label": "JOB",
+    "title": "Associate Data Scientist",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153461-senior-manager-ai-engineering-2": {
+    "firstSeen": "2026-10-17T10:47:23.054Z",
+    "label": "JOB",
+    "title": "Senior Manager, AI Engineering",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153397-engineering-manager-ai-transformation": {
+    "firstSeen": "2026-10-17T10:47:23.054Z",
+    "label": "JOB",
+    "title": "Engineering Manager, AI Transformation",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153362-applied-ai-ml-engineer-2": {
+    "firstSeen": "2026-10-17T10:47:23.054Z",
+    "label": "JOB",
+    "title": "Applied AI/ML Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/150863-data-science-intern-customer-success": {
+    "firstSeen": "2026-10-17T10:47:23.054Z",
+    "label": "JOB",
+    "title": "Data Science Intern (Customer Success)",
+    "kind": "screened"
+  },
+  "lead:gofasti": {
+    "firstSeen": "2026-10-17T10:47:24.729Z",
+    "label": "LEAD",
+    "title": "GoFasti",
+    "kind": "reported"
+  },
+  "lead:osano": {
+    "firstSeen": "2026-10-17T10:47:24.729Z",
+    "label": "LEAD",
+    "title": "Osano",
+    "kind": "screened"
+  },
+  "lead:cresta": {
+    "firstSeen": "2026-10-17T10:47:24.729Z",
+    "label": "LEAD",
+    "title": "Cresta",
+    "kind": "screened"
+  },
+  "lead:juniper square": {
+    "firstSeen": "2026-10-17T10:47:24.729Z",
+    "label": "LEAD",
+    "title": "Juniper Square",
+    "kind": "screened"
   }
 }
