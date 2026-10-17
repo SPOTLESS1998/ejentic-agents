@@ -1516,5 +1516,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-17T11:58:38.999Z"
+  },
+  "2026-10-17:afternoon": {
+    "date": "2026-10-17",
+    "slot": "afternoon",
+    "cycleDay": 11,
+    "theme": "Customer Service",
+    "pillar": "SHOWCASE",
+    "topic": "The multi-agent architecture: Researcher, Writer, Editor bots working together.",
+    "angle": "Connecting multi-agent architectures (Researcher, Writer, Editor) to multilingual customer service and automation ROI.",
+    "xPost": "How do you scale customer service without losing the human touch? Our multi-agent architecture coordinates Researcher, Writer, and Editor bots to handle support seamlessly. Watch agents in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "Scaling customer service operations requires more than a single chatbot. At Ejentic AI, we rely on a multi-agent architecture where specialized Researcher, Writer, and Editor bots work together to process requests, maintain data hygiene, and deliver accurate responses.\n\nThis orchestration powers our autonomous multilingual customer-service agents, which support English, Nigerian Pidgin, Hausa, Yoruba, and Igbo. They greet clients, answer questions, log complaints, and capture leads across your website, apps, and social media.\n\nChief Architect David Chen designs our systems around resilience and graceful degradation, while Lead ML Engineer Elena Rodriguez ensures rigorous evaluation and bias checks before shipping. AI should augment our people, not replace them.\n\nWatch our agents in action here: https://youtu.be/gbXhZMTdnkM\n\nReady to transform your support workflow? Book a free consultation\n\n#EjenticAI #AIAgents #CustomerExperience #Automation #NigeriaTech",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 9,
+    "createdAt": "2026-10-17T16:19:04.507Z"
   }
 }
