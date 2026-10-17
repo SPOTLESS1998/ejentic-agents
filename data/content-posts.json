@@ -1532,5 +1532,19 @@
     ],
     "score": 9,
     "createdAt": "2026-10-17T16:19:04.507Z"
+  },
+  "2026-10-17:evening": {
+    "date": "2026-10-17",
+    "slot": "evening",
+    "cycleDay": 11,
+    "theme": "Customer Service",
+    "pillar": "INSPIRE",
+    "topic": "Empathetic AI design.",
+    "angle": "Reframing customer service empathy as a deliberate AI design choice that builds lasting loyalty.",
+    "xPost": "Empathy isn’t just a human trait—it’s a design decision. When an AI handles a complaint with true care, it builds more loyalty than a smooth transaction ever could. Conversations, not screens. 🇳🇬 #EjenticAI #CustomerExperience",
+    "linkedinPost": "We often talk about efficiency, speed, and uptime when building AI. But Sarah Jenkins reminds us that technology should feel invisible and effortless—and that starts with how we treat people when things go wrong.\n\nIn customer service, a complaint handled with genuine empathy builds far more loyalty than no complaint at all. When a customer reaches out frustrated, they don't want a cold ticket number. They want to feel heard.\n\nDesigning autonomous agents isn't just about parsing text or routing data. It is a deliberate choice to build systems that respect human emotion, speak our languages, and augment our people instead of replacing them.\n\nHere in Nigeria, we are proving that the future of technology is deeply human-centric. \n\nHow does your current customer support handle the hardest conversations? \n\n#EjenticAI #AIAgents #CustomerExperience #EthicalAI #NigeriaTech",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-17T20:29:05.117Z"
   }
 }
