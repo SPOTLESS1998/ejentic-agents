@@ -1222,7 +1222,7 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/gitlab/fullstack-engineer-typescript-ai-engineering-duo-client-sdk": {
-    "firstSeen": "2026-10-07T13:27:38.706Z",
+    "firstSeen": "2026-10-18T11:09:21.572Z",
     "label": "JOB",
     "title": "Fullstack Engineer (TypeScript), AI Engineering: Duo Client SDK",
     "kind": "screened"
@@ -1664,5 +1664,77 @@
     "label": "LEAD",
     "title": "Juniper Square",
     "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-software-engineer-ai-coding-tasks-askable-1137538": {
+    "firstSeen": "2026-10-18T11:09:21.572Z",
+    "label": "JOB",
+    "title": "Software Engineer AI Coding Tasks",
+    "kind": "reported"
+  },
+  "https://jobicy.com/jobs/155632-director-ai-platforms": {
+    "firstSeen": "2026-10-18T11:09:21.572Z",
+    "label": "JOB",
+    "title": "Director, AI Platforms",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153513-director-of-ai-ml": {
+    "firstSeen": "2026-10-18T11:09:21.572Z",
+    "label": "JOB",
+    "title": "Director of AI/ML",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/146434-ai-vendor-market-expert-senior-director-analyst-fully-remote-united-states": {
+    "firstSeen": "2026-10-18T11:09:21.572Z",
+    "label": "JOB",
+    "title": "AI Vendor Market Expert (Senior Director, Analyst – Fully Remote United States)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153504-forward-deployed-engineer-5": {
+    "firstSeen": "2026-10-18T11:09:21.572Z",
+    "label": "JOB",
+    "title": "Forward Deployed Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/155602-data-engineer-us-remote": {
+    "firstSeen": "2026-10-18T11:09:21.572Z",
+    "label": "JOB",
+    "title": "Data Engineer - US Remote",
+    "kind": "screened"
+  },
+  "lead:canonical": {
+    "firstSeen": "2026-10-18T11:09:24.930Z",
+    "label": "LEAD",
+    "title": "Canonical",
+    "kind": "screened"
+  },
+  "lead:smithrx": {
+    "firstSeen": "2026-10-18T11:09:24.930Z",
+    "label": "LEAD",
+    "title": "SmithRx",
+    "kind": "reported"
+  },
+  "lead:6sense": {
+    "firstSeen": "2026-10-18T11:09:24.930Z",
+    "label": "LEAD",
+    "title": "6sense",
+    "kind": "screened"
+  },
+  "lead:perfectserve": {
+    "firstSeen": "2026-10-18T11:09:24.930Z",
+    "label": "LEAD",
+    "title": "PerfectServe",
+    "kind": "reported"
+  },
+  "lead:unison infrastructure": {
+    "firstSeen": "2026-10-18T11:09:24.930Z",
+    "label": "LEAD",
+    "title": "Unison Infrastructure",
+    "kind": "reported"
+  },
+  "lead:assetwatch": {
+    "firstSeen": "2026-10-18T11:09:24.930Z",
+    "label": "LEAD",
+    "title": "AssetWatch",
+    "kind": "reported"
   }
 }
