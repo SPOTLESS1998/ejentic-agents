@@ -1546,5 +1546,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-17T20:29:05.117Z"
+  },
+  "2026-10-18:morning": {
+    "date": "2026-10-18",
+    "slot": "morning",
+    "cycleDay": 12,
+    "theme": "Marketing & Sales",
+    "pillar": "EDUCATE",
+    "topic": "Why cold outreach is dying — and what is replacing it.",
+    "angle": "Explaining how generic cold outreach is failing and why AI agents executing multi-channel research and context-building are replacing brute-force volume.",
+    "xPost": "Why is cold outreach dying? Because brute-force volume is just digital noise. AI agents are replacing blasts by running deep multi-channel research and building real context for every single prospect. #EjenticAI #FutureOfWork",
+    "linkedinPost": "Why is cold outreach dying? Because sending the same generic email template to thousands of inboxes no longer works. Buyers tune out the noise, and aggressive spam filters catch the rest.\n\nVolume used to be the primary strategy. Today, hyper-relevance is the only metric that matters. But achieving true relevance at scale manually is impossible for lean teams.\n\nWhat is replacing the blast-and-pray approach is specific tactical execution by AI agents. Instead of static lists, these systems autonomously scan company filings, recent news, and social signals across multiple channels to build genuine context before a single word is written.\n\nIt is a structural shift from interruption to insight. By letting AI agents handle the heavy lifting of prospect research and dynamic message tailoring, human teams can focus entirely on high-value conversations.\n\n#EjenticAI #AIAgents #FutureOfWork #AIAutomation #SalesTech",
+    "citedSourceUrls": [],
+    "score": 7,
+    "createdAt": "2026-10-18T12:26:58.607Z"
   }
 }
