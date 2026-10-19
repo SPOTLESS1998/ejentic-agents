@@ -589,9 +589,10 @@
     "title": "Saisons Brother Holding"
   },
   "https://remoteok.com/remote-jobs/remote-digital-workplace-automation-specialist-dreem-health-1136948": {
-    "firstSeen": "2026-08-20T07:07:28.701Z",
+    "firstSeen": "2026-10-19T13:20:49.849Z",
     "label": "JOB",
-    "title": "Digital Workplace & Automation Specialist"
+    "title": "Digital Workplace & Automation Specialist",
+    "kind": "reported"
   },
   "lead:bupa australia": {
     "firstSeen": "2026-08-20T07:07:31.464Z",
@@ -644,9 +645,10 @@
     "title": "ALPHA BPO CORP"
   },
   "lead:engine": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
+    "firstSeen": "2026-10-19T13:20:52.830Z",
     "label": "LEAD",
-    "title": "Engine"
+    "title": "Engine",
+    "kind": "screened"
   },
   "lead:chaos": {
     "firstSeen": "2026-08-20T07:07:31.464Z",
@@ -1735,6 +1737,48 @@
     "firstSeen": "2026-10-18T11:09:24.930Z",
     "label": "LEAD",
     "title": "AssetWatch",
+    "kind": "reported"
+  },
+  "https://remotive.com/remote-jobs/software-development/software-engineer-ai-coding-tasks-2091158": {
+    "firstSeen": "2026-10-19T13:20:49.849Z",
+    "label": "JOB",
+    "title": "Software Engineer, AI Coding Tasks",
+    "kind": "reported"
+  },
+  "https://jobicy.com/jobs/153597-sr-data-engineer-3": {
+    "firstSeen": "2026-10-19T13:20:49.849Z",
+    "label": "JOB",
+    "title": "Sr. Data Engineer",
+    "kind": "screened"
+  },
+  "lead:betterhelp": {
+    "firstSeen": "2026-10-19T13:20:52.830Z",
+    "label": "LEAD",
+    "title": "BetterHelp",
+    "kind": "reported"
+  },
+  "lead:compscience": {
+    "firstSeen": "2026-10-19T13:20:52.830Z",
+    "label": "LEAD",
+    "title": "CompScience",
+    "kind": "screened"
+  },
+  "lead:edb": {
+    "firstSeen": "2026-10-19T13:20:52.830Z",
+    "label": "LEAD",
+    "title": "EDB",
+    "kind": "screened"
+  },
+  "lead:hubstaff": {
+    "firstSeen": "2026-10-19T13:20:52.830Z",
+    "label": "LEAD",
+    "title": "Hubstaff",
+    "kind": "reported"
+  },
+  "lead:goodleap": {
+    "firstSeen": "2026-10-19T13:20:52.830Z",
+    "label": "LEAD",
+    "title": "Goodleap",
     "kind": "reported"
   }
 }

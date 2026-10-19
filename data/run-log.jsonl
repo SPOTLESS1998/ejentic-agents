@@ -26,3 +26,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-10-18T12:26:58.610Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-10-18T16:27:59.790Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-10-18T20:31:49.528Z"}
+{"agent":"job","found":53,"screened":9,"reported":5,"degraded":false,"aborted":[],"ts":"2026-10-19T13:20:54.343Z"}
