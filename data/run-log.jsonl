@@ -29,3 +29,4 @@
 {"agent":"job","found":53,"screened":9,"reported":5,"degraded":false,"aborted":[],"ts":"2026-10-19T13:20:54.343Z"}
 {"agent":"scholarship","found":45,"screened":0,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing was screened: every result the search returned was already in the seen-store. This zero says there was nothing NEW, not that nothing matched.","ts":"2026-10-19T13:50:51.588Z"}
 {"agent":"research","found":30,"screened":2,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing passed screening today.","ts":"2026-10-19T14:10:06.047Z"}
+{"agent":"hackathon","found":27,"screened":1,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing passed screening today.","ts":"2026-10-19T14:43:25.422Z"}
