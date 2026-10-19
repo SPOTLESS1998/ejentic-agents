@@ -1605,5 +1605,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-19T15:17:36.735Z"
+  },
+  "2026-10-19:afternoon": {
+    "date": "2026-10-19",
+    "slot": "afternoon",
+    "cycleDay": 13,
+    "theme": "Legal & Compliance",
+    "pillar": "SHOWCASE",
+    "topic": "How Hybrid RAG instantly finds indemnity clauses in uploaded PDFs.",
+    "angle": "Using our Air-Gapped RAG Vault for legal compliance, specifically clause-level retrieval in seconds on-prem.",
+    "xPost": "Finding indemnity clauses across hundreds of heavy PDFs doesn't have to take days. Our Air-Gapped RAG Vault runs locally, delivering clause-level legal document retrieval in seconds with zero data leakage. Book a free consultation #EjenticAI #RAG",
+    "linkedinPost": "Reviewing bulky enterprise contracts for compliance is slow, tedious work. Reading through hundreds of pages just to locate specific indemnity clauses ties up valuable legal teams.\n\nThat is why we built the Air-Gapped RAG Vault. It is a secure internal knowledge base designed for sensitive enterprise documents, operating entirely on-premise so your data never leaks to public models.\n\nInstead of manual ctrl+F or waiting hours for research, legal and operations teams can query private SOPs and contracts directly. The system performs precise, clause-level document retrieval in seconds.\n\nBuilt by our Chief Architect David Chen to ensure resilient, secure systems that protect your proprietary data.\n\nBook a free consultation\n\n#EjenticAI #AIAgents #RAG #EthicalAI #Automation",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-10-19T19:15:13.049Z"
   }
 }
