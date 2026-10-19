@@ -1619,5 +1619,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-10-19T19:15:13.049Z"
+  },
+  "2026-10-19:evening": {
+    "date": "2026-10-19",
+    "slot": "evening",
+    "cycleDay": 13,
+    "theme": "Legal & Compliance",
+    "pillar": "INSPIRE",
+    "topic": "Governance and Accountability.",
+    "angle": "Connecting AI governance and traceability to our Wakanda-inspired vision of ethical, human-centric systems built in Africa.",
+    "xPost": "An AI decision you cannot audit is a liability. At Ejentic AI, traceability is non-negotiable because true innovation demands accountability. #EjenticAI #EthicalAI",
+    "linkedinPost": "In the rush to deploy automation, it is easy to forget a fundamental truth: an AI decision you cannot audit is a liability.\n\nAt Ejentic AI, building with a Wakanda-inspired vision means believing Africa can lead the world in artificial intelligence not by copying Silicon Valley, but by building ethical, human-centric systems. For our Chief Architect David Chen and Lead ML Engineer Elena Rodriguez, governance is not an afterthought.\n\nTraceability is non-negotiable for us. When businesses adopt our autonomous workflows or internal RAG vaults, they need to know why a decision was made. Systems must respect our data, augment our people, and remain fully accountable.\n\nHow is your organization auditing its AI decisions today?\n\n#EjenticAI #EthicalAI #AfricanTech #AIAutomation #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-10-19T22:16:54.255Z"
   }
 }
