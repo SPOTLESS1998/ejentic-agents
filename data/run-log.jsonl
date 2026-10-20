@@ -34,3 +34,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-10-19T19:15:13.052Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-10-19T22:16:54.257Z"}
 {"agent":"job","found":46,"screened":3,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing passed screening and link verification today.","ts":"2026-10-20T11:40:54.004Z"}
+{"agent":"scholarship","found":47,"screened":4,"reported":1,"degraded":false,"aborted":[],"ts":"2026-10-20T11:59:50.858Z"}
