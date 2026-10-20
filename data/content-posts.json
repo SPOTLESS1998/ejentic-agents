@@ -1663,5 +1663,19 @@
     ],
     "score": 8,
     "createdAt": "2026-10-20T17:56:34.136Z"
+  },
+  "2026-10-20:evening": {
+    "date": "2026-10-20",
+    "slot": "evening",
+    "cycleDay": 14,
+    "theme": "Weekly Recap & African Tech Excellence",
+    "pillar": "INSPIRE",
+    "topic": "Weekend motivation on African tech excellence.",
+    "angle": "Reflecting on African tech excellence and building ethical, human-centric AI systems that speak our languages rather than just copying Silicon Valley.",
+    "xPost": "We are not just catching up in tech—we are building differently. Ethical, human-centric AI that speaks our languages and respects our data. That is the vision. 🌍 #EjenticAI #NigerianTech",
+    "linkedinPost": "As we head into the weekend, it is worth pausing to reflect on what we are really building here in Nigeria and across Africa.\n\nFor too long, the narrative in tech has been about catching up—about importing systems built for other markets and trying to force them to fit our realities. But true innovation doesn't look like copying Silicon Valley.\n\nAt Ejentic AI, our vision is inspired by something much deeper. We believe in building ethical, human-centric systems that actually speak our languages, respect our data, and augment our people instead of replacing them. From multilingual customer agents that handle Pidgin, Hausa, Yoruba, and Igbo, to secure internal knowledge vaults, we are designing technology that reflects our strengths.\n\nWe aren't just adapting tools; we are creating a foundation where Africa leads the way in intelligent automation.\n\nWhat are you building this weekend to shape the future?\n\n#EjenticAI #NigerianTech #AfricanTech #BuildInNigeria #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-10-20T21:31:48.576Z"
   }
 }
