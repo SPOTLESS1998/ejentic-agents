@@ -1647,5 +1647,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-20T13:21:23.617Z"
+  },
+  "2026-10-20:afternoon": {
+    "date": "2026-10-20",
+    "slot": "afternoon",
+    "cycleDay": 14,
+    "theme": "Weekly Recap & African Tech Excellence",
+    "pillar": "SHOWCASE",
+    "topic": "The numbers behind the week — lessons and takeaways from seven days of industry deep dives.",
+    "angle": "Analyzing a week of industry deep dives reveals the same operational leaks across businesses, solved by secure RAG vaults and Nigerian multilingual automation.",
+    "xPost": "7 days of deep dives exposed the same operational leaks across businesses: siloed knowledge and support bottlenecks. The fix? Secure RAG vaults and Nigerian multilingual automation. Watch our agents in action: https://youtu.be/gbXhZMTdnkM\n\n#EjenticAI #AIAgents",
+    "linkedinPost": "Over the past seven days of industry deep dives, a clear pattern emerged across businesses. Whether looking at logistics, retail, or finance, teams face the exact same operational leaks: fragmented internal knowledge, high support overhead, and manual workflows that slow down growth.\n\nThe fix is not more software; it is better-integrated intelligence. This week, we looked closely at how our Autonomous Multilingual Customer-Service Agents and Air-Gapped RAG Vaults solve these exact bottlenecks. By letting employees query private SOPs securely and allowing customers to converse in English, Nigerian Pidgin, Hausa, Yoruba, or Igbo, companies remove friction at scale.\n\nAfrica is positioned to lead the world in AI by building human-centric systems that respect our data and augment our people. \n\nWatch our multilingual support agents in action here: https://youtu.be/gbXhZMTdnkM\n\nHow is your team handling internal knowledge management and multilingual support today?\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #NigeriaTech",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 8,
+    "createdAt": "2026-10-20T17:56:34.136Z"
   }
 }
