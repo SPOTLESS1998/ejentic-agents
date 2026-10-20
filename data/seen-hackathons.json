@@ -338,5 +338,35 @@
     "firstSeen": "2026-10-19T14:43:24.865Z",
     "label": "HACKATHON",
     "title": "U-Hackathon 2026 in Bangkok: Build AI and Web3 projects ..."
+  },
+  "https://travel.state.gov/en/passports/renew-replace/online.html": {
+    "firstSeen": "2026-10-20T12:46:35.033Z",
+    "label": "HACKATHON",
+    "title": "Renew Your Passport Online - Travel - State Department"
+  },
+  "https://secure.ssa.gov/ril/siview.action": {
+    "firstSeen": "2026-10-20T12:46:35.033Z",
+    "label": "HACKATHON",
+    "title": "sign in to your SSA account"
+  },
+  "https://www.dnr.state.mn.us/licenses/online-sales.html": {
+    "firstSeen": "2026-10-20T12:46:35.033Z",
+    "label": "HACKATHON",
+    "title": "Online license sales"
+  },
+  "https://sos.oregon.gov/elections/pages/registration.aspx": {
+    "firstSeen": "2026-10-20T12:46:35.033Z",
+    "label": "HACKATHON",
+    "title": "Oregon Online Voter Registration"
+  },
+  "https://mymvd.iowadot.gov": {
+    "firstSeen": "2026-10-20T12:46:35.033Z",
+    "label": "HACKATHON",
+    "title": "Iowa DOT online services"
+  },
+  "https://www.pavoterservices.pa.gov/pages/voterregistrationapplication.aspx": {
+    "firstSeen": "2026-10-20T12:46:35.033Z",
+    "label": "HACKATHON",
+    "title": "Voter Registration Application - PA Voter Services"
   }
 }
