@@ -1633,5 +1633,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-10-19T22:16:54.255Z"
+  },
+  "2026-10-20:morning": {
+    "date": "2026-10-20",
+    "slot": "morning",
+    "cycleDay": 14,
+    "theme": "Weekly Recap & African Tech Excellence",
+    "pillar": "EDUCATE",
+    "topic": "Favorite case study of the week — the one post that shows what automation really changes.",
+    "angle": "Highlighting a specific operational fix from our work this week—automating multi-country payroll compliance checks—to prove how workflow automation removes tedious administrative burdens without human replacement.",
+    "xPost": "What does automation change? This week, we automated multi-country payroll compliance checks for a client. Instead of spending 15 hours on manual doc reviews, their finance team now approves secure runs instantly. Real automation removes bottlenecks, not jobs. #EjenticAI",
+    "linkedinPost": "What does automation actually change in a growing business? \n\nThis week, we worked with a regional team struggling with multi-country payroll compliance. Every month, their finance staff spent 15-plus hours manually cross-referencing tax updates, verifying local entity documents, and routing approvals across three borders.\n\nWe implemented a localized agent workflow that pulls the latest regulatory requirements, runs initial compliance checks against internal records, and flags anomalies for human review in a secure dashboard.\n\nInstead of eliminating jobs, the automation absorbed the tedious administrative layer. The finance team shifted from manual document chasing to final strategic sign-offs, cutting their close cycle by three days.\n\nTechnology should remove operational friction while keeping data secure and compliant. \n\nWhat repetitive workflow is slowing your team down this week?\n\n#EjenticAI #Automation #FutureOfWork #AfricanTech #TechInAfrica",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-20T13:21:23.617Z"
   }
 }
