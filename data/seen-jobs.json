@@ -1780,5 +1780,23 @@
     "label": "LEAD",
     "title": "Goodleap",
     "kind": "reported"
+  },
+  "https://jobicy.com/jobs/153621-director-software-engineering-ai-workflows-ecosystem-2": {
+    "firstSeen": "2026-10-20T11:40:52.853Z",
+    "label": "JOB",
+    "title": "Director, Software Engineering (AI Workflows & Ecosystem)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/155922-senior-clinical-qa-specialist-ai": {
+    "firstSeen": "2026-10-20T11:40:52.853Z",
+    "label": "JOB",
+    "title": "Senior Clinical QA Specialist, AI",
+    "kind": "screened"
+  },
+  "lead:jobber": {
+    "firstSeen": "2026-10-20T11:40:53.572Z",
+    "label": "LEAD",
+    "title": "Jobber",
+    "kind": "screened"
   }
 }
