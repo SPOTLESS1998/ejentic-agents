@@ -1691,5 +1691,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-10-21T13:27:19.477Z"
+  },
+  "2026-10-21:afternoon": {
+    "date": "2026-10-21",
+    "slot": "afternoon",
+    "cycleDay": 15,
+    "theme": "Privacy by Architecture",
+    "pillar": "SHOWCASE",
+    "topic": "A day in the life of Nova (our front-end agent).",
+    "angle": "Showcasing autonomous multilingual agents through a playful 'day in the life' of Nova, highlighting our conversational customer service solutions.",
+    "xPost": "A day in the life of Nova, our front-end agent: greets visitors, answers questions in English or Pidgin, qualifies intent, and routes high-value leads 24/7. Watch Agents in Action: https://youtu.be/gbXhZMTdnkM Book a free consultation",
+    "linkedinPost": "Ever wondered what a 24/7 shift looks like for an autonomous front-end agent? Meet Nova.\n\n08:00 AM: Greets early website visitors, answering product questions instantly.\n01:00 PM: Switches effortlessly between English, Nigerian Pidgin, Hausa, Yoruba, and Igbo to match customer preference.\n05:00 PM: Qualifies intent, logs complex inquiries, and routes high-value prospects straight to the human sales team.\n\nNova handles the repetitive friction so your team can focus on high-impact work. Built with zero-friction UX where conversations replace clunky screens.\n\nWatch Agents in Action: https://youtu.be/gbXhZMTdnkM\n\nHow much time does your team spend on initial lead qualification? Book a free consultation\n\n#EjenticAI #AIAgents #CustomerExperience #Automation #NigeriaTech",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-21T17:59:09.918Z"
   }
 }
