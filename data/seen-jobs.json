@@ -70,7 +70,7 @@
     "title": "Outsite"
   },
   "lead:telus digital": {
-    "firstSeen": "2026-10-10T12:35:07.301Z",
+    "firstSeen": "2026-10-21T11:52:13.247Z",
     "label": "LEAD",
     "title": "TELUS Digital",
     "kind": "screened"
@@ -188,7 +188,7 @@
     "title": "Healthcare Data Scientist"
   },
   "https://www.themuse.com/jobs/gitlab/ai-transformation-owner-cro": {
-    "firstSeen": "2026-10-10T12:35:05.837Z",
+    "firstSeen": "2026-10-21T11:52:11.970Z",
     "label": "JOB",
     "title": "AI Transformation Owner, CRO",
     "kind": "screened"
@@ -1386,7 +1386,7 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/liftoff/machine-learning-engineer-f6d7cf": {
-    "firstSeen": "2026-10-10T12:35:05.837Z",
+    "firstSeen": "2026-10-21T11:52:11.970Z",
     "label": "JOB",
     "title": "Machine Learning Engineer ",
     "kind": "screened"
@@ -1798,5 +1798,59 @@
     "label": "LEAD",
     "title": "Jobber",
     "kind": "screened"
+  },
+  "https://jobicy.com/jobs/156097-manager-machine-learning-engineering": {
+    "firstSeen": "2026-10-21T11:52:11.970Z",
+    "label": "JOB",
+    "title": "Manager, Machine Learning Engineering",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/156098-applied-ai-engineer-2": {
+    "firstSeen": "2026-10-21T11:52:11.970Z",
+    "label": "JOB",
+    "title": "Applied AI Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/151146-aws-data-engineer-senior": {
+    "firstSeen": "2026-10-21T11:52:11.970Z",
+    "label": "JOB",
+    "title": "AWS Data Engineer (Senior)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/151260-generative-media-engineer-ai-social-us": {
+    "firstSeen": "2026-10-21T11:52:11.970Z",
+    "label": "JOB",
+    "title": "Generative Media Engineer, AI Social - US",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/146688-technical-product-marketer-k0rdent-ai-remote-in-the-us": {
+    "firstSeen": "2026-10-21T11:52:11.970Z",
+    "label": "JOB",
+    "title": "Technical Product Marketer, k0rdent AI - remote in the US",
+    "kind": "screened"
+  },
+  "lead:tala": {
+    "firstSeen": "2026-10-21T11:52:13.247Z",
+    "label": "LEAD",
+    "title": "Tala",
+    "kind": "screened"
+  },
+  "lead:future plc": {
+    "firstSeen": "2026-10-21T11:52:13.247Z",
+    "label": "LEAD",
+    "title": "Future PLC",
+    "kind": "screened"
+  },
+  "lead:clickup": {
+    "firstSeen": "2026-10-21T11:52:13.247Z",
+    "label": "LEAD",
+    "title": "ClickUp",
+    "kind": "screened"
+  },
+  "lead:beyond finance": {
+    "firstSeen": "2026-10-21T11:52:13.247Z",
+    "label": "LEAD",
+    "title": "Beyond Finance",
+    "kind": "reported"
   }
 }
