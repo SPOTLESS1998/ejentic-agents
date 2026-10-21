@@ -43,3 +43,4 @@
 {"agent":"job","found":50,"screened":12,"reported":1,"degraded":false,"aborted":[],"ts":"2026-10-21T11:52:14.183Z"}
 {"agent":"scholarship","found":45,"screened":4,"reported":1,"degraded":false,"aborted":[],"ts":"2026-10-21T12:15:06.438Z"}
 {"agent":"research","found":30,"screened":0,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing was screened: every result the search returned was already in the seen-store. This zero says there was nothing NEW, not that nothing matched.","ts":"2026-10-21T12:34:31.904Z"}
+{"agent":"hackathon","found":27,"screened":3,"reported":2,"degraded":false,"aborted":[],"ts":"2026-10-21T12:58:33.434Z"}
