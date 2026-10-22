@@ -1733,5 +1733,21 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-10-22T13:30:04.344Z"
+  },
+  "2026-10-22:afternoon": {
+    "date": "2026-10-22",
+    "slot": "afternoon",
+    "cycleDay": 16,
+    "theme": "Resilience Engineering",
+    "pillar": "SHOWCASE",
+    "topic": "How our fallback system works if a model goes down.",
+    "angle": "Highlighting our enterprise resilience engineering: how seamless model fallbacks protect our RAG, Automation, and Multilingual Bots from downtime.",
+    "xPost": "When your primary LLM drops, does your multilingual bot go down with it? Our RAG & automation infrastructure instantly switches to a backup model in milliseconds. Zero downtime. Watch the demo: https://youtu.be/gbXhZMTdnkM #EjenticAI",
+    "linkedinPost": "When your primary LLM drops, does your enterprise customer service go down with it?\n\nIn enterprise RAG and multilingual automation, downtime is expensive. That is why our architecture includes seamless failovers and graceful degradation. \n\nHere is how our resilience engineering works in practice: When an autonomous multilingual customer-service bot or automated workflow experiences a primary model failure, our infrastructure instantly and invisibly routes traffic to a backup model in milliseconds.\n\nWhether your users are interacting with our advanced RAG solutions or our Multilingual Bots supporting English, Nigerian Pidgin, Hausa, Yoruba, or Igbo, they experience zero interruption. They never even notice the switch.\n\nReliable enterprise automation means building for failure before it happens, keeping your operations running 24/7 without manual intervention.\n\nBook a consultation to see our technical showcase.\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #TechInAfrica",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 8,
+    "createdAt": "2026-10-22T17:56:26.291Z"
   }
 }
