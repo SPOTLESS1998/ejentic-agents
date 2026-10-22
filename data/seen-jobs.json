@@ -1254,7 +1254,7 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/atlassian/ai-productivity-lead-sales-development": {
-    "firstSeen": "2026-10-11T12:53:26.334Z",
+    "firstSeen": "2026-10-22T11:55:59.681Z",
     "label": "JOB",
     "title": "AI Productivity Lead, Sales Development",
     "kind": "screened"
@@ -1332,7 +1332,7 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/libertymutualinsurance/analyst-data-science-personal-lines-auto-modeling": {
-    "firstSeen": "2026-10-11T12:53:26.334Z",
+    "firstSeen": "2026-10-22T11:55:59.681Z",
     "label": "JOB",
     "title": "Analyst, Data Science, Personal Lines Auto Modeling",
     "kind": "screened"
@@ -1851,6 +1851,90 @@
     "firstSeen": "2026-10-21T11:52:13.247Z",
     "label": "LEAD",
     "title": "Beyond Finance",
+    "kind": "reported"
+  },
+  "https://jobicy.com/jobs/153842-director-ai-solutions": {
+    "firstSeen": "2026-10-22T11:55:59.681Z",
+    "label": "JOB",
+    "title": "Director, AI Solutions",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153833-solutions-engineer": {
+    "firstSeen": "2026-10-22T11:55:59.681Z",
+    "label": "JOB",
+    "title": "Solutions Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153824-product-manager-ai-transformation-salesforce": {
+    "firstSeen": "2026-10-22T11:55:59.681Z",
+    "label": "JOB",
+    "title": "Product Manager, AI Transformation & Salesforce",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/156259-sr-marketing-automation-specialist": {
+    "firstSeen": "2026-10-22T11:55:59.681Z",
+    "label": "JOB",
+    "title": "Sr. Marketing Automation Specialist",
+    "kind": "screened"
+  },
+  "lead:wealthfront": {
+    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "label": "LEAD",
+    "title": "Wealthfront",
+    "kind": "reported"
+  },
+  "lead:deleteme": {
+    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "label": "LEAD",
+    "title": "DeleteMe",
+    "kind": "screened"
+  },
+  "lead:ping identity": {
+    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "label": "LEAD",
+    "title": "Ping Identity",
+    "kind": "screened"
+  },
+  "lead:hello alice": {
+    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "label": "LEAD",
+    "title": "Hello Alice",
+    "kind": "reported"
+  },
+  "lead:spreedly": {
+    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "label": "LEAD",
+    "title": "Spreedly",
+    "kind": "reported"
+  },
+  "lead:alphasense": {
+    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "label": "LEAD",
+    "title": "AlphaSense",
+    "kind": "screened"
+  },
+  "lead:sigma computing": {
+    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "label": "LEAD",
+    "title": "Sigma Computing",
+    "kind": "screened"
+  },
+  "lead:amplitude": {
+    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "label": "LEAD",
+    "title": "Amplitude",
+    "kind": "screened"
+  },
+  "lead:cordance": {
+    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "label": "LEAD",
+    "title": "Cordance",
+    "kind": "screened"
+  },
+  "lead:harness": {
+    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "label": "LEAD",
+    "title": "Harness",
     "kind": "reported"
   }
 }
