@@ -1719,5 +1719,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-10-21T21:33:35.275Z"
+  },
+  "2026-10-22:morning": {
+    "date": "2026-10-22",
+    "slot": "morning",
+    "cycleDay": 16,
+    "theme": "Resilience Engineering",
+    "pillar": "EDUCATE",
+    "topic": "How prompt engineering actually works — demystified.",
+    "angle": "Demystifying prompt engineering as a structured method of context, constraints, and verification rather than mysterious magic.",
+    "xPost": "Prompt engineering isn't magic. It is simply context, constraints, examples, and verification. Build reliable AI by treating instructions like software architecture, not spellcasting. #EjenticAI #AIAgents",
+    "linkedinPost": "There is no magic in prompt engineering. When reliable autonomous agents work, it is not because someone whispered the right spell to an LLM. It is because of structure.\n\nHere is how it actually works:\n\n1. Context: Give the model the exact role, background, and data it needs to understand the task.\n\n2. Constraints: Define clear guardrails on what the model cannot do, formatting rules, and tone.\n\n3. Examples: Show it what good output looks like through few-shot prompting.\n\n4. Verification: Test outputs against strict criteria before they ever reach a customer or internal system.\n\nAs our Chief Architect David Chen emphasizes, resilient systems rely on graceful degradation and fallbacks. Treating prompts like software architecture—not guesswork—is how you build dependable AI automation.\n\n#EjenticAI #AIAgents #Automation #AIExplained",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-10-22T13:30:04.344Z"
   }
 }
