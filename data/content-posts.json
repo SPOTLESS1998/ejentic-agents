@@ -1749,5 +1749,19 @@
     ],
     "score": 8,
     "createdAt": "2026-10-22T17:56:26.291Z"
+  },
+  "2026-10-22:evening": {
+    "date": "2026-10-22",
+    "slot": "evening",
+    "cycleDay": 16,
+    "theme": "Resilience Engineering",
+    "pillar": "INSPIRE",
+    "topic": "David Chen on building systems that never leave users stranded.",
+    "angle": "Connecting the absolute reliability of resilient engineering to our ethical, human-centric vision for African AI infrastructure.",
+    "xPost": "Downtime isn't an accident; it's a design choice you didn't make. Our Chief Architect David Chen builds systems that never leave users stranded. Because African innovation demands absolute resilience. 🛡️ #EjenticAI #ResilienceEngineering",
+    "linkedinPost": "When building autonomous systems that businesses rely on every single second, failure is not an abstract concept. It is a design challenge.\n\nOur Chief Architect, David Chen, puts it plainly: \"Downtime isn't an accident; it's a design choice you didn't make.\"\n\nAt Ejentic AI, we believe that if Africa is going to lead the world in artificial intelligence, our infrastructure must be bulletproof. We don't just build smart agents that speak our languages and protect our data; we engineer resilient workflows with built-in fallbacks, seamless uptime, and graceful degradation so our people are never left stranded in the middle of a critical transaction.\n\nTrue human-centric AI means respecting the user enough to ensure the system is always there when they need it.\n\nHow is your team engineering for resilience as you adopt automation?\n\n#EjenticAI #ResilienceEngineering #FutureOfWork #EthicalAI #AfricanInnovation",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-10-22T21:27:48.507Z"
   }
 }
