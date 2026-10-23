@@ -1350,7 +1350,7 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/gitlab/staff-forward-deployed-engineer-c40f2f": {
-    "firstSeen": "2026-10-12T15:29:43.882Z",
+    "firstSeen": "2026-10-23T11:41:56.726Z",
     "label": "JOB",
     "title": "Staff Forward Deployed Engineer",
     "kind": "screened"
@@ -1936,5 +1936,59 @@
     "label": "LEAD",
     "title": "Harness",
     "kind": "reported"
+  },
+  "https://jobicy.com/jobs/156532-senior-applied-ai-solutions-engineer": {
+    "firstSeen": "2026-10-23T11:41:56.726Z",
+    "label": "JOB",
+    "title": "Senior Applied AI Solutions Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/156483-software-engineer-ai-ml-infrastructure-us-based": {
+    "firstSeen": "2026-10-23T11:41:56.726Z",
+    "label": "JOB",
+    "title": "Software Engineer, AI/ML Infrastructure (US-Based)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153884-ceo-ai-services-us-based": {
+    "firstSeen": "2026-10-23T11:41:56.726Z",
+    "label": "JOB",
+    "title": "CEO, AI Services - US-Based",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153886-senior-data-engineer-4": {
+    "firstSeen": "2026-10-23T11:41:56.726Z",
+    "label": "JOB",
+    "title": "Senior Data Engineer",
+    "kind": "screened"
+  },
+  "lead:plaid": {
+    "firstSeen": "2026-10-23T11:41:57.882Z",
+    "label": "LEAD",
+    "title": "Plaid",
+    "kind": "screened"
+  },
+  "lead:happy money": {
+    "firstSeen": "2026-10-23T11:41:57.882Z",
+    "label": "LEAD",
+    "title": "Happy Money",
+    "kind": "screened"
+  },
+  "lead:launchdarkly": {
+    "firstSeen": "2026-10-23T11:41:57.882Z",
+    "label": "LEAD",
+    "title": "LaunchDarkly",
+    "kind": "screened"
+  },
+  "lead:nogigiddy": {
+    "firstSeen": "2026-10-23T11:41:57.882Z",
+    "label": "LEAD",
+    "title": "NoGigiddy",
+    "kind": "reported"
+  },
+  "lead:bigid": {
+    "firstSeen": "2026-10-23T11:41:57.882Z",
+    "label": "LEAD",
+    "title": "BigID",
+    "kind": "screened"
   }
 }
