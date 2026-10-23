@@ -1777,5 +1777,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-23T13:05:08.403Z"
+  },
+  "2026-10-23:afternoon": {
+    "date": "2026-10-23",
+    "slot": "afternoon",
+    "cycleDay": 17,
+    "theme": "RAG, Internally",
+    "pillar": "SHOWCASE",
+    "topic": "Meet our multilingual support agent — how it switches between Pidgin, Hausa, Yoruba & Igbo mid-conversation.",
+    "angle": "Highlighting our autonomous multilingual customer-service agents that fluidly switch between English, Nigerian Pidgin, Hausa, Yoruba, and Igbo mid-conversation.",
+    "xPost": "Our autonomous multilingual support agents switch fluidly between English, Nigerian Pidgin, Hausa, Yoruba, and Igbo mid-conversation. See it in action: https://youtu.be/gbXhZMTdnkM\n\nBook a free consultation",
+    "linkedinPost": "Customer service in Africa shouldn't force users to choose just one language.\n\nAt Ejentic AI, our autonomous multilingual customer-service agents handle English, Nigerian Pidgin, Hausa, Yoruba, and Igbo — switching seamlessly mid-conversation to match how your customers naturally speak.\n\nHere is what a live interaction looks like:\n\nCustomer: 'Hello, how I fit check my account balance?' (Pidgin)\nAgent: 'E dey easy! You fit check am for our app menu, or make I help you run am here?' (Pidgin)\nCustomer: 'Please check am for me. E no dey open.' (Pidgin/English)\nAgent: 'O nira fún ẹ láti wọlé báyìí? Jẹ kí n tọ́ ọ sọ́nà lórí bí o ṣe lè tunṣe.' (Yoruba)\n\nBuilt by our team — David Chen ensuring resilient fallback systems, Sarah Jenkins designing invisible UI, and Elena Rodriguez ensuring rigorous bias evaluation — these agents greet clients, answer questions, and capture leads 24/7.\n\nWatch the full support agent demo: https://youtu.be/gbXhZMTdnkM\n\nBook a free consultation\n\n#EjenticAI #AIAgents #CustomerExperience #NigerianTech #BuildWithAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-23T17:50:33.230Z"
   }
 }
