@@ -57,3 +57,4 @@
 {"agent":"job","found":46,"screened":10,"reported":1,"degraded":false,"aborted":[],"ts":"2026-10-23T11:41:58.598Z"}
 {"agent":"scholarship","found":45,"screened":1,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing passed screening today.","ts":"2026-10-23T11:58:07.703Z"}
 {"agent":"research","found":30,"screened":3,"reported":3,"degraded":false,"aborted":[],"ts":"2026-10-23T12:17:11.095Z"}
+{"agent":"hackathon","found":27,"screened":0,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing was screened: every result the search returned was already in the seen-store. This zero says there was nothing NEW, not that nothing matched.","ts":"2026-10-23T12:39:43.888Z"}
