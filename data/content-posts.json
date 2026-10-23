@@ -1763,5 +1763,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-10-22T21:27:48.507Z"
+  },
+  "2026-10-23:morning": {
+    "date": "2026-10-23",
+    "slot": "morning",
+    "cycleDay": 17,
+    "theme": "RAG, Internally",
+    "pillar": "EDUCATE",
+    "topic": "Anatomy of a RAG pipeline: from PDF to instant answers.",
+    "angle": "Explaining the anatomy of a RAG pipeline from PDF to instant answers as part of internal knowledge management.",
+    "xPost": "How do documents become instant answers? The RAG pipeline: chunking PDFs, turning text into embeddings, storing in a vector DB, and retrieving the right context with citations. Secure internal knowledge without data leaks. #EjenticAI #RAG",
+    "linkedinPost": "Why do internal company documents often feel impossible to search through when employees need answers fast?\n\nThe answer lies in the anatomy of a RAG pipeline. Instead of leaving private SOPs trapped in static PDFs, a Retrieval-Augmented Generation system processes internal knowledge step by step.\n\nFirst, documents are broken down into manageable chunks. Next, those chunks are converted into numerical embeddings that capture semantic meaning. They are stored securely in a vector database.\n\nWhen an employee asks a question, the system retrieves the most relevant chunks and passes them to the language model to generate an answer backed by direct citations. No data leakage, just fast and reliable internal support.\n\n#EjenticAI #RAG #AIAutomation #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-23T13:05:08.403Z"
   }
 }
