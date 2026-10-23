@@ -1791,5 +1791,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-23T17:50:33.230Z"
+  },
+  "2026-10-23:evening": {
+    "date": "2026-10-23",
+    "slot": "evening",
+    "cycleDay": 17,
+    "theme": "RAG, Internally",
+    "pillar": "INSPIRE",
+    "topic": "Elena Rodriguez on evaluating AI before it ships.",
+    "angle": "Elena Rodriguez on evaluating AI before shipping to ensure ethical, human-centric systems.",
+    "xPost": "\"We test agents like pilots — simulations before passengers.\" - Elena Rodriguez, Lead ML Engineer at Ejentic AI. Responsible AI isn't an afterthought. #EjenticAI #EthicalAI",
+    "linkedinPost": "\"We test agents like pilots — simulations before passengers.\" \n\nAt Ejentic AI, our Lead ML Engineer Elena Rodriguez treats evaluation before shipping as a moral duty. In our vision to build Africa's technological future, we believe AI must augment our people, not replace them. That means rigorous bias checks and strict data hygiene before any autonomous system goes live.\n\nWe are building human-centric systems in Nigeria that respect our data and speak our languages. AI should be reliable, safe, and built with intention.\n\nHow does your team evaluate AI safety before deployment?\n\n#EjenticAI #EthicalAI #AIAgents #AfricanTech #ResponsibleAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-23T21:19:00.946Z"
   }
 }
