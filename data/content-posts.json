@@ -1838,5 +1838,19 @@
     ],
     "score": 9,
     "createdAt": "2026-10-24T16:32:11.376Z"
+  },
+  "2026-10-24:evening": {
+    "date": "2026-10-24",
+    "slot": "evening",
+    "cycleDay": 18,
+    "theme": "How We Test",
+    "pillar": "INSPIRE",
+    "topic": "Sarah Jenkins on designing conversations, not screens.",
+    "angle": "Connecting Sarah Jenkins' philosophy of designing conversations, not screens, to our human-centric vision for African AI",
+    "xPost": "AI shouldn't feel like a dashboard. \"The interface is the dialogue itself.\" — Sarah Jenkins, Head of Design. #EjenticAI #AI",
+    "linkedinPost": "At Ejentic AI, our vision is rooted in a simple truth: technology should adapt to how humans actually communicate, not the other way around. \n\nToo many businesses treat AI as just another screen to click through or a dashboard to stare at. But true integration means the interface is the dialogue itself. \n\n\"AI should feel invisible and effortless; conversations, not screens,\" says Sarah Jenkins, our Head of Design & Experience. \n\nWhen we build autonomous multilingual agents that speak English, Nigerian Pidgin, Hausa, Yoruba, and Igbo, we are designing for people first. We believe Africa can lead the world in AI by building ethical, human-centric systems that respect our data and augment our people.\n\nHow is your team designing user experiences that feel natural instead of technical? \n\n#EjenticAI #AIAgents #AfricanTech #CustomerExperience #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-10-24T20:38:51.715Z"
   }
 }
