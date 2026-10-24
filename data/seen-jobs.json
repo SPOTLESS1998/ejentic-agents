@@ -1990,5 +1990,65 @@
     "label": "LEAD",
     "title": "BigID",
     "kind": "screened"
+  },
+  "https://remotive.com/remote-jobs/artificial-intelligence/ai-trainer-video-annotation-2091161": {
+    "firstSeen": "2026-10-24T11:04:38.197Z",
+    "label": "JOB",
+    "title": "AI Trainer - Video Annotation",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153948-lead-machine-learning-engineer-3": {
+    "firstSeen": "2026-10-24T11:04:38.197Z",
+    "label": "JOB",
+    "title": "Lead Machine Learning Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153939-senior-machine-learning-engineer-ads-quora": {
+    "firstSeen": "2026-10-24T11:04:38.197Z",
+    "label": "JOB",
+    "title": "Senior Machine Learning Engineer, Ads - Quora",
+    "kind": "reported"
+  },
+  "https://jobicy.com/jobs/149563-python-and-kubernetes-software-engineer-data-workflows-ai-ml-analytics": {
+    "firstSeen": "2026-10-24T11:04:38.197Z",
+    "label": "JOB",
+    "title": "Python and Kubernetes Software Engineer - Data, Workflows, AI/ML & Analytics",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/151402-customer-solutions-engineer-3": {
+    "firstSeen": "2026-10-24T11:04:38.197Z",
+    "label": "JOB",
+    "title": "Customer Solutions Engineer",
+    "kind": "screened"
+  },
+  "lead:serve robotics": {
+    "firstSeen": "2026-10-24T11:04:43.243Z",
+    "label": "LEAD",
+    "title": "Serve Robotics",
+    "kind": "screened"
+  },
+  "lead:quora": {
+    "firstSeen": "2026-10-24T11:04:43.243Z",
+    "label": "LEAD",
+    "title": "Quora",
+    "kind": "screened"
+  },
+  "lead:dutchie": {
+    "firstSeen": "2026-10-24T11:04:43.243Z",
+    "label": "LEAD",
+    "title": "Dutchie",
+    "kind": "reported"
+  },
+  "lead:soci": {
+    "firstSeen": "2026-10-24T11:04:43.243Z",
+    "label": "LEAD",
+    "title": "SOCi",
+    "kind": "screened"
+  },
+  "lead:clover health": {
+    "firstSeen": "2026-10-24T11:04:43.243Z",
+    "label": "LEAD",
+    "title": "Clover Health",
+    "kind": "reported"
   }
 }
