@@ -1805,5 +1805,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-23T21:19:00.946Z"
+  },
+  "2026-10-24:morning": {
+    "date": "2026-10-24",
+    "slot": "morning",
+    "cycleDay": 18,
+    "theme": "How We Test",
+    "pillar": "EDUCATE",
+    "topic": "Why we test agents like pilots: evals, simulations, and guardrails.",
+    "angle": "Using rigorous pre-deployment evals and simulations as flight simulators for AI agents, ensuring reliability before they touch real customer workflows.",
+    "xPost": "Would you let an unproven pilot fly your plane? Why trust an untested AI agent with your customers? Quality is designed through rigorous evals, not hoped for. #EjenticAI #AIAgents",
+    "linkedinPost": "Would you board a plane if the pilot had only ever tested the controls in their imagination?\n\nIt sounds absurd when applied to aviation, yet many businesses deploy AI agents into live customer workflows hoping for the best without rigorous pre-release testing.\n\nAt Ejentic AI, our Lead ML Engineer Elena Rodriguez treats evaluations as the industry's flight simulator. Before any autonomous agent greets a customer, handles a query, or triggers a backend workflow, it goes through structured simulations, bias checks, and strict guardrails.\n\nQuality in AI is never an accident. It is designed through systematic evaluations that catch edge cases before your users do.\n\nHow does your team currently test your automated systems before they go live?\n\n#EjenticAI #AIAgents #EthicalAI #FutureOfWork #AIAutomation",
+    "citedSourceUrls": [
+      "https://fin.ai/learn/examples-ai-customer-service"
+    ],
+    "score": 9,
+    "createdAt": "2026-10-24T12:27:28.608Z"
   }
 }
