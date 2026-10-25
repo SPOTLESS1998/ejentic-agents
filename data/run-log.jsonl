@@ -72,3 +72,4 @@
 {"agent":"scholarship","found":44,"screened":0,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing was screened: every result the search returned was already in the seen-store. This zero says there was nothing NEW, not that nothing matched.","ts":"2026-10-25T11:56:00.472Z"}
 {"agent":"research","found":30,"screened":2,"reported":0,"degraded":false,"aborted":["Could not parse Gemini JSON output (453 chars). Raw head: {\"picks\":[{\"i\":1,\"genuine\":true,85,\"kind\":\"MARKET\",\"title\":\"42 ai automation statistics you need to know in 2026\",\"summary"],"reason":"A pass threw — this zero is not real information. See the recorded error.","ts":"2026-10-25T12:12:36.604Z"}
 {"agent":"hackathon","found":27,"screened":3,"reported":1,"degraded":false,"aborted":[],"ts":"2026-10-25T12:35:53.938Z"}
+{"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-10-25T12:57:47.996Z"}

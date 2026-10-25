@@ -1852,5 +1852,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-10-24T20:38:51.715Z"
+  },
+  "2026-10-25:morning": {
+    "date": "2026-10-25",
+    "slot": "morning",
+    "cycleDay": 19,
+    "theme": "Security Choices",
+    "pillar": "EDUCATE",
+    "topic": "Air-gapped vs. cloud RAG: choosing by risk, not hype.",
+    "angle": "Demystifying AI security architecture by contrasting cloud vs. air-gapped RAG based strictly on data sensitivity and risk profile.",
+    "xPost": "Cloud RAG vs. Air-Gapped RAG: Which is right for your data? Choose based on risk, not hype. Public knowledge belongs in the cloud; regulated and secret internal SOPs demand an air-gapped vault. Security starts with architecture. #EjenticAI #AIAgents",
+    "linkedinPost": "When adopting AI, the biggest security question isn't which model to use. It is where your data lives.\n\nMany businesses rush to put everything in the cloud because of the hype. But architecture should be driven by risk, not trends.\n\nIf your documents contain public knowledge, marketing materials, or general FAQs, a cloud-based RAG setup is efficient and cost-effective. But if you are handling regulated financial records, proprietary client data, or secret internal SOPs, you need an air-gapped RAG vault. This ensures your private documents never leak or train external models.\n\nOur Chief Architect, David Chen, designs systems focused on seamless, resilient operations. Elena Rodriguez, our Lead ML Engineer, treats data hygiene as a moral duty—prioritizing evaluation and security before a single system ships.\n\nEvaluate your data sensitivity honestly. Match your security to your actual risk level, not the latest tech cycle.\n\nHow does your team evaluate data risk before deploying new software?\n\n#EjenticAI #RAG #EthicalAI #FutureOfWork #AIAutomation",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-25T12:57:47.993Z"
   }
 }
