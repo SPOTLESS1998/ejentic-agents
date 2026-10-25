@@ -1866,5 +1866,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-25T12:57:47.993Z"
+  },
+  "2026-10-25:afternoon": {
+    "date": "2026-10-25",
+    "slot": "afternoon",
+    "cycleDay": 19,
+    "theme": "Security Choices",
+    "pillar": "SHOWCASE",
+    "topic": "From missed message to booked call: anatomy of our lead concierge.",
+    "angle": "Tracing the exact anatomy of our Inbound Lead Concierge from missed message to booked call, highlighting enterprise RAG and automated workflow integration for maximum ROI.",
+    "xPost": "From missed message to booked call: how our Inbound Lead Concierge captures leads 24/7 with RAG-powered answers. Book a free consultation https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "From missed message to booked call: let's look at the anatomy of our Inbound Lead Concierge and how it transforms pipeline conversion.\n\nBefore: A potential enterprise client visits your site at midnight with complex architectural questions. No human sales team is online, the static contact form sits in an unread backlog, and the high-value lead cools off permanently.\n\nAfter: Our 24/7 Inbound Lead Concierge greets them instantly. Utilizing enterprise RAG and secure multilingual bots, it answers nuanced technical questions, qualifies buyer intent against your exact business logic, and schedules a qualified consultation directly into your calendar.\n\nChief Architect David Chen obsesses over seamless, resilient systems with proper fallbacks, ensuring you capture demand around the clock without inflating headcount. \n\nWatch our technical showcase in action: https://youtu.be/gbXhZMTdnkM\n\nHow is your current tech stack handling after-hours enterprise inquiries?\n\n#EjenticAI #AIAgents #Automation #CustomerExperience #ConversationalAI",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 9,
+    "createdAt": "2026-10-25T17:01:27.972Z"
   }
 }
