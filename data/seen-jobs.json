@@ -811,9 +811,10 @@
     "title": "Dr. Martens Australia / New Zealand"
   },
   "https://remoteok.com/remote-jobs/remote-senior-backend-engineer-build-ai-agents-salesforge-1137114": {
-    "firstSeen": "2026-08-26T07:10:02.613Z",
+    "firstSeen": "2026-10-25T11:33:44.299Z",
     "label": "JOB",
-    "title": "Senior Backend Engineer Build AI Agents"
+    "title": "Senior Backend Engineer Build AI Agents",
+    "kind": "reported"
   },
   "https://remoteok.com/remote-jobs/remote-course-director-ux-ui-and-ai-interaction-design-foundation-1137139": {
     "firstSeen": "2026-08-27T17:39:09.212Z",
@@ -2049,6 +2050,48 @@
     "firstSeen": "2026-10-24T11:04:43.243Z",
     "label": "LEAD",
     "title": "Clover Health",
+    "kind": "reported"
+  },
+  "https://remoteok.com/remote-jobs/remote-solutions-engineer-onebrief-1137568": {
+    "firstSeen": "2026-10-25T11:33:44.299Z",
+    "label": "JOB",
+    "title": "Solutions Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/156883-senior-solutions-engineer-east": {
+    "firstSeen": "2026-10-25T11:33:44.299Z",
+    "label": "JOB",
+    "title": "Senior Solutions Engineer - East",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/156872-staff-data-engineer-5": {
+    "firstSeen": "2026-10-25T11:33:44.299Z",
+    "label": "JOB",
+    "title": "Staff Data Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/149521-engineering-manager-mlops-analytics": {
+    "firstSeen": "2026-10-25T11:33:44.299Z",
+    "label": "JOB",
+    "title": "Engineering Manager - MLOps & Analytics",
+    "kind": "reported"
+  },
+  "lead:obsidian security": {
+    "firstSeen": "2026-10-25T11:33:45.528Z",
+    "label": "LEAD",
+    "title": "Obsidian Security",
+    "kind": "screened"
+  },
+  "lead:d2l": {
+    "firstSeen": "2026-10-25T11:33:45.528Z",
+    "label": "LEAD",
+    "title": "D2L",
+    "kind": "screened"
+  },
+  "lead:garner health": {
+    "firstSeen": "2026-10-25T11:33:45.528Z",
+    "label": "LEAD",
+    "title": "Garner Health",
     "kind": "reported"
   }
 }
