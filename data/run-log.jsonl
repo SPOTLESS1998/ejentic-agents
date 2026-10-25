@@ -69,3 +69,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-10-24T16:32:11.379Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-10-24T20:38:51.718Z"}
 {"agent":"job","found":47,"screened":8,"reported":3,"degraded":false,"aborted":[],"ts":"2026-10-25T11:33:47.548Z"}
+{"agent":"scholarship","found":44,"screened":0,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing was screened: every result the search returned was already in the seen-store. This zero says there was nothing NEW, not that nothing matched.","ts":"2026-10-25T11:56:00.472Z"}
