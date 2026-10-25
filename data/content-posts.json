@@ -1882,5 +1882,19 @@
     ],
     "score": 9,
     "createdAt": "2026-10-25T17:01:27.972Z"
+  },
+  "2026-10-25:evening": {
+    "date": "2026-10-25",
+    "slot": "evening",
+    "cycleDay": 19,
+    "theme": "Security Choices",
+    "pillar": "INSPIRE",
+    "topic": "David Chen on the unglamorous work: logs, retries, uptime.",
+    "angle": "Reliability in AI systems isn't about magic; it comes down to the unglamorous work of architecture, logs, retries, and uptime.",
+    "xPost": "Reliability isn't a feature. As our Chief Architect David Chen says, it's a thousand boring decisions done right: logs, retries, and uptime. 🛡️\n\n#EjenticAI #AIAgents",
+    "linkedinPost": "When people look at autonomous AI agents, they usually see the magic—the fluent multilingual chat, the instant lead generation, or the seamless workflow automation.\n\nBut real enterprise infrastructure isn't built on magic. It's built on discipline.\n\nAs our Chief Architect, David Chen, often reminds us, reliability is rarely glamorous. It doesn't make a flashy demo. It lives in the unglamorous work: meticulous logs, intelligent fallbacks, rigorous retries, and relentless uptime. When you are processing sensitive business logic or querying private knowledge bases through an air-gapped vault, there is no room for graceful collapses.\n\nWe believe Africa can lead the world in AI, starting right here in Nigeria. But true leadership means building systems that are robust, secure, and resilient from the ground up. Not copying Silicon Valley, but engineering solutions that respect our data and augment our people.\n\nWhat boring, foundational decisions are you making in your tech stack today?\n\n#EjenticAI #AIAgents #Automation #BuildInNigeria #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-25T20:44:20.058Z"
   }
 }
