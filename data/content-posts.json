@@ -1910,5 +1910,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-10-26T14:52:05.390Z"
+  },
+  "2026-10-26:afternoon": {
+    "date": "2026-10-26",
+    "slot": "afternoon",
+    "cycleDay": 20,
+    "theme": "Clean Inputs, Trustworthy Outputs",
+    "pillar": "SHOWCASE",
+    "topic": "Workflow automation in the wild: Stripe + CRM + LLM, revisited step-by-step.",
+    "angle": "Connecting clean input and LLM optimization strategies to our Stripe + CRM + LLM invoice reconciliation workflow case study.",
+    "xPost": "Clean inputs drive trustworthy automation. Our step-by-step Stripe + CRM + LLM pipeline cuts invoice errors and turnaround times. #EjenticAI #Automation",
+    "linkedinPost": "Building reliable enterprise automation means sweating the pipeline architecture. Clean inputs lead to trustworthy outputs.\n\nHere is a step-by-step look at our Stripe + CRM + LLM workflow in the wild:\n\n1. Stripe triggers an event on payment receipt or invoice generation.\n2. The system pulls and structures raw data, stripping out noise to keep token costs down and prevent hallucination.\n3. An LLM parses unstructured metadata against CRM customer records.\n4. The pipeline handles reconciliation, updating financial logs and notifying account reps automatically.\n\nAs David Chen, our Chief Architect, notes, resilient systems require robust fallbacks and graceful degradation at every layer. We design these pipelines to cut operational costs, human error rates, and processing turnaround times without leaking private data.\n\nWant to see how this fits your stack? Book a free consultation\n\n#EjenticAI #Automation #AIAutomation #RAG #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-26T19:10:45.025Z"
   }
 }
