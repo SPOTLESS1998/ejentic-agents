@@ -2093,5 +2093,71 @@
     "label": "LEAD",
     "title": "Garner Health",
     "kind": "reported"
+  },
+  "https://news.ycombinator.com/item?id=49963332": {
+    "firstSeen": "2026-10-26T13:07:18.364Z",
+    "label": "JOB",
+    "title": "AI Engineer (Agentic Systems)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/157078-senior-enterprise-ai-account-executive-deasy-labs": {
+    "firstSeen": "2026-10-26T13:07:18.364Z",
+    "label": "JOB",
+    "title": "Senior Enterprise AI Account Executive — Deasy Labs",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/157074-senior-it-automation-engineer": {
+    "firstSeen": "2026-10-26T13:07:18.364Z",
+    "label": "JOB",
+    "title": "Senior IT Automation Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/157036-senior-product-manager-ai-adoption-growth": {
+    "firstSeen": "2026-10-26T13:07:18.364Z",
+    "label": "JOB",
+    "title": "Senior Product Manager, AI Adoption & Growth",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/151574-software-engineer-ai-native-cad-integrations": {
+    "firstSeen": "2026-10-26T13:07:18.364Z",
+    "label": "JOB",
+    "title": "Software Engineer — AI-Native CAD Integrations",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/151566-senior-ml-engineer": {
+    "firstSeen": "2026-10-26T13:07:18.364Z",
+    "label": "JOB",
+    "title": "Senior ML Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/151541-ai-transformation-owner-product-design": {
+    "firstSeen": "2026-10-26T13:07:18.364Z",
+    "label": "JOB",
+    "title": "AI Transformation Owner, Product & Design",
+    "kind": "screened"
+  },
+  "lead:axmed": {
+    "firstSeen": "2026-10-26T13:07:26.156Z",
+    "label": "LEAD",
+    "title": "Axmed",
+    "kind": "screened"
+  },
+  "lead:huntress": {
+    "firstSeen": "2026-10-26T13:07:26.156Z",
+    "label": "LEAD",
+    "title": "Huntress",
+    "kind": "screened"
+  },
+  "lead:cloudinary": {
+    "firstSeen": "2026-10-26T13:07:26.156Z",
+    "label": "LEAD",
+    "title": "Cloudinary",
+    "kind": "screened"
+  },
+  "lead:gitlab": {
+    "firstSeen": "2026-10-26T13:07:26.156Z",
+    "label": "LEAD",
+    "title": "GitLab",
+    "kind": "reported"
   }
 }
