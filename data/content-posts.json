@@ -1896,5 +1896,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-25T20:44:20.058Z"
+  },
+  "2026-10-26:morning": {
+    "date": "2026-10-26",
+    "slot": "morning",
+    "cycleDay": 20,
+    "theme": "Clean Inputs, Trustworthy Outputs",
+    "pillar": "EDUCATE",
+    "topic": "How we scrub prompt-injection and junk before AI ever sees it.",
+    "angle": "Using input sanitization and prompt injection scrubbing as a core security layer before data hits language models.",
+    "xPost": "What happens when someone tries to hack your AI chatbot with hidden instructions? Before an LLM sees any user text, our systems scrub junk, payloads, and tokens. Clean inputs mean trustworthy outputs. #EjenticAI #AIAgents",
+    "linkedinPost": "What actually happens when a user types a prompt into an AI assistant? If you aren't filtering the input, you're leaving the door wide open for prompt injection payloads, hidden tokens, and malicious instruction overrides.\n\nAt Ejentic AI, our engineering approach is built on a simple rule: clean inputs lead to trustworthy outputs. Before a single word reaches the language model, our pipelines scrub the incoming text, stripping out injection attempts and data anomalies.\n\nOur Lead ML Engineer, Elena Rodriguez, treats data hygiene as a moral duty—prioritizing evaluation and robust input validation long before anything ships to production. Security isn't an afterthought bolted onto the UI; it's baked into the architecture from day one.\n\nHow is your team handling input validation for your automated workflows?\n\n#EjenticAI #AIAgents #EthicalAI #AIAutomation #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-10-26T14:52:05.390Z"
   }
 }
