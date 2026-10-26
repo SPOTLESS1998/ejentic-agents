@@ -1924,5 +1924,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-26T19:10:45.025Z"
+  },
+  "2026-10-26:evening": {
+    "date": "2026-10-26",
+    "slot": "evening",
+    "cycleDay": 20,
+    "theme": "Clean Inputs, Trustworthy Outputs",
+    "pillar": "INSPIRE",
+    "topic": "Elena Rodriguez on data hygiene as a moral duty.",
+    "angle": "Connecting data hygiene to ethical AI development, emphasizing that clean inputs lead to trustworthy outputs.",
+    "xPost": "Bad data in means biased answers out. At Ejentic AI, our Lead ML Engineer Elena Rodriguez views data hygiene not as a chore, but as a moral duty to our people. #EjenticAI #EthicalAI",
+    "linkedinPost": "When we talk about building autonomous systems that augment our people rather than replace them, we have to start at the absolute root: the data.\n\nBad data in means biased, broken answers out. It is easy to obsess over model architectures, but ignoring data hygiene means building on sand.\n\nAs our Lead ML Engineer, Elena Rodriguez, puts it: data hygiene is not just technical maintenance. It is a moral duty. If we want AI systems that respect our data, speak our languages, and serve our businesses reliably, we have to treat every dataset with care and responsibility before it ever touches a model.\n\nClean inputs lead to trustworthy outputs. That is the standard we hold ourselves to every single day.\n\n#EjenticAI #EthicalAI #AIAgents #ResponsibleAI #AfricanInnovation",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-26T22:35:15.264Z"
   }
 }
