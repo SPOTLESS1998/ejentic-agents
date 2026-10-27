@@ -1938,5 +1938,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-26T22:35:15.264Z"
+  },
+  "2026-10-27:morning": {
+    "date": "2026-10-27",
+    "slot": "morning",
+    "cycleDay": 21,
+    "theme": "Radical Transparency",
+    "pillar": "EDUCATE",
+    "topic": "Behind the scenes: this very content is co-written by our agents (transparency post).",
+    "angle": "Using our own autonomous content pipeline as live proof of radical transparency in agentic AI workflows.",
+    "xPost": "How do you build trust in AI? By letting your own agents do the heavy lifting. This post was researched, drafted, and reviewed right inside our autonomous pipeline. That is radical transparency. #EjenticAI #AIAgents",
+    "linkedinPost": "How do you build trust in autonomous systems? By letting your own workflow be the product demo.\n\nWith the global AI automation market projected to scale past $1.1 trillion by 2033, businesses are rushing to adopt agentic tools. But tools alone do not build trust. Transparency does.\n\nThat is why today's post comes with no smoke and mirrors. Our research agent scanned daily industry data, our content agent drafted this update from those findings, and our human team reviewed it before publishing.\n\nAI should augment our people, not replace them. When you build systems that are honest about how they operate, automation stops feeling like a black box and starts feeling like a dependable partner.\n\nHow is your organization approaching transparency as you scale your AI workflows?\n\n#EjenticAI #AIAgents #Automation #EthicalAI #FutureOfWork",
+    "citedSourceUrls": [
+      "https://www.grandviewresearch.com/industry-analysis/ai-automation-market-report"
+    ],
+    "score": 8,
+    "createdAt": "2026-10-27T13:58:51.350Z"
   }
 }
