@@ -1954,5 +1954,19 @@
     ],
     "score": 8,
     "createdAt": "2026-10-27T13:58:51.350Z"
+  },
+  "2026-10-27:afternoon": {
+    "date": "2026-10-27",
+    "slot": "afternoon",
+    "cycleDay": 21,
+    "theme": "Radical Transparency",
+    "pillar": "SHOWCASE",
+    "topic": "Cost design: how we keep agents inside free tiers without cutting corners.",
+    "angle": "Frugal engineering as craft: keeping autonomous agents inside free tiers without cutting corners through batched AI calls and verification.",
+    "xPost": "Frugal engineering isn't cutting corners—it's craft. We build autonomous agents using batched AI calls and smart verification to keep you in free tiers. #EjenticAI #AIAgents",
+    "linkedinPost": "Enterprise automation shouldn't come with runaway token bills. At Ejentic AI, we treat frugal engineering as a core craft rather than an afterthought. \n\nBy implementing batched AI calls, rigorous verification before spend, and graceful degradation, our autonomous workflows run efficiently without cutting corners or dropping reliability.\n\nDavid Chen, our Chief Architect, designs resilient systems that keep operational costs predictable while your agents handle multilingual support, lead generation, and internal RAG queries.\n\nWant to scale your operations without scaling your API costs?\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #AIAutomation",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-10-27T18:38:55.537Z"
   }
 }
