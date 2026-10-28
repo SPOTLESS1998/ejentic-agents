@@ -1984,5 +1984,21 @@
     ],
     "score": 8,
     "createdAt": "2026-10-28T14:53:06.127Z"
+  },
+  "2026-10-28:afternoon": {
+    "date": "2026-10-28",
+    "slot": "afternoon",
+    "cycleDay": 22,
+    "theme": "Cost vs. Investment",
+    "pillar": "SHOWCASE",
+    "topic": "The SME vs. Enterprise Playbook, part 1: quick-win automations for small businesses.",
+    "angle": "Global AI automation trends show heavy enterprise spending, but SMEs need quick-win workflows like lead concierges and invoice routing to see immediate cost-to-investment ROI.",
+    "xPost": "Enterprise AI is growing fast, but SMEs shouldn't wait years for ROI. Our Inbound Lead Concierge and invoice automation go live in days, not months. Cut costs and capture leads 24/7. \n\nBook a free consultation\n\n#EjenticAI #Automation",
+    "linkedinPost": "While enterprise AI adoption scales globally toward a projected $1.1T market by 2033, small and medium businesses often ask where to start without breaking the bank.\n\nThe SME playbook doesn't require a six-month implementation cycle. Quick-win automations like our Inbound Lead Concierge and automated invoicing pipelines can go live in days, not months.\n\nHere is the shift: moving away from viewing technology as a massive sunk cost, and treating targeted automation as an immediate operational investment. David Chen, our Chief Architect, builds these systems with resilient fallbacks so your core operations never miss a beat.\n\nStop losing leads after hours and spending manual hours on reconciliation. Let us deploy practical, high-ROI systems tailored to your business.\n\nBook a free consultation\n\n#EjenticAI #AIAutomation #Automation #CustomerExperience #ROI",
+    "citedSourceUrls": [
+      "https://www.grandviewresearch.com/industry-analysis/ai-automation-market-report"
+    ],
+    "score": 5,
+    "createdAt": "2026-10-28T18:47:39.684Z"
   }
 }
