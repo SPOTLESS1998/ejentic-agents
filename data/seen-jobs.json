@@ -2189,5 +2189,53 @@
     "label": "LEAD",
     "title": "Instructure",
     "kind": "reported"
+  },
+  "https://jobicy.com/jobs/147495-applied-data-scientist-machine-learning-engineer-decision-intelligence": {
+    "firstSeen": "2026-10-28T12:58:52.277Z",
+    "label": "JOB",
+    "title": "Applied Data Scientist / Machine Learning Engineer (Decision Intelligence)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/157394-forward-deployed-product-manager-ai-agent": {
+    "firstSeen": "2026-10-28T12:58:52.277Z",
+    "label": "JOB",
+    "title": "Forward Deployed Product Manager, AI Agent",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/157390-enterprise-solutions-engineer-2": {
+    "firstSeen": "2026-10-28T12:58:52.277Z",
+    "label": "JOB",
+    "title": "Enterprise Solutions Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/157380-embedded-ai-expert-2": {
+    "firstSeen": "2026-10-28T12:58:52.277Z",
+    "label": "JOB",
+    "title": "Embedded AI Expert",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/157377-director-of-enterprise-ai-success": {
+    "firstSeen": "2026-10-28T12:58:52.277Z",
+    "label": "JOB",
+    "title": "Director of Enterprise AI Success.",
+    "kind": "screened"
+  },
+  "lead:workwave": {
+    "firstSeen": "2026-10-28T12:59:13.642Z",
+    "label": "LEAD",
+    "title": "WorkWave",
+    "kind": "screened"
+  },
+  "lead:medely": {
+    "firstSeen": "2026-10-28T12:59:13.642Z",
+    "label": "LEAD",
+    "title": "Medely",
+    "kind": "screened"
+  },
+  "lead:lendingtree": {
+    "firstSeen": "2026-10-28T12:59:13.642Z",
+    "label": "LEAD",
+    "title": "LendingTree",
+    "kind": "reported"
   }
 }
