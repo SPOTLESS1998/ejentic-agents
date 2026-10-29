@@ -2030,5 +2030,22 @@
     ],
     "score": 8,
     "createdAt": "2026-10-29T14:58:48.417Z"
+  },
+  "2026-10-29:afternoon": {
+    "date": "2026-10-29",
+    "slot": "afternoon",
+    "cycleDay": 23,
+    "theme": "The Playbook, Part 2",
+    "pillar": "SHOWCASE",
+    "topic": "The SME vs. Enterprise Playbook, part 2: integrating with bureaucratic legacy systems.",
+    "angle": "Using insights on enterprise agent stack maturity and legacy system pitfalls to outline Ejentic AI's structured, zero-disruption approach to integrating autonomous workflows with bureaucratic legacy systems.",
+    "xPost": "Legacy systems shouldn't stall your AI roadmap. Our phased enterprise pilots ensure zero-disruption deployment while connecting autonomous workflows to bureaucratic back-ends. Book a free consultation #EjenticAI #AIAgents https://youtu.be/gbXhZMTdnkM",
+    "linkedinPost": "Integrating AI with bureaucratic legacy systems is where most enterprise automation projects quietly stall. Vendor platforms change rapidly, but your core infrastructure remains complex.\n\nAt Ejentic AI, our enterprise approach avoids the trap of wholesale rewrites. We deploy through a rigorous methodology: initial technical assessment, controlled phased pilots, and zero-disruption deployment that respects your existing data boundaries.\n\nChief Architect David Chen designs our systems around resilience and graceful fallbacks, ensuring your operations remain stable while autonomous workflows take over repetitive tasks.\n\nIf you are ready to bridge modern agentic workflows with legacy enterprise architecture without risking downtime, let's talk. Book a free consultation.\n\n#EjenticAI #AIAgents #Automation #FutureOfWork #AIAutomation",
+    "citedSourceUrls": [
+      "https://www.pixelmatters.com/insights/ai-agent-development-platforms",
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 8,
+    "createdAt": "2026-10-29T18:55:19.019Z"
   }
 }
