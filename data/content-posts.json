@@ -2047,5 +2047,21 @@
     ],
     "score": 8,
     "createdAt": "2026-10-29T18:55:19.019Z"
+  },
+  "2026-10-29:evening": {
+    "date": "2026-10-29",
+    "slot": "evening",
+    "cycleDay": 23,
+    "theme": "The Playbook, Part 2",
+    "pillar": "INSPIRE",
+    "topic": "Direct CTA: Your competitors are not waiting for perfect conditions.",
+    "angle": "Connecting the rapid shifts in AI platform stability to the urgency of building human-centric, ethical systems in Africa without waiting for perfect conditions.",
+    "xPost": "True AI agents are about planning and execution, not routing logic. Your competitors are not waiting for perfect conditions. Book a free consultation #EjenticAI #AIAgents",
+    "linkedinPost": "The global AI landscape is shifting rapidly. Over 80% of enterprise deployments rely on basic routing logic with branding, rather than true autonomous systems that actually plan and execute.\n\nHere in Lagos, we are building differently. We believe Africa can lead the world in AI by designing ethical, human-centric systems that honor our communities, respect our data sovereignty, and augment our people.\n\nOur engineering team approaches every deployment with rigorous evaluation, building resilient infrastructure and intuitive interfaces that serve human needs first.\n\nYour competitors are not waiting for perfect conditions.\n\nBook a free consultation\n\n#EjenticAI #AIAgents #AfricanTech #EthicalAI #FutureOfWork",
+    "citedSourceUrls": [
+      "https://www.pixelmatters.com/insights/ai-agent-development-platforms"
+    ],
+    "score": 9,
+    "createdAt": "2026-10-29T22:40:58.462Z"
   }
 }
