@@ -97,3 +97,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-10-28T22:29:21.680Z"}
 {"agent":"job","found":51,"screened":9,"reported":2,"degraded":false,"aborted":[],"ts":"2026-10-29T13:05:47.271Z"}
 {"agent":"scholarship","found":45,"screened":2,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing passed screening today.","ts":"2026-10-29T13:37:14.622Z"}
+{"agent":"research","found":30,"screened":1,"reported":1,"degraded":false,"aborted":[],"ts":"2026-10-29T13:51:27.995Z"}
