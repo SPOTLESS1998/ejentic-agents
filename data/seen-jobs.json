@@ -2237,5 +2237,59 @@
     "label": "LEAD",
     "title": "LendingTree",
     "kind": "reported"
+  },
+  "https://jobicy.com/jobs/157806-director-of-gtm-data-processes-and-ai-enablement": {
+    "firstSeen": "2026-10-29T13:05:22.452Z",
+    "label": "JOB",
+    "title": "Director of GTM Data, Processes, and AI Enablement",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/157724-senior-data-scientist-product-2": {
+    "firstSeen": "2026-10-29T13:05:22.452Z",
+    "label": "JOB",
+    "title": "Senior Data Scientist, Product",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154169-data-scientist-risk": {
+    "firstSeen": "2026-10-29T13:05:22.452Z",
+    "label": "JOB",
+    "title": "Data Scientist, Risk",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154160-lead-solutions-engineer-2": {
+    "firstSeen": "2026-10-29T13:05:22.452Z",
+    "label": "JOB",
+    "title": "Lead Solutions Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154138-head-of-gtm-research-services-ai-native-research-remote-us-eu": {
+    "firstSeen": "2026-10-29T13:05:22.452Z",
+    "label": "JOB",
+    "title": "Head of GTM, Research Services | AI-Native Research (Remote US/EU)",
+    "kind": "screened"
+  },
+  "lead:apollo.io": {
+    "firstSeen": "2026-10-29T13:05:46.452Z",
+    "label": "LEAD",
+    "title": "Apollo.io",
+    "kind": "reported"
+  },
+  "lead:yipitdata": {
+    "firstSeen": "2026-10-29T13:05:46.452Z",
+    "label": "LEAD",
+    "title": "YipitData",
+    "kind": "reported"
+  },
+  "lead:maze": {
+    "firstSeen": "2026-10-29T13:05:46.452Z",
+    "label": "LEAD",
+    "title": "Maze",
+    "kind": "screened"
+  },
+  "lead:tines": {
+    "firstSeen": "2026-10-29T13:05:46.452Z",
+    "label": "LEAD",
+    "title": "Tines",
+    "kind": "screened"
   }
 }
