@@ -2077,5 +2077,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-10-30T14:50:13.829Z"
+  },
+  "2026-10-30:afternoon": {
+    "date": "2026-10-30",
+    "slot": "afternoon",
+    "cycleDay": 24,
+    "theme": "Proof Before Promise",
+    "pillar": "SHOWCASE",
+    "topic": "Case walkthrough: from first call to working agent in 30 days.",
+    "angle": "Proof Before Promise: Walking through a 30-day engagement model from first call to working agent.",
+    "xPost": "From first call to working autonomous agent in 30 days. Our exact model: discovery, secure integration, rigorous evaluation, and deployment. Watch agents in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "Proof before promise. When enterprises adopt AI, they need a working system that delivers measurable ROI without risking data security or downtime.\n\nHere is our 30-day engagement model from first call to a fully deployed autonomous agent:\n\nDays 1-7: Discovery and architecture mapping. We define exact workflows for multilingual service, RAG vaults, or automated lead generation.\n\nDays 8-21: Development and evaluation. We run rigorous evaluation and security checks before anything ships to production.\n\nDays 22-30: Integration, UX tuning, and deployment. By day 30, your custom agent is live, handling queries or routing high-value prospects.\n\nWatch our multilingual support agents in action: https://youtu.be/gbXhZMTdnkM\n\nWhat workflow would you automate first?\n\n#EjenticAI #AIAgents #Automation #CustomerExperience",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 8,
+    "createdAt": "2026-10-30T18:32:51.026Z"
   }
 }
