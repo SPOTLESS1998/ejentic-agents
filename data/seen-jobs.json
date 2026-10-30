@@ -645,7 +645,7 @@
     "title": "ALPHA BPO CORP"
   },
   "lead:engine": {
-    "firstSeen": "2026-10-19T13:20:52.830Z",
+    "firstSeen": "2026-10-30T12:58:56.029Z",
     "label": "LEAD",
     "title": "Engine",
     "kind": "screened"
@@ -1705,7 +1705,7 @@
     "kind": "screened"
   },
   "lead:canonical": {
-    "firstSeen": "2026-10-18T11:09:24.930Z",
+    "firstSeen": "2026-10-30T12:58:56.029Z",
     "label": "LEAD",
     "title": "Canonical",
     "kind": "screened"
@@ -2291,5 +2291,59 @@
     "label": "LEAD",
     "title": "Tines",
     "kind": "screened"
+  },
+  "https://www.themuse.com/jobs/kyndryl/qa-functional-automation-engineer-j": {
+    "firstSeen": "2026-10-30T12:58:52.218Z",
+    "label": "JOB",
+    "title": "QA Functional & Automation Engineer - J",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/156643-senior-software-engineer-developer-experience-ai-platform-team": {
+    "firstSeen": "2026-10-30T12:58:52.218Z",
+    "label": "JOB",
+    "title": "Senior Software Engineer, Developer Experience & AI Platform team",
+    "kind": "screened"
+  },
+  "lead:kyndryl": {
+    "firstSeen": "2026-10-30T12:58:56.029Z",
+    "label": "LEAD",
+    "title": "Kyndryl",
+    "kind": "screened"
+  },
+  "lead:superside": {
+    "firstSeen": "2026-10-30T12:58:56.029Z",
+    "label": "LEAD",
+    "title": "Superside",
+    "kind": "screened"
+  },
+  "lead:legion": {
+    "firstSeen": "2026-10-30T12:58:56.029Z",
+    "label": "LEAD",
+    "title": "Legion",
+    "kind": "reported"
+  },
+  "lead:icon plc": {
+    "firstSeen": "2026-10-30T12:58:56.029Z",
+    "label": "LEAD",
+    "title": "ICON plc",
+    "kind": "screened"
+  },
+  "lead:help scout": {
+    "firstSeen": "2026-10-30T12:58:56.029Z",
+    "label": "LEAD",
+    "title": "Help Scout",
+    "kind": "reported"
+  },
+  "lead:upstart": {
+    "firstSeen": "2026-10-30T12:58:56.029Z",
+    "label": "LEAD",
+    "title": "Upstart",
+    "kind": "reported"
+  },
+  "lead:socket": {
+    "firstSeen": "2026-10-30T12:58:56.029Z",
+    "label": "LEAD",
+    "title": "Socket",
+    "kind": "reported"
   }
 }
