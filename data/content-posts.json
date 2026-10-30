@@ -2063,5 +2063,19 @@
     ],
     "score": 9,
     "createdAt": "2026-10-29T22:40:58.462Z"
+  },
+  "2026-10-30:morning": {
+    "date": "2026-10-30",
+    "slot": "morning",
+    "cycleDay": 24,
+    "theme": "Proof Before Promise",
+    "pillar": "EDUCATE",
+    "topic": "Why we show demos before we show decks.",
+    "angle": "Using watchable prototypes over pitch decks to prove AI capability before making promises.",
+    "xPost": "Why do we show live demos instead of pitch decks? Because claims are cheap, but working software isn't. Watch our multilingual support agents in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "Why do we show working demos before we show pitch decks?\n\nIn the tech world, claims are cheap. Anyone can build a slide deck promising autonomous workflows, seamless integration, or perfect multilingual support. But slides don't solve business problems—working software does.\n\nAt Ejentic AI, we believe in proof before promise. That is why we let our prototypes speak for themselves. Whether it is a multilingual support agent handling customer inquiries or an autonomous lead-generation system, you should see the technology working in real time before you trust it with your operations.\n\nWatch our multilingual support agents in action here: https://youtu.be/gbXhZMTdnkM\n\nAnd see how our autonomous lead-generation system operates: https://youtu.be/4DcFtp6amjs\n\nWhat is one AI claim you wish companies would prove with a live demo instead of a slide?\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-10-30T14:50:13.829Z"
   }
 }
