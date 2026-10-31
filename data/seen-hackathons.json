@@ -453,5 +453,15 @@
     "firstSeen": "2026-10-30T14:15:56.993Z",
     "label": "HACKATHON",
     "title": "Hackathons | Tatum"
+  },
+  "https://apps.tatum.io/hackathons": {
+    "firstSeen": "2026-10-31T13:41:14.874Z",
+    "label": "HACKATHON",
+    "title": "Web3 Hackathons - Tatum Mini Apps"
+  },
+  "https://dorahacks.io/hackathon/bnbhack-twt-cmc": {
+    "firstSeen": "2026-10-31T13:41:14.874Z",
+    "label": "HACKATHON",
+    "title": "BNB Hack: AI Trading Agent Edition ️ CoinMarketCap × Trust"
   }
 }
