@@ -70,7 +70,7 @@
     "title": "Outsite"
   },
   "lead:telus digital": {
-    "firstSeen": "2026-10-21T11:52:13.247Z",
+    "firstSeen": "2026-10-31T12:35:25.245Z",
     "label": "LEAD",
     "title": "TELUS Digital",
     "kind": "screened"
@@ -188,7 +188,7 @@
     "title": "Healthcare Data Scientist"
   },
   "https://www.themuse.com/jobs/gitlab/ai-transformation-owner-cro": {
-    "firstSeen": "2026-10-21T11:52:11.970Z",
+    "firstSeen": "2026-10-31T12:35:23.602Z",
     "label": "JOB",
     "title": "AI Transformation Owner, CRO",
     "kind": "screened"
@@ -957,9 +957,10 @@
     "title": "TRANT ENGINEERING LIMITED"
   },
   "https://remoteok.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224": {
-    "firstSeen": "2026-09-01T11:41:21.161Z",
+    "firstSeen": "2026-10-31T12:35:23.602Z",
     "label": "JOB",
-    "title": "AI Engineer Data APIs"
+    "title": "AI Engineer Data APIs",
+    "kind": "reported"
   },
   "lead:coca-cola cambodia beverage company ltd": {
     "firstSeen": "2026-09-01T11:41:21.688Z",
@@ -2344,6 +2345,24 @@
     "firstSeen": "2026-10-30T12:58:56.029Z",
     "label": "LEAD",
     "title": "Socket",
+    "kind": "reported"
+  },
+  "https://remoteok.com/remote-jobs/remote-cloud-engineer-automation-smile-digital-health-1137600": {
+    "firstSeen": "2026-10-31T12:35:23.602Z",
+    "label": "JOB",
+    "title": "Cloud Engineer Automation",
+    "kind": "screened"
+  },
+  "lead:instacart": {
+    "firstSeen": "2026-10-31T12:35:25.245Z",
+    "label": "LEAD",
+    "title": "Instacart",
+    "kind": "reported"
+  },
+  "lead:roofr": {
+    "firstSeen": "2026-10-31T12:35:25.245Z",
+    "label": "LEAD",
+    "title": "Roofr",
     "kind": "reported"
   }
 }
