@@ -121,3 +121,4 @@
 {"agent":"research","found":30,"screened":1,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing passed screening today.","ts":"2026-11-01T13:54:55.481Z"}
 {"agent":"hackathon","found":28,"screened":1,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing passed screening today.","ts":"2026-11-01T14:18:25.722Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-01T14:45:07.360Z"}
+{"agent":"content","reported":0,"degraded":false,"aborted":["Gemini returned an empty draft"],"reason":"Drafting threw for a reason other than quota — see the recorded error.","ts":"2026-11-01T18:23:04.468Z"}
