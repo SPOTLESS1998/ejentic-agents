@@ -1256,10 +1256,10 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/atlassian/ai-productivity-lead-sales-development": {
-    "firstSeen": "2026-10-22T11:55:59.681Z",
+    "firstSeen": "2026-11-01T13:27:56.992Z",
     "label": "JOB",
     "title": "AI Productivity Lead, Sales Development",
-    "kind": "screened"
+    "kind": "reported"
   },
   "https://remotive.com/remote-jobs/artificial-intelligence/senior-ai-engineer-2091131": {
     "firstSeen": "2026-10-11T12:53:26.334Z",
@@ -1334,7 +1334,7 @@
     "kind": "screened"
   },
   "https://www.themuse.com/jobs/libertymutualinsurance/analyst-data-science-personal-lines-auto-modeling": {
-    "firstSeen": "2026-10-22T11:55:59.681Z",
+    "firstSeen": "2026-11-01T13:27:56.992Z",
     "label": "JOB",
     "title": "Analyst, Data Science, Personal Lines Auto Modeling",
     "kind": "screened"
@@ -2363,6 +2363,12 @@
     "firstSeen": "2026-10-31T12:35:25.245Z",
     "label": "LEAD",
     "title": "Roofr",
+    "kind": "reported"
+  },
+  "lead:headway.co": {
+    "firstSeen": "2026-11-01T13:27:58.348Z",
+    "label": "LEAD",
+    "title": "Headway.co",
     "kind": "reported"
   }
 }
