@@ -2149,5 +2149,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-01T21:56:50.560Z"
+  },
+  "2026-11-02:morning": {
+    "date": "2026-11-02",
+    "slot": "morning",
+    "cycleDay": 27,
+    "theme": "Who This Is For",
+    "pillar": "EDUCATE",
+    "topic": "The businesses we serve best — and the ones we honestly refer elsewhere.",
+    "angle": "Filtering for fit: why true AI integration requires knowing who to serve and who to politely refer elsewhere.",
+    "xPost": "Not every business is ready for autonomous AI agents. True authority means knowing who we serve best—and who we honestly refer elsewhere. #EjenticAI #AIAgents",
+    "linkedinPost": "In the rush to adopt AI, many providers will sell a solution to anyone with a credit card. We don't operate that way.\n\nAt Ejentic AI, we believe trust starts with radical honesty. We build autonomous multilingual agents, secure internal RAG vaults, and custom workflows for businesses ready to scale their operations. But we also frequently tell prospects when they aren't a fit.\n\nIf you need a quick off-the-shelf widget with zero security requirements, or if your team isn't ready to invest in proper data hygiene and workflow integration, we will honestly refer you elsewhere. Rigorous evaluation and data readiness are prerequisites before shipping any system.\n\nAuthority comes from selectivity. We choose to build resilient systems that augment your people properly.\n\nWho is your business currently building for?\n\n#EjenticAI #AIAgents #FutureOfWork #EthicalAI #BusinessAutomation",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-02T17:50:09.508Z"
   }
 }
