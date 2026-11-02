@@ -1964,7 +1964,7 @@
     "kind": "screened"
   },
   "lead:plaid": {
-    "firstSeen": "2026-10-23T11:41:57.882Z",
+    "firstSeen": "2026-11-02T15:58:37.699Z",
     "label": "LEAD",
     "title": "Plaid",
     "kind": "screened"
@@ -2370,5 +2370,29 @@
     "label": "LEAD",
     "title": "Headway.co",
     "kind": "reported"
+  },
+  "https://jobicy.com/jobs/152204-machine-learning-engineer-inference-maintainer-developer-experience": {
+    "firstSeen": "2026-11-02T15:58:36.383Z",
+    "label": "JOB",
+    "title": "Machine Learning Engineer - Inference Maintainer & Developer Experience",
+    "kind": "screened"
+  },
+  "lead:mecka": {
+    "firstSeen": "2026-11-02T15:58:37.699Z",
+    "label": "LEAD",
+    "title": "Mecka",
+    "kind": "screened"
+  },
+  "lead:deepgram": {
+    "firstSeen": "2026-11-02T15:58:37.699Z",
+    "label": "LEAD",
+    "title": "Deepgram",
+    "kind": "reported"
+  },
+  "lead:roboflow": {
+    "firstSeen": "2026-11-02T15:58:37.699Z",
+    "label": "LEAD",
+    "title": "Roboflow",
+    "kind": "screened"
   }
 }
