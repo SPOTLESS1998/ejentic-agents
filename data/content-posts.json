@@ -2163,5 +2163,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-02T17:50:09.508Z"
+  },
+  "2026-11-02:afternoon": {
+    "date": "2026-11-02",
+    "slot": "afternoon",
+    "cycleDay": 27,
+    "theme": "Who This Is For",
+    "pillar": "SHOWCASE",
+    "topic": "Multilingual support as market expansion: sell in the customer’s language.",
+    "angle": "Multilingual customer-service agents unlock new revenue by selling in local languages that competitors cannot reach.",
+    "xPost": "Most businesses ignore customers who speak Pidgin, Hausa, Yoruba, or Igbo. Our autonomous multilingual agents fix that, opening revenue your competitors can't reach. Watch them in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "Most customer support tools only handle English. That means you are invisible to millions of potential buyers who prefer communicating in Nigerian Pidgin, Hausa, Yoruba, or Igbo.\n\nTraditional customer service forces a trade-off: you either hire expensive multi-shift support teams, or you lose the customer entirely. But in 2026, autonomous multilingual agents are rewriting the rules of CX.\n\nAt Ejentic AI, we build embeddable autonomous multilingual customer-service agents that greet clients, answer questions, log complaints, and capture leads seamlessly across websites, apps, and social media in English, Pidgin, Hausa, Yoruba, and Igbo.\n\nBefore: Customers bounce because support doesn't speak their language.\nAfter: 24/7 engagement in local languages that drives new revenue competitors cannot reach.\n\nSee our multilingual support agents in action here: https://youtu.be/gbXhZMTdnkM\n\nBook a free consultation\n\n#EjenticAI #AIAgents #CustomerExperience #NigeriaTech #AfricanTech",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 8,
+    "createdAt": "2026-11-02T22:16:41.366Z"
   }
 }
