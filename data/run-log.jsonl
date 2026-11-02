@@ -124,3 +124,4 @@
 {"agent":"content","reported":0,"degraded":false,"aborted":["Gemini returned an empty draft"],"reason":"Drafting threw for a reason other than quota — see the recorded error.","ts":"2026-11-01T18:23:04.468Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-01T21:56:50.562Z"}
 {"agent":"job","found":54,"screened":5,"reported":1,"degraded":false,"aborted":[],"ts":"2026-11-02T15:58:38.635Z"}
+{"agent":"scholarship","found":45,"screened":3,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing passed screening today.","ts":"2026-11-02T16:29:07.894Z"}
