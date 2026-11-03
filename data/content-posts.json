@@ -2193,5 +2193,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-03T15:50:13.402Z"
+  },
+  "2026-11-03:afternoon": {
+    "date": "2026-11-03",
+    "slot": "afternoon",
+    "cycleDay": 28,
+    "theme": "Weekly Recap — The Partnership Week",
+    "pillar": "SHOWCASE",
+    "topic": "What an Ejentic partnership actually looks like: phases, check-ins, results.",
+    "angle": "As CX automation options scale in 2026, our partnership model focuses on collaborative implementation and end-to-end managed services rather than leaving teams to build knowledge bases alone.",
+    "xPost": "What does an Ejentic partnership actually look like? Phase 1 discovery, Phase 2 deployment, Phase 3 team training and managed optimization. We don't just hand over code; we build resilient systems together. Book a free consultation #EjenticAI #AIAgents",
+    "linkedinPost": "Building AI customer support and automated workflows shouldn't be a guessing game. While the 2026 market overflows with tools requiring hands-on implementation and complex setup, our partnership model takes a different path.\n\nAn Ejentic partnership focuses on a clear, collaborative operating model. We start with discovery to map your exact workflows, move to resilient deployment of custom RAG vaults or multilingual agents, and finish with rigorous team training and long-term managed optimization.\n\nLed by Chief Architect David Chen's focus on seamless systems and Lead ML Engineer Elena Rodriguez's commitment to responsible AI, we ensure your team is never left figuring out fallbacks or data hygiene alone.\n\nCurious what a phased rollout looks like for your enterprise? Book a free consultation\n\n#EjenticAI #AIAgents #Automation #CustomerExperience #FutureOfWork",
+    "citedSourceUrls": [
+      "https://influx.com/blog/the-12-best-ai-customer-support-agents-in-2026"
+    ],
+    "score": 9,
+    "createdAt": "2026-11-03T20:03:23.577Z"
   }
 }
