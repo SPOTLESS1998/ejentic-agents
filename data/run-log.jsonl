@@ -130,3 +130,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-02T17:50:09.510Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-02T22:16:41.369Z"}
 {"agent":"content","reported":0,"degraded":false,"aborted":["Gemini returned an empty draft"],"reason":"Drafting threw for a reason other than quota — see the recorded error.","ts":"2026-11-03T00:53:18.491Z"}
+{"agent":"job","found":49,"screened":13,"reported":1,"degraded":false,"aborted":[],"ts":"2026-11-03T14:19:34.343Z"}

@@ -1994,7 +1994,7 @@
     "kind": "screened"
   },
   "https://remotive.com/remote-jobs/artificial-intelligence/ai-trainer-video-annotation-2091161": {
-    "firstSeen": "2026-10-24T11:04:38.197Z",
+    "firstSeen": "2026-11-03T14:19:14.178Z",
     "label": "JOB",
     "title": "AI Trainer - Video Annotation",
     "kind": "screened"
@@ -2394,5 +2394,77 @@
     "label": "LEAD",
     "title": "Roboflow",
     "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-ai-ml-engineer-docusketch-1137619": {
+    "firstSeen": "2026-11-03T14:19:14.178Z",
+    "label": "JOB",
+    "title": "AI ML Engineer",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50352150": {
+    "firstSeen": "2026-11-03T14:19:14.178Z",
+    "label": "JOB",
+    "title": "Machine Learning Engineer",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50351693": {
+    "firstSeen": "2026-11-03T14:19:14.178Z",
+    "label": "JOB",
+    "title": "AI tech leads, Software and Platform engineers",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50349751": {
+    "firstSeen": "2026-11-03T14:19:14.178Z",
+    "label": "JOB",
+    "title": "ML Engineer, ML Ops Engineer",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50349129": {
+    "firstSeen": "2026-11-03T14:19:14.178Z",
+    "label": "JOB",
+    "title": "AI Engineer (Agentic / GenAI)",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50348566": {
+    "firstSeen": "2026-11-03T14:19:14.178Z",
+    "label": "JOB",
+    "title": "AI Research + AI Engineering roles",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50347596": {
+    "firstSeen": "2026-11-03T14:19:14.178Z",
+    "label": "JOB",
+    "title": "Research Engineer",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50346665": {
+    "firstSeen": "2026-11-03T14:19:14.178Z",
+    "label": "JOB",
+    "title": "Software Engineer & Data Scientist",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50345424": {
+    "firstSeen": "2026-11-03T14:19:14.178Z",
+    "label": "JOB",
+    "title": "Multiple Engineering, AI/ML Data Science, and Revenue roles",
+    "kind": "screened"
+  },
+  "lead:imc trading": {
+    "firstSeen": "2026-11-03T14:19:33.737Z",
+    "label": "LEAD",
+    "title": "IMC Trading",
+    "kind": "screened"
+  },
+  "lead:opsfleet": {
+    "firstSeen": "2026-11-03T14:19:33.737Z",
+    "label": "LEAD",
+    "title": "Opsfleet",
+    "kind": "screened"
+  },
+  "lead:mactores": {
+    "firstSeen": "2026-11-03T14:19:33.737Z",
+    "label": "LEAD",
+    "title": "Mactores",
+    "kind": "reported"
   }
 }
