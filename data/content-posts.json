@@ -2240,5 +2240,21 @@
     ],
     "score": 8,
     "createdAt": "2026-11-04T15:58:52.471Z"
+  },
+  "2026-11-04:afternoon": {
+    "date": "2026-11-04",
+    "slot": "afternoon",
+    "cycleDay": 29,
+    "theme": "Where This Is Going",
+    "pillar": "SHOWCASE",
+    "topic": "Our managed AI services and retainer models — how we stick with clients long-term.",
+    "angle": "Connecting the 2026 enterprise shift toward live production AI agents to our managed AI services and long-term optimization retainers.",
+    "xPost": "Deploying an AI agent is day one. Keeping it accurate, secure, and aligned with your business is the long game. That is why our managed AI services include continuous monitoring, retraining, and optimization. \n\nBook a free consultation https://youtu.be/gbXhZMTdnkM",
+    "linkedinPost": "Enterprise adoption of AI customer service agents crossed 66% in 2026, with the vast majority now running live in production environments. But building the initial agent is only half the battle. \n\nThe real work begins on day two. Without ongoing evaluation, prompt adjustments, and strict data hygiene, performance drifts and customer trust erodes. \n\nThat is why our managed AI services and retainer models are built for the long game. We stay embedded with your team to handle continuous monitoring, retraining, and system optimization as your business evolves. \n\nDavid Chen, our Chief Architect, designs our systems for resilience and graceful degradation, while our engineers ensure your workflows remain robust over time. \n\nBook a free consultation \n\n#EjenticAI #AIAgents #Automation #BuildWithAI #AIAutomation",
+    "citedSourceUrls": [
+      "https://azeon.ai/blog/state-of-ai-customer-service"
+    ],
+    "score": 8,
+    "createdAt": "2026-11-04T20:23:25.972Z"
   }
 }
