@@ -137,3 +137,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-03T15:50:13.405Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-03T20:03:23.579Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-03T23:13:34.994Z"}
+{"agent":"job","found":51,"screened":12,"reported":3,"degraded":false,"aborted":[],"ts":"2026-11-04T14:36:28.198Z"}

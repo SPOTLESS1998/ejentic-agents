@@ -2054,7 +2054,7 @@
     "kind": "reported"
   },
   "https://remoteok.com/remote-jobs/remote-solutions-engineer-onebrief-1137568": {
-    "firstSeen": "2026-10-25T11:33:44.299Z",
+    "firstSeen": "2026-11-04T14:36:08.573Z",
     "label": "JOB",
     "title": "Solutions Engineer",
     "kind": "screened"
@@ -2465,6 +2465,72 @@
     "firstSeen": "2026-11-03T14:19:33.737Z",
     "label": "LEAD",
     "title": "Mactores",
+    "kind": "reported"
+  },
+  "https://www.themuse.com/jobs/usatodayco/aiassisted-reporter-55eba6": {
+    "firstSeen": "2026-11-04T14:36:08.573Z",
+    "label": "JOB",
+    "title": "AI-Assisted Reporter",
+    "kind": "screened"
+  },
+  "https://www.themuse.com/jobs/cummins/data-scientist-5c2d06": {
+    "firstSeen": "2026-11-04T14:36:08.573Z",
+    "label": "JOB",
+    "title": "Data Scientist",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50354142": {
+    "firstSeen": "2026-11-04T14:36:08.573Z",
+    "label": "JOB",
+    "title": "Lead Engineer, AI Accounting",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50353951": {
+    "firstSeen": "2026-11-04T14:36:08.573Z",
+    "label": "JOB",
+    "title": "Security, Machine Learning",
+    "kind": "reported"
+  },
+  "https://news.ycombinator.com/item?id=50353641": {
+    "firstSeen": "2026-11-04T14:36:08.573Z",
+    "label": "JOB",
+    "title": "Forward Deployed Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/158833-ai-content-reviewer": {
+    "firstSeen": "2026-11-04T14:36:08.573Z",
+    "label": "JOB",
+    "title": "AI Content Reviewer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/158826-partner-solutions-architect-ai-builder": {
+    "firstSeen": "2026-11-04T14:36:08.573Z",
+    "label": "JOB",
+    "title": "Partner Solutions Architect , AI Builder",
+    "kind": "reported"
+  },
+  "https://jobicy.com/jobs/158822-lead-engineer-ai-agent-voice-experience": {
+    "firstSeen": "2026-11-04T14:36:08.573Z",
+    "label": "JOB",
+    "title": "Lead Engineer - AI Agent Voice Experience",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/158817-application-security-engineer-generative-ai": {
+    "firstSeen": "2026-11-04T14:36:08.573Z",
+    "label": "JOB",
+    "title": "Application Security Engineer, Generative AI",
+    "kind": "screened"
+  },
+  "lead:threatmark": {
+    "firstSeen": "2026-11-04T14:36:26.663Z",
+    "label": "LEAD",
+    "title": "ThreatMark",
+    "kind": "screened"
+  },
+  "lead:pointclickcare": {
+    "firstSeen": "2026-11-04T14:36:26.663Z",
+    "label": "LEAD",
+    "title": "PointClickCare",
     "kind": "reported"
   }
 }
