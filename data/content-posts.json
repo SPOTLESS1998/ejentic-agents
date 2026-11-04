@@ -2256,5 +2256,19 @@
     ],
     "score": 8,
     "createdAt": "2026-11-04T20:23:25.972Z"
+  },
+  "2026-11-04:evening": {
+    "date": "2026-11-04",
+    "slot": "evening",
+    "cycleDay": 29,
+    "theme": "Where This Is Going",
+    "pillar": "INSPIRE",
+    "topic": "A reflection on the Ejentic AI mission — how far we’ve come and where we are taking Nigeria.",
+    "angle": "Reflecting on the Ejentic AI mission of building human-centric, ethical AI that empowers Nigeria and respects our culture, moving beyond Western paradigms.",
+    "xPost": "We didn't start Ejentic AI to copy Silicon Valley. We started it to build autonomous systems that speak our languages, protect our data, and empower our people. The future of AI is African. #EjenticAI #NigeriaTech",
+    "linkedinPost": "When we founded Ejentic AI, we shared a simple conviction: the technological future being written across the globe shouldn't bypass our continent. We didn't set out to copy Silicon Valley.\n\nInstead, we asked what happens when AI systems speak our languages—English, Nigerian Pidgin, Hausa, Yoruba, and Igbo—and respect our data through secure infrastructures like our Air-Gapped RAG Vault.\n\nTrue progress isn't about replacing people with cold automation. It is about building human-centric tools that augment our workforce, respect our culture, and solve real local problems with operational excellence.\n\nOur journey is national, grounded in gratitude for the businesses trusting us and conviction in where we are taking Nigeria. We are building the foundation for a sovereign, ethical digital economy.\n\n#EjenticAI #NigeriaTech #AfricanTech #EthicalAI #BuildInNigeria",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-04T23:33:34.118Z"
   }
 }
