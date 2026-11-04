@@ -2223,5 +2223,22 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-11-03T23:13:34.991Z"
+  },
+  "2026-11-04:morning": {
+    "date": "2026-11-04",
+    "slot": "morning",
+    "cycleDay": 29,
+    "theme": "Where This Is Going",
+    "pillar": "EDUCATE",
+    "topic": "Where is AI going in the next 12 months?",
+    "angle": "Using concrete operational shifts in agentic AI to forecast the move from deflection metrics to end-to-end resolution over the next 12 months.",
+    "xPost": "Stop measuring AI by how many chats it deflects. Over the next 12 months, the real benchmark shifts from ticket containment to zero-touch, end-to-end problem resolution with measurable business outcomes. #EjenticAI #FutureOfWork",
+    "linkedinPost": "Where is AI actually going in the next 12 months? \n\nThe proof is already in the operational data: companies are ripping out basic chat widgets that just bounce tickets around. Instead, engineering teams are deploying autonomous service agents built on orchestration tools like n8n and Make that handle multi-step workflows from start to finish.\n\nThis changes the entire measurement framework. The old KPI was simple deflection—getting a user to click away before reaching a human. The new operational reality demands actual first-contact resolution, lowered cost per resolved issue, and strict guardrails that prevent hallucinations in production.\n\nBuilding this isn't about replacing your team. It is about moving skilled staff away from repetitive data retrieval so they can manage exceptions and complex system logic.\n\nAre you still tracking ticket containment, or have your metrics shifted to full resolution yet?\n\n#EjenticAI #AIAgents #Automation #FutureOfWork #AIAutomation",
+    "citedSourceUrls": [
+      "https://www.totalum.app/blog/ai-automation-agency-2026",
+      "https://azeon.ai/blog/state-of-ai-customer-service"
+    ],
+    "score": 8,
+    "createdAt": "2026-11-04T15:58:52.471Z"
   }
 }
