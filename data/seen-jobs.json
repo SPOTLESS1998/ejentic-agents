@@ -1562,13 +1562,13 @@
     "kind": "screened"
   },
   "lead:aweber": {
-    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "firstSeen": "2026-11-05T14:41:37.987Z",
     "label": "LEAD",
     "title": "AWeber",
     "kind": "screened"
   },
   "lead:seahub asia": {
-    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "firstSeen": "2026-11-05T14:41:37.987Z",
     "label": "LEAD",
     "title": "SEAhub Asia",
     "kind": "screened"
@@ -2532,5 +2532,95 @@
     "label": "LEAD",
     "title": "PointClickCare",
     "kind": "reported"
+  },
+  "https://www.themuse.com/jobs/zoom/ai-deployment-strategist-de727a": {
+    "firstSeen": "2026-11-05T14:41:28.898Z",
+    "label": "JOB",
+    "title": "AI Deployment Strategist",
+    "kind": "reported"
+  },
+  "https://news.ycombinator.com/item?id=50369581": {
+    "firstSeen": "2026-11-05T14:41:28.898Z",
+    "label": "JOB",
+    "title": "Sr/Staff Software Engineers, Data Scientist, FDE, PM",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159087-principal-data-scientist-ads": {
+    "firstSeen": "2026-11-05T14:41:28.898Z",
+    "label": "JOB",
+    "title": "Principal Data Scientist, Ads",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159084-ai-engineer-marketing": {
+    "firstSeen": "2026-11-05T14:41:28.898Z",
+    "label": "JOB",
+    "title": "AI Engineer, Marketing",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159083-sr-solutions-engineer-west": {
+    "firstSeen": "2026-11-05T14:41:28.898Z",
+    "label": "JOB",
+    "title": "Sr. Solutions Engineer, West",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159080-machine-learning-manager-feed-relevance-retrieval": {
+    "firstSeen": "2026-11-05T14:41:28.898Z",
+    "label": "JOB",
+    "title": "Machine Learning Manager, Feed Relevance (Retrieval)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159073-machine-learning-manager-feed-ecosystems": {
+    "firstSeen": "2026-11-05T14:41:28.898Z",
+    "label": "JOB",
+    "title": "Machine Learning Manager, Feed Ecosystems",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159068-field-cto-financial-services-ai-infrastructure": {
+    "firstSeen": "2026-11-05T14:41:28.898Z",
+    "label": "JOB",
+    "title": "Field CTO, Financial Services AI Infrastructure",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159066-machine-learning-engineering-manager-core-ads-ranking": {
+    "firstSeen": "2026-11-05T14:41:28.898Z",
+    "label": "JOB",
+    "title": "Machine Learning Engineering Manager - Core Ads Ranking",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159057-machine-learning-engineer-answers-relevance": {
+    "firstSeen": "2026-11-05T14:41:28.898Z",
+    "label": "JOB",
+    "title": "Machine Learning Engineer, Answers Relevance",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159035-lead-forward-deployed-engineer-ai-enablement": {
+    "firstSeen": "2026-11-05T14:41:28.898Z",
+    "label": "JOB",
+    "title": "Lead Forward Deployed Engineer (AI Enablement)",
+    "kind": "screened"
+  },
+  "lead:arabian private holdings": {
+    "firstSeen": "2026-11-05T14:41:37.987Z",
+    "label": "LEAD",
+    "title": "Arabian Private Holdings",
+    "kind": "screened"
+  },
+  "lead:grow10x": {
+    "firstSeen": "2026-11-05T14:41:37.987Z",
+    "label": "LEAD",
+    "title": "GROW10X",
+    "kind": "screened"
+  },
+  "lead:reddit": {
+    "firstSeen": "2026-11-05T14:41:37.987Z",
+    "label": "LEAD",
+    "title": "Reddit",
+    "kind": "screened"
+  },
+  "lead:stripe": {
+    "firstSeen": "2026-11-05T14:41:37.987Z",
+    "label": "LEAD",
+    "title": "Stripe",
+    "kind": "screened"
   }
 }
