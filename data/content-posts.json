@@ -2314,5 +2314,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-06T15:39:49.322Z"
+  },
+  "2026-11-06:afternoon": {
+    "date": "2026-11-06",
+    "slot": "afternoon",
+    "cycleDay": 1,
+    "theme": "The Grand Introduction",
+    "pillar": "SHOWCASE",
+    "topic": "The AI Transformation Journey — our 5-phase approach: Assessment, Pilot, Deployment, Training, Optimization.",
+    "angle": "Using our disciplined 5-phase AI transformation journey to showcase enterprise deployment and ROI.",
+    "xPost": "Adopting AI isn't about guessing. At Ejentic AI, our 5-phase journey takes you from Assessment to Pilot, Deployment, Training, and Optimization. Book a free consultation #EjenticAI #AIAgents",
+    "linkedinPost": "Adopting AI without a roadmap leads to wasted spend and stalled pilots. That is why we built a disciplined 5-phase AI transformation journey at Ejentic AI.\n\nHere is how we deliver enterprise automation safely and effectively:\n\n1. Assessment: We audit your workflows to find high-ROI bottlenecks.\n\n2. Pilot: We build a targeted proof-of-concept to prove value.\n\n3. Deployment: We integrate autonomous agents and secure systems like our Air-Gapped RAG Vault into your stack.\n\n4. Training: We train your team so adoption is seamless and human-centric.\n\n5. Optimization: We manage, monitor, and tune performance for the long term.\n\nReady to bring resilient, human-centric AI into your operations? Which phase of the journey is your current AI initiative stuck in?\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-06T19:55:30.628Z"
   }
 }
