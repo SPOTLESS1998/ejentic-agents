@@ -152,3 +152,4 @@
 {"agent":"content","reported":0,"degraded":false,"aborted":["Gemini HTTP 503: { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\":"],"reason":"Drafting threw for a reason other than quota — see the recorded error.","ts":"2026-11-05T20:36:24.778Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-05T23:33:11.435Z"}
 {"agent":"job","found":51,"screened":17,"reported":2,"degraded":false,"aborted":[],"ts":"2026-11-06T14:18:57.080Z"}
+{"agent":"scholarship","found":44,"screened":3,"reported":1,"degraded":false,"aborted":[],"ts":"2026-11-06T14:32:11.351Z"}
