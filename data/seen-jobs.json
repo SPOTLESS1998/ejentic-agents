@@ -1202,7 +1202,7 @@
     "kind": "screened"
   },
   "https://remoteok.com/remote-jobs/remote-technical-product-lead-ai-finance-app-bjak-1137388": {
-    "firstSeen": "2026-10-27T12:15:54.536Z",
+    "firstSeen": "2026-11-06T14:18:53.016Z",
     "label": "JOB",
     "title": "Technical Product Lead AI Finance App",
     "kind": "screened"
@@ -1298,19 +1298,19 @@
     "kind": "reported"
   },
   "https://remoteok.com/remote-jobs/remote-senior-growth-product-manager-ai-native-magic-eden-1137414": {
-    "firstSeen": "2026-10-27T12:15:54.536Z",
+    "firstSeen": "2026-11-06T14:18:53.016Z",
     "label": "JOB",
     "title": "Senior Growth Product Manager AI Native",
     "kind": "screened"
   },
   "lead:ashby": {
-    "firstSeen": "2026-10-27T12:16:02.144Z",
+    "firstSeen": "2026-11-06T14:18:55.512Z",
     "label": "LEAD",
     "title": "Ashby",
-    "kind": "screened"
+    "kind": "reported"
   },
   "https://remoteok.com/remote-jobs/remote-technical-product-manager-ai-stockbroking-app-bjak-1137421": {
-    "firstSeen": "2026-10-27T12:15:54.536Z",
+    "firstSeen": "2026-11-06T14:18:53.016Z",
     "label": "JOB",
     "title": "Technical Product Manager AI Stockbroking App",
     "kind": "screened"
@@ -1430,13 +1430,13 @@
     "kind": "screened"
   },
   "https://remoteok.com/remote-jobs/remote-senior-software-engineer-ii-applied-ai-wrapbook-1137527": {
-    "firstSeen": "2026-10-27T12:15:54.536Z",
+    "firstSeen": "2026-11-06T14:18:53.016Z",
     "label": "JOB",
     "title": "Senior Software Engineer II Applied AI",
     "kind": "screened"
   },
   "https://remoteok.com/remote-jobs/remote-ai-trainer-imerit-technology-1137513": {
-    "firstSeen": "2026-10-27T12:15:54.536Z",
+    "firstSeen": "2026-11-06T14:18:53.016Z",
     "label": "JOB",
     "title": "AI Trainer",
     "kind": "screened"
@@ -1556,10 +1556,10 @@
     "kind": "reported"
   },
   "lead:benzinga": {
-    "firstSeen": "2026-10-27T12:16:02.144Z",
+    "firstSeen": "2026-11-06T14:18:55.512Z",
     "label": "LEAD",
     "title": "Benzinga",
-    "kind": "screened"
+    "kind": "reported"
   },
   "lead:aweber": {
     "firstSeen": "2026-11-05T14:41:37.987Z",
@@ -2621,6 +2621,66 @@
     "firstSeen": "2026-11-05T14:41:37.987Z",
     "label": "LEAD",
     "title": "Stripe",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-ai-content-reviewer-video-annotation-imerit-1137686": {
+    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "label": "JOB",
+    "title": "AI Content Reviewer Video Annotation",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50385049": {
+    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "label": "JOB",
+    "title": "Senior Integration Engineer, Data/ML Engineer, Product Lead",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50384008": {
+    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "label": "JOB",
+    "title": "Computer Vision Engineer, Junior Frontend Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159265-data-scientist-7": {
+    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "label": "JOB",
+    "title": "Data Scientist",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159258-senior-staff-machine-learning-engineer-content-platform": {
+    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "label": "JOB",
+    "title": "Senior Staff Machine Learning Engineer - Content Platform",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159254-forward-deployed-engineer-fde-c-uas": {
+    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "label": "JOB",
+    "title": "Forward Deployed Engineer (FDE) C-UAS",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154739-commercial-data-scientist": {
+    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "label": "JOB",
+    "title": "Commercial Data Scientist",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154689-associate-general-counsel-privacy-product-ai": {
+    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "label": "JOB",
+    "title": "Associate General Counsel, Privacy, Product & AI",
+    "kind": "screened"
+  },
+  "lead:spotify": {
+    "firstSeen": "2026-11-06T14:18:55.512Z",
+    "label": "LEAD",
+    "title": "Spotify",
+    "kind": "screened"
+  },
+  "lead:sonatype": {
+    "firstSeen": "2026-11-06T14:18:55.512Z",
+    "label": "LEAD",
+    "title": "Sonatype",
     "kind": "screened"
   }
 }
