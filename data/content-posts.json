@@ -2342,5 +2342,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-06T22:59:37.177Z"
+  },
+  "2026-11-07:morning": {
+    "date": "2026-11-07",
+    "slot": "morning",
+    "cycleDay": 2,
+    "theme": "The Holistic Approach",
+    "pillar": "EDUCATE",
+    "topic": "Why tech needs a \"herbalist\" approach — we look at businesses as ecosystems, diagnosing root causes before prescribing AI.",
+    "angle": "Using the herbalist metaphor to explain that AI automation requires looking at businesses as complete ecosystems and diagnosing root causes before prescribing tools.",
+    "xPost": "Why tech needs a \"herbalist\" approach: treating a business like an ecosystem means diagnosing the root cause before prescribing AI. No blind fixes. 🌿 #EjenticAI #AIAgents",
+    "linkedinPost": "Why does tech need a \"herbalist\" approach to automation?\n\nToo many companies rush to buy AI tools without understanding where their business actually hurts. They treat symptoms instead of diagnosing the root cause.\n\nWe look at businesses as living ecosystems. Just like a good herbalist doesn't hand out random remedies, we map how work really moves through your company before designing a single workflow or deploying an agent.\n\nProcess discovery comes first. We figure out which tasks need strict rules, which need an AI model, and which must always stay with a human.\n\nDiagnosis before prescription. That is the whole point.\n\n#EjenticAI #AIAutomation #BusinessOperations #FutureOfWork",
+    "citedSourceUrls": [
+      "https://www.totalum.app/blog/ai-automation-agency-2026"
+    ],
+    "score": 9,
+    "createdAt": "2026-11-07T14:40:52.626Z"
   }
 }
