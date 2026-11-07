@@ -1358,7 +1358,7 @@
     "kind": "screened"
   },
   "lead:toptal": {
-    "firstSeen": "2026-10-12T15:29:44.383Z",
+    "firstSeen": "2026-11-07T13:05:37.395Z",
     "label": "LEAD",
     "title": "Toptal",
     "kind": "screened"
@@ -2682,5 +2682,65 @@
     "label": "LEAD",
     "title": "Sonatype",
     "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-feltsense-ai-engineer-silver-dev-1137691": {
+    "firstSeen": "2026-11-07T13:05:31.511Z",
+    "label": "JOB",
+    "title": "Feltsense AI Engineer",
+    "kind": "reported"
+  },
+  "https://remoteok.com/remote-jobs/remote-operations-expert-with-python-for-ai-supply-chain-task-design-toptal-1137690": {
+    "firstSeen": "2026-11-07T13:05:31.511Z",
+    "label": "JOB",
+    "title": "Operations Expert with Python for AI Supply Chain Task Design",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-ml-inference-engineer-terminal-bench-task-designer-vllm-sglang-tensorrt-llm-toptal-1137689": {
+    "firstSeen": "2026-11-07T13:05:31.511Z",
+    "label": "JOB",
+    "title": "ML Inference Engineer â Terminal-Bench Task Designer (vLLM / SGLang / TensorRT-LLM)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/152562-ai-transformation-owner-cro": {
+    "firstSeen": "2026-11-07T13:05:31.511Z",
+    "label": "JOB",
+    "title": "AI Transformation Owner, CRO",
+    "kind": "screened"
+  },
+  "lead:samsara inc.": {
+    "firstSeen": "2026-11-07T13:05:37.395Z",
+    "label": "LEAD",
+    "title": "Samsara Inc.",
+    "kind": "screened"
+  },
+  "lead:silver.dev": {
+    "firstSeen": "2026-11-07T13:05:37.395Z",
+    "label": "LEAD",
+    "title": "Silver.dev",
+    "kind": "screened"
+  },
+  "lead:vxi global solutions": {
+    "firstSeen": "2026-11-07T13:05:37.395Z",
+    "label": "LEAD",
+    "title": "VXI Global Solutions",
+    "kind": "reported"
+  },
+  "lead:coderpad": {
+    "firstSeen": "2026-11-07T13:05:37.395Z",
+    "label": "LEAD",
+    "title": "CoderPad",
+    "kind": "reported"
+  },
+  "lead:devrev": {
+    "firstSeen": "2026-11-07T13:05:37.395Z",
+    "label": "LEAD",
+    "title": "DevRev",
+    "kind": "reported"
+  },
+  "lead:maven clinic": {
+    "firstSeen": "2026-11-07T13:05:37.395Z",
+    "label": "LEAD",
+    "title": "Maven Clinic",
+    "kind": "reported"
   }
 }
