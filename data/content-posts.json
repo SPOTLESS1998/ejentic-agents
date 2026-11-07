@@ -2358,5 +2358,21 @@
     ],
     "score": 9,
     "createdAt": "2026-11-07T14:40:52.626Z"
+  },
+  "2026-11-07:afternoon": {
+    "date": "2026-11-07",
+    "slot": "afternoon",
+    "cycleDay": 2,
+    "theme": "The Holistic Approach",
+    "pillar": "SHOWCASE",
+    "topic": "What is \"Adaptogenic AI\"? Our philosophy of building resilient AI systems that adapt to market changes, not rigid deployments.",
+    "angle": "Explaining 'Adaptogenic AI' as our core philosophy for building resilient, flexible agentic workflows instead of rigid legacy deployments.",
+    "xPost": "Rigid bots break when markets shift; adaptive agents survive. We build resilient AI systems designed for change. Watch our multilingual support agents in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "Most enterprise software projects fail because they are built to be rigid. When markets shift, legacy deployments break. That is why at Ejentic AI, we champion 'Adaptogenic AI'—our philosophy of building resilient AI systems that adapt to market changes rather than brittle, hard-coded scripts.\n\nWhether it is our Air-Gapped RAG Vault for secure internal knowledge retrieval, our Inbound Lead Concierge for 24/7 qualification, or autonomous multilingual customer-service agents handling English, Nigerian Pidgin, Hausa, Yoruba, and Igbo, our systems are engineered to scale seamlessly and handle real-world unpredictability.\n\nAs our Chief Architect David Chen notes, we are obsessed with resilient systems featuring robust fallbacks, reliable uptime, and graceful degradation. You don't need another rigid tool that requires constant manual patching.\n\nWatch our autonomous multilingual support agents in action: https://youtu.be/gbXhZMTdnkM\n\nHow is your team handling system resilience as your automation scales? Book a free consultation\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #FutureOfWork",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 8,
+    "createdAt": "2026-11-07T17:59:40.925Z"
   }
 }
