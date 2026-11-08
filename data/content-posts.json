@@ -2406,5 +2406,21 @@
     ],
     "score": 9,
     "createdAt": "2026-11-08T14:46:32.391Z"
+  },
+  "2026-11-08:afternoon": {
+    "date": "2026-11-08",
+    "slot": "afternoon",
+    "cycleDay": 3,
+    "theme": "The Problem with Basic AI",
+    "pillar": "SHOWCASE",
+    "topic": "Introducing the Air-Gapped RAG Vault — our internal knowledge base offer: employees query private SOPs securely.",
+    "angle": "Using insights on 2026 AI agency models to showcase our Air-Gapped RAG Vault as the secure solution for internal company knowledge.",
+    "xPost": "SOPs buried in a drawer vs. answers in seconds with zero data leaks. Meet the Air-Gapped RAG Vault by Ejentic AI. Secure internal knowledge your team can actually query. Book a free consultation #EjenticAI #RAG",
+    "linkedinPost": "In 2026, businesses want AI, but they refuse to compromise on data security. Standard public tools leak your private SOPs and proprietary workflows straight into training data. That is the problem with basic AI.\n\nAt Ejentic AI, our Chief Architect David Chen builds resilient systems designed around privacy. That is why we built the Air-Gapped RAG Vault.\n\nBefore: Valuable SOPs, compliance docs, and operational strategies sitting in a drawer or unsearchable shared drives, wasting hours of employee time.\n\nAfter: Answers in seconds, complete data isolation, and zero leaks. Your internal team queries private documents securely without exposing sensitive company assets to the outside world.\n\nReady to upgrade your internal workflows without risking your data? \n\nBook a free consultation\n\n#EjenticAI #RAG #AIAgents #Automation #EthicalAI",
+    "citedSourceUrls": [
+      "https://medium.com/the-ai-studio/how-ai-agencies-are-really-making-money-in-2026-6ab696804300"
+    ],
+    "score": 8,
+    "createdAt": "2026-11-08T18:18:37.396Z"
   }
 }
