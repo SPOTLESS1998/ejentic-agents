@@ -2422,5 +2422,21 @@
     ],
     "score": 8,
     "createdAt": "2026-11-08T18:18:37.396Z"
+  },
+  "2026-11-08:evening": {
+    "date": "2026-11-08",
+    "slot": "evening",
+    "cycleDay": 3,
+    "theme": "The Problem with Basic AI",
+    "pillar": "INSPIRE",
+    "topic": "Digital Detox & Pruning — streamline existing processes and cut redundant software before adding AI.",
+    "angle": "Using the 2026 AI agency landscape to emphasize that pouring AI on top of unorganized chaos simply automates the chaos, requiring digital detox and pruning first.",
+    "xPost": "AI on top of chaos just automates the chaos. Before building autonomous agents, we need a digital detox. Prune redundant software, clean your data, then build human-centric systems. #EjenticAI #FutureOfWork",
+    "linkedinPost": "As we build the future of AI from Lagos outward, a hard truth keeps surfacing across businesses: adding AI on top of chaos simply automates the chaos.\n\nMany companies are rushing to stack automated tools, LLMs, and fragmented software onto messy internal processes. But technology cannot fix a foundation that hasn't been pruned.\n\nAt Ejentic AI, our Chief Architect David Chen designs resilient, seamless systems, but we always start with the human element. Elena Rodriguez, our Lead ML Engineer, treats data hygiene as a moral duty—evaluation before shipping, and respect for what is actually there.\n\nBefore you add agents, try a digital detox. Prune redundant software, streamline your workflows, and cut the digital clutter. Only then can we build ethical, human-centric systems that augment our people instead of replacing them.\n\nWhat redundant software can your team prune this week?\n\n#EjenticAI #FutureOfWork #AIAutomation #EthicalAI #AfricanInnovation",
+    "citedSourceUrls": [
+      "https://medium.com/the-ai-studio/how-ai-agencies-are-really-making-money-in-2026-6ab696804300"
+    ],
+    "score": 9,
+    "createdAt": "2026-11-08T21:56:46.284Z"
   }
 }
