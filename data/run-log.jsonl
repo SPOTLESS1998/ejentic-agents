@@ -165,3 +165,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-07T14:40:52.629Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-07T17:59:40.928Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-07T21:43:16.013Z"}
+{"agent":"job","found":49,"screened":12,"reported":3,"degraded":false,"aborted":[],"ts":"2026-11-08T13:28:01.557Z"}

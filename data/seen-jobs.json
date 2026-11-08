@@ -1886,10 +1886,10 @@
     "kind": "reported"
   },
   "lead:deleteme": {
-    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "firstSeen": "2026-11-08T13:28:00.036Z",
     "label": "LEAD",
     "title": "DeleteMe",
-    "kind": "screened"
+    "kind": "reported"
   },
   "lead:ping identity": {
     "firstSeen": "2026-10-22T11:56:04.025Z",
@@ -2741,6 +2741,72 @@
     "firstSeen": "2026-11-07T13:05:37.395Z",
     "label": "LEAD",
     "title": "Maven Clinic",
+    "kind": "reported"
+  },
+  "https://remoteok.com/remote-jobs/remote-ai-developer-salvo-software-1137701": {
+    "firstSeen": "2026-11-08T13:27:57.917Z",
+    "label": "JOB",
+    "title": "AI Developer",
+    "kind": "reported"
+  },
+  "https://jobicy.com/jobs/159801-principal-data-scientist-user-ecosystem": {
+    "firstSeen": "2026-11-08T13:27:57.917Z",
+    "label": "JOB",
+    "title": "Principal Data Scientist, User Ecosystem",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159799-sr-counsel-product-privacy-and-ai": {
+    "firstSeen": "2026-11-08T13:27:57.917Z",
+    "label": "JOB",
+    "title": "Sr. Counsel; Product, Privacy, and AI",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159786-lead-ai-architect-data-platform": {
+    "firstSeen": "2026-11-08T13:27:57.917Z",
+    "label": "JOB",
+    "title": "Lead AI Architect - Data Platform",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159740-cloud-ai-engineer-legal-compliance": {
+    "firstSeen": "2026-11-08T13:27:57.917Z",
+    "label": "JOB",
+    "title": "Cloud AI Engineer (Legal & Compliance)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159745-senior-fullstack-engineer-fanx-ai": {
+    "firstSeen": "2026-11-08T13:27:57.917Z",
+    "label": "JOB",
+    "title": "Senior Fullstack Engineer, FanX AI",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/159706-staff-software-engineer-product-ai": {
+    "firstSeen": "2026-11-08T13:27:57.917Z",
+    "label": "JOB",
+    "title": "Staff Software Engineer, Product/AI",
+    "kind": "screened"
+  },
+  "lead:elevenlabs": {
+    "firstSeen": "2026-11-08T13:28:00.036Z",
+    "label": "LEAD",
+    "title": "Elevenlabs",
+    "kind": "screened"
+  },
+  "lead:binance": {
+    "firstSeen": "2026-11-08T13:28:00.036Z",
+    "label": "LEAD",
+    "title": "Binance",
+    "kind": "screened"
+  },
+  "lead:1password": {
+    "firstSeen": "2026-11-08T13:28:00.036Z",
+    "label": "LEAD",
+    "title": "1Password",
+    "kind": "screened"
+  },
+  "lead:peerspace": {
+    "firstSeen": "2026-11-08T13:28:00.036Z",
+    "label": "LEAD",
+    "title": "Peerspace",
     "kind": "reported"
   }
 }
