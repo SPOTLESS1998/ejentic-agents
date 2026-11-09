@@ -1,29 +1,4 @@
 {
-  "https://www.themuse.com/jobs/leidos/energy-ai-transformation-solution-architect": {
-    "firstSeen": "2026-08-10T15:30:00.282Z",
-    "label": "JOB",
-    "title": "Energy AI Transformation Solution Architect"
-  },
-  "https://www.themuse.com/jobs/atlassian/senior-design-manager-jira-ai": {
-    "firstSeen": "2026-08-10T15:30:00.282Z",
-    "label": "JOB",
-    "title": "Senior Design Manager, Jira AI"
-  },
-  "https://www.themuse.com/jobs/allstate/senior-consultant-ii-aiml-engineer-net-focus-national-general": {
-    "firstSeen": "2026-08-10T15:30:00.282Z",
-    "label": "JOB",
-    "title": "Senior Consultant II - AI/ML Engineer (.NET Focus) - National General"
-  },
-  "https://www.themuse.com/jobs/epicinsurancebrokersandconsultants/lead-insurance-data-scientist": {
-    "firstSeen": "2026-08-10T15:30:00.282Z",
-    "label": "JOB",
-    "title": "Lead Insurance Data Scientist"
-  },
-  "https://www.themuse.com/jobs/equinixinc/principal-machine-learning-engineer-mle-deb6bc": {
-    "firstSeen": "2026-08-10T15:30:00.282Z",
-    "label": "JOB",
-    "title": "Principal Machine Learning Engineer (MLE)"
-  },
   "lead:credit wellness, llc": {
     "firstSeen": "2026-10-10T12:35:07.301Z",
     "label": "LEAD",
@@ -35,11 +10,6 @@
     "label": "LEAD",
     "title": "Unio Digital",
     "kind": "reported"
-  },
-  "lead:creative force": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Creative Force"
   },
   "lead:iapwe": {
     "firstSeen": "2026-10-10T12:35:07.301Z",
@@ -59,31 +29,11 @@
     "title": "Lemon.io",
     "kind": "screened"
   },
-  "lead:workada": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Workada"
-  },
-  "lead:outsite": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Outsite"
-  },
   "lead:telus digital": {
     "firstSeen": "2026-10-31T12:35:25.245Z",
     "label": "LEAD",
     "title": "TELUS Digital",
     "kind": "screened"
-  },
-  "lead:tribe wellness": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Tribe Wellness"
-  },
-  "lead:statlinx": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "STATLINX"
   },
   "lead:a.team": {
     "firstSeen": "2026-10-10T12:35:07.301Z",
@@ -91,112 +41,17 @@
     "title": "A.Team",
     "kind": "screened"
   },
-  "lead:garden3d": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "garden3d"
-  },
   "lead:mitre media": {
     "firstSeen": "2026-10-10T12:35:07.301Z",
     "label": "LEAD",
     "title": "Mitre Media",
     "kind": "screened"
   },
-  "lead:clipster": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Clipster"
-  },
-  "lead:the obesity society": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "The Obesity Society"
-  },
-  "lead:whiterose janitorial services": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Whiterose Janitorial Services"
-  },
-  "lead:mercanti": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Mercanti"
-  },
-  "lead:ccdc - the cambridge crystallographic data centre": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "CCDC - The Cambridge Crystallographic Data Centre"
-  },
-  "lead:fedex": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "FedEx"
-  },
-  "lead:washington state university school of food science": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Washington State University School of Food Science"
-  },
-  "lead:the mcbride group": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "The McBride Group"
-  },
-  "lead:carnival corporation": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Carnival Corporation"
-  },
-  "lead:simmons civil": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Simmons Civil"
-  },
-  "lead:tridant": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Tridant"
-  },
-  "lead:stratvantage consulting": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "StratVantage Consulting"
-  },
-  "lead:covaltech": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "CovalTech"
-  },
-  "lead:order from chaos, today!": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Order From Chaos, Today!"
-  },
-  "lead:as unexpected": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "AS UNEXPECTED"
-  },
-  "lead:robert half": {
-    "firstSeen": "2026-08-10T15:30:02.030Z",
-    "label": "LEAD",
-    "title": "Robert Half"
-  },
-  "https://www.themuse.com/jobs/epicinsurancebrokersandconsultants/healthcare-data-scientist": {
-    "firstSeen": "2026-08-10T16:23:45.713Z",
-    "label": "JOB",
-    "title": "Healthcare Data Scientist"
-  },
   "https://www.themuse.com/jobs/gitlab/ai-transformation-owner-cro": {
     "firstSeen": "2026-10-31T12:35:23.602Z",
     "label": "JOB",
     "title": "AI Transformation Owner, CRO",
     "kind": "screened"
-  },
-  "https://www.themuse.com/jobs/generalmotors/staff-software-engineer-machine-learning": {
-    "firstSeen": "2026-08-10T16:23:45.713Z",
-    "label": "JOB",
-    "title": "Staff Software Engineer - Machine Learning"
   },
   "https://www.themuse.com/jobs/autodesk/software-qa-engineer-automation": {
     "firstSeen": "2026-08-12T07:53:56.568Z",
@@ -645,10 +500,10 @@
     "title": "ALPHA BPO CORP"
   },
   "lead:engine": {
-    "firstSeen": "2026-10-30T12:58:56.029Z",
+    "firstSeen": "2026-11-09T16:24:35.794Z",
     "label": "LEAD",
     "title": "Engine",
-    "kind": "screened"
+    "kind": "reported"
   },
   "lead:chaos": {
     "firstSeen": "2026-08-20T07:07:31.464Z",
@@ -1532,7 +1387,7 @@
     "kind": "reported"
   },
   "lead:liftoff": {
-    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "firstSeen": "2026-11-09T16:24:35.794Z",
     "label": "LEAD",
     "title": "Liftoff",
     "kind": "screened"
@@ -1658,7 +1513,7 @@
     "kind": "screened"
   },
   "lead:cresta": {
-    "firstSeen": "2026-10-17T10:47:24.729Z",
+    "firstSeen": "2026-11-09T16:24:35.794Z",
     "label": "LEAD",
     "title": "Cresta",
     "kind": "screened"
@@ -2030,7 +1885,7 @@
     "kind": "screened"
   },
   "lead:quora": {
-    "firstSeen": "2026-10-24T11:04:43.243Z",
+    "firstSeen": "2026-11-09T16:24:35.794Z",
     "label": "LEAD",
     "title": "Quora",
     "kind": "screened"
@@ -2807,6 +2662,78 @@
     "firstSeen": "2026-11-08T13:28:00.036Z",
     "label": "LEAD",
     "title": "Peerspace",
+    "kind": "reported"
+  },
+  "https://news.ycombinator.com/item?id=50424162": {
+    "firstSeen": "2026-11-09T16:24:26.227Z",
+    "label": "JOB",
+    "title": "Forward Deployed Engineer, Founding Product Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/160029-director-ai-solutions-strategy-planning": {
+    "firstSeen": "2026-11-09T16:24:26.227Z",
+    "label": "JOB",
+    "title": "Director, AI Solutions Strategy & Planning",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/160021-regional-manager-sales-engineering-ai-accounts": {
+    "firstSeen": "2026-11-09T16:24:26.227Z",
+    "label": "JOB",
+    "title": "Regional Manager, Sales Engineering - AI Accounts",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/160014-strategic-project-lead-speech-audio-ai-united-states": {
+    "firstSeen": "2026-11-09T16:24:26.227Z",
+    "label": "JOB",
+    "title": "Strategic Project Lead - Speech & Audio AI (United States)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154953-group-product-manager-ai-native-data-warehouse": {
+    "firstSeen": "2026-11-09T16:24:26.227Z",
+    "label": "JOB",
+    "title": "Group Product Manager, AI-Native Data Warehouse",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154951-principal-solutions-engineer-emerging-technologies": {
+    "firstSeen": "2026-11-09T16:24:26.227Z",
+    "label": "JOB",
+    "title": "Principal Solutions Engineer, Emerging Technologies",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154935-principal-engineer-ai-office-of-the-ceo": {
+    "firstSeen": "2026-11-09T16:24:26.227Z",
+    "label": "JOB",
+    "title": "Principal Engineer (AI, Office of the CEO)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154931-ai-operations-lead": {
+    "firstSeen": "2026-11-09T16:24:26.227Z",
+    "label": "JOB",
+    "title": "AI Operations Lead",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154946-ai-engineer-gtm": {
+    "firstSeen": "2026-11-09T16:24:26.227Z",
+    "label": "JOB",
+    "title": "AI Engineer, GTM",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154907-senior-machine-learning-engineer-ranking-quora": {
+    "firstSeen": "2026-11-09T16:24:26.227Z",
+    "label": "JOB",
+    "title": "Senior Machine Learning Engineer, Ranking - Quora",
+    "kind": "screened"
+  },
+  "lead:tekmetric": {
+    "firstSeen": "2026-11-09T16:24:35.794Z",
+    "label": "LEAD",
+    "title": "Tekmetric",
+    "kind": "reported"
+  },
+  "lead:karbon": {
+    "firstSeen": "2026-11-09T16:24:35.794Z",
+    "label": "LEAD",
+    "title": "Karbon",
     "kind": "reported"
   }
 }
