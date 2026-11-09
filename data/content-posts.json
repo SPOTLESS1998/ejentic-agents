@@ -2438,5 +2438,21 @@
     ],
     "score": 9,
     "createdAt": "2026-11-08T21:56:46.284Z"
+  },
+  "2026-11-09:afternoon": {
+    "date": "2026-11-09",
+    "slot": "afternoon",
+    "cycleDay": 4,
+    "theme": "Bridging the Cultural Gap",
+    "pillar": "SHOWCASE",
+    "topic": "Showcase: Localized Multilingual Agents — our bots that fluently speak Pidgin, Hausa, Yoruba, and Igbo.",
+    "angle": "Connecting the industry-wide push for AI customer service automation to our localized multilingual agents that speak Pidgin, Hausa, Yoruba, and Igbo.",
+    "xPost": "Most AI bots only speak English. Yours shouldn't have to. Our localized multilingual agents handle Pidgin, Hausa, Yoruba, and Igbo natively. See them in action: https://youtu.be/gbXhZMTdnkM\n\n#EjenticAI #AIAgents",
+    "linkedinPost": "While global reports show customer service leaders rushing to adopt AI, most off-the-shelf tools miss a critical requirement for African markets: local languages.\n\nIf your customers speak Nigerian Pidgin, Hausa, Yoruba, or Igbo, an English-only chatbot creates friction instead of resolution.\n\nAt Ejentic AI, we build autonomous multilingual customer-service agents that embed seamlessly into your website, apps, and social media. They greet clients, answer questions, log complaints, and capture leads in the languages your customers actually use.\n\nWatch our agents handle real multilingual conversations here: https://youtu.be/gbXhZMTdnkM\n\nHow is your current customer support handling language diversity across your markets? Book a free consultation\n\n#EjenticAI #AIAgents #CustomerExperience #NigeriaTech #TechInAfrica",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 9,
+    "createdAt": "2026-11-09T22:57:20.424Z"
   }
 }
