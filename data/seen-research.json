@@ -1,54 +1,4 @@
 {
-  "https://www.reddit.com/r/ai_agents/comments/1rdf5v7/my_guide_on_what_tools_to_use_to_build_ai_agents": {
-    "firstSeen": "2026-08-12T08:09:49.408Z",
-    "label": "RESEARCH",
-    "title": "My guide on what tools to use to build AI agents in 2026 (if ..."
-  },
-  "https://www.langchain.com/resources/ai-agent-frameworks": {
-    "firstSeen": "2026-08-12T08:09:49.408Z",
-    "label": "RESEARCH",
-    "title": "The best AI agent frameworks in 2026"
-  },
-  "https://www.youtube.com/watch?v=rsvyae1l9yi": {
-    "firstSeen": "2026-08-12T08:09:49.408Z",
-    "label": "RESEARCH",
-    "title": "Best AI Agent Frameworks for 2026: LangGraph vs CrewAI vs ..."
-  },
-  "https://www.agensi.io/learn/best-niches-ai-automation-agency-2026": {
-    "firstSeen": "2026-08-12T08:09:49.408Z",
-    "label": "RESEARCH",
-    "title": "Best Niches for AI Automation Agency 2026"
-  },
-  "https://www.digitalapplied.com/blog/ai-customer-support-statistics-2026-adoption-roi-data": {
-    "firstSeen": "2026-08-12T08:09:49.408Z",
-    "label": "RESEARCH",
-    "title": "AI Customer Support 2026: 50+ Adoption + ROI Data Points"
-  },
-  "https://www.imversion.com/blog/llm-cost-optimization-effective-strategies-for-2026": {
-    "firstSeen": "2026-08-12T08:09:49.408Z",
-    "label": "RESEARCH",
-    "title": "LLM Cost Optimization: Effective Strategies for 2026 | Imversion"
-  },
-  "https://khimananda.com/blog/llm-cost-optimization-for-production-apps": {
-    "firstSeen": "2026-08-12T08:09:49.408Z",
-    "label": "RESEARCH",
-    "title": "LLM Cost Optimization for Production Apps: 2026 Guide - Khimananda Oli"
-  },
-  "https://www.ai-agentsplus.com/blog/ai-agent-cost-optimization-strategies-march-2026": {
-    "firstSeen": "2026-08-12T08:09:49.408Z",
-    "label": "RESEARCH",
-    "title": "AI Agent Cost Optimization Strategies: Practical Guide for 2026"
-  },
-  "https://www.maviklabs.com/blog/llm-cost-optimization-2026": {
-    "firstSeen": "2026-08-12T08:09:49.408Z",
-    "label": "RESEARCH",
-    "title": "LLM Cost Optimization in 2026: Routing, Caching, and Batching"
-  },
-  "https://thecrunch.io/ai-automation-for-small-business": {
-    "firstSeen": "2026-08-12T08:09:49.408Z",
-    "label": "RESEARCH",
-    "title": "7 Best AI Automation for Small Business Tools in 2026 - The Crunch"
-  },
   "https://www.youtube.com/watch?v=g13up2b29ek": {
     "firstSeen": "2026-08-13T08:12:02.343Z",
     "label": "RESEARCH",
@@ -663,5 +613,40 @@
     "firstSeen": "2026-11-09T16:58:53.471Z",
     "label": "RESEARCH",
     "title": "Cost Optimization Strategies for Delivering LLM-Based AI Agents"
+  },
+  "https://blog.jetbrains.com/pycharm/2026/06/top-agentic-frameworks-for-building-applications-2026": {
+    "firstSeen": "2026-11-10T15:18:17.307Z",
+    "label": "RESEARCH",
+    "title": "Top Agentic Frameworks for Building Applications 2026"
+  },
+  "https://www.aprimo.com/blog/ai-driven-marketing-strategies-to-implement-in-2026": {
+    "firstSeen": "2026-11-10T15:18:17.307Z",
+    "label": "RESEARCH",
+    "title": "AI-Driven Marketing Strategies to Implement in 2026 - Aprimo"
+  },
+  "https://medium.com/@nbjoshua8/the-ultimate-2026-guide-to-starting-an-ai-automation-agency-from-0-to-1-000-month-9ae180c713f2": {
+    "firstSeen": "2026-11-10T15:18:17.307Z",
+    "label": "RESEARCH",
+    "title": "The Ultimate 2026 Guide to Starting an AI Automation Agency"
+  },
+  "https://masterofcode.com/blog/ai-in-customer-service-statistics": {
+    "firstSeen": "2026-11-10T15:18:17.307Z",
+    "label": "RESEARCH",
+    "title": "AI in Customer Service Statistics [2026]"
+  },
+  "https://cobbai.com/blog/ai-in-customer-service-case-studies": {
+    "firstSeen": "2026-11-10T15:18:17.307Z",
+    "label": "RESEARCH",
+    "title": "AI in Customer Service: 25 Case Studies by Industry"
+  },
+  "https://www.forbes.com/sites/terdawn-deboe/2026/01/02/15-ai-predictions-for-small-businesses-in-2026": {
+    "firstSeen": "2026-11-10T15:18:17.307Z",
+    "label": "RESEARCH",
+    "title": "15 AI Predictions For Small Businesses In 2026"
+  },
+  "https://metodoviral.com/en/blog/ai/ai-and-small-businesses-opportunities-in-2026": {
+    "firstSeen": "2026-11-10T15:18:17.307Z",
+    "label": "RESEARCH",
+    "title": "AI and Small Businesses: Opportunities in 2026"
   }
 }
