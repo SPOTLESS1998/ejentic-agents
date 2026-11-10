@@ -2454,5 +2454,21 @@
     ],
     "score": 9,
     "createdAt": "2026-11-09T22:57:20.424Z"
+  },
+  "2026-11-10:evening": {
+    "date": "2026-11-10",
+    "slot": "evening",
+    "cycleDay": 5,
+    "theme": "The Invisible Hand of Automation",
+    "pillar": "INSPIRE",
+    "topic": "Societal Impact: Shifting the Nature of Work — when humans don’t do repetitive tasks, we unlock creativity and complex problem-solving.",
+    "angle": "Using statistics on growing AI adoption in customer service to frame automation not as layoffs, but as the liberation of human workers to focus on creativity and complex problem-solving.",
+    "xPost": "Adoption is growing, but true automation isn't about replacing people. It's about taking away repetitive tasks so human creativity can thrive. Building ethical, human-centric systems from Nigeria to the world. #EjenticAI #FutureOfWork",
+    "linkedinPost": "As AI adoption grows across organizations, a vital question remains: what happens to the human element?\n\nAt Ejentic AI, we believe the true power of automation isn't about replacing people. It's about liberation. When autonomous workflows handle repetitive tasks and routine inquiries, humans are finally free to focus on what they do best: complex problem-solving, deep empathy, and true creativity.\n\nOur vision is rooted right here in Nigeria — building ethical, human-centric systems that augment our people instead of replacing them. When we let technology handle the mechanical, we unlock the human.\n\n#EjenticAI #FutureOfWork #EthicalAI #AfricanInnovation #Automation",
+    "citedSourceUrls": [
+      "https://www.getmacha.com/blog/ai-customer-service-adoption-statistics"
+    ],
+    "score": 5,
+    "createdAt": "2026-11-10T01:26:35.838Z"
   }
 }
