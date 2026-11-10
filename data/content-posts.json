@@ -2486,5 +2486,19 @@
     ],
     "score": 9,
     "createdAt": "2026-11-10T16:06:45.552Z"
+  },
+  "2026-11-10:afternoon": {
+    "date": "2026-11-10",
+    "slot": "afternoon",
+    "cycleDay": 5,
+    "theme": "The Invisible Hand of Automation",
+    "pillar": "SHOWCASE",
+    "topic": "Enterprise Workflow Automation — case study: connecting Stripe, a CRM, and an LLM to automate invoicing and lead routing.",
+    "angle": "Using concrete enterprise workflow automation architecture (Stripe + CRM + LLM) to eliminate manual bottlenecks and operational errors.",
+    "xPost": "Most AI tools stop at chat. Real efficiency is invisible infrastructure. Here is how we connect Stripe, your CRM, and LLMs to fully automate invoicing and lead routing. Book a free consultation #EjenticAI #AIAgents",
+    "linkedinPost": "Many companies buy AI chat tools and wonder why their overhead barely moves. True efficiency isn't another interface for your team to check. It is the invisible hand of automation operating quietly in the background.\n\nTake enterprise billing and lead routing. Without integration, your sales team is manually moving data between Stripe and your CRM, leading to delays and human error.\n\nAt Ejentic AI, we build custom agentic workflows that bridge these systems seamlessly. When a payment clears in Stripe, our pipeline updates your CRM, triggers intelligent LLM routing, and drafts the next steps instantly. No manual data entry. No dropped leads.\n\nAs David Chen, our Chief Architect, puts it: systems need to be resilient, with graceful degradation and built-in fallbacks so your operations never miss a beat.\n\nReady to move past surface-level tools and automate your core workflows? Book a free consultation\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-10T20:25:28.270Z"
   }
 }
