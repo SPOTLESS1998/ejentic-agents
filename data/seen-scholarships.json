@@ -1,44 +1,4 @@
 {
-  "https://www.chinesescholarshipcouncil.com": {
-    "firstSeen": "2026-08-13T08:03:01.087Z",
-    "label": "SCHOLARSHIP",
-    "title": "Chinese Government Scholarships: CSC Scholarships | China ..."
-  },
-  "https://www.facebook.com/mudassarchofficial/videos/silk-road-scholarship-2026-study-at-nanjing-university-of-science-and-technology/3999850273646431": {
-    "firstSeen": "2026-08-13T08:03:01.087Z",
-    "label": "SCHOLARSHIP",
-    "title": "Silk Road Scholarship 2026 | Study at Nanjing University of Science and ..."
-  },
-  "https://www.unicaf.org": {
-    "firstSeen": "2026-08-13T08:03:01.087Z",
-    "label": "SCHOLARSHIP",
-    "title": "Unicaf Scholarships | Earn A Scholarship For A Recognised ..."
-  },
-  "https://www.applykite.com/scholarships/fully-funded-ediss-masters-scholarships-in-data-science-and-related-fields-finland-spain-italy-sweden-5l9cbz8fck": {
-    "firstSeen": "2026-08-13T08:03:01.087Z",
-    "label": "SCHOLARSHIP",
-    "title": "Fully Funded EDISS Masters Scholarships in Data Science ..."
-  },
-  "https://studyinslovenia.si/news/university-of-verona-opens-applications-for-scholarships-for-international-masters-students-2026-2027": {
-    "firstSeen": "2026-08-13T08:03:01.087Z",
-    "label": "SCHOLARSHIP",
-    "title": "University of Verona Opens Applications for Scholarships ..."
-  },
-  "https://www.scholarshiptab.com/scholarships-by-course/data-science": {
-    "firstSeen": "2026-08-13T08:03:01.087Z",
-    "label": "SCHOLARSHIP",
-    "title": "Data Science scholarships for international students 2026- ..."
-  },
-  "https://www.sciencespo.fr/students/en/fees-funding/bursaries-financial-aid/emile-boutmy-scholarship": {
-    "firstSeen": "2026-08-13T08:03:01.087Z",
-    "label": "SCHOLARSHIP",
-    "title": "The Émile Boutmy scholarship | Sciences Po Students"
-  },
-  "https://univ-cotedazur.eu/msc/msc-data-science-and-artificial-intelligence/registration/scholarship": {
-    "firstSeen": "2026-08-13T08:03:01.087Z",
-    "label": "SCHOLARSHIP",
-    "title": "Scholarship - Université Côte d'Azur"
-  },
   "https://www.facebook.com/groups/1655496357954044/posts/3168656496638015": {
     "firstSeen": "2026-08-15T07:08:09.341Z",
     "label": "SCHOLARSHIP",
@@ -948,5 +908,15 @@
     "firstSeen": "2026-11-10T15:10:39.837Z",
     "label": "SCHOLARSHIP",
     "title": "Graduate Assistantships | UMN Data Science Initiative"
+  },
+  "https://yz.tsinghua.edu.cn/en/financial_aid/scholarship_application.htm": {
+    "firstSeen": "2026-11-11T14:40:34.642Z",
+    "label": "SCHOLARSHIP",
+    "title": "Scholarship Application-THU Graduate Admissions for ..."
+  },
+  "https://www.scholars4dev.com/new-zealand-scholarships": {
+    "firstSeen": "2026-11-11T14:40:34.642Z",
+    "label": "SCHOLARSHIP",
+    "title": "New Zealand Scholarships 2027-2028"
   }
 }

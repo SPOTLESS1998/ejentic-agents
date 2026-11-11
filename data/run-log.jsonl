@@ -185,3 +185,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-10T16:06:45.557Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-10T20:25:28.274Z"}
 {"agent":"job","found":49,"screened":11,"reported":1,"degraded":false,"aborted":[],"ts":"2026-11-11T14:27:04.883Z"}
+{"agent":"scholarship","found":46,"screened":2,"reported":1,"degraded":false,"aborted":[],"ts":"2026-11-11T14:40:37.418Z"}
