@@ -2500,5 +2500,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-10T20:25:28.270Z"
+  },
+  "2026-11-11:morning": {
+    "date": "2026-11-11",
+    "slot": "morning",
+    "cycleDay": 6,
+    "theme": "Demystifying the Buzzwords",
+    "pillar": "EDUCATE",
+    "topic": "AI Glossary: What is a \"Vector Database\"? A simple, visual explanation of how we store company knowledge (Pinecone/pgvector).",
+    "angle": "Explaining the concept of a vector database through an analogy-first approach to demystify how AI searches and retrieves company knowledge by meaning rather than spelling.",
+    "xPost": "Ever wonder how AI actually reads your company documents? Think of a vector database like a massive library organized by meaning, not spelling. It finds concepts, not just keywords. #EjenticAI #AIAgents",
+    "linkedinPost": "What actually happens when an AI searches your company's private documents? \n\nIf you have ever tried building an internal knowledge base, you have likely run into the term \"Vector Database\" (like Pinecone or pgvector). It sounds complex, but the concept is actually quite intuitive.\n\nTraditional databases look for exact keyword matches. If your SOP says \"client onboarding\" and an employee searches for \"customer intake,\" a traditional database might miss it.\n\nA vector database works like a library organized entirely by meaning, not spelling. It converts text into mathematical coordinates (vectors) based on context. Concepts that mean similar things live close to each other on the map.\n\nThis is the exact engine behind secure RAG vaults—allowing employees to query private SOPs instantly, without data leaks. \n\nHow is your team currently handling internal knowledge retrieval?\n\n#EjenticAI #AIAgents #RAG #AIAutomation #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-11T15:52:21.819Z"
   }
 }
