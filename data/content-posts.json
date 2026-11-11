@@ -2514,5 +2514,22 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-11T15:52:21.819Z"
+  },
+  "2026-11-11:afternoon": {
+    "date": "2026-11-11",
+    "slot": "afternoon",
+    "cycleDay": 6,
+    "theme": "Demystifying the Buzzwords",
+    "pillar": "SHOWCASE",
+    "topic": "The Inbound Lead Concierge — our AI greets visitors 24/7, qualifies intent, and routes high-value prospects to human sales reps.",
+    "angle": "Using insights on agentic frameworks and autonomous marketing systems to showcase how our Inbound Lead Concierge captures 24/7 revenue opportunities.",
+    "xPost": "That 2 AM lead nobody answered just went to your competitor. The Inbound Lead Concierge greets visitors 24/7, qualifies intent, and routes high-value prospects instantly. \n\nSee it in action: https://youtu.be/4DcFtp6amjs\n\n#EjenticAI #AIAgents",
+    "linkedinPost": "That 2 AM lead nobody answered just went to your competitor. In business, response time is everything, but human teams can't be online around the clock without burning out.\n\nThe industry is shifting rapidly. With task-specific agentic systems becoming a core layer in modern enterprise architecture, standing up autonomous infrastructure isn't just about efficiency—it is about capturing revenue that currently slips through the cracks.\n\nOur Inbound Lead Concierge solves this precisely. It greets website visitors 24/7, qualifies their intent in real time, and routes high-value prospects directly to your human sales reps the moment they land, reducing initial response time to zero.\n\nWatch the autonomous lead-generation system demo here: https://youtu.be/4DcFtp6amjs\n\nHow is your current architecture handling after-hours pipeline capture?\n\n#EjenticAI #AIAgents #Automation #CustomerExperience #ROI",
+    "citedSourceUrls": [
+      "https://blog.jetbrains.com/pycharm/2026/06/top-agentic-frameworks-for-building-applications-2026",
+      "https://www.aprimo.com/blog/ai-driven-marketing-strategies-to-implement-in-2026"
+    ],
+    "score": 7,
+    "createdAt": "2026-11-11T20:08:25.323Z"
   }
 }
