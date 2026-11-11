@@ -53,71 +53,6 @@
     "title": "AI Transformation Owner, CRO",
     "kind": "screened"
   },
-  "https://www.themuse.com/jobs/himshers/future-analytics-data-science-opportunities": {
-    "firstSeen": "2026-08-13T07:54:59.824Z",
-    "label": "JOB",
-    "title": "Future Analytics & Data Science Opportunities"
-  },
-  "https://www.themuse.com/jobs/enterprisemobility/data-scientist-adaff7": {
-    "firstSeen": "2026-08-13T07:54:59.824Z",
-    "label": "JOB",
-    "title": "Data Scientist"
-  },
-  "https://remoteok.com/remote-jobs/remote-artificial-intelligence-specialist-modis-boutique-1136555": {
-    "firstSeen": "2026-08-13T07:54:59.824Z",
-    "label": "JOB",
-    "title": "Artificial Intelligence Specialist"
-  },
-  "https://remoteok.com/remote-jobs/remote-aragon-ai-ai-supermarket-1136388": {
-    "firstSeen": "2026-08-13T07:54:59.824Z",
-    "label": "JOB",
-    "title": "Aragon AI"
-  },
-  "lead:jde peet's": {
-    "firstSeen": "2026-08-13T07:55:00.398Z",
-    "label": "LEAD",
-    "title": "JDE Peet's"
-  },
-  "lead:jobs in council": {
-    "firstSeen": "2026-08-13T07:55:00.398Z",
-    "label": "LEAD",
-    "title": "Jobs in Council"
-  },
-  "lead:modi's boutique": {
-    "firstSeen": "2026-08-13T07:55:00.398Z",
-    "label": "LEAD",
-    "title": "Modi's Boutique"
-  },
-  "lead:ai supermarket": {
-    "firstSeen": "2026-08-13T07:55:00.398Z",
-    "label": "LEAD",
-    "title": "AI Supermarket"
-  },
-  "lead:goddard enterprises ltd.": {
-    "firstSeen": "2026-08-13T07:55:00.398Z",
-    "label": "LEAD",
-    "title": "Goddard Enterprises Ltd."
-  },
-  "lead:tommy gun's original barbershop": {
-    "firstSeen": "2026-08-13T07:55:00.398Z",
-    "label": "LEAD",
-    "title": "Tommy Gun's Original Barbershop"
-  },
-  "lead:universal wolf": {
-    "firstSeen": "2026-08-13T07:55:00.398Z",
-    "label": "LEAD",
-    "title": "Universal Wolf"
-  },
-  "lead:cgc recruitment": {
-    "firstSeen": "2026-08-13T07:55:00.398Z",
-    "label": "LEAD",
-    "title": "CGC Recruitment"
-  },
-  "lead:covergo": {
-    "firstSeen": "2026-08-13T07:55:00.398Z",
-    "label": "LEAD",
-    "title": "CoverGo"
-  },
   "https://remoteok.com/remote-jobs/remote-jenni-ai-ai-supermarket-1136602": {
     "firstSeen": "2026-08-14T07:51:52.188Z",
     "label": "JOB",
@@ -1698,7 +1633,7 @@
     "kind": "screened"
   },
   "lead:cordance": {
-    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "firstSeen": "2026-11-11T14:27:04.232Z",
     "label": "LEAD",
     "title": "Cordance",
     "kind": "screened"
@@ -2739,6 +2674,66 @@
     "firstSeen": "2026-11-10T14:55:29.189Z",
     "label": "LEAD",
     "title": "Bayesian Health",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-senior-agentic-ai-engineer-nda-gt-1137710": {
+    "firstSeen": "2026-11-11T14:27:00.122Z",
+    "label": "JOB",
+    "title": "Senior Agentic AI Engineer NDA",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/161244-ai-engineer-2": {
+    "firstSeen": "2026-11-11T14:27:00.122Z",
+    "label": "JOB",
+    "title": "AI Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/155007-director-of-it-automation-appen": {
+    "firstSeen": "2026-11-11T14:27:00.122Z",
+    "label": "JOB",
+    "title": "Director of IT & Automation - Appen",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154992-automation-strategist-customer-success": {
+    "firstSeen": "2026-11-11T14:27:00.122Z",
+    "label": "JOB",
+    "title": "Automation Strategist, Customer Success",
+    "kind": "screened"
+  },
+  "lead:gt": {
+    "firstSeen": "2026-11-11T14:27:04.232Z",
+    "label": "LEAD",
+    "title": "GT",
+    "kind": "screened"
+  },
+  "lead:dscout": {
+    "firstSeen": "2026-11-11T14:27:04.232Z",
+    "label": "LEAD",
+    "title": "dscout",
+    "kind": "screened"
+  },
+  "lead:particle41": {
+    "firstSeen": "2026-11-11T14:27:04.232Z",
+    "label": "LEAD",
+    "title": "Particle41",
+    "kind": "screened"
+  },
+  "lead:zapier": {
+    "firstSeen": "2026-11-11T14:27:04.232Z",
+    "label": "LEAD",
+    "title": "Zapier",
+    "kind": "screened"
+  },
+  "lead:double": {
+    "firstSeen": "2026-11-11T14:27:04.232Z",
+    "label": "LEAD",
+    "title": "Double",
+    "kind": "reported"
+  },
+  "lead:kalshi": {
+    "firstSeen": "2026-11-11T14:27:04.232Z",
+    "label": "LEAD",
+    "title": "Kalshi",
     "kind": "screened"
   }
 }
