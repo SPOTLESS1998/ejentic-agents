@@ -1,14 +1,4 @@
 {
-  "https://www.youtube.com/watch?v=g13up2b29ek": {
-    "firstSeen": "2026-08-13T08:12:02.343Z",
-    "label": "RESEARCH",
-    "title": "Real-world agent case studies: how organizations are using AI agents"
-  },
-  "https://www.linkedin.com/pulse/ai-agent-optimization-executive-guide-predictable-systems-wbtwc": {
-    "firstSeen": "2026-08-13T08:12:02.343Z",
-    "label": "RESEARCH",
-    "title": "AI Agent Optimization: The Executive Guide to Predictable AI ... - LinkedIn"
-  },
   "https://www.ideas2it.com/blogs/ai-agent-frameworks": {
     "firstSeen": "2026-08-15T07:21:49.702Z",
     "label": "RESEARCH",
@@ -648,5 +638,25 @@
     "firstSeen": "2026-11-10T15:18:17.307Z",
     "label": "RESEARCH",
     "title": "AI and Small Businesses: Opportunities in 2026"
+  },
+  "https://www.langchain.com/resources/ai-agent-frameworks": {
+    "firstSeen": "2026-11-11T14:48:56.265Z",
+    "label": "RESEARCH",
+    "title": "The best AI agent frameworks in 2026"
+  },
+  "https://www.reddit.com/r/ai_agents/comments/1rdf5v7/my_guide_on_what_tools_to_use_to_build_ai_agents": {
+    "firstSeen": "2026-11-11T14:48:56.265Z",
+    "label": "RESEARCH",
+    "title": "My guide on what tools to use to build AI agents in 2026 (if ..."
+  },
+  "https://ideaproof.io/guides/ai-automation-agency": {
+    "firstSeen": "2026-11-11T14:48:56.265Z",
+    "label": "RESEARCH",
+    "title": "AI Automation Agency: The 2026 Playbook to"
+  },
+  "https://ascendurepro.com/small-business-ai-automation-trends-2026-investments": {
+    "firstSeen": "2026-11-11T14:48:56.265Z",
+    "label": "RESEARCH",
+    "title": "Small Business AI Automation Trends 2026 Investments"
   }
 }
