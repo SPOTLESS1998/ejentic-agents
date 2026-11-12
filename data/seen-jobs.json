@@ -53,51 +53,6 @@
     "title": "AI Transformation Owner, CRO",
     "kind": "screened"
   },
-  "https://remoteok.com/remote-jobs/remote-jenni-ai-ai-supermarket-1136602": {
-    "firstSeen": "2026-08-14T07:51:52.188Z",
-    "label": "JOB",
-    "title": "Jenni AI"
-  },
-  "lead:the security centre limited.": {
-    "firstSeen": "2026-08-14T07:51:54.213Z",
-    "label": "LEAD",
-    "title": "The Security Centre Limited."
-  },
-  "lead:fairmont hotels &amp; resorts": {
-    "firstSeen": "2026-08-14T07:51:54.213Z",
-    "label": "LEAD",
-    "title": "Fairmont Hotels &amp; Resorts"
-  },
-  "lead:bybit": {
-    "firstSeen": "2026-08-14T07:51:54.213Z",
-    "label": "LEAD",
-    "title": "Bybit"
-  },
-  "lead:american bureau of shipping (abs)": {
-    "firstSeen": "2026-08-14T07:51:54.213Z",
-    "label": "LEAD",
-    "title": "American Bureau of Shipping (ABS)"
-  },
-  "lead:adaptive teams": {
-    "firstSeen": "2026-08-14T07:51:54.213Z",
-    "label": "LEAD",
-    "title": "Adaptive Teams"
-  },
-  "lead:slb": {
-    "firstSeen": "2026-08-14T07:51:54.213Z",
-    "label": "LEAD",
-    "title": "SLB"
-  },
-  "lead:tucker's farm corporation": {
-    "firstSeen": "2026-08-14T07:51:54.213Z",
-    "label": "LEAD",
-    "title": "Tucker's Farm Corporation"
-  },
-  "lead:niyukti systems, inc": {
-    "firstSeen": "2026-08-14T07:51:54.213Z",
-    "label": "LEAD",
-    "title": "Niyukti Systems, Inc"
-  },
   "lead:nt health": {
     "firstSeen": "2026-08-15T06:58:49.106Z",
     "label": "LEAD",
@@ -1423,7 +1378,7 @@
     "kind": "reported"
   },
   "lead:6sense": {
-    "firstSeen": "2026-10-18T11:09:24.930Z",
+    "firstSeen": "2026-11-12T15:18:10.472Z",
     "label": "LEAD",
     "title": "6sense",
     "kind": "screened"
@@ -2735,5 +2690,71 @@
     "label": "LEAD",
     "title": "Kalshi",
     "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-data-engineer-addepto-1137714": {
+    "firstSeen": "2026-11-12T15:18:09.096Z",
+    "label": "JOB",
+    "title": "Data Engineer",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50461075": {
+    "firstSeen": "2026-11-12T15:18:09.096Z",
+    "label": "JOB",
+    "title": "AI Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/155126-senior-data-engineer-ads": {
+    "firstSeen": "2026-11-12T15:18:09.096Z",
+    "label": "JOB",
+    "title": "Senior Data Engineer, Ads",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/155125-ai-strategist": {
+    "firstSeen": "2026-11-12T15:18:09.096Z",
+    "label": "JOB",
+    "title": "AI Strategist",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/155140-engineering-manager-ai-cicd": {
+    "firstSeen": "2026-11-12T15:18:09.096Z",
+    "label": "JOB",
+    "title": "Engineering Manager, AI CICD",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/155130-ai-success-manager": {
+    "firstSeen": "2026-11-12T15:18:09.096Z",
+    "label": "JOB",
+    "title": "AI Success Manager",
+    "kind": "screened"
+  },
+  "lead:shyftoff": {
+    "firstSeen": "2026-11-12T15:18:10.472Z",
+    "label": "LEAD",
+    "title": "ShyftOff",
+    "kind": "screened"
+  },
+  "lead:landlord": {
+    "firstSeen": "2026-11-12T15:18:10.472Z",
+    "label": "LEAD",
+    "title": "Landlord",
+    "kind": "screened"
+  },
+  "lead:steven hobbs": {
+    "firstSeen": "2026-11-12T15:18:10.472Z",
+    "label": "LEAD",
+    "title": "Steven Hobbs",
+    "kind": "screened"
+  },
+  "lead:fleetio": {
+    "firstSeen": "2026-11-12T15:18:10.472Z",
+    "label": "LEAD",
+    "title": "Fleetio",
+    "kind": "screened"
+  },
+  "lead:vonage": {
+    "firstSeen": "2026-11-12T15:18:10.472Z",
+    "label": "LEAD",
+    "title": "Vonage",
+    "kind": "reported"
   }
 }
