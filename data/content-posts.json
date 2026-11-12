@@ -2531,5 +2531,19 @@
     ],
     "score": 7,
     "createdAt": "2026-11-11T20:08:25.323Z"
+  },
+  "2026-11-12:evening": {
+    "date": "2026-11-12",
+    "slot": "evening",
+    "cycleDay": 7,
+    "theme": "Weekly Recap & Engagement",
+    "pillar": "INSPIRE",
+    "topic": "The Week Ahead — a teaser of next week’s discussions, focusing on specific industry use-cases.",
+    "angle": "Reflecting on our human-centric, Wakanda-inspired vision of African AI leadership and previewing industry use-cases for next week.",
+    "xPost": "We believe Africa can lead the world in AI by building ethical, human-centric systems that speak our languages and augment our people. As we wrap up week one, looking ahead to next week we are diving into specific industry use-cases. #EjenticAI #AfricanTech",
+    "linkedinPost": "As we look across the landscape of AI agent frameworks and enterprise cost strategies, our vision at Ejentic AI remains crystal clear. We believe Africa — starting right here in Nigeria — can lead the world in artificial intelligence. Not by copying Silicon Valley, but by building ethical, human-centric systems that speak our local languages, protect private data, and augment our people rather than replacing them.\n\nFrom Sarah Jenkins designing invisible, effortless conversations to David Chen building resilient architectures and Elena Rodriguez driving responsible AI evaluation, everything we do is rooted in community and purpose.\n\nAs we close out our first week, we are looking ahead. Next week, we are zooming in on practical industry use-cases, breaking down how autonomous agents and secure workflows solve real operational challenges across sectors.\n\nWhat industry are you most eager to see transformed by ethical AI first?\n\n#EjenticAI #NigeriaTech #AfricanTech #EthicalAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-12T00:30:52.891Z"
   }
 }
