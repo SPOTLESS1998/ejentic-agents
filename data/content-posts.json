@@ -2545,5 +2545,22 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-12T00:30:52.891Z"
+  },
+  "2026-11-12:afternoon": {
+    "date": "2026-11-12",
+    "slot": "afternoon",
+    "cycleDay": 7,
+    "theme": "Weekly Recap & Engagement",
+    "pillar": "SHOWCASE",
+    "topic": "Demo Reel — a short video snippet of our \"Watch Agents in Action\" prototypes (Lead Gen or Multilingual Support).",
+    "angle": "Connecting LLM production cost control and reliable frameworks to Ejentic's enterprise agent solutions (Multilingual Support and Lead Gen).",
+    "xPost": "Prototypes are easy; production is where token spend spirals. See how our multilingual support & lead-gen agents keep costs predictable and performance high. Watch them in action: https://youtu.be/gbXhZMTdnkM",
+    "linkedinPost": "Moving an AI prototype to production often introduces unexpected cost spikes—from token consumption and model inference to vector storage and infrastructure overhead. Building systems that scale efficiently requires deliberate model routing and robust orchestration rather than defaulting to maximum power for every single query.\n\nAt Ejentic AI, our Chief Architect David Chen focuses on building resilient, cost-effective systems with graceful degradation, while Lead ML Engineer Elena Rodriguez prioritizes responsible evaluation before shipping.\n\nOur specialized enterprise offers—including autonomous multilingual customer-service agents supporting English, Nigerian Pidgin, Hausa, Yoruba, and Igbo, alongside autonomous lead-generation systems—are engineered to deliver clear ROI without inflated token waste.\n\nWatch our agents in action here: https://youtu.be/gbXhZMTdnkM\n\nHow is your team currently balancing model performance with production token costs?\n\n#EjenticAI #AIAgents #Automation #CustomerExperience #ROI",
+    "citedSourceUrls": [
+      "https://www.c-sharpcorner.com/article/ai-cost-optimization-strategies-for-production-llm-applications",
+      "https://www.langchain.com/resources/ai-agent-frameworks"
+    ],
+    "score": 9,
+    "createdAt": "2026-11-12T20:45:23.926Z"
   }
 }
