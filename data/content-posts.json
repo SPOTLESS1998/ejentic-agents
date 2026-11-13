@@ -2562,5 +2562,21 @@
     ],
     "score": 9,
     "createdAt": "2026-11-12T20:45:23.926Z"
+  },
+  "2026-11-13:morning": {
+    "date": "2026-11-13",
+    "slot": "morning",
+    "cycleDay": 8,
+    "theme": "Finance",
+    "pillar": "EDUCATE",
+    "topic": "Fraud detection AI vs. legacy systems — why rule-based checks lose against adaptive agents.",
+    "angle": "Connecting the need for workflow visibility and operational stage tracing to why legacy rule-based fraud detection fails against adaptive agents.",
+    "xPost": "Why do static fraud checks keep failing? Fixed rules look for exact patterns, missing modern, multi-step threats. Adaptive agents evaluate context across every processing stage instead of just matching static lists. #EjenticAI #AIAgents",
+    "linkedinPost": "Why do legacy rule-based fraud checks fail against modern threats?\n\nTraditional systems rely on static IF-THEN rules. If a transaction fits a known list, it gets flagged. If a fraudster shifts slightly, it slips right through.\n\nAdaptive agents work differently. They trace workflows across multiple processing stages—evaluating context, behavior, and intent rather than just matching hardcoded criteria. Instead of rigid generation or matching, they assess the entire sequence of events to catch anomalies that static code misses.\n\nIn financial operations, tracing the full run cost and outcome of every validation step matters just as much as catching the bad actor. Systems need to adapt without inflating operational overhead or false positives.\n\nAt Ejentic AI, we build resilient architectures focused on reliability and graceful fallbacks. Because in digital finance, trust is the real currency.\n\n#EjenticAI #AIAgents #Automation #AI #FutureOfWork",
+    "citedSourceUrls": [
+      "https://maddevs.io/amp/blog/llm-cost-optimization"
+    ],
+    "score": 8,
+    "createdAt": "2026-11-13T15:55:31.670Z"
   }
 }
