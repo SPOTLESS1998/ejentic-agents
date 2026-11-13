@@ -53,61 +53,6 @@
     "title": "AI Transformation Owner, CRO",
     "kind": "screened"
   },
-  "lead:nt health": {
-    "firstSeen": "2026-08-15T06:58:49.106Z",
-    "label": "LEAD",
-    "title": "NT Health"
-  },
-  "lead:the abaco club": {
-    "firstSeen": "2026-08-15T06:58:49.106Z",
-    "label": "LEAD",
-    "title": "The Abaco Club"
-  },
-  "lead:aecon group inc.": {
-    "firstSeen": "2026-08-15T06:58:49.106Z",
-    "label": "LEAD",
-    "title": "Aecon Group Inc."
-  },
-  "lead:skanska": {
-    "firstSeen": "2026-08-15T06:58:49.106Z",
-    "label": "LEAD",
-    "title": "Skanska"
-  },
-  "lead:hovis ltd": {
-    "firstSeen": "2026-08-15T06:58:49.106Z",
-    "label": "LEAD",
-    "title": "Hovis Ltd"
-  },
-  "lead:w hotels": {
-    "firstSeen": "2026-08-15T06:58:49.106Z",
-    "label": "LEAD",
-    "title": "W Hotels"
-  },
-  "lead:macpac ltd.": {
-    "firstSeen": "2026-08-15T06:58:49.106Z",
-    "label": "LEAD",
-    "title": "Macpac Ltd."
-  },
-  "lead:subwayâ® australia": {
-    "firstSeen": "2026-08-15T06:58:49.106Z",
-    "label": "LEAD",
-    "title": "SubwayÂ® Australia"
-  },
-  "lead:dan murphy's": {
-    "firstSeen": "2026-08-15T06:58:49.106Z",
-    "label": "LEAD",
-    "title": "Dan Murphy's"
-  },
-  "lead:german ship repair jamaica limited": {
-    "firstSeen": "2026-08-15T06:58:49.106Z",
-    "label": "LEAD",
-    "title": "German Ship Repair Jamaica Limited"
-  },
-  "lead:coles liquor": {
-    "firstSeen": "2026-08-15T06:58:49.106Z",
-    "label": "LEAD",
-    "title": "Coles Liquor"
-  },
   "lead:mobiux labs uk limited ( formerly vida technologies ltd)": {
     "firstSeen": "2026-08-16T07:00:01.643Z",
     "label": "LEAD",
@@ -1366,10 +1311,10 @@
     "kind": "screened"
   },
   "lead:canonical": {
-    "firstSeen": "2026-10-30T12:58:56.029Z",
+    "firstSeen": "2026-11-13T14:37:17.600Z",
     "label": "LEAD",
     "title": "Canonical",
-    "kind": "screened"
+    "kind": "reported"
   },
   "lead:smithrx": {
     "firstSeen": "2026-10-18T11:09:24.930Z",
@@ -1624,7 +1569,7 @@
     "kind": "screened"
   },
   "lead:plaid": {
-    "firstSeen": "2026-11-02T15:58:37.699Z",
+    "firstSeen": "2026-11-13T14:37:17.600Z",
     "label": "LEAD",
     "title": "Plaid",
     "kind": "screened"
@@ -1654,7 +1599,7 @@
     "kind": "screened"
   },
   "https://remotive.com/remote-jobs/artificial-intelligence/ai-trainer-video-annotation-2091161": {
-    "firstSeen": "2026-11-03T14:19:14.178Z",
+    "firstSeen": "2026-11-13T14:37:10.415Z",
     "label": "JOB",
     "title": "AI Trainer - Video Annotation",
     "kind": "screened"
@@ -2038,7 +1983,7 @@
     "kind": "screened"
   },
   "lead:mecka": {
-    "firstSeen": "2026-11-02T15:58:37.699Z",
+    "firstSeen": "2026-11-13T14:37:17.600Z",
     "label": "LEAD",
     "title": "Mecka",
     "kind": "screened"
@@ -2056,7 +2001,7 @@
     "kind": "screened"
   },
   "https://remoteok.com/remote-jobs/remote-ai-ml-engineer-docusketch-1137619": {
-    "firstSeen": "2026-11-03T14:19:14.178Z",
+    "firstSeen": "2026-11-13T14:37:10.415Z",
     "label": "JOB",
     "title": "AI ML Engineer",
     "kind": "screened"
@@ -2756,5 +2701,89 @@
     "label": "LEAD",
     "title": "Vonage",
     "kind": "reported"
+  },
+  "https://news.ycombinator.com/item?id=50481529": {
+    "firstSeen": "2026-11-13T14:37:10.415Z",
+    "label": "JOB",
+    "title": "Forward-Deployed Product Engineer",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50480454": {
+    "firstSeen": "2026-11-13T14:37:10.415Z",
+    "label": "JOB",
+    "title": "Machine Learning Engineer",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50474550": {
+    "firstSeen": "2026-11-13T14:37:10.415Z",
+    "label": "JOB",
+    "title": "Senior Software Engineer, Alti (AI agents)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/155196-senior-gtm-systems-ai-specialist": {
+    "firstSeen": "2026-11-13T14:37:10.415Z",
+    "label": "JOB",
+    "title": "Senior GTM Systems & AI Specialist",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/154024-research-engineer": {
+    "firstSeen": "2026-11-13T14:37:10.415Z",
+    "label": "JOB",
+    "title": "Research Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153021-senior-data-scientist-2": {
+    "firstSeen": "2026-11-13T14:37:10.415Z",
+    "label": "JOB",
+    "title": "Senior Data Scientist",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153013-principal-software-engineer-data-science": {
+    "firstSeen": "2026-11-13T14:37:10.415Z",
+    "label": "JOB",
+    "title": "Principal Software Engineer | Data Science",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/161693-finops-data-engineer": {
+    "firstSeen": "2026-11-13T14:37:10.415Z",
+    "label": "JOB",
+    "title": "FinOps Data Engineer",
+    "kind": "reported"
+  },
+  "lead:cern": {
+    "firstSeen": "2026-11-13T14:37:17.600Z",
+    "label": "LEAD",
+    "title": "CERN",
+    "kind": "screened"
+  },
+  "lead:kaseya": {
+    "firstSeen": "2026-11-13T14:37:17.600Z",
+    "label": "LEAD",
+    "title": "Kaseya",
+    "kind": "screened"
+  },
+  "lead:firework": {
+    "firstSeen": "2026-11-13T14:37:17.600Z",
+    "label": "LEAD",
+    "title": "Firework",
+    "kind": "reported"
+  },
+  "lead:later": {
+    "firstSeen": "2026-11-13T14:37:17.600Z",
+    "label": "LEAD",
+    "title": "Later",
+    "kind": "screened"
+  },
+  "lead:zuora": {
+    "firstSeen": "2026-11-13T14:37:17.600Z",
+    "label": "LEAD",
+    "title": "Zuora",
+    "kind": "reported"
+  },
+  "lead:updater": {
+    "firstSeen": "2026-11-13T14:37:17.600Z",
+    "label": "LEAD",
+    "title": "Updater",
+    "kind": "screened"
   }
 }
