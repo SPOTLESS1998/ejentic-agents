@@ -2578,5 +2578,21 @@
     ],
     "score": 8,
     "createdAt": "2026-11-13T15:55:31.670Z"
+  },
+  "2026-11-13:afternoon": {
+    "date": "2026-11-13",
+    "slot": "afternoon",
+    "cycleDay": 8,
+    "theme": "Finance",
+    "pillar": "SHOWCASE",
+    "topic": "AI Payment Reconciliation via Vision AI for OPay/Moniepoint receipts.",
+    "angle": "Aligning 2026 enterprise spending trends toward practical finance automation with local Nigerian payment reconciliation workflows.",
+    "xPost": "Manual receipt matching drains finance teams. Ejentic AI uses Vision AI to instantly reconcile OPay and Moniepoint receipts directly into your CRM. Cut errors and close books faster. Book a free consultation #EjenticAI #Automation",
+    "linkedinPost": "Enterprise budgets in 2026 are shifting firmly away from novelty AI and into core operational software like finance and workflow automation.\n\nYet, finance teams across Nigeria still lose hours manually matching payment receipts from local rails like OPay and Moniepoint against bank ledgers and CRM records. It is tedious, prone to human error, and slows down days sales outstanding.\n\nEjentic AI builds custom agentic workflows that solve this exact bottleneck. Using Vision AI, our autonomous systems read payment receipts, verify transaction details against your payment gateway, and reconcile accounts in real time.\n\nDavid Chen, our Chief Architect, designs these pipelines with robust fallback protocols and resilient error handling to ensure zero data loss during high-volume periods.\n\nStop letting manual reconciliation eat your margins. Book a free consultation\n\n#EjenticAI #AIAgents #Automation #NigeriaTech #ROI",
+    "citedSourceUrls": [
+      "https://ascendurepro.com/small-business-ai-automation-trends-2026-investments"
+    ],
+    "score": 9,
+    "createdAt": "2026-11-13T20:26:53.289Z"
   }
 }
