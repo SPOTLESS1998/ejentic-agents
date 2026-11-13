@@ -1,34 +1,4 @@
 {
-  "https://www.ideas2it.com/blogs/ai-agent-frameworks": {
-    "firstSeen": "2026-08-15T07:21:49.702Z",
-    "label": "RESEARCH",
-    "title": "Top AI Agent Frameworks for Autonomous Workflows"
-  },
-  "https://www.reddit.com/r/scaling_agencies/comments/1r85u8b/how_agencies_are_using_ai_and_automation_to_scale": {
-    "firstSeen": "2026-08-15T07:21:49.702Z",
-    "label": "RESEARCH",
-    "title": "How Agencies Are Using AI and Automation to Scale in 2026 - Reddit"
-  },
-  "https://www.claysys.com/blog/top-use-cases-of-ai-agents-transforming-business-in-2026": {
-    "firstSeen": "2026-08-15T07:21:49.702Z",
-    "label": "RESEARCH",
-    "title": "Top Use Cases of AI Agents Transforming Business in 2026"
-  },
-  "https://coworker.ai/blog/ai-customer-service-statistics": {
-    "firstSeen": "2026-08-15T07:21:49.702Z",
-    "label": "RESEARCH",
-    "title": "40 AI Customer Service Statistics for 2026 (Sourced) - Coworker AI"
-  },
-  "https://jinba.io/blog/llm-cost-optimization-enterprise": {
-    "firstSeen": "2026-08-15T07:21:49.702Z",
-    "label": "RESEARCH",
-    "title": "How Regulated Enterprises Approach LLM Cost Optimization"
-  },
-  "https://www.openlegion.ai/en/learn/llm-cost-optimization": {
-    "firstSeen": "2026-08-15T07:21:49.702Z",
-    "label": "RESEARCH",
-    "title": "LLM Cost Optimization — Six Levers for Production Agent ..."
-  },
   "https://ai.exoticaitsolutions.com/blog/artificial-intelligence-automation-agency": {
     "firstSeen": "2026-08-16T07:23:14.829Z",
     "label": "RESEARCH",
@@ -673,5 +643,15 @@
     "firstSeen": "2026-11-12T15:41:04.177Z",
     "label": "RESEARCH",
     "title": "AI Cost Optimization Strategies for Production LLM ..."
+  },
+  "https://www.instaclustr.com/education/agentic-ai/agentic-ai-frameworks-top-10-options-in-2026": {
+    "firstSeen": "2026-11-13T14:59:42.754Z",
+    "label": "RESEARCH",
+    "title": "Agentic AI Frameworks: Top 10 Options in 2026"
+  },
+  "https://maddevs.io/amp/blog/llm-cost-optimization": {
+    "firstSeen": "2026-11-13T14:59:42.754Z",
+    "label": "RESEARCH",
+    "title": "LLM Cost Optimization for Production AI"
   }
 }
