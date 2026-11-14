@@ -2636,5 +2636,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-14T18:42:44.877Z"
+  },
+  "2026-11-14:evening": {
+    "date": "2026-11-14",
+    "slot": "evening",
+    "cycleDay": 9,
+    "theme": "HR & Recruiting",
+    "pillar": "INSPIRE",
+    "topic": "Sentiment analysis for employee well-being.",
+    "angle": "Using anonymized sentiment analysis not to monitor, but to listen and protect employee well-being as part of a human-centric AI vision.",
+    "xPost": "Technology should augment our people, not replace them. When building HR sentiment tools, we start with privacy—anonymizing data so leaders can genuinely listen and care. #EjenticAI #EthicalAI",
+    "linkedinPost": "In our vision of the future, technology listens so leaders can truly act with care. \n\nWhen we build sentiment analysis tools for HR and recruiting, our approach is rooted in respect for the individual. We believe that employee well-being data must be strictly anonymized. Privacy isn't an afterthought; it is the foundation.\n\nElena Rodriguez, our Lead ML Engineer, treats data hygiene as a moral duty. When AI analyzes workplace sentiment, it should be to catch burnout early, understand team friction, and protect the humans who build the business.\n\nAI should never feel like surveillance. It should feel like an invisible, supportive layer that helps organizations nurture their teams with empathy and dignity.\n\nHow is your workplace using technology to genuinely support employee well-being?\n\n#EjenticAI #EthicalAI #FutureOfWork #AfricanInnovation",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-14T22:15:31.176Z"
   }
 }
