@@ -2622,5 +2622,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-11-14T14:46:31.007Z"
+  },
+  "2026-11-14:afternoon": {
+    "date": "2026-11-14",
+    "slot": "afternoon",
+    "cycleDay": 9,
+    "theme": "HR & Recruiting",
+    "pillar": "SHOWCASE",
+    "topic": "Automated resume screening & onboarding KYC.",
+    "angle": "Using custom enterprise automation and responsible AI evaluation for HR to process 400 CVs in a single weekend instead of weeks with built-in fairness safeguards.",
+    "xPost": "Processing 400 CVs takes weeks. Our automated resume screening and onboarding KYC handles it in a single weekend, complete with fairness safeguards built by our ML team. Book a free consultation",
+    "linkedinPost": "Reviewing hundreds of resumes and managing onboarding KYC manually creates massive bottlenecks for HR teams.\n\nAt Ejentic AI, we build custom agentic workflows that solve this exact problem. Before our automation, screening 400 CVs took weeks of manual sorting. With our enterprise pipeline, it takes a single weekend—cutting turnaround time while maintaining rigorous fairness safeguards to check for bias before evaluation.\n\nOur Lead ML Engineer, Elena Rodriguez, focuses on responsible AI with strict data hygiene and bias checks as a moral duty. You get fast, scalable recruitment without sacrificing fairness or data security.\n\nHow many hours does your team spend on manual resume screening every month? Book a free consultation\n\n#EjenticAI #AIAgents #Automation #EthicalAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-14T18:42:44.877Z"
   }
 }
