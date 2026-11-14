@@ -2608,5 +2608,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-13T23:27:45.946Z"
+  },
+  "2026-11-14:morning": {
+    "date": "2026-11-14",
+    "slot": "morning",
+    "cycleDay": 9,
+    "theme": "HR & Recruiting",
+    "pillar": "EDUCATE",
+    "topic": "The bias in human recruiting — we like to think humans are neutral; the data says otherwise.",
+    "angle": "Debunking the myth of human neutrality in hiring and making the case for structured, auditable screening systems.",
+    "xPost": "We like to think human hiring is neutral. The data says otherwise. Unconscious bias creeps into every resume scan. What if structured screening could change that? #EjenticAI #FutureOfWork",
+    "linkedinPost": "We like to think humans are neutral when reviewing resumes. The data says otherwise. \n\nUnconscious bias, fatigue, and gut feelings quietly shape hiring decisions every single day. Even with the best intentions, human evaluators bring blind spots into the process.\n\nElena Rodriguez, our Lead ML Engineer, often reminds us that responsible AI requires rigorous evaluation, data hygiene, and bias checks before anything ships. The goal isn't to replace human judgment with a black box, but to build structured, auditable screening systems that look past names and backgrounds to focus purely on capability.\n\nWhen designed with care, AI doesn't inherit human prejudice—it gives us a mirror to check it. How is your team balancing human intuition with structured screening in your hiring workflow?\n\n#EjenticAI #EthicalAI #AIAgents #FutureOfWork #AIAutomation",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-11-14T14:46:31.007Z"
   }
 }
