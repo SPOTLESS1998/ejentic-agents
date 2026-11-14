@@ -53,36 +53,6 @@
     "title": "AI Transformation Owner, CRO",
     "kind": "screened"
   },
-  "lead:mobiux labs uk limited ( formerly vida technologies ltd)": {
-    "firstSeen": "2026-08-16T07:00:01.643Z",
-    "label": "LEAD",
-    "title": "Mobiux Labs UK Limited ( Formerly Vida Technologies Ltd)"
-  },
-  "lead:harris farm markets": {
-    "firstSeen": "2026-08-16T07:00:01.643Z",
-    "label": "LEAD",
-    "title": "Harris Farm Markets"
-  },
-  "lead:multiplymii": {
-    "firstSeen": "2026-08-16T07:00:01.643Z",
-    "label": "LEAD",
-    "title": "MultiplyMii"
-  },
-  "lead:wolt": {
-    "firstSeen": "2026-08-16T07:00:01.643Z",
-    "label": "LEAD",
-    "title": "Wolt"
-  },
-  "lead:canadian armed forces | forces armã©es canadiennes": {
-    "firstSeen": "2026-08-16T07:00:01.643Z",
-    "label": "LEAD",
-    "title": "Canadian Armed Forces | Forces armÃ©es canadiennes"
-  },
-  "lead:booz allen hamilton": {
-    "firstSeen": "2026-08-16T07:00:01.643Z",
-    "label": "LEAD",
-    "title": "Booz Allen Hamilton"
-  },
   "lead:freedompay": {
     "firstSeen": "2026-08-17T07:17:42.440Z",
     "label": "LEAD",
@@ -2785,5 +2755,95 @@
     "label": "LEAD",
     "title": "Updater",
     "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-software-engineer-ai-tooling-supabase-1137793": {
+    "firstSeen": "2026-11-14T13:34:19.439Z",
+    "label": "JOB",
+    "title": "Software Engineer AI Tooling",
+    "kind": "reported"
+  },
+  "https://remoteok.com/remote-jobs/remote-research-engineer-privacy-and-anonymization-pragmatike-1137792": {
+    "firstSeen": "2026-11-14T13:34:19.439Z",
+    "label": "JOB",
+    "title": "Research Engineer Privacy and Anonymization",
+    "kind": "screened"
+  },
+  "https://remotive.com/remote-jobs/data/senior-data-engineer-2091137": {
+    "firstSeen": "2026-11-14T13:34:19.439Z",
+    "label": "JOB",
+    "title": "Senior Data Engineer",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50487782": {
+    "firstSeen": "2026-11-14T13:34:19.439Z",
+    "label": "JOB",
+    "title": "AI Engineer, Company Brain",
+    "kind": "screened"
+  },
+  "https://news.ycombinator.com/item?id=50487397": {
+    "firstSeen": "2026-11-14T13:34:19.439Z",
+    "label": "JOB",
+    "title": "Senior Data Scientist, Staff Data Scientist",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/162124-senior-data-scientist-product-3": {
+    "firstSeen": "2026-11-14T13:34:19.439Z",
+    "label": "JOB",
+    "title": "Senior Data Scientist - Product",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/155336-senior-applied-data-scientist-fleet-intelligence": {
+    "firstSeen": "2026-11-14T13:34:19.439Z",
+    "label": "JOB",
+    "title": "Senior Applied Data Scientist, Fleet Intelligence",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/155332-sr-director-maintainx-ai": {
+    "firstSeen": "2026-11-14T13:34:19.439Z",
+    "label": "JOB",
+    "title": "Sr. Director, MaintainX AI",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/155260-senior-data-scientist-audio": {
+    "firstSeen": "2026-11-14T13:34:19.439Z",
+    "label": "JOB",
+    "title": "Senior Data Scientist, Audio",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/153108-senior-gen-ai-software-engineer": {
+    "firstSeen": "2026-11-14T13:34:19.439Z",
+    "label": "JOB",
+    "title": "Senior Gen AI Software Engineer",
+    "kind": "screened"
+  },
+  "lead:joulent": {
+    "firstSeen": "2026-11-14T13:34:21.410Z",
+    "label": "LEAD",
+    "title": "Joulent",
+    "kind": "screened"
+  },
+  "lead:clipboard": {
+    "firstSeen": "2026-11-14T13:34:21.410Z",
+    "label": "LEAD",
+    "title": "Clipboard",
+    "kind": "reported"
+  },
+  "lead:customer.io": {
+    "firstSeen": "2026-11-14T13:34:21.410Z",
+    "label": "LEAD",
+    "title": "Customer.io",
+    "kind": "screened"
+  },
+  "lead:netbox labs": {
+    "firstSeen": "2026-11-14T13:34:21.410Z",
+    "label": "LEAD",
+    "title": "NetBox Labs",
+    "kind": "screened"
+  },
+  "lead:h1": {
+    "firstSeen": "2026-11-14T13:34:21.410Z",
+    "label": "LEAD",
+    "title": "H1",
+    "kind": "reported"
   }
 }
