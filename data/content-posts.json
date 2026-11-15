@@ -2650,5 +2650,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-14T22:15:31.176Z"
+  },
+  "2026-11-15:morning": {
+    "date": "2026-11-15",
+    "slot": "morning",
+    "cycleDay": 10,
+    "theme": "Operations & Logistics",
+    "pillar": "EDUCATE",
+    "topic": "Supply chain fragility — the pandemic showed us what happens when operations run on spreadsheets and prayer.",
+    "angle": "Connecting supply chain fragility and spreadsheet-and-prayer operations to the need for resilient, automated agentic workflows.",
+    "xPost": "Remember when the pandemic exposed just how fragile supply chains running on spreadsheets and prayer really are? Modern logistics needs more than manual fixes. It needs resilient, automated workflows to keep moving. #EjenticAI #SupplyChain",
+    "linkedinPost": "Remember what the pandemic taught us about operations? When global supply chains shuddered, businesses relying on spreadsheets and manual tracking found themselves running on hope and prayer.\n\nTraditional logistics is often fragile because it depends entirely on human memory, endless email threads, and disconnected tools. When a bottleneck hits, it takes hours to trace the issue.\n\nBuilding resilient operations means replacing manual firefighting with autonomous workflows that track, coordinate, and flag problems before they cascade. Systems should handle the routine reconciliation so your people can focus on the edge cases.\n\nHow is your team handling unexpected operational bottlenecks this year?\n\n#EjenticAI #Automation #SupplyChain #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-15T15:22:05.043Z"
   }
 }
