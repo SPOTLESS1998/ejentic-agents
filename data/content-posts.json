@@ -2664,5 +2664,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-15T15:22:05.043Z"
+  },
+  "2026-11-15:afternoon": {
+    "date": "2026-11-15",
+    "slot": "afternoon",
+    "cycleDay": 10,
+    "theme": "Operations & Logistics",
+    "pillar": "SHOWCASE",
+    "topic": "Predictive maintenance and route optimization.",
+    "angle": "Leveraging robust agentic workflows and custom automation to drive predictive maintenance and route optimization, cutting downtime and saving operational costs.",
+    "xPost": "Downtime and delayed deliveries cost logistics companies millions. Our custom agentic workflows automate predictive maintenance and route optimization to keep fleets moving and costs down. Book a free consultation #EjenticAI #AIAutomation https://youtu.be/4DcFtp6amjs",
+    "linkedinPost": "In logistics, every hour of unexpected vehicle downtime and every inefficient route eats directly into your bottom line. Traditional tracking tools tell you where a problem is after it happens, but they do not prevent it.\n\nAt Ejentic AI, we build custom agentic workflows and enterprise automation pipelines that integrate your telematics, ERP, and scheduling data. These systems run predictive maintenance checks to flag component failures before they stall your fleet, while simultaneously optimizing delivery routes in real time.\n\nThe result is fewer mid-route breakdowns, reduced fuel consumption, and higher on-time delivery rates that protect your margins and scale your operations without adding operational overhead.\n\nReady to see how intelligent automation transforms logistics? Book a free consultation\n\n#EjenticAI #AIAgents #Automation #AIAutomation #TechInAfrica",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-15T19:19:53.473Z"
   }
 }
