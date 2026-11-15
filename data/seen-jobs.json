@@ -53,31 +53,6 @@
     "title": "AI Transformation Owner, CRO",
     "kind": "screened"
   },
-  "lead:freedompay": {
-    "firstSeen": "2026-08-17T07:17:42.440Z",
-    "label": "LEAD",
-    "title": "FreedomPay"
-  },
-  "lead:pivotal health": {
-    "firstSeen": "2026-08-17T07:17:42.440Z",
-    "label": "LEAD",
-    "title": "Pivotal Health"
-  },
-  "lead:menzies aviation": {
-    "firstSeen": "2026-08-17T07:17:42.440Z",
-    "label": "LEAD",
-    "title": "Menzies Aviation"
-  },
-  "lead:chico's fas, inc.": {
-    "firstSeen": "2026-08-17T07:17:42.440Z",
-    "label": "LEAD",
-    "title": "Chico's FAS, Inc."
-  },
-  "lead:the heineken company": {
-    "firstSeen": "2026-08-17T07:17:42.440Z",
-    "label": "LEAD",
-    "title": "The HEINEKEN Company"
-  },
   "lead:flurix.ai": {
     "firstSeen": "2026-08-18T07:05:57.506Z",
     "label": "LEAD",
@@ -795,10 +770,10 @@
     "kind": "reported"
   },
   "lead:extrahop": {
-    "firstSeen": "2026-10-07T13:27:39.235Z",
+    "firstSeen": "2026-11-15T13:57:41.874Z",
     "label": "LEAD",
     "title": "ExtraHop",
-    "kind": "screened"
+    "kind": "reported"
   },
   "https://www.themuse.com/jobs/gitlab/fullstack-engineer-typescript-ai-engineering-duo-client-sdk": {
     "firstSeen": "2026-10-18T11:09:21.572Z",
@@ -1173,7 +1148,7 @@
     "kind": "screened"
   },
   "lead:early-stage startup": {
-    "firstSeen": "2026-10-27T12:16:02.144Z",
+    "firstSeen": "2026-11-15T13:57:41.874Z",
     "label": "LEAD",
     "title": "Early-stage Startup",
     "kind": "screened"
@@ -1629,7 +1604,7 @@
     "kind": "reported"
   },
   "https://remoteok.com/remote-jobs/remote-solutions-engineer-onebrief-1137568": {
-    "firstSeen": "2026-11-04T14:36:08.573Z",
+    "firstSeen": "2026-11-15T13:57:38.556Z",
     "label": "JOB",
     "title": "Solutions Engineer",
     "kind": "screened"
@@ -2844,6 +2819,30 @@
     "firstSeen": "2026-11-14T13:34:21.410Z",
     "label": "LEAD",
     "title": "H1",
+    "kind": "reported"
+  },
+  "https://jobicy.com/jobs/155357-senior-forward-deployed-engineer-2": {
+    "firstSeen": "2026-11-15T13:57:38.556Z",
+    "label": "JOB",
+    "title": "Senior Forward Deployed Engineer",
+    "kind": "screened"
+  },
+  "lead:datavant": {
+    "firstSeen": "2026-11-15T13:57:41.874Z",
+    "label": "LEAD",
+    "title": "Datavant",
+    "kind": "reported"
+  },
+  "lead:revenuecat": {
+    "firstSeen": "2026-11-15T13:57:41.874Z",
+    "label": "LEAD",
+    "title": "RevenueCat",
+    "kind": "reported"
+  },
+  "lead:mercury": {
+    "firstSeen": "2026-11-15T13:57:41.874Z",
+    "label": "LEAD",
+    "title": "Mercury",
     "kind": "reported"
   }
 }
