@@ -216,3 +216,4 @@
 {"agent":"hackathon","found":0,"screened":0,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing was screened: every result the search returned was already in the seen-store. This zero says there was nothing NEW, not that nothing matched.","ts":"2026-11-15T14:48:38.537Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-15T15:22:05.046Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-15T19:19:53.477Z"}
+{"agent":"content","reported":0,"degraded":false,"aborted":["Gemini returned an empty draft"],"reason":"Drafting threw for a reason other than quota — see the recorded error.","ts":"2026-11-15T22:43:23.374Z"}
