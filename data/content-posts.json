@@ -2678,5 +2678,21 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-15T19:19:53.473Z"
+  },
+  "2026-11-16:afternoon": {
+    "date": "2026-11-16",
+    "slot": "afternoon",
+    "cycleDay": 11,
+    "theme": "Customer Service",
+    "pillar": "SHOWCASE",
+    "topic": "The multi-agent architecture: Researcher, Writer, Editor bots working together.",
+    "angle": "Showcasing how our internal multi-agent architecture (Researcher, Writer, Editor) powers enterprise multilingual customer service and automation workflows.",
+    "xPost": "Behind every Ejentic AI customer service bot is a multi-agent architecture. Our Researcher, Writer, and Editor bots collaborate to handle inquiries seamlessly in English, Pidgin, Hausa, Yoruba, and Igbo. See them in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "Scaling customer support across multiple languages shouldn't mean sacrificing brand voice or accuracy. At Ejentic AI, we power our enterprise solutions using a collaborative multi-agent architecture.\n\nInstead of relying on a single monolithic prompt, our systems divide and conquer. A Researcher bot gathers accurate contextual data, a Writer bot drafts the response tailored to the user's language—whether English, Nigerian Pidgin, Hausa, Yoruba, or Igbo—and an Editor bot checks for tone, policy compliance, and clarity before it reaches the customer.\n\nThis division of labor drastically reduces hallucinations, lowers error rates, and ensures your users get fast, natural support 24/7. Watch our multilingual support agents in action at https://youtu.be/gbXhZMTdnkM.\n\nHow is your current customer service stack handling multilingual inquiries today?\n\n#EjenticAI #AIAgents #Automation #CustomerExperience #EthicalAI",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM"
+    ],
+    "score": 8,
+    "createdAt": "2026-11-16T22:50:31.288Z"
   }
 }
