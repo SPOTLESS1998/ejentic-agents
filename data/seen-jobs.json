@@ -53,51 +53,6 @@
     "title": "AI Transformation Owner, CRO",
     "kind": "screened"
   },
-  "lead:flurix.ai": {
-    "firstSeen": "2026-08-18T07:05:57.506Z",
-    "label": "LEAD",
-    "title": "Flurix.AI"
-  },
-  "lead:numeris": {
-    "firstSeen": "2026-08-18T07:05:57.506Z",
-    "label": "LEAD",
-    "title": "Numeris"
-  },
-  "lead:froxjob | executive jobs in nepal": {
-    "firstSeen": "2026-08-18T07:05:57.506Z",
-    "label": "LEAD",
-    "title": "FroxJob | Executive Jobs in Nepal"
-  },
-  "lead:mdpi": {
-    "firstSeen": "2026-08-18T07:05:57.506Z",
-    "label": "LEAD",
-    "title": "MDPI"
-  },
-  "lead:costa coffee ireland": {
-    "firstSeen": "2026-08-18T07:05:57.506Z",
-    "label": "LEAD",
-    "title": "Costa Coffee Ireland"
-  },
-  "lead:twintopics": {
-    "firstSeen": "2026-08-18T07:05:57.506Z",
-    "label": "LEAD",
-    "title": "TwinTopics"
-  },
-  "lead:hk express": {
-    "firstSeen": "2026-08-18T07:05:57.506Z",
-    "label": "LEAD",
-    "title": "HK Express"
-  },
-  "lead:hilton": {
-    "firstSeen": "2026-08-18T07:05:57.506Z",
-    "label": "LEAD",
-    "title": "Hilton"
-  },
-  "lead:hongkong express": {
-    "firstSeen": "2026-08-18T07:05:57.506Z",
-    "label": "LEAD",
-    "title": "Hongkong Express"
-  },
   "lead:plumbers co-op": {
     "firstSeen": "2026-08-19T07:06:48.589Z",
     "label": "LEAD",
@@ -752,7 +707,7 @@
     "kind": "screened"
   },
   "https://remoteok.com/remote-jobs/remote-technical-product-lead-ai-finance-app-bjak-1137388": {
-    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "firstSeen": "2026-11-16T15:50:25.675Z",
     "label": "JOB",
     "title": "Technical Product Lead AI Finance App",
     "kind": "screened"
@@ -848,7 +803,7 @@
     "kind": "reported"
   },
   "https://remoteok.com/remote-jobs/remote-senior-growth-product-manager-ai-native-magic-eden-1137414": {
-    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "firstSeen": "2026-11-16T15:50:25.675Z",
     "label": "JOB",
     "title": "Senior Growth Product Manager AI Native",
     "kind": "screened"
@@ -860,7 +815,7 @@
     "kind": "reported"
   },
   "https://remoteok.com/remote-jobs/remote-technical-product-manager-ai-stockbroking-app-bjak-1137421": {
-    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "firstSeen": "2026-11-16T15:50:25.675Z",
     "label": "JOB",
     "title": "Technical Product Manager AI Stockbroking App",
     "kind": "screened"
@@ -980,7 +935,7 @@
     "kind": "screened"
   },
   "https://remoteok.com/remote-jobs/remote-senior-software-engineer-ii-applied-ai-wrapbook-1137527": {
-    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "firstSeen": "2026-11-16T15:50:25.675Z",
     "label": "JOB",
     "title": "Senior Software Engineer II Applied AI",
     "kind": "screened"
@@ -2090,7 +2045,7 @@
     "kind": "reported"
   },
   "https://news.ycombinator.com/item?id=50369581": {
-    "firstSeen": "2026-11-05T14:41:28.898Z",
+    "firstSeen": "2026-11-16T15:50:25.675Z",
     "label": "JOB",
     "title": "Sr/Staff Software Engineers, Data Scientist, FDE, PM",
     "kind": "screened"
@@ -2174,19 +2129,19 @@
     "kind": "screened"
   },
   "https://remoteok.com/remote-jobs/remote-ai-content-reviewer-video-annotation-imerit-1137686": {
-    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "firstSeen": "2026-11-16T15:50:25.675Z",
     "label": "JOB",
     "title": "AI Content Reviewer Video Annotation",
     "kind": "screened"
   },
   "https://news.ycombinator.com/item?id=50385049": {
-    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "firstSeen": "2026-11-16T15:50:25.675Z",
     "label": "JOB",
     "title": "Senior Integration Engineer, Data/ML Engineer, Product Lead",
     "kind": "screened"
   },
   "https://news.ycombinator.com/item?id=50384008": {
-    "firstSeen": "2026-11-06T14:18:53.016Z",
+    "firstSeen": "2026-11-16T15:50:25.675Z",
     "label": "JOB",
     "title": "Computer Vision Engineer, Junior Frontend Engineer",
     "kind": "screened"
@@ -2844,5 +2799,11 @@
     "label": "LEAD",
     "title": "Mercury",
     "kind": "reported"
+  },
+  "https://jobicy.com/jobs/160308-senior-ai-developer": {
+    "firstSeen": "2026-11-16T15:50:25.675Z",
+    "label": "JOB",
+    "title": "Senior AI Developer",
+    "kind": "screened"
   }
 }
