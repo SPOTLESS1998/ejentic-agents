@@ -2722,5 +2722,21 @@
     "citedSourceUrls": [],
     "score": null,
     "createdAt": "2026-11-17T17:23:29.746Z"
+  },
+  "2026-11-17:afternoon": {
+    "date": "2026-11-17",
+    "slot": "afternoon",
+    "cycleDay": 12,
+    "theme": "Marketing & Sales",
+    "pillar": "SHOWCASE",
+    "topic": "The Autonomous Researcher agent for competitive analysis.",
+    "angle": "Using our autonomous research agent for competitive analysis to showcase how automated market intelligence delivers actionable insights without manual overhead.",
+    "xPost": "Manual competitive research slows strategy down. Our autonomous researcher agent scans, verifies, and briefs your team daily so you can act faster. Watch agents in action: https://youtu.be/4DcFtp6amjs #EjenticAI #AIAgents",
+    "linkedinPost": "Keeping up with competitors shouldn't require a dedicated team spending weeks gathering fragmented data. Manual research creates blind spots and delays strategic moves.\n\nAt Ejentic AI, our autonomous research agent handles the heavy lifting. It systematically scans the web for prospects and market signals, verifies the findings, and delivers structured briefs daily. Your team gets clean, actionable intelligence without the manual overhead.\n\nDavid Chen, our Chief Architect, designs these systems for seamless reliability and resilient performance, ensuring you get accurate insights when you need them.\n\nStop wasting hours on manual spreadsheets. See how our automation works: https://youtu.be/4DcFtp6amjs\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #FutureOfWork",
+    "citedSourceUrls": [
+      "https://youtu.be/4DcFtp6amjs"
+    ],
+    "score": 8,
+    "createdAt": "2026-11-17T21:41:17.470Z"
   }
 }
