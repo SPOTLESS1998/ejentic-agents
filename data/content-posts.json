@@ -2694,5 +2694,19 @@
     ],
     "score": 8,
     "createdAt": "2026-11-16T22:50:31.288Z"
+  },
+  "2026-11-17:evening": {
+    "date": "2026-11-17",
+    "slot": "evening",
+    "cycleDay": 12,
+    "theme": "Marketing & Sales",
+    "pillar": "INSPIRE",
+    "topic": "Data privacy in marketing.",
+    "angle": "Balancing powerful marketing personalization with strict data privacy as a core ethical commitment of African-led AI.",
+    "xPost": "Personalization should never feel like surveillance. At Ejentic AI, we believe your data belongs to you. Building AI that respects privacy isn't just compliance—it's a moral duty. #EjenticAI #EthicalAI",
+    "linkedinPost": "There is a thin, sacred line between personalization and surveillance in modern marketing. Too often, hyper-targeting crosses into intrusion, treating human lives and chats as mere data points to be harvested.\n\nAt Ejentic AI, we draw a different line. Inspired by a vision of technology that serves our people rather than exploiting them, we believe AI systems must be built with data sovereignty at their core. Elena Rodriguez, our Lead ML Engineer, views data hygiene and privacy not as a checklist, but as a moral duty.\n\nWhen we build autonomous workflows and customer concierges, your data remains yours. Personalization should feel like a helpful human conversation, never like a digital shadow following your every move. We can build powerful, efficient marketing systems that deeply respect the dignity and privacy of every user.\n\nWhere do you draw the line between helpful marketing and intrusive surveillance in your business?\n\n#EjenticAI #EthicalAI #AfricanInnovation #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-17T01:49:56.942Z"
   }
 }
