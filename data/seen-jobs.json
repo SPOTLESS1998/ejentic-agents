@@ -53,46 +53,6 @@
     "title": "AI Transformation Owner, CRO",
     "kind": "screened"
   },
-  "lead:plumbers co-op": {
-    "firstSeen": "2026-08-19T07:06:48.589Z",
-    "label": "LEAD",
-    "title": "Plumbers Co-op"
-  },
-  "lead:adani airport holdings ltd": {
-    "firstSeen": "2026-08-19T07:06:48.589Z",
-    "label": "LEAD",
-    "title": "Adani Airport Holdings Ltd"
-  },
-  "lead:department of education and training": {
-    "firstSeen": "2026-08-19T07:06:48.589Z",
-    "label": "LEAD",
-    "title": "Department of Education and Training"
-  },
-  "lead:baldwin blueprint": {
-    "firstSeen": "2026-08-19T07:06:48.589Z",
-    "label": "LEAD",
-    "title": "Baldwin Blueprint"
-  },
-  "lead:sanya pharma pvt ltd": {
-    "firstSeen": "2026-08-19T07:06:48.589Z",
-    "label": "LEAD",
-    "title": "Sanya Pharma Pvt Ltd"
-  },
-  "lead:precision medicine group": {
-    "firstSeen": "2026-08-19T07:06:48.589Z",
-    "label": "LEAD",
-    "title": "Precision Medicine Group"
-  },
-  "lead:highlevel": {
-    "firstSeen": "2026-08-19T07:06:48.589Z",
-    "label": "LEAD",
-    "title": "HighLevel"
-  },
-  "lead:saisons brother holding": {
-    "firstSeen": "2026-08-19T07:06:48.589Z",
-    "label": "LEAD",
-    "title": "Saisons Brother Holding"
-  },
   "https://remoteok.com/remote-jobs/remote-digital-workplace-automation-specialist-dreem-health-1136948": {
     "firstSeen": "2026-10-19T13:20:49.849Z",
     "label": "JOB",
@@ -863,7 +823,7 @@
     "kind": "screened"
   },
   "lead:toptal": {
-    "firstSeen": "2026-11-07T13:05:37.395Z",
+    "firstSeen": "2026-11-17T16:03:45.459Z",
     "label": "LEAD",
     "title": "Toptal",
     "kind": "screened"
@@ -983,13 +943,13 @@
     "kind": "screened"
   },
   "https://jobicy.com/jobs/153333-solutions-engineer-us": {
-    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "firstSeen": "2026-11-17T16:03:36.553Z",
     "label": "JOB",
     "title": "Solutions Engineer - US",
     "kind": "screened"
   },
   "https://jobicy.com/jobs/153341-forward-deployed-engineer-python": {
-    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "firstSeen": "2026-11-17T16:03:36.553Z",
     "label": "JOB",
     "title": "Forward Deployed Engineer, Python",
     "kind": "screened"
@@ -1001,19 +961,19 @@
     "kind": "screened"
   },
   "https://jobicy.com/jobs/149199-customer-solutions-engineer-payments": {
-    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "firstSeen": "2026-11-17T16:03:36.553Z",
     "label": "JOB",
     "title": "Customer Solutions Engineer – Payments",
     "kind": "screened"
   },
   "https://jobicy.com/jobs/150667-data-scientist-product-analytics": {
-    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "firstSeen": "2026-11-17T16:03:36.553Z",
     "label": "JOB",
     "title": "Data Scientist, Product Analytics",
     "kind": "screened"
   },
   "https://jobicy.com/jobs/150666-data-engineer-product-analytics": {
-    "firstSeen": "2026-10-16T16:07:07.957Z",
+    "firstSeen": "2026-11-17T16:03:36.553Z",
     "label": "JOB",
     "title": "Data Engineer, Product Analytics",
     "kind": "screened"
@@ -1109,10 +1069,10 @@
     "kind": "screened"
   },
   "lead:elation health": {
-    "firstSeen": "2026-10-16T16:07:25.340Z",
+    "firstSeen": "2026-11-17T16:03:45.459Z",
     "label": "LEAD",
     "title": "Elation Health",
-    "kind": "screened"
+    "kind": "reported"
   },
   "lead:motive": {
     "firstSeen": "2026-10-16T16:07:25.340Z",
@@ -1205,7 +1165,7 @@
     "kind": "screened"
   },
   "https://jobicy.com/jobs/155602-data-engineer-us-remote": {
-    "firstSeen": "2026-10-18T11:09:21.572Z",
+    "firstSeen": "2026-11-17T16:03:36.553Z",
     "label": "JOB",
     "title": "Data Engineer - US Remote",
     "kind": "screened"
@@ -2195,13 +2155,13 @@
     "kind": "reported"
   },
   "https://remoteok.com/remote-jobs/remote-operations-expert-with-python-for-ai-supply-chain-task-design-toptal-1137690": {
-    "firstSeen": "2026-11-07T13:05:31.511Z",
+    "firstSeen": "2026-11-17T16:03:36.553Z",
     "label": "JOB",
     "title": "Operations Expert with Python for AI Supply Chain Task Design",
     "kind": "screened"
   },
   "https://remoteok.com/remote-jobs/remote-ml-inference-engineer-terminal-bench-task-designer-vllm-sglang-tensorrt-llm-toptal-1137689": {
-    "firstSeen": "2026-11-07T13:05:31.511Z",
+    "firstSeen": "2026-11-17T16:03:36.553Z",
     "label": "JOB",
     "title": "ML Inference Engineer â Terminal-Bench Task Designer (vLLM / SGLang / TensorRT-LLM)",
     "kind": "screened"
@@ -2219,10 +2179,10 @@
     "kind": "screened"
   },
   "lead:silver.dev": {
-    "firstSeen": "2026-11-07T13:05:37.395Z",
+    "firstSeen": "2026-11-17T16:03:45.459Z",
     "label": "LEAD",
     "title": "Silver.dev",
-    "kind": "screened"
+    "kind": "reported"
   },
   "lead:vxi global solutions": {
     "firstSeen": "2026-11-07T13:05:37.395Z",
@@ -2804,6 +2764,18 @@
     "firstSeen": "2026-11-16T15:50:25.675Z",
     "label": "JOB",
     "title": "Senior AI Developer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/162751-data-scientist-ii-marketing": {
+    "firstSeen": "2026-11-17T16:03:36.553Z",
+    "label": "JOB",
+    "title": "Data Scientist II, Marketing",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/162740-ai-algorithms-software-engineer": {
+    "firstSeen": "2026-11-17T16:03:36.553Z",
+    "label": "JOB",
+    "title": "AI Algorithms/Software Engineer",
     "kind": "screened"
   }
 }
