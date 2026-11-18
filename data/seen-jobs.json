@@ -59,91 +59,11 @@
     "title": "Digital Workplace & Automation Specialist",
     "kind": "reported"
   },
-  "lead:bupa australia": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "Bupa Australia"
-  },
-  "lead:verlo": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "Verlo"
-  },
-  "lead:midjourney": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "Midjourney"
-  },
-  "lead:alaka`ina foundation family of companies": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "Alaka`ina Foundation Family of Companies"
-  },
-  "lead:four seasons": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "Four Seasons"
-  },
-  "lead:collate": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "Collate"
-  },
-  "lead:jack &amp; jones": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "JACK &amp; JONES"
-  },
-  "lead:twi foods inc.": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "TWI Foods Inc."
-  },
-  "lead:the chedi luå¡tica bay": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "The Chedi LuÅ¡tica Bay"
-  },
-  "lead:alpha bpo corp": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "ALPHA BPO CORP"
-  },
   "lead:engine": {
     "firstSeen": "2026-11-09T16:24:35.794Z",
     "label": "LEAD",
     "title": "Engine",
     "kind": "reported"
-  },
-  "lead:chaos": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "Chaos"
-  },
-  "lead:dreem health": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "Dreem Health"
-  },
-  "lead:bhushan international": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "Bhushan International"
-  },
-  "lead:otr": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "OTR"
-  },
-  "lead:power fm bega bay": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "Power FM Bega Bay"
-  },
-  "lead:benchling": {
-    "firstSeen": "2026-08-20T07:07:31.464Z",
-    "label": "LEAD",
-    "title": "Benchling"
   },
   "lead:radisson hotel group": {
     "firstSeen": "2026-08-21T07:09:03.993Z",
@@ -1141,7 +1061,7 @@
     "kind": "reported"
   },
   "https://jobicy.com/jobs/155632-director-ai-platforms": {
-    "firstSeen": "2026-10-18T11:09:21.572Z",
+    "firstSeen": "2026-11-18T15:42:09.771Z",
     "label": "JOB",
     "title": "Director, AI Platforms",
     "kind": "screened"
@@ -1231,7 +1151,7 @@
     "kind": "screened"
   },
   "lead:edb": {
-    "firstSeen": "2026-10-19T13:20:52.830Z",
+    "firstSeen": "2026-11-18T15:42:20.035Z",
     "label": "LEAD",
     "title": "EDB",
     "kind": "screened"
@@ -2251,7 +2171,7 @@
     "kind": "screened"
   },
   "lead:elevenlabs": {
-    "firstSeen": "2026-11-08T13:28:00.036Z",
+    "firstSeen": "2026-11-18T15:42:20.035Z",
     "label": "LEAD",
     "title": "Elevenlabs",
     "kind": "screened"
@@ -2776,6 +2696,18 @@
     "firstSeen": "2026-11-17T16:03:36.553Z",
     "label": "JOB",
     "title": "AI Algorithms/Software Engineer",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-expert-talent-pool-physical-ai-clera-1137799": {
+    "firstSeen": "2026-11-18T15:42:09.771Z",
+    "label": "JOB",
+    "title": "Expert Talent Pool Physical AI",
+    "kind": "screened"
+  },
+  "lead:upbound": {
+    "firstSeen": "2026-11-18T15:42:20.035Z",
+    "label": "LEAD",
+    "title": "UpBound",
     "kind": "screened"
   }
 }
