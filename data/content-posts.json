@@ -2738,5 +2738,19 @@
     ],
     "score": 8,
     "createdAt": "2026-11-17T21:41:17.470Z"
+  },
+  "2026-11-18:evening": {
+    "date": "2026-11-18",
+    "slot": "evening",
+    "cycleDay": 13,
+    "theme": "Legal & Compliance",
+    "pillar": "INSPIRE",
+    "topic": "Governance and Accountability.",
+    "angle": "Governance and accountability are foundational to ethical AI, ensuring every decision is traceable and audit-ready as part of our human-centric vision.",
+    "xPost": "An AI decision you cannot audit is a liability. Traceability is non-negotiable for us at Ejentic AI. #EjenticAI #EthicalAI",
+    "linkedinPost": "An AI decision you can’t audit is a liability. When we build autonomous systems and workflows for businesses, traceability is non-negotiable for us.\n\nElena Rodriguez, our Lead ML Engineer, treats data hygiene and evaluation as a moral duty. We believe Africa can lead the world in AI not by copying Silicon Valley, but by building ethical, human-centric systems that respect our data and augment our people.\n\nGovernance and accountability are at the heart of everything we build. How is your team ensuring transparency in your AI workflows?\n\n#EjenticAI #EthicalAI #AIAgents #AfricanInnovation #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-18T00:53:39.938Z"
   }
 }
