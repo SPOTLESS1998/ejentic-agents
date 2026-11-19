@@ -2780,5 +2780,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-19T00:14:35.844Z"
+  },
+  "2026-11-19:morning": {
+    "date": "2026-11-19",
+    "slot": "morning",
+    "cycleDay": 14,
+    "theme": "Weekly Recap & African Tech Excellence",
+    "pillar": "EDUCATE",
+    "topic": "Favorite case study of the week — the one post that shows what automation really changes.",
+    "angle": "Reflecting on a week of building multilingual customer service agents that speak local languages, proving that African tech excellence means creating systems that respect our people.",
+    "xPost": "What does true automation change? When a customer support agent can seamlessly switch to Nigerian Pidgin or Yoruba to solve a problem at 2 AM, efficiency meets dignity. That is the standard we are building toward at Ejentic AI. #EjenticAI #AfricanTech",
+    "linkedinPost": "What does automation actually change in a growing business? \n\nThis week, our engineering discussions kept circling back to a simple truth: technology only matters if it serves human dignity. When we deploy autonomous multilingual customer-service agents that fluently handle English, Nigerian Pidgin, Hausa, Yoruba, and Igbo, we are not just cutting response times. We are removing friction in the languages our people actually live and work in.\n\nElena Rodriguez, our Lead ML Engineer, often reminds us that responsible AI starts with data hygiene and respect for local context. We don't need to copy Silicon Valley. We are building systems here in Nigeria that augment our people instead of replacing them, handling everything from lead capture to support without losing the human touch.\n\nAutomation shouldn't feel like a cold wall between you and your customers. It should feel invisible, effortless, and entirely natural.\n\nHow is your team blending automation with local context this week?\n\n#EjenticAI #AIAgents #AfricanTech #BuildInNigeria #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-19T17:05:53.230Z"
   }
 }
