@@ -238,3 +238,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-18T21:20:34.512Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-19T00:14:35.848Z"}
 {"agent":"scholarship","found":0,"screened":0,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing was screened: every result the search returned was already in the seen-store. This zero says there was nothing NEW, not that nothing matched.","ts":"2026-11-19T15:59:30.920Z"}
+{"agent":"research","found":0,"screened":0,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing was screened: every result the search returned was already in the seen-store. This zero says there was nothing NEW, not that nothing matched.","ts":"2026-11-19T16:10:22.214Z"}
