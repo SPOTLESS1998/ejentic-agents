@@ -2794,5 +2794,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-19T17:05:53.230Z"
+  },
+  "2026-11-19:afternoon": {
+    "date": "2026-11-19",
+    "slot": "afternoon",
+    "cycleDay": 14,
+    "theme": "Weekly Recap & African Tech Excellence",
+    "pillar": "SHOWCASE",
+    "topic": "The numbers behind the week — lessons and takeaways from seven days of industry deep dives.",
+    "angle": "Reviewing patterns of operational leaks across industries this week and how our modular AI solutions fix them.",
+    "xPost": "This week's deep dive revealed the same leaks across industries: slow lead response and unstructured internal data. Our multilingual agents and Air-Gapped RAG Vault fix these bottlenecks. Book a free consultation #EjenticAI #AIAgents",
+    "linkedinPost": "Reflecting on a week of industry deep dives, we noticed the same patterns everywhere: the exact same operational leaks and the exact same fixes.\n\nBusinesses are losing revenue on slow lead responses and wasting hours searching unstructured internal documents.\n\nAt Ejentic AI, we solve this with targeted architecture. Our autonomous multilingual customer-service agents handle inbound traffic 24/7 in English, Nigerian Pidgin, Hausa, Yoruba, and Igbo. Meanwhile, our Air-Gapped RAG Vault lets employees query private SOPs securely without data leaks.\n\nBy deploying custom agentic workflows and automated CRM pipelines, we cut turnaround times and reduce manual errors.\n\nAre you seeing similar bottlenecks in your operations this week?\n\nBook a free consultation\n\n#EjenticAI #AIAgents #RAG #CustomerExperience #NigeriaTech",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-19T21:24:17.177Z"
   }
 }
