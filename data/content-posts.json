@@ -2808,5 +2808,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-19T21:24:17.177Z"
+  },
+  "2026-11-20:evening": {
+    "date": "2026-11-20",
+    "slot": "evening",
+    "cycleDay": 15,
+    "theme": "Privacy by Architecture",
+    "pillar": "INSPIRE",
+    "topic": "Sarah Jenkins on why UI/UX makes or breaks AI adoption.",
+    "angle": "Sarah Jenkins' philosophy on invisible UI/UX aligns with our vision of human-centric, ethical AI that respects people and data.",
+    "xPost": "If users have to think about the AI, we failed. — Sarah Jenkins, Head of Design & Experience at Ejentic AI. We believe AI should feel invisible, effortless, and deeply human. #EjenticAI #EthicalAI",
+    "linkedinPost": "When we talk about building autonomous agents and workflows here at Ejentic AI, the conversation always comes back to people.\n\nOur Head of Design & Experience, Sarah Jenkins, puts it simply: \"If users have to think about the AI, we failed.\"\n\nToo many technology systems force humans to adapt to rigid interfaces, clunky screens, and confusing prompts. We believe the future of work looks different. AI should feel invisible and effortless. It should be about natural conversations, not complex screens, respecting our data and augmenting our people instead of replacing them.\n\nStarting right here in Nigeria, we are building systems that speak our languages and fit naturally into how we already live and work. Technology should serve us, not the other way around.\n\nHow is your team experiencing AI interactions right now? Are they getting in the way, or fading into the background?\n\n#EjenticAI #EthicalAI #FutureOfWork #AfricanTech #HumanCentricAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-20T00:33:03.566Z"
   }
 }
