@@ -2836,5 +2836,21 @@
     "citedSourceUrls": [],
     "score": null,
     "createdAt": "2026-11-20T16:42:48.883Z"
+  },
+  "2026-11-20:afternoon": {
+    "date": "2026-11-20",
+    "slot": "afternoon",
+    "cycleDay": 15,
+    "theme": "Privacy by Architecture",
+    "pillar": "SHOWCASE",
+    "topic": "A day in the life of Nova (our front-end agent).",
+    "angle": "Using lean agent loops and private architecture to show a day in the life of Nova, our front-end customer service agent.",
+    "xPost": "Ever wonder what a day looks like for an autonomous agent? Meet Nova: greeting website visitors, qualifying intent, and routing high-value leads 24/7. Watch Nova in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "Ever wonder what a day looks like for an autonomous front-end agent? Meet Nova, our customer-service and lead-qualification engine.\n\nNova starts the day greeting website visitors instantly, answering questions across multiple languages, logging complaints, and capturing leads while your team sleeps. By noon, Nova has qualified intent and securely routed high-value prospects directly to human sales.\n\nBuilt on resilient systems with clean architecture, Nova makes customer engagement feel effortless. AI should feel like a natural conversation, not a screen.\n\nWatch Agents in Action here: https://youtu.be/gbXhZMTdnkM\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #CustomerExperience #FutureOfWork",
+    "citedSourceUrls": [
+      "https://www.aibuilderclub.com/blog/ai-agents"
+    ],
+    "score": 8,
+    "createdAt": "2026-11-20T21:00:13.043Z"
   }
 }
