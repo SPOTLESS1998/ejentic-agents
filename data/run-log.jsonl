@@ -243,3 +243,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-19T17:05:53.234Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-19T21:24:17.180Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-20T00:33:03.569Z"}
+{"agent":"job","found":36,"screened":13,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing passed screening and link verification today.","ts":"2026-11-20T15:30:01.279Z"}

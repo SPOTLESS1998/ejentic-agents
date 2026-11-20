@@ -65,86 +65,6 @@
     "title": "Engine",
     "kind": "reported"
   },
-  "lead:radisson hotel group": {
-    "firstSeen": "2026-08-21T07:09:03.993Z",
-    "label": "LEAD",
-    "title": "Radisson Hotel Group"
-  },
-  "lead:natural spirits nepal": {
-    "firstSeen": "2026-08-21T07:09:03.993Z",
-    "label": "LEAD",
-    "title": "Natural Spirits Nepal"
-  },
-  "lead:canopy growth corporation": {
-    "firstSeen": "2026-08-21T07:09:03.993Z",
-    "label": "LEAD",
-    "title": "Canopy Growth Corporation"
-  },
-  "lead:sunbelt rentals, inc.": {
-    "firstSeen": "2026-08-21T07:09:03.993Z",
-    "label": "LEAD",
-    "title": "Sunbelt Rentals, Inc."
-  },
-  "lead:bass pro shops": {
-    "firstSeen": "2026-08-21T07:09:03.993Z",
-    "label": "LEAD",
-    "title": "Bass Pro Shops"
-  },
-  "lead:flow control commune": {
-    "firstSeen": "2026-08-21T07:09:03.993Z",
-    "label": "LEAD",
-    "title": "Flow Control Commune"
-  },
-  "lead:larsen &amp; toubro": {
-    "firstSeen": "2026-08-21T07:09:03.993Z",
-    "label": "LEAD",
-    "title": "Larsen &amp; Toubro"
-  },
-  "lead:srikara hospitals": {
-    "firstSeen": "2026-08-21T07:09:03.993Z",
-    "label": "LEAD",
-    "title": "Srikara Hospitals"
-  },
-  "lead:shatterproof": {
-    "firstSeen": "2026-08-22T07:00:32.496Z",
-    "label": "LEAD",
-    "title": "Shatterproof"
-  },
-  "lead:kent removals &amp; storage": {
-    "firstSeen": "2026-08-22T07:00:32.496Z",
-    "label": "LEAD",
-    "title": "Kent Removals &amp; Storage"
-  },
-  "lead:uzeats": {
-    "firstSeen": "2026-08-22T07:00:32.496Z",
-    "label": "LEAD",
-    "title": "UzEats"
-  },
-  "lead:retail fx": {
-    "firstSeen": "2026-08-22T07:00:32.496Z",
-    "label": "LEAD",
-    "title": "Retail FX"
-  },
-  "lead:shoppers drug mart": {
-    "firstSeen": "2026-08-22T07:00:32.496Z",
-    "label": "LEAD",
-    "title": "Shoppers Drug Mart"
-  },
-  "lead:h&amp;m": {
-    "firstSeen": "2026-08-22T07:00:32.496Z",
-    "label": "LEAD",
-    "title": "H&amp;M"
-  },
-  "lead:gpc asia pacific": {
-    "firstSeen": "2026-08-22T07:00:32.496Z",
-    "label": "LEAD",
-    "title": "GPC Asia Pacific"
-  },
-  "lead:tipsy topsy": {
-    "firstSeen": "2026-08-22T07:00:32.496Z",
-    "label": "LEAD",
-    "title": "Tipsy Topsy"
-  },
   "lead:dart": {
     "firstSeen": "2026-08-23T07:02:36.281Z",
     "label": "LEAD",
@@ -1037,7 +957,7 @@
     "kind": "reported"
   },
   "lead:osano": {
-    "firstSeen": "2026-10-17T10:47:24.729Z",
+    "firstSeen": "2026-11-20T15:30:00.930Z",
     "label": "LEAD",
     "title": "Osano",
     "kind": "screened"
@@ -1733,7 +1653,7 @@
     "kind": "reported"
   },
   "https://remoteok.com/remote-jobs/remote-cloud-engineer-automation-smile-digital-health-1137600": {
-    "firstSeen": "2026-11-10T14:55:21.403Z",
+    "firstSeen": "2026-11-20T15:29:36.401Z",
     "label": "JOB",
     "title": "Cloud Engineer Automation",
     "kind": "screened"
@@ -2708,6 +2628,72 @@
     "firstSeen": "2026-11-18T15:42:20.035Z",
     "label": "LEAD",
     "title": "UpBound",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-enterprise-solutions-engineer-east-glean-1137826": {
+    "firstSeen": "2026-11-20T15:29:36.401Z",
+    "label": "JOB",
+    "title": "Enterprise Solutions Engineer, East",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-software-engineer-ai-coding-tasks-askable-1137808": {
+    "firstSeen": "2026-11-20T15:29:36.401Z",
+    "label": "JOB",
+    "title": "Software Engineer AI Coding Tasks",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/163488-senior-ai-engineer-11": {
+    "firstSeen": "2026-11-20T15:29:36.401Z",
+    "label": "JOB",
+    "title": "Senior AI Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/163478-director-ai-solutions-2": {
+    "firstSeen": "2026-11-20T15:29:36.401Z",
+    "label": "JOB",
+    "title": "Director, AI Solutions",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/163465-security-systems-solutions-engineer": {
+    "firstSeen": "2026-11-20T15:29:36.401Z",
+    "label": "JOB",
+    "title": "Security Systems Solutions Engineer",
+    "kind": "screened"
+  },
+  "lead:airtable": {
+    "firstSeen": "2026-11-20T15:30:00.930Z",
+    "label": "LEAD",
+    "title": "Airtable",
+    "kind": "screened"
+  },
+  "lead:fin": {
+    "firstSeen": "2026-11-20T15:30:00.930Z",
+    "label": "LEAD",
+    "title": "Fin",
+    "kind": "screened"
+  },
+  "lead:orkes": {
+    "firstSeen": "2026-11-20T15:30:00.930Z",
+    "label": "LEAD",
+    "title": "Orkes",
+    "kind": "screened"
+  },
+  "lead:keyfactor, inc.": {
+    "firstSeen": "2026-11-20T15:30:00.930Z",
+    "label": "LEAD",
+    "title": "Keyfactor, Inc.",
+    "kind": "screened"
+  },
+  "lead:anteriad": {
+    "firstSeen": "2026-11-20T15:30:00.930Z",
+    "label": "LEAD",
+    "title": "Anteriad",
+    "kind": "screened"
+  },
+  "lead:guidewheel": {
+    "firstSeen": "2026-11-20T15:30:00.930Z",
+    "label": "LEAD",
+    "title": "Guidewheel",
     "kind": "screened"
   }
 }
