@@ -2866,5 +2866,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-21T15:54:48.055Z"
+  },
+  "2026-11-21:afternoon": {
+    "date": "2026-11-21",
+    "slot": "afternoon",
+    "cycleDay": 16,
+    "theme": "Resilience Engineering",
+    "pillar": "SHOWCASE",
+    "topic": "How our fallback system works if a model goes down.",
+    "angle": "Combining David Chen's architectural resilience with enterprise gateway routing to ensure zero downtime when primary models fail.",
+    "xPost": "When your primary LLM goes down, does your business stop? Our failover routing seamlessly switches to a backup model in milliseconds. The user never notices a thing. Built for resilience. \n\n#EjenticAI #AIAgents",
+    "linkedinPost": "Enterprise AI is only as good as its uptime. When production token volumes spike or a primary model provider experiences an outage, what happens to your customer workflows?\n\nAs our Chief Architect David Chen notes, resilient systems require seamless fallbacks and graceful degradation. At Ejentic AI, our gateway-level routing ensures that if a primary model fails, a secondary backup takes over instantly. The transition happens invisibly, and the user never notices a drop in quality or speed.\n\nWhether you are deploying our multilingual customer-service agents or the Air-Gapped RAG Vault for internal documents, high availability isn't an afterthought—it is engineered into the architecture from day one.\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-21T20:01:28.050Z"
   }
 }
