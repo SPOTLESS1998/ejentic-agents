@@ -2880,5 +2880,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-21T20:01:28.050Z"
+  },
+  "2026-11-21:evening": {
+    "date": "2026-11-21",
+    "slot": "evening",
+    "cycleDay": 16,
+    "theme": "Resilience Engineering",
+    "pillar": "INSPIRE",
+    "topic": "David Chen on building systems that never leave users stranded.",
+    "angle": "Connecting the need for resilient, resilient systems in AI automation directly to Chief Architect David Chen's philosophy on uptime and intentional design.",
+    "xPost": "Downtime isn't an accident; it's a design choice you didn't make. Our Chief Architect David Chen builds systems that never leave your users stranded. \n\n#EjenticAI #AIAgents",
+    "linkedinPost": "When businesses adopt AI automation to handle customer support or internal workflows, reliability isn't just a technical feature. It is a commitment.\n\nOur Chief Architect, David Chen, often says: \"Downtime isn't an accident; it's a design choice you didn't make.\"\n\nIn resilient systems engineering, hope is not a strategy. True automation requires graceful degradation, built-in fallbacks, and resilient infrastructure so your business never stops moving.\n\nWe believe Africa can lead the world in AI by building ethical, human-centric systems that respect our data and augment our people. That starts with engineering that never leaves users stranded.\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-21T23:03:27.910Z"
   }
 }
