@@ -249,3 +249,4 @@
 {"agent":"hackathon","found":0,"screened":0,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing was screened: every result the search returned was already in the seen-store. This zero says there was nothing NEW, not that nothing matched.","ts":"2026-11-20T16:12:04.886Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-20T16:42:48.888Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-20T21:00:13.046Z"}
+{"agent":"job","found":27,"screened":19,"reported":3,"degraded":false,"aborted":[],"ts":"2026-11-21T14:41:29.312Z"}

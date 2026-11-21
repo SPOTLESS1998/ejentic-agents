@@ -65,21 +65,6 @@
     "title": "Engine",
     "kind": "reported"
   },
-  "lead:dart": {
-    "firstSeen": "2026-08-23T07:02:36.281Z",
-    "label": "LEAD",
-    "title": "Dart"
-  },
-  "lead:mcnab": {
-    "firstSeen": "2026-08-23T07:02:36.281Z",
-    "label": "LEAD",
-    "title": "McNab"
-  },
-  "lead:cable bahamas ltd.": {
-    "firstSeen": "2026-08-23T07:02:36.281Z",
-    "label": "LEAD",
-    "title": "Cable Bahamas Ltd."
-  },
   "lead:rowan": {
     "firstSeen": "2026-08-24T07:29:53.236Z",
     "label": "LEAD",
@@ -1101,19 +1086,19 @@
     "kind": "screened"
   },
   "lead:jobber": {
-    "firstSeen": "2026-10-20T11:40:53.572Z",
+    "firstSeen": "2026-11-21T14:41:28.157Z",
     "label": "LEAD",
     "title": "Jobber",
-    "kind": "screened"
+    "kind": "reported"
   },
   "https://jobicy.com/jobs/156097-manager-machine-learning-engineering": {
-    "firstSeen": "2026-10-21T11:52:11.970Z",
+    "firstSeen": "2026-11-21T14:41:18.946Z",
     "label": "JOB",
     "title": "Manager, Machine Learning Engineering",
     "kind": "screened"
   },
   "https://jobicy.com/jobs/156098-applied-ai-engineer-2": {
-    "firstSeen": "2026-10-21T11:52:11.970Z",
+    "firstSeen": "2026-11-21T14:41:18.946Z",
     "label": "JOB",
     "title": "Applied AI Engineer",
     "kind": "screened"
@@ -1137,13 +1122,13 @@
     "kind": "screened"
   },
   "lead:tala": {
-    "firstSeen": "2026-10-21T11:52:13.247Z",
+    "firstSeen": "2026-11-21T14:41:28.157Z",
     "label": "LEAD",
     "title": "Tala",
     "kind": "screened"
   },
   "lead:future plc": {
-    "firstSeen": "2026-10-21T11:52:13.247Z",
+    "firstSeen": "2026-11-21T14:41:28.157Z",
     "label": "LEAD",
     "title": "Future PLC",
     "kind": "screened"
@@ -2695,5 +2680,89 @@
     "label": "LEAD",
     "title": "Guidewheel",
     "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-product-manager-ai-foundations-reddit-1137893": {
+    "firstSeen": "2026-11-21T14:41:18.946Z",
+    "label": "JOB",
+    "title": "Product Manager, AI Foundations",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-manager-business-risk-and-ai-automation-reddit-1137879": {
+    "firstSeen": "2026-11-21T14:41:18.946Z",
+    "label": "JOB",
+    "title": "Manager, Business Risk and AI Automation",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-presales-solutions-engineer-sumo-logic-1137877": {
+    "firstSeen": "2026-11-21T14:41:18.946Z",
+    "label": "JOB",
+    "title": "PreSales Solutions Engineer",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-engineering-manager-external-search-ai-optimization-airbnb-1137848": {
+    "firstSeen": "2026-11-21T14:41:18.946Z",
+    "label": "JOB",
+    "title": "Engineering Manager, External Search & AI Optimization",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-senior-data-engineer-tech-foundations-airbnb-1137846": {
+    "firstSeen": "2026-11-21T14:41:18.946Z",
+    "label": "JOB",
+    "title": "Senior Data Engineer Tech Foundations",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/163629-applied-ai-data-scientist": {
+    "firstSeen": "2026-11-21T14:41:18.946Z",
+    "label": "JOB",
+    "title": "Applied AI Data Scientist",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/163627-machine-learning-engineer-perception": {
+    "firstSeen": "2026-11-21T14:41:18.946Z",
+    "label": "JOB",
+    "title": "Machine Learning Engineer, Perception",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/163623-solutions-engineerpython-airflow": {
+    "firstSeen": "2026-11-21T14:41:18.946Z",
+    "label": "JOB",
+    "title": "Solutions Engineer(Python/Airflow)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/156203-senior-director-analytics-and-data-science-core-product-growth": {
+    "firstSeen": "2026-11-21T14:41:18.946Z",
+    "label": "JOB",
+    "title": "Senior Director, Analytics and Data Science, Core Product & Growth",
+    "kind": "screened"
+  },
+  "lead:salsify": {
+    "firstSeen": "2026-11-21T14:41:28.157Z",
+    "label": "LEAD",
+    "title": "Salsify",
+    "kind": "screened"
+  },
+  "lead:abnormal": {
+    "firstSeen": "2026-11-21T14:41:28.157Z",
+    "label": "LEAD",
+    "title": "Abnormal",
+    "kind": "reported"
+  },
+  "lead:everpure": {
+    "firstSeen": "2026-11-21T14:41:28.157Z",
+    "label": "LEAD",
+    "title": "Everpure",
+    "kind": "screened"
+  },
+  "lead:path robotics": {
+    "firstSeen": "2026-11-21T14:41:28.157Z",
+    "label": "LEAD",
+    "title": "Path Robotics",
+    "kind": "screened"
+  },
+  "lead:nebius": {
+    "firstSeen": "2026-11-21T14:41:28.157Z",
+    "label": "LEAD",
+    "title": "Nebius",
+    "kind": "reported"
   }
 }
