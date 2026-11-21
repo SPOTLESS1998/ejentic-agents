@@ -2852,5 +2852,19 @@
     ],
     "score": 8,
     "createdAt": "2026-11-20T21:00:13.043Z"
+  },
+  "2026-11-21:morning": {
+    "date": "2026-11-21",
+    "slot": "morning",
+    "cycleDay": 16,
+    "theme": "Resilience Engineering",
+    "pillar": "EDUCATE",
+    "topic": "How prompt engineering actually works — demystified.",
+    "angle": "Demystifying prompt engineering as a structured method of context, constraints, examples, and verification rather than magical incantations.",
+    "xPost": "Is prompt engineering just guessing magic words? Far from it. Real prompt design is an engineering discipline: context, constraints, examples, and rigorous verification. No hype, just method. #EjenticAI #AIAgents",
+    "linkedinPost": "Is prompt engineering just guessing magic words until the AI gives you the right answer? Far from it.\n\nAt Ejentic AI, we treat prompt design as a reliable engineering discipline rather than a guessing game. When you strip away the hype, effective prompting comes down to four core pillars:\n\n1. Context: Giving the model the exact background, role, and situational data it needs.\n\n2. Constraints: Setting strict boundaries on length, format, tone, and what the model must NOT do.\n\n3. Examples: Providing clear few-shot demonstrations of expected inputs and outputs.\n\n4. Verification: Systematically testing outputs against evaluation criteria before anything goes to production.\n\nThere is no magic here—just method. Building robust autonomous workflows means treating LLM inputs with the same precision as traditional code.\n\nHow does your team approach prompt design today?\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #AIExplained",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-21T15:54:48.055Z"
   }
 }
