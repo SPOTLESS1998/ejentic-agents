@@ -2894,5 +2894,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-21T23:03:27.910Z"
+  },
+  "2026-11-22:morning": {
+    "date": "2026-11-22",
+    "slot": "morning",
+    "cycleDay": 17,
+    "theme": "RAG, Internally",
+    "pillar": "EDUCATE",
+    "topic": "Anatomy of a RAG pipeline: from PDF to instant answers.",
+    "angle": "Explaining the internal mechanics of a RAG pipeline from PDF to vector storage and precise retrieval, ensuring internal knowledge bases remain secure and private.",
+    "xPost": "How do private company documents turn into instant, accurate answers without leaking data? Here is the anatomy of a RAG pipeline: chunking, embedding, vector storage, and retrieval with citations. Plain answers, zero hype. #EjenticAI #AIAgents",
+    "linkedinPost": "How do your internal SOPs and private documents actually turn into instant answers without risking a data leak?\n\nIt comes down to the anatomy of a RAG pipeline. Here is how it works under the hood:\n\nFirst, we chunk long PDFs and documents into readable paragraphs. Next, we convert those chunks into embeddings—mathematical representations of meaning. Those vectors are stored securely in a dedicated database.\n\nWhen an employee asks a question, the system searches the vector store for the most relevant context, retrieves it, and generates an answer backed by direct citations from your internal files.\n\nAs Elena Rodriguez, our Lead ML Engineer, puts it: data hygiene and evaluation before shipping are a moral duty. That is why we build air-gapped RAG vaults that keep your private knowledge strictly internal.\n\nCurious how this fits your team's workflow? Book a free consultation\n\n#EjenticAI #RAG #AIAgents #AIAutomation #EthicalAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-22T15:55:53.884Z"
   }
 }
