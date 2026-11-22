@@ -2908,5 +2908,22 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-22T15:55:53.884Z"
+  },
+  "2026-11-22:afternoon": {
+    "date": "2026-11-22",
+    "slot": "afternoon",
+    "cycleDay": 17,
+    "theme": "RAG, Internally",
+    "pillar": "SHOWCASE",
+    "topic": "Meet our multilingual support agent — how it switches between Pidgin, Hausa, Yoruba & Igbo mid-conversation.",
+    "angle": "Using 2026 hyperautomation and customer experience trends to highlight our multilingual autonomous support agents that seamlessly switch between English, Pidgin, Hausa, Yoruba, and Igbo mid-conversation.",
+    "xPost": "How does your customer service handle code-switching? Our autonomous multilingual agents fluidly move between English, Pidgin, Hausa, Yoruba, & Igbo mid-chat. See it in action: https://youtu.be/gbXhZMTdnkM #EjenticAI #AIAgents",
+    "linkedinPost": "In 2026, customer experience automation means meeting your customers in the exact language and cadence they use every day. If your support desk only speaks rigid English, you are missing the heartbeat of the market.\n\nAt Ejentic AI, we build autonomous multilingual customer-service agents that handle complex, natural code-switching mid-conversation.\n\nPicture this:\nCustomer: \"Hello, I wan check my delivery status abi e don delay?\"\nAgent: \"E don arrive our Ikeja hub o! Let me check your order details. Sannu, ko kuna son in taimaka muku da wani abu?\"\n\nOur agents greet clients, answer questions, log complaints, and capture leads across English, Nigerian Pidgin, Hausa, Yoruba, and Igbo.\n\nWatch our agents in action here: https://youtu.be/gbXhZMTdnkM\n\nBook a free consultation\n\n#EjenticAI #AIAgents #CustomerExperience #NigeriaTech #AfricanTech",
+    "citedSourceUrls": [
+      "https://youtu.be/gbXhZMTdnkM",
+      "https://matchbestsoftware.com/blogs/top-ai-automation-trends-transforming-businesses-in-2026"
+    ],
+    "score": 8,
+    "createdAt": "2026-11-22T20:17:00.830Z"
   }
 }
