@@ -65,36 +65,6 @@
     "title": "Engine",
     "kind": "reported"
   },
-  "lead:rowan": {
-    "firstSeen": "2026-08-24T07:29:53.236Z",
-    "label": "LEAD",
-    "title": "Rowan"
-  },
-  "lead:orca bio": {
-    "firstSeen": "2026-08-24T07:29:53.236Z",
-    "label": "LEAD",
-    "title": "Orca Bio"
-  },
-  "lead:edspired.tech": {
-    "firstSeen": "2026-08-24T07:29:53.236Z",
-    "label": "LEAD",
-    "title": "Edspired.Tech"
-  },
-  "lead:tesco": {
-    "firstSeen": "2026-08-24T07:29:53.236Z",
-    "label": "LEAD",
-    "title": "Tesco"
-  },
-  "lead:jobtrade": {
-    "firstSeen": "2026-08-24T07:29:53.236Z",
-    "label": "LEAD",
-    "title": "JobTrade"
-  },
-  "lead:platypus shoes": {
-    "firstSeen": "2026-08-24T07:29:53.236Z",
-    "label": "LEAD",
-    "title": "Platypus Shoes"
-  },
   "lead:dr. martens australia / new zealand": {
     "firstSeen": "2026-08-25T07:10:09.860Z",
     "label": "LEAD",
@@ -1182,7 +1152,7 @@
     "kind": "reported"
   },
   "lead:ping identity": {
-    "firstSeen": "2026-10-22T11:56:04.025Z",
+    "firstSeen": "2026-11-22T14:37:38.157Z",
     "label": "LEAD",
     "title": "Ping Identity",
     "kind": "screened"
@@ -1902,7 +1872,7 @@
     "kind": "screened"
   },
   "lead:reddit": {
-    "firstSeen": "2026-11-05T14:41:37.987Z",
+    "firstSeen": "2026-11-22T14:37:38.157Z",
     "label": "LEAD",
     "title": "Reddit",
     "kind": "screened"
@@ -2763,6 +2733,114 @@
     "firstSeen": "2026-11-21T14:41:28.157Z",
     "label": "LEAD",
     "title": "Nebius",
+    "kind": "reported"
+  },
+  "https://remoteok.com/remote-jobs/remote-staff-data-scientist-martech-platform-ml-algos-airbnb-1137956": {
+    "firstSeen": "2026-11-22T14:37:26.589Z",
+    "label": "JOB",
+    "title": "Staff Data Scientist - Martech Platform (ML/Algos)",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-staff-software-engineer-agentic-tools-cribl-1137955": {
+    "firstSeen": "2026-11-22T14:37:26.589Z",
+    "label": "JOB",
+    "title": "Staff Software Engineer, Agentic Tools",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-senior-staff-machine-learning-engineer-ads-ranking-reddit-1137932": {
+    "firstSeen": "2026-11-22T14:37:26.589Z",
+    "label": "JOB",
+    "title": "Senior Staff Machine Learning Engineer, Ads Ranking",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-staff-scientist-machine-learning-genomics-natera-1137926": {
+    "firstSeen": "2026-11-22T14:37:26.589Z",
+    "label": "JOB",
+    "title": "Staff Scientist, Machine Learning (Genomics)",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-senior-software-engineer-ii-agentic-intelligence-honeycomb-io-1137924": {
+    "firstSeen": "2026-11-22T14:37:26.589Z",
+    "label": "JOB",
+    "title": "Senior Software Engineer II - Agentic Intelligence",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-technical-solutions-engineer-stripe-1137922": {
+    "firstSeen": "2026-11-22T14:37:26.589Z",
+    "label": "JOB",
+    "title": "Technical Solutions Engineer",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-senior-applied-ai-engineer-wemolo-1137917": {
+    "firstSeen": "2026-11-22T14:37:26.589Z",
+    "label": "JOB",
+    "title": "Senior Applied AI Engineer",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/163771-senior-data-engineer-ads-data-ai-native": {
+    "firstSeen": "2026-11-22T14:37:26.589Z",
+    "label": "JOB",
+    "title": "Senior Data Engineer, Ads Data (AI Native)",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/163759-principal-agentic-engineer-ai-ecosystem": {
+    "firstSeen": "2026-11-22T14:37:26.589Z",
+    "label": "JOB",
+    "title": "Principal Agentic Engineer, AI Ecosystem",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/156460-senior-director-agentic-engineering": {
+    "firstSeen": "2026-11-22T14:37:26.589Z",
+    "label": "JOB",
+    "title": "Senior Director, Agentic Engineering",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/156436-research-engineer-web-crawlers": {
+    "firstSeen": "2026-11-22T14:37:26.589Z",
+    "label": "JOB",
+    "title": "Research Engineer - Web Crawlers",
+    "kind": "screened"
+  },
+  "lead:contentstack": {
+    "firstSeen": "2026-11-22T14:37:38.157Z",
+    "label": "LEAD",
+    "title": "Contentstack",
+    "kind": "reported"
+  },
+  "lead:carrot": {
+    "firstSeen": "2026-11-22T14:37:38.157Z",
+    "label": "LEAD",
+    "title": "Carrot",
+    "kind": "screened"
+  },
+  "lead:natera": {
+    "firstSeen": "2026-11-22T14:37:38.157Z",
+    "label": "LEAD",
+    "title": "Natera",
+    "kind": "screened"
+  },
+  "lead:wemolo": {
+    "firstSeen": "2026-11-22T14:37:38.157Z",
+    "label": "LEAD",
+    "title": "Wemolo",
+    "kind": "screened"
+  },
+  "lead:tenable": {
+    "firstSeen": "2026-11-22T14:37:38.157Z",
+    "label": "LEAD",
+    "title": "Tenable",
+    "kind": "screened"
+  },
+  "lead:proof": {
+    "firstSeen": "2026-11-22T14:37:38.157Z",
+    "label": "LEAD",
+    "title": "Proof",
+    "kind": "reported"
+  },
+  "lead:vultr": {
+    "firstSeen": "2026-11-22T14:37:38.157Z",
+    "label": "LEAD",
+    "title": "Vultr",
     "kind": "reported"
   }
 }

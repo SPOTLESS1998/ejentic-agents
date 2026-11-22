@@ -256,3 +256,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-21T15:54:48.059Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-21T20:01:28.054Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-21T23:03:27.915Z"}
+{"agent":"job","found":28,"screened":20,"reported":3,"degraded":false,"aborted":[],"ts":"2026-11-22T14:37:39.473Z"}
