@@ -65,11 +65,6 @@
     "title": "Engine",
     "kind": "reported"
   },
-  "lead:dr. martens australia / new zealand": {
-    "firstSeen": "2026-08-25T07:10:09.860Z",
-    "label": "LEAD",
-    "title": "Dr. Martens Australia / New Zealand"
-  },
   "https://remoteok.com/remote-jobs/remote-senior-backend-engineer-build-ai-agents-salesforge-1137114": {
     "firstSeen": "2026-10-25T11:33:44.299Z",
     "label": "JOB",
@@ -1560,7 +1555,7 @@
     "kind": "screened"
   },
   "https://jobicy.com/jobs/156643-senior-software-engineer-developer-experience-ai-platform-team": {
-    "firstSeen": "2026-10-30T12:58:52.218Z",
+    "firstSeen": "2026-11-23T18:13:51.923Z",
     "label": "JOB",
     "title": "Senior Software Engineer, Developer Experience & AI Platform team",
     "kind": "screened"
@@ -2842,5 +2837,11 @@
     "label": "LEAD",
     "title": "Vultr",
     "kind": "reported"
+  },
+  "https://remoteok.com/remote-jobs/remote-sr-forward-deployed-data-engineer-natera-1137970": {
+    "firstSeen": "2026-11-23T18:13:51.923Z",
+    "label": "JOB",
+    "title": "Sr. Forward Deployed Data Engineer",
+    "kind": "screened"
   }
 }
