@@ -2925,5 +2925,19 @@
     ],
     "score": 8,
     "createdAt": "2026-11-22T20:17:00.830Z"
+  },
+  "2026-11-23:morning": {
+    "date": "2026-11-23",
+    "slot": "morning",
+    "cycleDay": 18,
+    "theme": "How We Test",
+    "pillar": "EDUCATE",
+    "topic": "Why we test agents like pilots: evals, simulations, and guardrails.",
+    "angle": "Using flight simulator methodology for AI agent evaluations, simulations, and guardrails to ensure quality is designed rather than hoped for.",
+    "xPost": "Would you board a plane that never tested its autopilot? We test AI agents like pilots use flight simulators: rigorous evals, simulations, and guardrails before deployment. Quality is designed, not hoped for. #EjenticAI #AIAgents",
+    "linkedinPost": "Would you board a commercial flight if the pilot had never practiced in a flight simulator? \n\nIn software, we often see a different approach: deploying AI models straight to production and hoping for the best. At Ejentic AI, our Lead ML Engineer Elena Rodriguez treats evaluation before shipping, bias checks, and data hygiene as a moral duty.\n\nThat is why we test agents like pilots. We run rigorous evaluations, automated simulations, and strict guardrails before any autonomous workflow touches real customers or sensitive data. \n\nWhen you are building systems that handle customer support or internal knowledge bases, hope is not a strategy. Quality must be designed into the architecture from day one.\n\nHow does your team evaluate AI reliability before it goes live?\n\n#EjenticAI #AIAgents #EthicalAI #FutureOfWork #AIAutomation",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-23T19:51:46.527Z"
   }
 }
