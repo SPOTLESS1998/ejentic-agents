@@ -2939,5 +2939,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-23T19:51:46.527Z"
+  },
+  "2026-11-24:evening": {
+    "date": "2026-11-24",
+    "slot": "evening",
+    "cycleDay": 19,
+    "theme": "Security Choices",
+    "pillar": "INSPIRE",
+    "topic": "David Chen on the unglamorous work: logs, retries, uptime.",
+    "angle": "Relating the unglamorous engineering realities of logs, retries, and uptime to our Wakanda-inspired vision of building reliable, human-centric AI systems for Africa and the world.",
+    "xPost": "Reliability isn't flashy. Our Chief Architect, David Chen, knows true AI infrastructure is built on a thousand boring decisions done right: logs, retries, and uptime. #EjenticAI #AIAgents",
+    "linkedinPost": "When people talk about artificial intelligence, they usually picture the magic. They talk about fluent conversations, lightning-fast text generation, and seamless automation.\n\nBut our Chief Architect, David Chen, focuses on the unglamorous work that happens behind the scenes. The logs. The retries. The graceful degradation when a provider drops.\n\nTrue reliability isn't a single brilliant feature. It is a thousand boring decisions done right, repeated every single second of the day.\n\nAt Ejentic AI, our Wakanda-inspired vision means Africa can lead the world in AI not just through bold ideas, but through resilient, human-centric systems that never let you down. Because when you build infrastructure businesses depend on, boring reliability is the highest form of respect.\n\nWhat does system reliability mean for your operations today?\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-24T03:55:54.323Z"
   }
 }
