@@ -2323,7 +2323,7 @@
     "kind": "screened"
   },
   "lead:shyftoff": {
-    "firstSeen": "2026-11-12T15:18:10.472Z",
+    "firstSeen": "2026-11-24T17:48:45.231Z",
     "label": "LEAD",
     "title": "ShyftOff",
     "kind": "screened"
@@ -2449,7 +2449,7 @@
     "kind": "screened"
   },
   "https://remotive.com/remote-jobs/data/senior-data-engineer-2091137": {
-    "firstSeen": "2026-11-14T13:34:19.439Z",
+    "firstSeen": "2026-11-24T17:48:44.236Z",
     "label": "JOB",
     "title": "Senior Data Engineer",
     "kind": "screened"
@@ -2842,6 +2842,36 @@
     "firstSeen": "2026-11-23T18:13:51.923Z",
     "label": "JOB",
     "title": "Sr. Forward Deployed Data Engineer",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-senior-software-engineer-agentic-ai-clover-health-1138070": {
+    "firstSeen": "2026-11-24T17:48:44.236Z",
+    "label": "JOB",
+    "title": "Senior Software Engineer, Agentic AI",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-senior-software-developer-agentic-ai-canada-clover-health-1138068": {
+    "firstSeen": "2026-11-24T17:48:44.236Z",
+    "label": "JOB",
+    "title": "Senior Software Developer, Agentic AI - Canada",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-threat-research-engineer-security-factory-threat-research-gitlab-1138067": {
+    "firstSeen": "2026-11-24T17:48:44.236Z",
+    "label": "JOB",
+    "title": "Threat Research Engineer, Security Factory: Threat Research",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/164100-technical-trainer-legal-ai": {
+    "firstSeen": "2026-11-24T17:48:44.236Z",
+    "label": "JOB",
+    "title": "Technical Trainer - Legal AI",
+    "kind": "screened"
+  },
+  "lead:fivetran": {
+    "firstSeen": "2026-11-24T17:48:45.231Z",
+    "label": "LEAD",
+    "title": "Fivetran",
     "kind": "screened"
   }
 }
