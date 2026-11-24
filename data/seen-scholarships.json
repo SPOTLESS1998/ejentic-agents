@@ -1,39 +1,4 @@
 {
-  "https://www.scholarshipsads.com/scholarships-in-china": {
-    "firstSeen": "2026-08-26T07:28:32.110Z",
-    "label": "SCHOLARSHIP",
-    "title": "Scholarships in China for international students 2026 - 2025"
-  },
-  "https://www.facebook.com/opportunitiesforyouth/posts/-google-deepmind-ai-masters-scholarships-20262027-fully-funded-study-opportunity/1480788900745125": {
-    "firstSeen": "2026-08-26T07:28:32.110Z",
-    "label": "SCHOLARSHIP",
-    "title": "🚀 Google DeepMind AI Master's Scholarships 2026–2027 ..."
-  },
-  "https://www.scholarshiptab.com/scholarships-by-course/computer-science": {
-    "firstSeen": "2026-08-26T07:28:32.110Z",
-    "label": "SCHOLARSHIP",
-    "title": "Computer Science scholarships for international students 2026-2027"
-  },
-  "https://www.topuniversities.com/student-info/scholarship-advice/computer-science-scholarships": {
-    "firstSeen": "2026-08-26T07:28:32.110Z",
-    "label": "SCHOLARSHIP",
-    "title": "Computer Science Scholarships | TopUniversities"
-  },
-  "https://www.opportunitiesforafricans.com/category/scholarships/masters": {
-    "firstSeen": "2026-08-26T07:28:32.110Z",
-    "label": "SCHOLARSHIP",
-    "title": "Masters - Opportunities For Africans"
-  },
-  "https://analytics.georgetown.edu/tuition-and-scholarships": {
-    "firstSeen": "2026-08-26T07:28:32.110Z",
-    "label": "SCHOLARSHIP",
-    "title": "Tuition - Data Science & Analytics Master - Georgetown"
-  },
-  "https://www.facebook.com/groups/mextscholarship/posts/1257099559466823": {
-    "firstSeen": "2026-08-26T07:28:32.110Z",
-    "label": "SCHOLARSHIP",
-    "title": "Hi, I'm looking for a scholarship to pursue my master's ..."
-  },
   "https://martingale.foundation/subjects/artificial-intelligence": {
     "firstSeen": "2026-08-27T17:52:23.208Z",
     "label": "SCHOLARSHIP",
@@ -953,5 +918,65 @@
     "firstSeen": "2026-11-22T14:49:36.062Z",
     "label": "SCHOLARSHIP",
     "title": "Best Global Universities for Artificial Intelligence in Canada"
+  },
+  "https://en.wikipedia.org/wiki/university": {
+    "firstSeen": "2026-11-24T18:10:35.522Z",
+    "label": "SCHOLARSHIP",
+    "title": "University"
+  },
+  "https://www.uni.edu": {
+    "firstSeen": "2026-11-24T18:10:35.522Z",
+    "label": "SCHOLARSHIP",
+    "title": "University of Northern Iowa"
+  },
+  "https://www.harvard.edu": {
+    "firstSeen": "2026-11-24T18:10:35.522Z",
+    "label": "SCHOLARSHIP",
+    "title": "Harvard University"
+  },
+  "https://www.ufl.edu": {
+    "firstSeen": "2026-11-24T18:10:35.522Z",
+    "label": "SCHOLARSHIP",
+    "title": "University of Florida: Home"
+  },
+  "https://unu.edu": {
+    "firstSeen": "2026-11-24T18:10:35.522Z",
+    "label": "SCHOLARSHIP",
+    "title": "United Nations University: UNU"
+  },
+  "https://www.berkeley.edu": {
+    "firstSeen": "2026-11-24T18:10:35.522Z",
+    "label": "SCHOLARSHIP",
+    "title": "University of California, Berkeley: Home"
+  },
+  "https://www.applykite.com/scholarships/fully-funded-canadian-scholarships-for-international-students-2026-bachelors-masters-and-phd-opportunities-in-multiple-fields-45w5ufxgyo": {
+    "firstSeen": "2026-11-24T18:10:35.522Z",
+    "label": "SCHOLARSHIP",
+    "title": "Fully Funded Canadian Scholarships for International Students 2026"
+  },
+  "https://www.for9a.com/en/opportunity/funded-masters-in-canada-at-the-university-of-waterloo-in-artificial-intelligence-and-cybersecurity-for-international-students": {
+    "firstSeen": "2026-11-24T18:10:35.522Z",
+    "label": "SCHOLARSHIP",
+    "title": "Funded Master's in Canada at the University of Waterloo in…"
+  },
+  "https://www.facebook.com/fb-answers/computer-science-scholarships-in-canada-for-international-students": {
+    "firstSeen": "2026-11-24T18:10:35.522Z",
+    "label": "SCHOLARSHIP",
+    "title": "Computer Science Scholarships in Canada for International Students"
+  },
+  "https://www.reddit.com/r/gradadmissions/comments/1wo29ik/chances_for_a_funded_msc_cs_thesis_in_canada_fall": {
+    "firstSeen": "2026-11-24T18:10:35.522Z",
+    "label": "SCHOLARSHIP",
+    "title": "Chances for a funded MSc CS (thesis) in Canada, Fall 2027? International ..."
+  },
+  "https://www.hotcoursesabroad.com/study/international-scholarships/canada/postgraduate/computer-and-mathematical-sciences/32/98/e/scholarship2.html": {
+    "firstSeen": "2026-11-24T18:10:35.522Z",
+    "label": "SCHOLARSHIP",
+    "title": "57 Master's Degree Computer Science and IT Scholarships ..."
+  },
+  "https://mscac.utoronto.ca/concentrations/ai": {
+    "firstSeen": "2026-11-24T18:10:35.522Z",
+    "label": "SCHOLARSHIP",
+    "title": "Artificial Intelligence | MScAC | University of Toronto"
   }
 }
