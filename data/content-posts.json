@@ -2953,5 +2953,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-24T03:55:54.323Z"
+  },
+  "2026-11-24:afternoon": {
+    "date": "2026-11-24",
+    "slot": "afternoon",
+    "cycleDay": 19,
+    "theme": "Security Choices",
+    "pillar": "SHOWCASE",
+    "topic": "From missed message to booked call: anatomy of our lead concierge.",
+    "angle": "Tracing the exact visitor journey through our Inbound Lead Concierge from missed message to a booked call.",
+    "xPost": "From missed message to booked call in minutes. See the exact anatomy of our Inbound Lead Concierge working 24/7 to qualify high-intent traffic instantly. #EjenticAI #AIAgents",
+    "linkedinPost": "Let's trace a real visitor journey through our Inbound Lead Concierge, step by step.\n\nBefore: A potential client lands on your website at 11 PM on a Friday with a high-intent query. Previously, they would face a static contact form, wait until Monday morning, and likely bounce to a competitor.\n\nAfter: Our autonomous Inbound Lead Concierge greets them instantly, answers nuanced questions about your services, qualifies their intent in real time, and routes high-value prospects straight to a booked calendar slot.\n\nBehind the architecture: maintaining persistent session state and zero-latency qualification requires robust fallback loops. When API limits or edge timeouts occur, the system degrades gracefully without dropping the prospect.\n\nHow is your current lead routing handling after-hours traffic?\n\n#EjenticAI #AIAgents #Automation #CustomerExperience",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-24T22:58:45.729Z"
   }
 }
