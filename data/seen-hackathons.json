@@ -618,5 +618,25 @@
     "firstSeen": "2026-11-23T19:18:55.976Z",
     "label": "HACKATHON",
     "title": "lablab.build (@lablabai) / X"
+  },
+  "https://dorahacks.io/hackathon/$demo": {
+    "firstSeen": "2026-11-24T18:55:53.935Z",
+    "label": "HACKATHON",
+    "title": "Dora Future-AI Hackathon"
+  },
+  "https://dorahacks.io/hackathon-ai": {
+    "firstSeen": "2026-11-24T18:55:53.935Z",
+    "label": "HACKATHON",
+    "title": "Hackathon AI"
+  },
+  "https://ethglobal.com/events/ethonline2026": {
+    "firstSeen": "2026-11-24T18:55:53.935Z",
+    "label": "HACKATHON",
+    "title": "ETHOnline 2026"
+  },
+  "https://www.instagram.com/reel/dcwru5uitff": {
+    "firstSeen": "2026-11-24T18:55:53.935Z",
+    "label": "HACKATHON",
+    "title": "Real problems. Real solutions. Real impact. Apply now for the 7th ..."
   }
 }
