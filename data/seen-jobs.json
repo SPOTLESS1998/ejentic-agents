@@ -1015,7 +1015,7 @@
     "kind": "reported"
   },
   "lead:compscience": {
-    "firstSeen": "2026-10-19T13:20:52.830Z",
+    "firstSeen": "2026-11-25T17:16:40.296Z",
     "label": "LEAD",
     "title": "CompScience",
     "kind": "screened"
@@ -2341,10 +2341,10 @@
     "kind": "screened"
   },
   "lead:fleetio": {
-    "firstSeen": "2026-11-12T15:18:10.472Z",
+    "firstSeen": "2026-11-25T17:16:40.296Z",
     "label": "LEAD",
     "title": "Fleetio",
-    "kind": "screened"
+    "kind": "reported"
   },
   "lead:vonage": {
     "firstSeen": "2026-11-12T15:18:10.472Z",
@@ -2873,5 +2873,59 @@
     "label": "LEAD",
     "title": "Fivetran",
     "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-senior-software-engineer-ai-science-platform-reddit-1138093": {
+    "firstSeen": "2026-11-25T17:16:28.965Z",
+    "label": "JOB",
+    "title": "Senior Software Engineer, AI & Science Platform",
+    "kind": "screened"
+  },
+  "https://remoteok.com/remote-jobs/remote-sr-account-executive-ai-hpc-everpure-1138086": {
+    "firstSeen": "2026-11-25T17:16:28.965Z",
+    "label": "JOB",
+    "title": "Sr. Account Executive, AI & HPC",
+    "kind": "screened"
+  },
+  "https://jobicy.com/jobs/164235-forward-deployed-engineer-devops-sre": {
+    "firstSeen": "2026-11-25T17:16:28.965Z",
+    "label": "JOB",
+    "title": "Forward Deployed Engineer - DevOps/SRE",
+    "kind": "screened"
+  },
+  "lead:lastpass": {
+    "firstSeen": "2026-11-25T17:16:40.296Z",
+    "label": "LEAD",
+    "title": "LastPass",
+    "kind": "screened"
+  },
+  "lead:augment": {
+    "firstSeen": "2026-11-25T17:16:40.296Z",
+    "label": "LEAD",
+    "title": "Augment",
+    "kind": "screened"
+  },
+  "lead:filigran": {
+    "firstSeen": "2026-11-25T17:16:40.296Z",
+    "label": "LEAD",
+    "title": "Filigran",
+    "kind": "screened"
+  },
+  "lead:geotab": {
+    "firstSeen": "2026-11-25T17:16:40.296Z",
+    "label": "LEAD",
+    "title": "Geotab",
+    "kind": "screened"
+  },
+  "lead:upcodes": {
+    "firstSeen": "2026-11-25T17:16:40.296Z",
+    "label": "LEAD",
+    "title": "UpCodes",
+    "kind": "reported"
+  },
+  "lead:rackner": {
+    "firstSeen": "2026-11-25T17:16:40.296Z",
+    "label": "LEAD",
+    "title": "Rackner",
+    "kind": "reported"
   }
 }
