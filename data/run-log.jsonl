@@ -278,3 +278,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-24T22:58:45.733Z"}
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-25T02:16:17.436Z"}
 {"agent":"job","found":38,"screened":11,"reported":3,"degraded":false,"aborted":[],"ts":"2026-11-25T17:16:41.909Z"}
+{"agent":"scholarship","found":47,"screened":15,"reported":0,"degraded":false,"aborted":["Gemini HTTP 503: { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\":"],"reason":"A pass threw — this zero is not real information. See the recorded error.","ts":"2026-11-25T17:33:06.038Z"}
