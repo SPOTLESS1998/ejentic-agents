@@ -2981,5 +2981,19 @@
     "citedSourceUrls": [],
     "score": 9,
     "createdAt": "2026-11-25T02:16:17.432Z"
+  },
+  "2026-11-25:afternoon": {
+    "date": "2026-11-25",
+    "slot": "afternoon",
+    "cycleDay": 20,
+    "theme": "Clean Inputs, Trustworthy Outputs",
+    "pillar": "SHOWCASE",
+    "topic": "Workflow automation in the wild: Stripe + CRM + LLM, revisited step-by-step.",
+    "angle": "Revisiting our Stripe + CRM + LLM workflow case study step-by-step to show how custom agentic automation cuts error rates and turnaround times.",
+    "xPost": "Stripe + CRM + LLM pipelines: how we automate invoicing, lead routing, and reconciliation to slash error rates and turnaround times. #EjenticAI #Automation",
+    "linkedinPost": "Let's look under the hood of a custom agentic workflow we frequently deploy for growing enterprises: the Stripe + CRM + LLM pipeline.\n\nBefore automation, teams spend hours manually reconciling invoices, updating customer records, and routing inbound leads. This manual handoff introduces friction, data entry errors, and costly delays in response time.\n\nHere is how our step-by-step architecture solves this:\n\n1. Stripe captures the payment event securely.\n2. An automated LLM pipeline parses and validates the transaction metadata.\n3. The CRM is instantly updated, and downstream tasks like receipt generation or lead routing trigger automatically.\n\nDavid Chen, our Chief Architect, designs these systems with resilience in mind—ensuring robust fallbacks, high uptime, and graceful degradation so your financial and customer data never misses a beat.\n\nThe result? Lower operational costs, near-zero manual error rates, and lightning-fast turnaround times.\n\nWhere is your team still losing the most time on manual data handoffs between Stripe and your CRM?\n\n#EjenticAI #AIAgents #Automation #BuildWithAI #FutureOfWork",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-25T22:25:10.539Z"
   }
 }
