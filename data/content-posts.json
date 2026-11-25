@@ -2967,5 +2967,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-24T22:58:45.729Z"
+  },
+  "2026-11-25:evening": {
+    "date": "2026-11-25",
+    "slot": "evening",
+    "cycleDay": 20,
+    "theme": "Clean Inputs, Trustworthy Outputs",
+    "pillar": "INSPIRE",
+    "topic": "Elena Rodriguez on data hygiene as a moral duty.",
+    "angle": "Relating the compounding token costs of unoptimized AI agents to the fundamental need for clean inputs and rigorous data hygiene as an ethical duty.",
+    "xPost": "Bad data in means biased answers out. As our Lead ML Engineer Elena Rodriguez notes, data hygiene isn't just a technical task—it is a moral duty. #EjenticAI #EthicalAI",
+    "linkedinPost": "When building autonomous agents, compounding context means every extra token and messy input gets multiplied across every step of a loop. But the cost of bad data goes far beyond cloud spend.\n\nAs our Lead ML Engineer Elena Rodriguez puts it: data hygiene is a moral duty, not just a technical checkbox.\n\nBad inputs lead directly to biased answers, broken workflows, and flawed decisions. If we are building systems that augment people and serve our communities, we cannot afford sloppy data. Clean inputs are the foundation of trustworthy, human-centric AI.\n\nHow is your team auditing your data hygiene before scaling your AI workflows?\n\n#EjenticAI #EthicalAI #FutureOfWork #AIAgents #AIAutomation",
+    "citedSourceUrls": [],
+    "score": 9,
+    "createdAt": "2026-11-25T02:16:17.432Z"
   }
 }
