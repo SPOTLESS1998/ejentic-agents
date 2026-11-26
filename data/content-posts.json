@@ -3009,5 +3009,22 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-26T01:44:26.661Z"
+  },
+  "2026-11-26:morning": {
+    "date": "2026-11-26",
+    "slot": "morning",
+    "cycleDay": 21,
+    "theme": "Radical Transparency",
+    "pillar": "EDUCATE",
+    "topic": "Behind the scenes: this very content is co-written by our agents (transparency post).",
+    "angle": "Using Salesforce and search optimization data as context, we demonstrate radical transparency by showing how our own research and content pipeline uses autonomous agents to write daily posts.",
+    "xPost": "Want radical transparency? This post was researched by our autonomous web agent, drafted from its findings, and reviewed by a human before publishing. Our pipeline is our product demo. #EjenticAI #AIAgents",
+    "linkedinPost": "How transparent can an AI agency really be?\n\nToday's post is a live demonstration. Our research agent scanned the latest industry data, including recent reports showing 66% of customer service teams now use agentic AI to drive satisfaction. From those findings, our content agent drafted this update.\n\nA human reviewed it before it hit your feed. No black boxes, no corporate gloss.\n\nWe believe the best proof of an autonomous workflow is using it to run our own operations. When systems are designed to augment people rather than replace them, you can trace the work right back to the architecture.\n\nCurious how an automated pipeline could handle your internal research or customer workflows without losing the human touch? Let's talk.\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #FutureOfWork #EthicalAI",
+    "citedSourceUrls": [
+      "https://www.salesforce.com/news/stories/ai-service-agents-improve-customer-satisfaction",
+      "https://parallel.ai/articles/llm-cost-optimization-for-ai-agents"
+    ],
+    "score": 8,
+    "createdAt": "2026-11-26T18:07:59.628Z"
   }
 }

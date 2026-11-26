@@ -1,9 +1,4 @@
 {
-  "2026-08-28:morning": {
-    "firstSeen": "2026-08-28T04:12:20.456Z",
-    "label": "CONTENT",
-    "title": "Day 1 morning"
-  },
   "2026-08-29:evening": {
     "firstSeen": "2026-08-29T01:43:02.422Z",
     "label": "CONTENT",
@@ -1078,5 +1073,10 @@
     "firstSeen": "2026-11-26T01:44:26.660Z",
     "label": "CONTENT",
     "title": "Day 21 evening"
+  },
+  "2026-11-26:morning": {
+    "firstSeen": "2026-11-26T18:07:59.628Z",
+    "label": "CONTENT",
+    "title": "Day 21 morning"
   }
 }
