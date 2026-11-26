@@ -2995,5 +2995,19 @@
     "citedSourceUrls": [],
     "score": 8,
     "createdAt": "2026-11-25T22:25:10.539Z"
+  },
+  "2026-11-26:evening": {
+    "date": "2026-11-26",
+    "slot": "evening",
+    "cycleDay": 21,
+    "theme": "Radical Transparency",
+    "pillar": "INSPIRE",
+    "topic": "The builders’ roundtable — Sarah, David & Elena on what’s next.",
+    "angle": "Connecting infrastructure choices and system design back to our core vision of ethical, human-centric AI built in Africa.",
+    "xPost": "At our builders' roundtable, Sarah, David & Elena debated what is next for Ejentic AI. AI should feel invisible, resilient, and anchored in responsible design. Building the future right here. #EjenticAI #AfricanTech",
+    "linkedinPost": "At our latest builders' roundtable, Sarah, David, and Elena sat down to reflect on what is next for Ejentic AI, looking closely at how we build systems that truly serve our people.\n\nSarah reminded us: \"AI should feel invisible and effortless; conversations, not screens.\"\n\nDavid emphasized our technical baseline: \"Seamless, resilient systems need robust fallbacks, uptime, and graceful degradation.\"\n\nElena grounded our mission in accountability: \"Responsible AI means evaluation before shipping, bias checks, and treating data hygiene as a moral duty.\n\nWe believe Africa can lead the world in AI by building ethical, human-centric systems that speak our languages and augment our people.\n\n#EjenticAI #AIAgents #EthicalAI #AfricanTech #BuildWithAI",
+    "citedSourceUrls": [],
+    "score": 8,
+    "createdAt": "2026-11-26T01:44:26.661Z"
   }
 }
