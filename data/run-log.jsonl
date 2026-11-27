@@ -293,3 +293,4 @@
 {"agent":"content","reported":1,"degraded":false,"aborted":[],"ts":"2026-11-27T01:40:14.067Z"}
 {"agent":"job","found":20,"screened":7,"reported":2,"degraded":false,"aborted":[],"ts":"2026-11-27T16:42:22.487Z"}
 {"agent":"scholarship","found":48,"screened":14,"reported":1,"degraded":false,"aborted":[],"ts":"2026-11-27T16:56:02.816Z"}
+{"agent":"hackathon","found":30,"screened":2,"reported":0,"degraded":false,"aborted":[],"reason":"Nothing passed screening today.","ts":"2026-11-27T17:29:54.473Z"}
