@@ -71,61 +71,6 @@
     "title": "Senior Backend Engineer Build AI Agents",
     "kind": "reported"
   },
-  "lead:vertu motors plc": {
-    "firstSeen": "2026-08-28T18:44:26.462Z",
-    "label": "LEAD",
-    "title": "Vertu Motors plc"
-  },
-  "lead:virtuhire": {
-    "firstSeen": "2026-08-28T18:44:26.462Z",
-    "label": "LEAD",
-    "title": "VirtuHire"
-  },
-  "lead:sisal hub albania": {
-    "firstSeen": "2026-08-28T18:44:26.462Z",
-    "label": "LEAD",
-    "title": "Sisal Hub Albania"
-  },
-  "lead:royal caribbean group": {
-    "firstSeen": "2026-08-28T18:44:26.462Z",
-    "label": "LEAD",
-    "title": "Royal Caribbean Group"
-  },
-  "lead:storage king group": {
-    "firstSeen": "2026-08-28T18:44:26.462Z",
-    "label": "LEAD",
-    "title": "Storage King Group"
-  },
-  "lead:blackbird interactive": {
-    "firstSeen": "2026-08-28T18:44:26.462Z",
-    "label": "LEAD",
-    "title": "Blackbird Interactive"
-  },
-  "lead:scotsman hospitality": {
-    "firstSeen": "2026-08-28T18:44:26.462Z",
-    "label": "LEAD",
-    "title": "Scotsman Hospitality"
-  },
-  "lead:transportation partners &amp; logistics": {
-    "firstSeen": "2026-08-28T18:44:26.462Z",
-    "label": "LEAD",
-    "title": "Transportation Partners &amp; Logistics"
-  },
-  "lead:pembroke school": {
-    "firstSeen": "2026-08-29T12:43:05.120Z",
-    "label": "LEAD",
-    "title": "Pembroke School"
-  },
-  "lead:pete's frootique": {
-    "firstSeen": "2026-08-29T12:43:05.120Z",
-    "label": "LEAD",
-    "title": "Pete's Frootique"
-  },
-  "lead:crocs, inc.": {
-    "firstSeen": "2026-08-29T12:43:05.120Z",
-    "label": "LEAD",
-    "title": "Crocs, Inc."
-  },
   "lead:acumentis group": {
     "firstSeen": "2026-08-30T11:56:37.979Z",
     "label": "LEAD",
@@ -553,10 +498,10 @@
     "kind": "screened"
   },
   "lead:toptal": {
-    "firstSeen": "2026-11-17T16:03:45.459Z",
+    "firstSeen": "2026-11-27T16:42:21.203Z",
     "label": "LEAD",
     "title": "Toptal",
-    "kind": "screened"
+    "kind": "reported"
   },
   "https://www.themuse.com/jobs/gitlab/ai-transformation-owner-product-design": {
     "firstSeen": "2026-10-27T12:15:54.536Z",
@@ -1039,7 +984,7 @@
     "kind": "screened"
   },
   "lead:clickup": {
-    "firstSeen": "2026-10-21T11:52:13.247Z",
+    "firstSeen": "2026-11-27T16:42:21.203Z",
     "label": "LEAD",
     "title": "ClickUp",
     "kind": "screened"
@@ -2884,6 +2829,36 @@
     "firstSeen": "2026-11-26T16:56:29.150Z",
     "label": "LEAD",
     "title": "Freshpaint",
+    "kind": "reported"
+  },
+  "https://remoteok.com/remote-jobs/remote-senior-engineering-manager-agentic-products-spotify-1138174": {
+    "firstSeen": "2026-11-27T16:42:18.789Z",
+    "label": "JOB",
+    "title": "Senior Engineering Manager - Agentic Products",
+    "kind": "screened"
+  },
+  "lead:outmarket ai": {
+    "firstSeen": "2026-11-27T16:42:21.203Z",
+    "label": "LEAD",
+    "title": "Outmarket AI",
+    "kind": "screened"
+  },
+  "lead:zip": {
+    "firstSeen": "2026-11-27T16:42:21.203Z",
+    "label": "LEAD",
+    "title": "Zip",
+    "kind": "screened"
+  },
+  "lead:livekit": {
+    "firstSeen": "2026-11-27T16:42:21.203Z",
+    "label": "LEAD",
+    "title": "LiveKit",
+    "kind": "screened"
+  },
+  "lead:emplifi": {
+    "firstSeen": "2026-11-27T16:42:21.203Z",
+    "label": "LEAD",
+    "title": "Emplifi",
     "kind": "reported"
   }
 }
