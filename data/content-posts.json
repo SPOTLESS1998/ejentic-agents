@@ -3089,5 +3089,21 @@
     ],
     "score": 8,
     "createdAt": "2026-11-27T21:54:27.016Z"
+  },
+  "2026-11-28:evening": {
+    "date": "2026-11-28",
+    "slot": "evening",
+    "cycleDay": 23,
+    "theme": "The Playbook, Part 2",
+    "pillar": "INSPIRE",
+    "topic": "Direct CTA: Your competitors are not waiting for perfect conditions.",
+    "angle": "Connecting the reality of 2026 agent orchestration and outcome-driven software to the Ejentic vision of African-led ethical AI, closing with a direct push for immediate action.",
+    "xPost": "Real AI adoption isn't about hype or loose frameworks—it requires rigorous guardrails, observability, and human-centric design. Your competitors are not waiting for perfect conditions. Book a free consultation #EjenticAI #AIAgents",
+    "linkedinPost": "Many businesses think adopting AI means scrambling to pick a framework or chasing the latest tech trend. But as any seasoned architect knows, real production systems need strict guardrails, evaluation loops, and a relentless focus on business outcomes over mere novelty. \n\nAt Ejentic AI, our vision is rooted much deeper. We believe Africa, starting right here in Nigeria, can lead the world in artificial intelligence—not by imitating Silicon Valley, but by building ethical, human-centric systems that speak our languages, protect our data, and augment our people.\n\nYour competitors are not waiting for perfect conditions. The advantage belongs to those who act with intention and clarity today.\n\nBook a free consultation\n\n#EjenticAI #AIAgents #Automation #NigeriaTech #AfricanTech",
+    "citedSourceUrls": [
+      "https://yabasha.dev/guides/ai-agent-frameworks-2026"
+    ],
+    "score": 8,
+    "createdAt": "2026-11-28T01:21:58.063Z"
   }
 }
